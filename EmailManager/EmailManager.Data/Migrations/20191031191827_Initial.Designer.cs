@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmailManager.Data.Migrations
 {
     [DbContext(typeof(EmailManagerDbContext))]
-    [Migration("20191030223936_initial")]
-    partial class initial
+    [Migration("20191031191827_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,14 +21,26 @@ namespace EmailManager.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("EmailManager.Data.Entities.AuditLog", b =>
+            modelBuilder.Entity("EmailManager.Data.Entities.ClientData", b =>
                 {
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("EncryptedEGN")
+                        .IsRequired();
+
+                    b.Property<string>("EncryptedEmail")
+                        .IsRequired();
+
+                    b.Property<string>("EncryptedPhone")
+                        .IsRequired();
+
+                    b.Property<string>("Names")
+                        .IsRequired();
+
                     b.HasKey("Id");
 
-                    b.ToTable("AuditLogs");
+                    b.ToTable("ClientDatas");
                 });
 
             modelBuilder.Entity("EmailManager.Data.Entities.Email", b =>
@@ -36,19 +48,47 @@ namespace EmailManager.Data.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Body");
+                    b.Property<string>("Body")
+                        .IsRequired();
 
                     b.Property<DateTime>("DateReceived");
 
-                    b.Property<string>("Sender");
+                    b.Property<string>("Sender")
+                        .IsRequired();
 
-                    b.Property<string>("Subject");
+                    b.Property<string>("StatusEmailId");
 
-                    b.Property<double>("TotalSumMb");
+                    b.Property<string>("Subject")
+                        .IsRequired();
+
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("StatusEmailId");
+
+                    b.HasIndex("UserId");
+
                     b.ToTable("Emails");
+                });
+
+            modelBuilder.Entity("EmailManager.Data.Entities.EmailAttachments", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("EmailId");
+
+                    b.Property<string>("FileName")
+                        .IsRequired();
+
+                    b.Property<double>("FileSize");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmailId");
+
+                    b.ToTable("EmailAttachments");
                 });
 
             modelBuilder.Entity("EmailManager.Data.Entities.LoanApplication", b =>
@@ -56,7 +96,7 @@ namespace EmailManager.Data.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("AuditLogId");
+                    b.Property<string>("ClientDataId");
 
                     b.Property<string>("EmailId");
 
@@ -66,7 +106,7 @@ namespace EmailManager.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AuditLogId");
+                    b.HasIndex("ClientDataId");
 
                     b.HasIndex("EmailId")
                         .IsUnique()
@@ -84,11 +124,25 @@ namespace EmailManager.Data.Migrations
                     b.Property<string>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("StatusType");
+                    b.Property<string>("StatusType")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
                     b.ToTable("StatusApplications");
+                });
+
+            modelBuilder.Entity("EmailManager.Data.Entities.StatusEmail", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("StatusType")
+                        .IsRequired();
+
+                    b.HasKey("Id");
+
+                    b.ToTable("StatusEmails");
                 });
 
             modelBuilder.Entity("EmailManager.Data.Entities.User", b =>
@@ -256,11 +310,29 @@ namespace EmailManager.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("EmailManager.Data.Entities.Email", b =>
+                {
+                    b.HasOne("EmailManager.Data.Entities.StatusEmail", "StatusEmail")
+                        .WithMany("Emails")
+                        .HasForeignKey("StatusEmailId");
+
+                    b.HasOne("EmailManager.Data.Entities.User", "User")
+                        .WithMany("Emails")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("EmailManager.Data.Entities.EmailAttachments", b =>
+                {
+                    b.HasOne("EmailManager.Data.Entities.Email", "Email")
+                        .WithMany("EmailAttachments")
+                        .HasForeignKey("EmailId");
+                });
+
             modelBuilder.Entity("EmailManager.Data.Entities.LoanApplication", b =>
                 {
-                    b.HasOne("EmailManager.Data.Entities.AuditLog")
+                    b.HasOne("EmailManager.Data.Entities.ClientData", "ClientData")
                         .WithMany("LoanApplications")
-                        .HasForeignKey("AuditLogId");
+                        .HasForeignKey("ClientDataId");
 
                     b.HasOne("EmailManager.Data.Entities.Email", "Email")
                         .WithOne("LoanApplication")

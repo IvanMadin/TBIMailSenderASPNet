@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmailManager.Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -48,30 +48,18 @@ namespace EmailManager.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AuditLogs",
-                columns: table => new
-                {
-                    Id = table.Column<string>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_AuditLogs", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Emails",
+                name: "ClientDatas",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    Sender = table.Column<string>(nullable: true),
-                    DateReceived = table.Column<DateTime>(nullable: false),
-                    Subject = table.Column<string>(nullable: true),
-                    Body = table.Column<string>(nullable: true),
-                    TotalSumMb = table.Column<double>(nullable: false)
+                    Names = table.Column<string>(nullable: false),
+                    EncryptedEGN = table.Column<string>(nullable: false),
+                    EncryptedPhone = table.Column<string>(nullable: false),
+                    EncryptedEmail = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Emails", x => x.Id);
+                    table.PrimaryKey("PK_ClientDatas", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -79,11 +67,23 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    StatusType = table.Column<string>(nullable: true)
+                    StatusType = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_StatusApplications", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "StatusEmails",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    StatusType = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_StatusEmails", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -193,22 +193,71 @@ namespace EmailManager.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Emails",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    Sender = table.Column<string>(nullable: false),
+                    DateReceived = table.Column<DateTime>(nullable: false),
+                    Subject = table.Column<string>(nullable: false),
+                    Body = table.Column<string>(nullable: false),
+                    StatusEmailId = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Emails", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Emails_StatusEmails_StatusEmailId",
+                        column: x => x.StatusEmailId,
+                        principalTable: "StatusEmails",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Emails_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "EmailAttachments",
+                columns: table => new
+                {
+                    Id = table.Column<string>(nullable: false),
+                    FileName = table.Column<string>(nullable: false),
+                    FileSize = table.Column<double>(nullable: false),
+                    EmailId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_EmailAttachments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_EmailAttachments_Emails_EmailId",
+                        column: x => x.EmailId,
+                        principalTable: "Emails",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "LoanApplications",
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
                     UserId = table.Column<string>(nullable: true),
+                    ClientDataId = table.Column<string>(nullable: true),
                     EmailId = table.Column<string>(nullable: true),
-                    StatusApplicationId = table.Column<string>(nullable: true),
-                    AuditLogId = table.Column<string>(nullable: true)
+                    StatusApplicationId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_LoanApplications", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_LoanApplications_AuditLogs_AuditLogId",
-                        column: x => x.AuditLogId,
-                        principalTable: "AuditLogs",
+                        name: "FK_LoanApplications_ClientDatas_ClientDataId",
+                        column: x => x.ClientDataId,
+                        principalTable: "ClientDatas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -271,9 +320,24 @@ namespace EmailManager.Data.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LoanApplications_AuditLogId",
+                name: "IX_EmailAttachments_EmailId",
+                table: "EmailAttachments",
+                column: "EmailId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Emails_StatusEmailId",
+                table: "Emails",
+                column: "StatusEmailId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Emails_UserId",
+                table: "Emails",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_LoanApplications_ClientDataId",
                 table: "LoanApplications",
-                column: "AuditLogId");
+                column: "ClientDataId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_LoanApplications_EmailId",
@@ -311,19 +375,25 @@ namespace EmailManager.Data.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "EmailAttachments");
+
+            migrationBuilder.DropTable(
                 name: "LoanApplications");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
-                name: "AuditLogs");
+                name: "ClientDatas");
 
             migrationBuilder.DropTable(
                 name: "Emails");
 
             migrationBuilder.DropTable(
                 name: "StatusApplications");
+
+            migrationBuilder.DropTable(
+                name: "StatusEmails");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

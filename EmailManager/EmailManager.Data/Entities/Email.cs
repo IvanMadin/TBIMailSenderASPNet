@@ -12,9 +12,15 @@ namespace EmailManager.Data.Entities
         public DateTime DateReceived { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
-        public double TotalSumMb { get; set; }
 
-        //public string LoanApplicationId { get; set; }
+        public ICollection<EmailAttachments> EmailAttachments { get; set; }
+
+        public string StatusEmailId { get; set; }
+        public StatusEmail StatusEmail { get; set; }
+
+        public string UserId { get; set; }
+        public User User { get; set; }
+
         public LoanApplication LoanApplication { get; set; }
     }
 }

@@ -11,6 +11,9 @@ namespace EmailManager.Data.Entities
         public string UserId { get; set; }
         public User User { get; set; }
 
+        public string ClientDataId { get; set; }
+        public ClientData ClientData { get; set; }
+
         public string EmailId { get; set; }
         public Email Email { get; set; }
 
