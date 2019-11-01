@@ -1,4 +1,5 @@
 ﻿using EmailManager.Data.Configurations;
+using EmailManager.Data.DataSeeder;
 using EmailManager.Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,7 @@ namespace EmailManager.Data
             builder.ApplyConfiguration<StatusApplication>(new StatusApplicationConfiguration());
             builder.ApplyConfiguration<StatusEmail>(new StatusEmailConfiguration());
 
+            builder.UserRoleSeeder();
             base.OnModelCreating(builder);
         }
     }

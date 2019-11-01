@@ -52,6 +52,9 @@ namespace EmailManager.Web
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
+            //services.AddScoped<IUsersService, UsersService>();
+            //services.AddScoped<IRolesService, RolesService>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

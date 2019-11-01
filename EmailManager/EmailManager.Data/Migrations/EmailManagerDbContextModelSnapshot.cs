@@ -192,6 +192,40 @@ namespace EmailManager.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "28cee90e-9b97-4360-b572-ab8827192a4e",
+                            Email = "krisi@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = true,
+                            NormalizedEmail = "KRISI@GMAIL.COM",
+                            NormalizedUserName = "KRISI",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBNHgO9c2xVa+5txp+6KI2kzNldtZBb3DZsbL3Nd9Um1EUQwGpM2WIO0d5AtRJ0Ebw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
+                            TwoFactorEnabled = false,
+                            UserName = "krisi"
+                        },
+                        new
+                        {
+                            Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "09ea5ac3-72f8-4fba-8e8a-448f729b8f78",
+                            Email = "madinftw@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = true,
+                            NormalizedEmail = "MADINFTW@GMAIL.COM",
+                            NormalizedUserName = "MADINFTW",
+                            PasswordHash = "AQAAAAEAACcQAAAAEP6m44O4UPI+Y5hCLgywR18PIlm0EYwEKfFaL/kx6DAGvRBvA4H0pw5CsAvs+jwCHg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
+                            TwoFactorEnabled = false,
+                            UserName = "madinftw"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -216,6 +250,22 @@ namespace EmailManager.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
+                            ConcurrencyStamp = "50718c01-454f-4eab-8cf4-d0a810a2f9fb",
+                            Name = "Manager",
+                            NormalizedName = "MANAGER"
+                        },
+                        new
+                        {
+                            Id = "93c66dd9-11c5-4836-b104-a9c333549530",
+                            ConcurrencyStamp = "0d26d4be-7b9f-4ebd-b5d0-b39aca131df5",
+                            Name = "Operator",
+                            NormalizedName = "OPERATOR"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -289,6 +339,18 @@ namespace EmailManager.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
+                            RoleId = "771f568e-a7d5-496b-90c4-72ff997368e6"
+                        },
+                        new
+                        {
+                            UserId = "565dfbc0-2681-4f29-bc97-a619eacf339c",
+                            RoleId = "771f568e-a7d5-496b-90c4-72ff997368e6"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>

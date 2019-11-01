@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmailManager.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -279,6 +279,34 @@ namespace EmailManager.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "50718c01-454f-4eab-8cf4-d0a810a2f9fb", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "0d26d4be-7b9f-4ebd-b5d0-b39aca131df5", "Operator", "OPERATOR" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[,]
+                {
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "28cee90e-9b97-4360-b572-ab8827192a4e", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEBNHgO9c2xVa+5txp+6KI2kzNldtZBb3DZsbL3Nd9Um1EUQwGpM2WIO0d5AtRJ0Ebw==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "09ea5ac3-72f8-4fba-8e8a-448f729b8f78", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEP6m44O4UPI+Y5hCLgywR18PIlm0EYwEKfFaL/kx6DAGvRBvA4H0pw5CsAvs+jwCHg==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "fe86f129-41f3-4ab8-a61c-5f47239a1393", "771f568e-a7d5-496b-90c4-72ff997368e6" });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "565dfbc0-2681-4f29-bc97-a619eacf339c", "771f568e-a7d5-496b-90c4-72ff997368e6" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
