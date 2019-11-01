@@ -1,0 +1,30 @@
+﻿body {
+    background-color:white;
+}
+
+.centerheader {
+    text-align: center;
+}
+
+.rigth-button {
+    text-align: left;
+}
+
+.mg{
+    margin-bottom:7%;
+}
+
+.button-color{
+    background-color:orange;
+    color:black;
+}
+.orange-color{
+    color: orange;
+}
+.content {
+    max-width: 500px;
+    margin:auto;
+    margin-top:12%;
+    background-color: white;
+    padding: 20px;
+}
