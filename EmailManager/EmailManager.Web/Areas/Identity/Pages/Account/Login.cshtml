@@ -7,13 +7,13 @@
 
 <link rel="stylesheet" href="~/css/login.css">
 
-<div class="content">
+<div class="content scroll-hide">
     <div class="mg centerheader"><h1>E-mail Manager <span style="color:darkorange">TBI</span>Bank</h1></div>
-<div class="row ">
-    <div class="col-md-12">
-        <section>
-            <form id="account" method="post">
-                <div class="mg centerheader"><h4>Use a local account to log in.</h4></div>
+    <div class="row ">
+        <div class="col-md-12">
+            <section>
+                <form id="account" method="post">
+                    <div class="mg centerheader"><h4>Use a local account to log in.</h4></div>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
@@ -26,26 +26,28 @@
                         <input asp-for="Input.Password" class="form-control" />
                         <span asp-validation-for="Input.Password" class="text-danger"></span>
                     </div>
-                    @*<div class="form-group">
-            <div class="checkbox">
-                <label asp-for="Input.RememberMe">
-                    <input asp-for="Input.RememberMe" />
-                    @Html.DisplayNameFor(m => m.Input.RememberMe)
-                </label>
-            </div>
-        </div>*@
                     <div class="form-group">
-                        <button type="submit" class="btn button-color rigth-button">Log in</button>
+                        <div class="checkbox">
+                            <label asp-for="Input.RememberMe">
+                                <input asp-for="Input.RememberMe" />
+                                @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            </label>
+                        </div>
                     </div>
-                    @*<div class="form-group">
-            <p>
-                <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
-            </p>
-        </div>*@
-</form>
-        </section>
+                        <div class="form-group">
+                            <button type="submit" class="btn rigth-button button-color">Log in</button>
+                        </div>
+                    
+
+                    <div class="form-group">
+                        <p>
+                            <a class="orange-color" id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                        </p>
+                    </div>
+                </form>
+            </section>
+        </div>
     </div>
-</div>
 </div>
 
 @section Scripts {
