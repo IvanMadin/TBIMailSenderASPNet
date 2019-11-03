@@ -6,6 +6,7 @@ using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,8 +26,9 @@ namespace EmailManager.Service
 
         public async Task<EmailDTO> CreateAsync(string originalMailId, string sender, string dateReceived, string subject, string body)
         {
+            var currentCultureDateFormat =  this.ParseExactDateAsync(dateReceived);
 
-            var newEmail = this.emailFactory.CreateEmail(originalMailId, sender, dateReceived, subject, body);
+            var newEmail = this.emailFactory.CreateEmail(originalMailId, sender, currentCultureDateFormat, subject, body);
 
             if (newEmail is null)
                 throw new ArgumentException("Invalid email");
@@ -62,7 +64,7 @@ namespace EmailManager.Service
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var email = await this.GetEmailByOriginalIdAsync(originalMailId);
-            
+
             if (email is null)
                 return false;
 
@@ -74,6 +76,21 @@ namespace EmailManager.Service
         //    var email = await this.GetEmailByIdAsync(emailId);
 
         //}
+        private string ParseExactDateAsync(string dateReceived)
+        {
+            //TODO: Have to find another way. To ignore the exact formatting.
+            var format = "";
+            if (dateReceived.Contains("GMT"))
+            {
+                format = "ddd, d MMM yyyy HH:mm:ss K (GMT)";
+            }
+            else
+            {
+                format = "ddd, d MMM yyyy HH:mm:ss K";
+            }
+            var date = DateTime.ParseExact(dateReceived, format, CultureInfo.InvariantCulture);
 
+            return date.ToString("d/MM/yyyy H:mm:ss");
+        }
     }
 }

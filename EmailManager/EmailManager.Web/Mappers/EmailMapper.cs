@@ -17,7 +17,8 @@ namespace EmailManager.Web.Mappers
                 DateReceived = emailDTO.DateReceived,
                 Id = emailDTO.Id,
                 OriginalMailId = emailDTO.OriginalMailId,
-                Sender = emailDTO.Sender
+                Sender = emailDTO.Sender,
+                Subject = emailDTO.Subject
             };
 
             return emailModel;

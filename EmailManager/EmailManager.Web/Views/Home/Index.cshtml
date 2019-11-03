@@ -4,22 +4,68 @@
 }
 
 <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4">
+        <div class="card border-0 shadow my-5">
 
-    <div class="col-md-6">
-        @foreach (var item in Model)
-        {
-                <div class="text-center">
-                    <div>
-                        <label>Sender: @item.Sender</label> <label>From Date: @item.DateReceived</label>
-                    </div>
-                    <label>Body: </label>
-                    @Html.Raw(item.Body)
-
-                </div>
-            <hr />
-        }
+            <div class="card-body p-5 amber-text">
+                <h3>Select option</h3>
+                <a asp-controller="Home" asp-action="UpdateEmails">Refresh Inbox</a>
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-        The form will go here.
+    <div class="col-sm-9 col-md-6 col-lg-8">
+        <div class="container">
+            <div class="card border-0 shadow my-5">
+                <div class="card-body p-5 amber-text">
+                    <h3>Emails</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Sender)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Subject)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.DateReceived)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var email in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @email.Sender
+                                    </td>
+                                    <td>
+                                        @email.Subject
+                                    </td>
+                                    <td>
+                                        @email.DateReceived
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Home" asp-action="Index">View Email</a>
+                                    </td>
+
+                                </tr>
+                                @if (!Model.Any())
+                                {
+                                    <tr>
+                                        <td>
+                                            <p style="color:dimgray">
+                                                There are no new emails.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

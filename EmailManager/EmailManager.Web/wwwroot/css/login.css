@@ -1,0 +1,37 @@
+﻿body {
+    background-color:white;
+}
+
+.centerheader {
+    text-align: center;
+}
+
+.rigth-button {
+    text-align: center;
+    width: 460px !important;
+}
+
+.mg{
+    margin-bottom:7%;
+}
+
+.button-color{
+    background-color:orange;
+    color:black;
+}
+.orange-color{
+    color: orange;
+}
+.content {
+    max-width: 500px;
+    margin:auto;
+    margin-top:5%;
+    background-color: white;
+    padding: 20px;
+    overflow:hidden;
+}
+
+.scroll-hide
+{
+    overflow:hidden;
+}
