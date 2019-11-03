@@ -1,8 +1,25 @@
-﻿@{
+﻿@model IEnumerable<EmailViewModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row">
+
+    <div class="col-md-6">
+        @foreach (var item in Model)
+        {
+                <div class="text-center">
+                    <div>
+                        <label>Sender: @item.Sender</label> <label>From Date: @item.DateReceived</label>
+                    </div>
+                    <label>Body: </label>
+                    @Html.Raw(item.Body)
+
+                </div>
+            <hr />
+        }
+    </div>
+    <div class="col-md-6">
+        The form will go here.
+    </div>
 </div>

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmailManager.Data.Migrations
 {
-    public partial class initial : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -197,8 +197,9 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
+                    OriginalMailId = table.Column<string>(nullable: false),
                     Sender = table.Column<string>(nullable: false),
-                    DateReceived = table.Column<DateTime>(nullable: false),
+                    DateReceived = table.Column<string>(nullable: false),
                     Subject = table.Column<string>(nullable: false),
                     Body = table.Column<string>(nullable: false),
                     StatusEmailId = table.Column<string>(nullable: true),
@@ -246,6 +247,7 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
+                    Amount = table.Column<decimal>(type: "numeric(15,2)", nullable: false),
                     UserId = table.Column<string>(nullable: true),
                     ClientDataId = table.Column<string>(nullable: true),
                     EmailId = table.Column<string>(nullable: true),
@@ -285,8 +287,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "50718c01-454f-4eab-8cf4-d0a810a2f9fb", "Manager", "MANAGER" },
-                    { "93c66dd9-11c5-4836-b104-a9c333549530", "0d26d4be-7b9f-4ebd-b5d0-b39aca131df5", "Operator", "OPERATOR" }
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "0d33363d-4c3a-4391-a217-0864c4cd3580", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "cdfbdae6-3f55-4f2f-bbf8-18618b7c3074", "Operator", "OPERATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -294,8 +296,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "28cee90e-9b97-4360-b572-ab8827192a4e", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEBNHgO9c2xVa+5txp+6KI2kzNldtZBb3DZsbL3Nd9Um1EUQwGpM2WIO0d5AtRJ0Ebw==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
-                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "09ea5ac3-72f8-4fba-8e8a-448f729b8f78", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEP6m44O4UPI+Y5hCLgywR18PIlm0EYwEKfFaL/kx6DAGvRBvA4H0pw5CsAvs+jwCHg==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "224814bc-4df7-426e-b864-ed3a29e3d297", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEJ/g9dglHcFGfrGNI5ffOmO4kt24MQKHkZJXNTqxRXBJ8R02DQKliYQZVoXTMHg92g==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "dea9eca1-93e7-4bf7-8439-d5c2cdaf3659", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEALPwh9OIc4CBxVWrVJ5vjG0r2ja+oJreffWBWsgQBep3xiJkD7ovOGgjhq9U0vIXQ==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
                 });
 
             migrationBuilder.InsertData(

@@ -29,6 +29,11 @@ namespace EmailManager.Data.Configurations
                 .HasOne(la => la.StatusApplication)
                 .WithMany(sa => sa.LoanApplications)
                 .HasForeignKey(la => la.StatusApplicationId);
+
+            builder
+                .Property(la => la.Amount)
+                .HasColumnType("numeric(15,2)")
+                .IsRequired();
         }
     }
 }

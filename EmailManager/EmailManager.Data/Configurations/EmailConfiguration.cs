@@ -27,6 +27,10 @@ namespace EmailManager.Data.Configurations
                 .HasForeignKey(ea => ea.EmailId);
 
             builder
+                .Property(e => e.OriginalMailId)
+                .IsRequired();
+
+            builder
                 .Property(e => e.Sender)
                 .IsRequired();
 

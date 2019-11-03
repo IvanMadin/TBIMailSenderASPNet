@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmailManager.Data\EmailManager.Data.csproj" />
+    <ProjectReference Include="..\EmailManager.GmailConfig\EmailManager.GmailConfig.csproj" />
   </ItemGroup>
 
 

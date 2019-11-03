@@ -14,11 +14,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EmailManager.Data.Entities;
 using EmailManager.Data;
+using EmailManager.Service;
+using EmailManager.GmailConfig;
+using EmailManager.Service.Contracts.Factories;
+using EmailManager.Service.Factories;
 
 namespace EmailManager.Web
 {
     public class Startup
     {
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,7 +31,6 @@ namespace EmailManager.Web
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             //services.Configure<CookiePolicyOptions>(options =>
@@ -52,7 +56,9 @@ namespace EmailManager.Web
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
-            //services.AddScoped<IUsersService, UsersService>();
+            services.AddScoped<GmailConfigure>();
+            services.AddScoped<IEmailFactory, EmailFactory>();
+            services.AddScoped<EmailService>();
             //services.AddScoped<IRolesService, RolesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
