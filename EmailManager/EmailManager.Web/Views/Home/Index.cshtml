@@ -3,7 +3,25 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="row">
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5 amber-text">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="row">
+                        <a asp-controller="Email" asp-action="Application" asp-route-id="@item.Id" title="Details of email">
+                            <label>Sender: @item.Sender</label> <label>From Date: @item.DateReceived</label>
+                        </a>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="row">
     <div class="col-sm-3 col-md-6 col-lg-4">
         <div class="card border-0 shadow my-5">
 
@@ -68,4 +86,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@

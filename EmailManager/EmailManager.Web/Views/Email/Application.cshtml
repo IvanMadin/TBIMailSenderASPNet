@@ -1,0 +1,41 @@
+﻿@model EmailViewModel
+
+@{
+    ViewData["Title"] = "Application";
+}
+
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="row">
+            <div class="col-9 card-body p-5 amber-text">
+                <h3>Details for @Model.Sender</h3>
+                <div>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">
+                            @nameof(Model.Sender)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Model.Sender
+                        </dd>
+                        <dt class="col-sm-4">
+                            @nameof(Model.DateReceived)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Model.DateReceived
+                        </dd>
+                        <dt class="col-sm-4">
+                            @nameof(Model.Body)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Html.Raw(Model.Body)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

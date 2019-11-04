@@ -1,0 +1,42 @@
+﻿@model IEnumerable<EmailViewModel>
+
+@{
+    ViewData["Title"] = "AllApplications";
+}
+
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5 amber-text">
+            <h1 class="font-weight-light">List of all emails</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Sender)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DateReceived)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @item.Sender
+                            </td>
+                            <td>
+                                @item.DateReceived
+                            </td>
+                            <td>
+                                <a asp-controller="Email" asp-action="Application" asp-route-id="@item.Id">Application</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
