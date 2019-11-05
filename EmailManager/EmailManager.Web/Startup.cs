@@ -59,6 +59,8 @@ namespace EmailManager.Web
             services.AddScoped<GmailConfigure>();
             services.AddScoped<IEmailFactory, EmailFactory>();
             services.AddScoped<EmailService>();
+            services.AddScoped<LoanApplicationService>();
+            services.AddScoped<ClientService>();
             //services.AddScoped<IRolesService, RolesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

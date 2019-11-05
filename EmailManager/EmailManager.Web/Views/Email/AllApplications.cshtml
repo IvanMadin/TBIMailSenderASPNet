@@ -15,22 +15,28 @@
                             @Html.DisplayNameFor(model => model.Sender)
                         </th>
                         <th>
+                            @Html.DisplayNameFor(model => model.Subject)
+                        </th>
+                        <th>
                             @Html.DisplayNameFor(model => model.DateReceived)
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model)
+                    @foreach (var email in Model)
                     {
                         <tr>
                             <td>
-                                @item.Sender
+                                @email.Sender
                             </td>
                             <td>
-                                @item.DateReceived
+                                @email.Subject
                             </td>
                             <td>
-                                <a asp-controller="Email" asp-action="Application" asp-route-id="@item.Id">Application</a>
+                                @email.DateReceived
+                            </td>
+                            <td>
+                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Application</a>
                             </td>
                         </tr>
                     }

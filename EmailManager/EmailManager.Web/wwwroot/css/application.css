@@ -1,0 +1,12 @@
+﻿body {
+}
+
+.button-color {
+    background-color: orange;
+    color: black;
+}
+
+.rigth-button {
+    text-align: center;
+    width: 120px !important;
+}

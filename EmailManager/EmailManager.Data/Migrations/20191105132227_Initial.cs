@@ -52,10 +52,10 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    Names = table.Column<string>(nullable: false),
+                    FirstName = table.Column<string>(nullable: false),
+                    LastName = table.Column<string>(nullable: true),
                     EncryptedEGN = table.Column<string>(nullable: false),
-                    EncryptedPhone = table.Column<string>(nullable: false),
-                    EncryptedEmail = table.Column<string>(nullable: false)
+                    EncryptedPhone = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -287,8 +287,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "245812ae-c12e-4abb-ad2c-13c91cf18bac", "Manager", "MANAGER" },
-                    { "93c66dd9-11c5-4836-b104-a9c333549530", "ce1df465-cbfd-4969-9275-087908eed011", "Operator", "OPERATOR" }
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "d779cec9-9942-40a2-8b3a-22dde872baa1", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "70c17d4f-fa69-4da8-a9b3-7265ca0151ed", "Operator", "OPERATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -296,8 +296,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "79d88efa-ebe8-4022-9c2b-f83c0ad65257", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEPqVOsa15aBUAzae6u/7qgZ3BEiFIKIu6172sfcBgoMXCS8gFpVINKSpCuSH9VZAdQ==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
-                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "323ce965-7156-4a31-afe7-52d830c2bb4a", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEJ9Bw8giU0qXPhJojGKRI5+7lFevDB5VoSodIoO549cyCBJmzexZ+qyr7QFjAjdJjA==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "102c59a7-8943-4c2c-bbdf-4e0ba24e95ba", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEIn2wSsOFaBjiwxKHi9og6kySWoWqcNwXEOwsC01jih6KENPIgR/GS7aYwXC26Yb3g==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "155b8817-d9da-4198-addb-8010a3ecd97e", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEHH/mA05gIiLf8ZfPJk+M6Y/hZ1Ak83eLge/rYi+YjacEz8+5oUIMKn5TXO79tJtqw==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
                 });
 
             migrationBuilder.InsertData(

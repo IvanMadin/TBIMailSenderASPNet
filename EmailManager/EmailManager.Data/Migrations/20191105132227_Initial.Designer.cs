@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmailManager.Data.Migrations
 {
     [DbContext(typeof(EmailManagerDbContext))]
-    [Migration("20191103195457_Initial")]
+    [Migration("20191105132227_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,14 +29,13 @@ namespace EmailManager.Data.Migrations
                     b.Property<string>("EncryptedEGN")
                         .IsRequired();
 
-                    b.Property<string>("EncryptedEmail")
-                        .IsRequired();
-
                     b.Property<string>("EncryptedPhone")
                         .IsRequired();
 
-                    b.Property<string>("Names")
+                    b.Property<string>("FirstName")
                         .IsRequired();
+
+                    b.Property<string>("LastName");
 
                     b.HasKey("Id");
 
@@ -207,13 +206,13 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "79d88efa-ebe8-4022-9c2b-f83c0ad65257",
+                            ConcurrencyStamp = "102c59a7-8943-4c2c-bbdf-4e0ba24e95ba",
                             Email = "krisi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "KRISI@GMAIL.COM",
                             NormalizedUserName = "KRISI",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPqVOsa15aBUAzae6u/7qgZ3BEiFIKIu6172sfcBgoMXCS8gFpVINKSpCuSH9VZAdQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIn2wSsOFaBjiwxKHi9og6kySWoWqcNwXEOwsC01jih6KENPIgR/GS7aYwXC26Yb3g==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
                             TwoFactorEnabled = false,
@@ -223,13 +222,13 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "323ce965-7156-4a31-afe7-52d830c2bb4a",
+                            ConcurrencyStamp = "155b8817-d9da-4198-addb-8010a3ecd97e",
                             Email = "madinftw@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "MADINFTW@GMAIL.COM",
                             NormalizedUserName = "MADINFTW",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJ9Bw8giU0qXPhJojGKRI5+7lFevDB5VoSodIoO549cyCBJmzexZ+qyr7QFjAjdJjA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHH/mA05gIiLf8ZfPJk+M6Y/hZ1Ak83eLge/rYi+YjacEz8+5oUIMKn5TXO79tJtqw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
                             TwoFactorEnabled = false,
@@ -264,14 +263,14 @@ namespace EmailManager.Data.Migrations
                         new
                         {
                             Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
-                            ConcurrencyStamp = "245812ae-c12e-4abb-ad2c-13c91cf18bac",
+                            ConcurrencyStamp = "d779cec9-9942-40a2-8b3a-22dde872baa1",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
                             Id = "93c66dd9-11c5-4836-b104-a9c333549530",
-                            ConcurrencyStamp = "ce1df465-cbfd-4969-9275-087908eed011",
+                            ConcurrencyStamp = "70c17d4f-fa69-4da8-a9b3-7265ca0151ed",
                             Name = "Operator",
                             NormalizedName = "OPERATOR"
                         });

@@ -16,9 +16,9 @@ namespace EmailManager.Service.Mappers
             var clientData = new ClientDataDTO
             {
                 Id = entity.Id,
-                Names = entity.Names,
+                FirstName = entity.FirstName,
+                LastName = entity.LastName,
                 EGN = entity.EncryptedEGN,
-                Email = entity.EncryptedEmail,
                 Phone = entity.EncryptedPhone
             };
 

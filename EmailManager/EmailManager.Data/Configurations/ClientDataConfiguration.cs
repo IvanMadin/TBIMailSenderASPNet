@@ -16,7 +16,7 @@ namespace EmailManager.Data.Configurations
                 .HasForeignKey(la => la.ClientDataId);
 
             builder
-                .Property(cd => cd.Names)
+                .Property(cd => cd.FirstName)
                 .IsRequired();
 
             builder
@@ -25,10 +25,6 @@ namespace EmailManager.Data.Configurations
 
             builder
                 .Property(cd => cd.EncryptedPhone)
-                .IsRequired();
-
-            builder
-                .Property(cd => cd.EncryptedEmail)
                 .IsRequired();
         }
     }
