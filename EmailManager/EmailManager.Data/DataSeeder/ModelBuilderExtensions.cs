@@ -44,5 +44,19 @@ namespace EmailManager.Data.DataSeeder
                     UserId = madinManager.Id
                 });
         }
+
+        public static void StatusSeeder(this ModelBuilder builder)
+        {
+            builder.Entity<StatusApplication>().HasData(
+                new StatusApplication { Id = "61cb6584-591b-4560-bc4a-a89950b15cc3", StatusType = "New" },
+                new StatusApplication { Id = "645ad030-3b7f-47fb-93e1-1c9315b34673", StatusType = "Open" },
+                new StatusApplication { Id = "6c60cb0a-5395-49b1-abfd-40a4db7a355a", StatusType = "Closed" }
+                );
+
+            builder.Entity<StatusEmail>().HasData(
+                new StatusEmail { Id = "a0e53404-d40e-4a1e-8fe5-9a5fc0139ed9", StatusType = "Not Reviewed" },
+                new StatusEmail { Id = "165e4e23-7fed-4bd6-a859-530026625ffc", StatusType = "Invalid Application" }
+                );
+        }
     }
 }

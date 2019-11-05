@@ -32,6 +32,7 @@ namespace EmailManager.Data
             builder.ApplyConfiguration<StatusEmail>(new StatusEmailConfiguration());
 
             builder.UserRoleSeeder();
+            builder.StatusSeeder();
             base.OnModelCreating(builder);
         }
     }

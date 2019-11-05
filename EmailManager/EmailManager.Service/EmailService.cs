@@ -74,7 +74,6 @@ namespace EmailManager.Service
         //public async Task<EmailDTO> ChangeEmailStatusAsync(string emailId)
         //{
         //    var email = await this.GetEmailByIdAsync(emailId);
-
         //}
         private string ParseExactDateAsync(string dateReceived)
         {

@@ -31,7 +31,7 @@ namespace EmailManager.Service
                 ClientDataId = clientId,
                 EmailId = emailId,
                 Amount = amount,
-                StatusApplicationId = "3a868cf4-ac9d-4936-9efe-5a17f56b998c",
+                StatusApplicationId = "61cb6584-591b-4560-bc4a-a89950b15cc3",
                 UserId = operatorId
             };
 

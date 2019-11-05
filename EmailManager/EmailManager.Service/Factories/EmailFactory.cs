@@ -16,7 +16,8 @@ namespace EmailManager.Service.Factories
                 Sender = sender,
                 DateReceived = dateReceived,
                 Subject = subject,
-                Body = body
+                Body = body,
+                StatusEmailId = "a0e53404-d40e-4a1e-8fe5-9a5fc0139ed9"
             };
 
             return newEmail;
