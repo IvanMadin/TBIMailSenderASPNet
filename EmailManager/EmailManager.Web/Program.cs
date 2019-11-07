@@ -14,7 +14,7 @@ namespace EmailManager.Web
     {
         public static void Main(string[] args)
         {
-
+            //TODO: Log4net config file reg.
             CreateWebHostBuilder(args).Build().Run();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmailManager.Data.Entities.BaseProperties;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,6 +12,6 @@ namespace EmailManager.Data.Entities
         public double FileSize { get; set; }
 
         public string EmailId { get; set; }
-        public Email Email { get; set; }
+        public ClientEmail Email { get; set; }
     }
 }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading;
 using EmailManager.Service;
 using System.Threading.Tasks;
+using EmailManager.Service.Providers;
 
 namespace EmailManager.GmailConfig
 {
@@ -17,10 +18,12 @@ namespace EmailManager.GmailConfig
         static string[] Scopes = { GmailService.Scope.GmailReadonly };
         static string ApplicationName = "Gmail API .NET Quickstart";
         private readonly EmailService emailService;
+        private readonly EncryptingHelper encryptingHelper;
 
-        public GmailConfigure(EmailService emailService)
+        public GmailConfigure(EmailService emailService, EncryptingHelper encryptingHelper)
         {
             this.emailService = emailService;
+            this.encryptingHelper = encryptingHelper;
         }
 
 
@@ -31,7 +34,7 @@ namespace EmailManager.GmailConfig
             using (var stream =
                 new FileStream("../EmailManager.GmailConfig/credentials.json", FileMode.Open, FileAccess.Read))
             {
-                string credPath = "token.json";
+                string credPath = "../EmailManager.GmailConfig/token.json";
                 credential =
                     GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
@@ -39,7 +42,7 @@ namespace EmailManager.GmailConfig
                     "user",
                     CancellationToken.None,
                     new FileDataStore(credPath, true)).Result;
-                Console.WriteLine("Credential file saved to: " + credPath);
+                //Console.WriteLine("Credential file saved to: " + credPath);
             }
 
             var gmailService = new GmailService(new BaseClientService.Initializer()
@@ -69,53 +72,58 @@ namespace EmailManager.GmailConfig
                     {
                         string originalMailId = emailFullResponse.Id;
 
-                        string dateReceived = emailFullResponse.Payload.Headers
-                            .FirstOrDefault(x => x.Name == "Date")
-                            .Value;
-
-                        string sender = emailFullResponse.Payload.Headers
-                           .FirstOrDefault(x => x.Name == "From")
-                           .Value;
-
-                        string subject = emailFullResponse.Payload.Headers
-                            .FirstOrDefault(x => x.Name == "Subject")
-                            .Value;
-
-                        var stringBuilder = new StringBuilder();
-
-                        //TODO: Probably Recursion is gonna be used here.
-                        var emailToResolve = emailFullResponse.Payload.Parts[1];
-
-                        if (emailToResolve.MimeType == "text/html")
-                        {
-                            //TODO: Move the encoding/Decoding somewhere else.
-                            String codedBody = emailToResolve.Body.Data.Replace("-", "+");
-                            codedBody = codedBody.Replace("_", "/");
-                            byte[] data = Convert.FromBase64String(codedBody);
-                            var result = Encoding.UTF8.GetString(data);
-
-                            stringBuilder.Append(result);
-                        }
-                        else
-                        {
-                            String codedBody = emailToResolve.Parts[1].Body.Data.Replace("-", "+");
-                            codedBody = codedBody.Replace("_", "/");
-                            byte[] data = Convert.FromBase64String(codedBody);
-                            var result = Encoding.UTF8.GetString(data);
-
-                        }
-
-                        string body = stringBuilder.ToString();
-
                         var IsAlreadyAtDatabase = await emailService.CheckIfEmailExists(originalMailId);
 
                         if (!IsAlreadyAtDatabase)
                         {
-                            await emailService.CreateAsync(originalMailId, sender, dateReceived, subject, body);
+                            string dateReceived = emailFullResponse.Payload.Headers
+                                .FirstOrDefault(x => x.Name == "Date")
+                                .Value;
+
+                            string sender = emailFullResponse.Payload.Headers
+                               .FirstOrDefault(x => x.Name == "From")
+                               .Value;
+                            (var senderName, var senderEmail) = SplitSender(sender);
+
+                            string subject = emailFullResponse.Payload.Headers
+                                .FirstOrDefault(x => x.Name == "Subject")
+                                .Value;
+
+                            var stringBuilder = new StringBuilder();
+
+                            string body = "";
+                            //TODO: Probably Recursion is gonna be used here.
+                            var bodyToResolve = emailFullResponse.Payload.Parts[1];
+
+                            if (bodyToResolve.MimeType == "text/html")
+                            {
+                                body = this.encryptingHelper.EncryptingData(bodyToResolve.Body.Data);
+                            }
+                            else
+                            {
+                                body = this.encryptingHelper.EncryptingData(bodyToResolve.Parts[1].Body.Data);
+                            }
+
+
+
+                            await emailService.CreateAsync(originalMailId, senderName, senderEmail, dateReceived, subject, body);
                         }
                     }
                 }
             }
+        }
+
+        private (string, string) SplitSender(string sender)
+        {
+            var input = sender.Split();
+            var senderName = "";
+            for (int i = 0; i < input.Length - 1; i++)
+            {
+                senderName += input[i] + " ";
+            }
+            var senderEmail = input[input.Length - 1].Replace("<", "").Replace(">", "");
+
+            return (senderName, senderEmail);
         }
     }
 }

@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManager.Data", "EmailM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManager.Service", "EmailManager.Service\EmailManager.Service.csproj", "{F2F57696-58ED-415A-891B-4D5E1E2D5D3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.GmailConfig", "EmailManager.GmailConfig\EmailManager.GmailConfig.csproj", "{1A868E21-D7D3-4702-A534-E75FD04DAFA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManager.GmailConfig", "EmailManager.GmailConfig\EmailManager.GmailConfig.csproj", "{1A868E21-D7D3-4702-A534-E75FD04DAFA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

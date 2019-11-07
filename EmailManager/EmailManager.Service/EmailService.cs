@@ -24,11 +24,11 @@ namespace EmailManager.Service
             this.emailFactory = emailFactory;
         }
 
-        public async Task<EmailDTO> CreateAsync(string originalMailId, string sender, string dateReceived, string subject, string body)
+        public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body)
         {
-            var currentCultureDateFormat =  this.ParseExactDateAsync(dateReceived);
+            var currentCultureDateFormat = this.ParseExactDateAsync(dateReceived);
 
-            var newEmail = this.emailFactory.CreateEmail(originalMailId, sender, currentCultureDateFormat, subject, body);
+            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, currentCultureDateFormat, subject, body);
 
             if (newEmail is null)
                 throw new ArgumentException("Invalid email");
@@ -46,7 +46,7 @@ namespace EmailManager.Service
 
             return email.ToDTO();
         }
-        public async Task<Email> GetEmailByOriginalIdAsync(string originalMailId)
+        public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
         {
             var email = await this.context.Emails.FirstOrDefaultAsync(e => e.OriginalMailId == originalMailId);
 

@@ -18,6 +18,7 @@ using EmailManager.Service;
 using EmailManager.GmailConfig;
 using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.Factories;
+using EmailManager.Service.Providers;
 
 namespace EmailManager.Web
 {
@@ -61,6 +62,7 @@ namespace EmailManager.Web
             services.AddScoped<EmailService>();
             services.AddScoped<LoanApplicationService>();
             services.AddScoped<ClientService>();
+            services.AddScoped<EncryptingHelper>();
             //services.AddScoped<IRolesService, RolesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

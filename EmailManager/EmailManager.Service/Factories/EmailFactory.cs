@@ -8,16 +8,18 @@ namespace EmailManager.Service.Factories
 {
     public class EmailFactory : IEmailFactory
     {
-        public Email CreateEmail(string originalMailId, string sender, string dateReceived, string subject, string body)
+        public ClientEmail CreateEmail(string originalMailId,string senderName, string senderEmail, string dateReceived, string subject, string body)
         {
-            var newEmail = new Email
+            var newEmail = new ClientEmail
             {
                 OriginalMailId = originalMailId,
-                Sender = sender,
+                SenderName = senderName,
+                SenderEmail = senderEmail,
                 DateReceived = dateReceived,
                 Subject = subject,
                 Body = body,
-                StatusEmailId = "a0e53404-d40e-4a1e-8fe5-9a5fc0139ed9"
+                StatusEmailId = "a0e53404-d40e-4a1e-8fe5-9a5fc0139ed9",
+                CreatedOnDate = DateTime.Now
             };
 
             return newEmail;

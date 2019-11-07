@@ -1,10 +1,11 @@
-﻿using System;
+﻿using EmailManager.Data.Entities.BaseProperties;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace EmailManager.Data.Entities
 {
-    public class LoanApplication
+    public class LoanApplication : ModifierEntityProperties
     {
         public string Id { get; set; }
         public decimal Amount { get; set; }
@@ -15,7 +16,7 @@ namespace EmailManager.Data.Entities
         public ClientData ClientData { get; set; }
 
         public string EmailId { get; set; }
-        public Email Email { get; set; }
+        public ClientEmail Email { get; set; }
 
         public string StatusApplicationId { get; set; }
         public StatusApplication StatusApplication { get; set; }

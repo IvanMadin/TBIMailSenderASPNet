@@ -5,6 +5,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191107114923_checking.cs" />
+    <Compile Remove="Migrations\20191107114923_checking.Designer.cs" />
+    <Compile Remove="Migrations\20191107115507_checking.cs" />
+    <Compile Remove="Migrations\20191107115507_checking.Designer.cs" />
+    <Compile Remove="Migrations\20191107120957_checking.cs" />
+    <Compile Remove="Migrations\20191107120957_checking.Designer.cs" />
+    <Compile Remove="Migrations\20191107122230_checking.cs" />
+    <Compile Remove="Migrations\20191107122230_checking.Designer.cs" />
+    <Compile Remove="Migrations\20191107122549_checking.cs" />
+    <Compile Remove="Migrations\20191107122549_checking.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
   </ItemGroup>
