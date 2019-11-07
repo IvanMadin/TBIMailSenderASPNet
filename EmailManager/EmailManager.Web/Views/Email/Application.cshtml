@@ -11,9 +11,8 @@
         <div class="row">
             <div class="col-9 card-body p-5 amber-text">
                 <h4>Details for @Model.Sender <button type="submit" class="btn rigth-button button-color">Status</button></h4>
-                 <a area="" asp-controller="LoanApplication" asp-action="ApplicationForm" asp-route-emailId="@Model.Id">data</a>
+                <a area="" asp-controller="LoanApplication" asp-action="ApplicationForm" asp-route-emailId="@Model.Id">data</a>
                 <div>
-                    <hr />
                     <dl class="row">
                         <dt class="col-sm-4">
                             @nameof(Model.Sender)

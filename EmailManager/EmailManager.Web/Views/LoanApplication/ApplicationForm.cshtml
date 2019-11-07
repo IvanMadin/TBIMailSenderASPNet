@@ -1,44 +1,44 @@
 ﻿@model LoanApplicationViewModel
 
-
-<div class="container-fluid" style="padding-top:12px">
-    <div class="row">
-        <div class="card border-0 shadow my-5">
-            <div class="card-body p-5 amber-text">
-                <form method="post">
-                    <h4>Fill Client Data</h4>
-                    <hr />
-                    <div asp-validation-summary="All" class="text-danger"></div>
-                    <input asp-for="EmailId" hidden disabled />
-                    <div class="form-group">
-                        <label asp-for="FirstName" title="Name: "></label>
-                        <input asp-for="FirstName" class="form-control" />
-                        <span asp-validation-for="FirstName" class="text-danger"></span>
+    <div class="modal">
+        <div class="container-fluid" style="padding-top:12px">
+            <div class="row">
+                <div class="card border-0 shadow my-5">
+                    <div class="card-body p-5 amber-text">
+                        <form method="post">
+                            <h4>Fill Client Data</h4>
+                            <hr />
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <input asp-for="EmailId" hidden disabled />
+                            <div class="form-group">
+                                <label asp-for="FirstName" title="Name: "></label>
+                                <input asp-for="FirstName" class="form-control" />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="LastName" title="Name: "></label>
+                                <input asp-for="LastName" class="form-control" />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="EGN" title="EGN: "></label>
+                                <input asp-for="EGN" class="form-control" />
+                                <span asp-validation-for="EGN" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Phone" title="Phone: "></label>
+                                <input asp-for="Phone" class="form-control" />
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Amount" title="Amount: "></label>
+                                <input asp-for="Amount" class="form-control" />
+                                <span asp-validation-for="Amount" class="text-danger"></span>
+                            </div>
+                            <button type="submit" class="btn button-color">Confirm</button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label asp-for="LastName" title="Name: "></label>
-                        <input asp-for="LastName" class="form-control" />
-                        <span asp-validation-for="LastName" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="EGN" title="EGN: "></label>
-                        <input asp-for="EGN" class="form-control" />
-                        <span asp-validation-for="EGN" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Phone" title="Phone: "></label>
-                        <input asp-for="Phone" class="form-control" />
-                        <span asp-validation-for="Phone" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="Amount" title="Amount: "></label>
-                        <input asp-for="Amount" class="form-control" />
-                        <span asp-validation-for="Amount" class="text-danger"></span>
-                    </div>
-                    <button type="submit" class="btn button-color">Confirm</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
-

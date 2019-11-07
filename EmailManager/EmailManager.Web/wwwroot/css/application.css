@@ -10,3 +10,25 @@
     text-align: center;
     width: 120px !important;
 }
+
+.table > thead:first-of-type > tr,
+.table > tbody:first-of-type > tr {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.table > thead:first-of-type > tr > th:first-of-type,
+.table > thead:first-of-type > tr > th:nth-of-type(2),
+.table > tbody:first-of-type > tr > td:first-of-type,
+.table > tbody:first-of-type > tr > td:nth-of-type(2) {
+    grid-column: span 3
+}
+
+.email-container {
+    display: none;
+    grid-column: 1 / -1;
+}
+
+button .close-email {
+    display: none;
+}

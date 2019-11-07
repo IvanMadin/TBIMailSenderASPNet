@@ -9,13 +9,23 @@
             <div class="card border-0 shadow my-5">
                 <div class="card-body p-5 amber-text">
                     <h4>Select option</h4>
+                    <div class="dropdown-divider"></div>
+                    <a area="" asp-controller="Email" asp-action="AllApplications">All emails</a>
+                    <div class="dropdown-divider"></div>
+                    <a area="" asp-controller="Email" asp-action="OpenApplications">Open emails</a>
+                    <div class="dropdown-divider"></div>
+                    <a area="" asp-controller="Email" asp-action="NewApplications">New emails</a>
+                    <div class="dropdown-divider"></div>
+                    <a area="" asp-controller="Email" asp-action="NotValidApplications">Not valid emails</a>
+                    <div class="dropdown-divider"></div>
+                    <a area="" asp-controller="Email" asp-action="ClosedApplications">Closed emails</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-9 col-md-9 col-lg-9">
             <div class="card border-0 shadow my-5">
                 <div class="card-body p-5 amber-text">
-                    <h4>All emails</h4>
+                    <h4>Emails</h4>
                     <div class="dropdown-divider"></div>
                     @foreach (var item in Model)
                     {

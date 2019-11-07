@@ -20,9 +20,11 @@ namespace EmailManager.Web.Controllers
             this.emailService = emailService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> BodyModal(string id)
         {
-            return View();
+            var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
+
+            return View(email);
         }
 
         public async Task<IActionResult> Application(string id)
