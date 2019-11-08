@@ -4,6 +4,9 @@
     ViewData["Title"] = "AllApplications";
 }
 
+
+<link rel="stylesheet" href="~/css/application.css">
+
 <div class="container">
     <div class="card border-0 shadow my-5">
         <div class="card-body p-5 amber-text">
@@ -37,6 +40,19 @@
                             </td>
                             <td>
                                 <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Application</a>
+
+                            </td>
+                            <td>
+                                <input type="button" class="open-close-email btn btn-warning" value="Open">
+                            </td>
+                            <td class="email-container">
+                                @*<a asp-controller="Email" asp-action="BodyModal" asp-route-id="@email.Id">Body</a>*@
+                                @*@Component.InvokeAsync("BodyModal");*@
+                                @*@await Component.InvokeAsync("BodyModal", email.Id)*@
+                                <div class="email-description">
+
+                                    @await Component.InvokeAsync("BodyModal", email.Id)
+                                </div>
                             </td>
                         </tr>
                     }
@@ -44,5 +60,6 @@
             </table>
         </div>
     </div>
+
 </div>
 
