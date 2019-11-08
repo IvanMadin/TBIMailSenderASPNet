@@ -47,9 +47,6 @@ namespace EmailManager.Data.Configurations
 
             builder
                 .Property(e => e.Body);
-
-            builder
-                .Ignore(e => e.CreatedByUserId);
         }
     }
 }

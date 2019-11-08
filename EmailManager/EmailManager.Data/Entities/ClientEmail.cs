@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EmailManager.Data.Entities
 {
-    public class ClientEmail : ModifierEntityProperties
+    public class ClientEmail
     {
         public string Id { get; set; }
 

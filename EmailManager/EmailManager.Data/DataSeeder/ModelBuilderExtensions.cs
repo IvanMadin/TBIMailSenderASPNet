@@ -22,10 +22,10 @@ namespace EmailManager.Data.DataSeeder
 
             var hasher = new PasswordHasher<User>();
 
-            User krisiManager = new User { Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393", UserName = "krisi", NormalizedUserName = "KRISI", Email = "krisi@gmail.com", NormalizedEmail = "KRISI@GMAIL.COM", LockoutEnabled = true, SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", CreatedOnDate = DateTime.Now };
+            User krisiManager = new User { Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393", UserName = "krisi", NormalizedUserName = "KRISI", Email = "krisi@gmail.com", NormalizedEmail = "KRISI@GMAIL.COM", LockoutEnabled = true, SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN"};
             krisiManager.PasswordHash = hasher.HashPassword(krisiManager, "krisi123");
 
-            User madinManager = new User { Id = "565dfbc0-2681-4f29-bc97-a619eacf339c", UserName = "madinftw", NormalizedUserName = "MADINFTW", Email = "madinftw@gmail.com", NormalizedEmail = "MADINFTW@GMAIL.COM", LockoutEnabled = true, SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", CreatedOnDate = DateTime.Now };
+            User madinManager = new User { Id = "565dfbc0-2681-4f29-bc97-a619eacf339c", UserName = "madinftw", NormalizedUserName = "MADINFTW", Email = "madinftw@gmail.com", NormalizedEmail = "MADINFTW@GMAIL.COM", LockoutEnabled = true, SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU"};
             madinManager.PasswordHash = hasher.HashPassword(madinManager, "madin123");
 
             builder.Entity<User>().HasData(krisiManager, madinManager);

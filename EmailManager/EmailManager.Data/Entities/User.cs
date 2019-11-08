@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EmailManager.Data.Entities
 {
-    public class User : IdentityUser, ICreated, IModified, IDeleted
+    public class User : IdentityUser, IModified, IDeleted
     {
         public ICollection<ClientEmail> Emails { get; set; }
         public ICollection<LoanApplication> LoanApplications { get; set; }
@@ -14,7 +14,5 @@ namespace EmailManager.Data.Entities
         public DateTime? ModifiedOnDate { get; set; }
         public string DeletedByUserId { get; set; }
         public DateTime? DeletedOnDate { get; set; }
-        public string CreatedByUserId { get; set; }
-        public DateTime? CreatedOnDate { get; set; }
     }
 }
