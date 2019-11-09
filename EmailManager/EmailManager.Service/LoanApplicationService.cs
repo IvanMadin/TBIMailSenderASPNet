@@ -25,14 +25,17 @@ namespace EmailManager.Service
 
         public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string clientId, string emailId, string operatorId, decimal amount)
         {
-
+            //TODO: After the new application is applied to status Open you have access to that metod. Have to change status from Open to Close after that method is done.
+            
             var loanApplication = new LoanApplication
             {
                 ClientDataId = clientId,
                 EmailId = emailId,
                 Amount = amount,
                 StatusApplicationId = "61cb6584-591b-4560-bc4a-a89950b15cc3",
-                UserId = operatorId
+                UserId = operatorId,
+                CreatedOnDate = DateTime.UtcNow,
+                CreatedByUserId = operatorId
             };
 
             this.context.LoanApplications.Add(loanApplication);

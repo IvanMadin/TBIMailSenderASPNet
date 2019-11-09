@@ -63,12 +63,9 @@ namespace EmailManager.Service
         }
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
-            var email = await this.GetEmailByOriginalIdAsync(originalMailId);
+            var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
 
-            if (email is null)
-                return false;
-
-            return true;
+            return doesEmailExist;
         }
 
         //public async Task<EmailDTO> ChangeEmailStatusAsync(string emailId)

@@ -1,15 +1,14 @@
 ﻿@model LoanApplicationViewModel
 
-
 <div class="container-fluid" style="padding-top:12px">
     <div class="row">
         <div class="card border-0 shadow my-5">
-            <div class="card-body p-5 amber-text">
-                <form method="post">
+            <div class="card-body p-3 amber-text">
+                <form asp-controller="LoanApplication" asp-action="ApplicationForm" method="post">
                     <h4>Fill Client Data</h4>
                     <hr />
                     <div asp-validation-summary="All" class="text-danger"></div>
-                    <input asp-for="EmailId" hidden disabled />
+                    <input asp-for="EmailId" value="@Model.EmailId" hidden />
                     <div class="form-group">
                         <label asp-for="FirstName" title="Name: "></label>
                         <input asp-for="FirstName" class="form-control" />
@@ -41,4 +40,5 @@
         </div>
     </div>
 </div>
+
 

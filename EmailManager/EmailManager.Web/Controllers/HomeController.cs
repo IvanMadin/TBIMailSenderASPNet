@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using EmailManager.Web.Models;
 using EmailManager.GmailConfig;
 using EmailManager.Service;
-using EmailManager.Web.Mappers;
+using EmailManager.Web.Extensions.Mappers;
 
 namespace EmailManager.Web.Controllers
 {
@@ -32,11 +32,6 @@ namespace EmailManager.Web.Controllers
             var model = (await emailService.GetAllEmailsAsync()).ToVM();
 
             return View(model);
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

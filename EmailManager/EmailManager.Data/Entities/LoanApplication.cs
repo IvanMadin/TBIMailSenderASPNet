@@ -7,6 +7,7 @@ namespace EmailManager.Data.Entities
 {
     public class LoanApplication : ModifierEntityProperties
     {
+        //TODO: Have to add one more property or enum we will see to check if the application is approved or rejected. Both situations it is going to Closed!
         public string Id { get; set; }
         public decimal Amount { get; set; }
         public string UserId { get; set; }

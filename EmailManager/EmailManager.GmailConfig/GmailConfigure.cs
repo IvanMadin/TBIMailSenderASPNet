@@ -18,12 +18,10 @@ namespace EmailManager.GmailConfig
         static string[] Scopes = { GmailService.Scope.GmailReadonly };
         static string ApplicationName = "Gmail API .NET Quickstart";
         private readonly EmailService emailService;
-        private readonly EncryptingHelper encryptingHelper;
 
-        public GmailConfigure(EmailService emailService, EncryptingHelper encryptingHelper)
+        public GmailConfigure(EmailService emailService)
         {
             this.emailService = emailService;
-            this.encryptingHelper = encryptingHelper;
         }
 
 
@@ -42,7 +40,6 @@ namespace EmailManager.GmailConfig
                     "user",
                     CancellationToken.None,
                     new FileDataStore(credPath, true)).Result;
-                //Console.WriteLine("Credential file saved to: " + credPath);
             }
 
             var gmailService = new GmailService(new BaseClientService.Initializer()
@@ -92,16 +89,15 @@ namespace EmailManager.GmailConfig
                             var stringBuilder = new StringBuilder();
 
                             string body = "";
-                            //TODO: Probably Recursion is gonna be used here.
                             var bodyToResolve = emailFullResponse.Payload.Parts[1];
 
                             if (bodyToResolve.MimeType == "text/html")
                             {
-                                body = this.encryptingHelper.EncryptingData(bodyToResolve.Body.Data);
+                                body = bodyToResolve.Body.Data;
                             }
                             else
                             {
-                                body = this.encryptingHelper.EncryptingData(bodyToResolve.Parts[1].Body.Data);
+                                body = bodyToResolve.Parts[1].Body.Data;
                             }
 
 

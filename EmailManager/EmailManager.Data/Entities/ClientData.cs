@@ -10,8 +10,8 @@ namespace EmailManager.Data.Entities
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string EncryptedEGN { get; set; }
-        public string EncryptedPhone { get; set; }
+        public string EGN { get; set; }
+        public string Phone { get; set; }
 
         public ICollection<LoanApplication> LoanApplications { get; set; }
     }

@@ -1,24 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EmailManager.Data.Entities;
 using EmailManager.Data;
-using EmailManager.Service;
-using EmailManager.GmailConfig;
-using EmailManager.Service.Contracts.Factories;
-using EmailManager.Service.Factories;
-using EmailManager.Service.Providers;
+using EmailManager.Web.Extensions.ServiceHelpers;
 
 namespace EmailManager.Web
 {
@@ -57,13 +47,8 @@ namespace EmailManager.Web
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
-            services.AddScoped<GmailConfigure>();
-            services.AddScoped<IEmailFactory, EmailFactory>();
-            services.AddScoped<EmailService>();
-            services.AddScoped<LoanApplicationService>();
-            services.AddScoped<ClientService>();
-            services.AddScoped<EncryptingHelper>();
-            //services.AddScoped<IRolesService, RolesService>();
+
+            services.Registrations();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

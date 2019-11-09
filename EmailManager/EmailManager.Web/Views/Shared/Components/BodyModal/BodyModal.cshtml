@@ -5,16 +5,16 @@
     <div class="row">
         <div class="card border-0 shadow my-5">
             <div class="card-body p-5 amber-text">
-                <h4>Details for @Model.Sender </h4>
+                <h4 style="text-align:center">@nameof(Model.Body)</h4>
                 <div>
-                    <dl class="row">
+                    @*<dl class="row">
                         <dt class="col-sm-4">
                             @nameof(Model.Body)
                         </dt>
-                        <dd class="col-sm-8">
+                        <dd class="col-sm-8">*@
                             @Html.Raw(Model.Body)
-                        </dd>
-                    </dl>
+                        @*</dd>
+                    </dl>*@
 
                 </div>
             </div>

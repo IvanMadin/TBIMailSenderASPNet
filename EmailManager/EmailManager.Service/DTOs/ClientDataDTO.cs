@@ -11,5 +11,6 @@ namespace EmailManager.Service.DTOs
         public string LastName { get; set; }
         public string EGN { get; set; }
         public string Phone { get; set; }
+        public string OperatorId { get; set; }
     }
 }

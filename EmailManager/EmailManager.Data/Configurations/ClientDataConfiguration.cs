@@ -20,11 +20,11 @@ namespace EmailManager.Data.Configurations
                 .IsRequired();
 
             builder
-                .Property(cd => cd.EncryptedEGN)
+                .Property(cd => cd.EGN)
                 .IsRequired();
 
             builder
-                .Property(cd => cd.EncryptedPhone)
+                .Property(cd => cd.Phone)
                 .IsRequired();
         }
     }

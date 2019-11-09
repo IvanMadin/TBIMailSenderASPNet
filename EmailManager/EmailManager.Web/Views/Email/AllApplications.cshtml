@@ -43,7 +43,7 @@
 
                             </td>
                             <td>
-                                <input type="button" class="open-close-email btn btn-warning" value="Open">
+                                <input type="button" class="open-close-email btn btn-warning" value="Preview body">
                             </td>
                             <td class="email-container">
                                 @*<a asp-controller="Email" asp-action="BodyModal" asp-route-id="@email.Id">Body</a>*@
@@ -63,3 +63,6 @@
 
 </div>
 
+@section Scripts{
+    <script type="text/javascript" src="~/js/all-applications.js"></script>
+}

@@ -4,9 +4,6 @@ using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EmailManager.Service
@@ -20,14 +17,16 @@ namespace EmailManager.Service
             this.context = context;
         }
 
-        public async Task<ClientDataDTO> CreateClientData(string firstName, string lastName, string egn, string phone)
+        public async Task<ClientDataDTO> CreateClientData(ClientDataDTO clientDataDTO)
         {
             var clientData = new ClientData
             {
-                FirstName = firstName,
-                LastName = lastName,
-                EncryptedEGN = egn,
-                EncryptedPhone = phone
+                FirstName = clientDataDTO.FirstName,
+                LastName = clientDataDTO.LastName,
+                EGN = clientDataDTO.EGN,
+                Phone = clientDataDTO.Phone,
+                CreatedByUserId = clientDataDTO.OperatorId,
+                CreatedOnDate = DateTime.UtcNow
             };
 
             this.context.ClientDatas.Add(clientData);
@@ -46,7 +45,7 @@ namespace EmailManager.Service
         public async Task<ClientDataDTO> FindClientAsync(string firstName, string lastName, string egn)
         {
             var client = await this.context.ClientDatas
-                 .FirstOrDefaultAsync(cd => cd.FirstName == firstName && cd.LastName == lastName && cd.EncryptedEGN == egn);
+                 .FirstOrDefaultAsync(cd => cd.FirstName == firstName && cd.LastName == lastName && cd.EGN == egn);
 
             return client.ToDTO();
         }

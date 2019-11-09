@@ -18,8 +18,8 @@ namespace EmailManager.Service.Mappers
                 Id = entity.Id,
                 FirstName = entity.FirstName,
                 LastName = entity.LastName,
-                EGN = entity.EncryptedEGN,
-                Phone = entity.EncryptedPhone
+                EGN = entity.EGN,
+                Phone = entity.Phone
             };
 
             return clientData;

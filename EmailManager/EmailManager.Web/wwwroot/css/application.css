@@ -17,12 +17,12 @@
     grid-template-columns: repeat(9, 1fr);
 }
 
-.table > thead:first-of-type > tr > th:first-of-type,
-.table > thead:first-of-type > tr > th:nth-of-type(2),
-.table > tbody:first-of-type > tr > td:first-of-type,
-.table > tbody:first-of-type > tr > td:nth-of-type(2) {
-    grid-column: span 3
-}
+    .table > thead:first-of-type > tr > th:first-of-type,
+    .table > thead:first-of-type > tr > th:nth-of-type(2),
+    .table > tbody:first-of-type > tr > td:first-of-type,
+    .table > tbody:first-of-type > tr > td:nth-of-type(2) {
+        grid-column: span 3
+    }
 
 .email-container {
     display: none;
@@ -31,4 +31,11 @@
 
 button .close-email {
     display: none;
+}
+
+#application-form-div {
+    visibility: hidden;
+    position: fixed;
+    top: 5%;
+    right: -3%;
 }

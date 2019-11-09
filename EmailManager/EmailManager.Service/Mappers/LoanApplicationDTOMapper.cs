@@ -19,10 +19,10 @@ namespace EmailManager.Service.Mappers
             {
                 Id = entity.Id,
                 LoanAmount = entity.Amount,
-                ClientEGN = entity.ClientData?.EncryptedEGN,
+                ClientEGN = entity.ClientData?.EGN,
                 ClientFristName = entity.ClientData?.FirstName,
                 ClientLastName = entity.ClientData?.LastName,
-                ClientPhone = entity.ClientData?.EncryptedPhone,
+                ClientPhone = entity.ClientData?.Phone,
                 EmployeeName = entity.User?.UserName,
                 EmailId = entity.EmailId
                 
