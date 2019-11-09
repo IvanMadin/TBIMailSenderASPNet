@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmailManager.Web.Mappers
+namespace EmailManager.Web.Extensions.Mappers
 {
     public static class LoanApplicationMapper
     {
@@ -13,12 +13,13 @@ namespace EmailManager.Web.Mappers
         {
             var dataModel = new LoanApplicationViewModel
             {
-                Id=dataDTO.Id,
-                FirstName=dataDTO.ClientFristName,
+                Id = dataDTO.Id,
+                FirstName = dataDTO.ClientFristName,
                 LastName = dataDTO.ClientLastName,
-                EGN=dataDTO.ClientEGN,
-                Phone=dataDTO.ClientPhone,
-                Amount=dataDTO.LoanAmount
+                EGN = dataDTO.ClientEGN,
+                Phone = dataDTO.ClientPhone,
+                Amount = dataDTO.LoanAmount,
+                EmailId = dataDTO.EmailId
             };
 
             return dataModel;

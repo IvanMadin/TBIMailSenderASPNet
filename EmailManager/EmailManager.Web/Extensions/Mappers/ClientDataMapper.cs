@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmailManager.Web.Mappers
+namespace EmailManager.Web.Extensions.Mappers
 {
     public static class ClientDataMapper
     {
@@ -13,10 +13,10 @@ namespace EmailManager.Web.Mappers
         {
             var clientModel = new ClientDataViewModel
             {
-                Id=emailDTO.Id,
-                Names=emailDTO.FirstName,
-                EGN=emailDTO.EGN,
-                Phone=emailDTO.Phone,
+                Id = emailDTO.Id,
+                Names = emailDTO.FirstName,
+                EGN = emailDTO.EGN,
+                Phone = emailDTO.Phone,
             };
 
             return clientModel;

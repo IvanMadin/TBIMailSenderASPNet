@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using EmailManager.GmailConfig;
 using EmailManager.Service;
-using EmailManager.Web.Mappers;
+using EmailManager.Web.Extensions.Mappers;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 

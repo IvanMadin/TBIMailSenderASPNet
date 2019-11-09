@@ -25,11 +25,11 @@ namespace EmailManager.Service
             this.emailFactory = emailFactory;
         }
 
-        public async Task<EmailDTO> CreateAsync(string originalMailId, string sender, string dateReceived, string subject, string body)
+        public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body)
         {
-            var currentCultureDateFormat =  this.ParseExactDateAsync(dateReceived);
+            var currentCultureDateFormat = this.ParseExactDateAsync(dateReceived);
 
-            var newEmail = this.emailFactory.CreateEmail(originalMailId, sender, currentCultureDateFormat, subject, body);
+            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, currentCultureDateFormat, subject, body);
 
             if (newEmail == null)
             {
@@ -51,7 +51,7 @@ namespace EmailManager.Service
 
             return email.ToDTO();
         }
-        public async Task<Email> GetEmailByOriginalIdAsync(string originalMailId)
+        public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
         {
             var email = await this.context.Emails.FirstOrDefaultAsync(e => e.OriginalMailId == originalMailId);
 
@@ -68,12 +68,9 @@ namespace EmailManager.Service
         }
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
-            var email = await this.GetEmailByOriginalIdAsync(originalMailId);
+            var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
 
-            if (email is null)
-                return false;
-
-            return true;
+            return doesEmailExist;
         }
 
         //public async Task<EmailDTO> ChangeEmailStatusAsync(string emailId)

@@ -8,6 +8,6 @@ namespace EmailManager.Data.Entities
     {
         public string Id { get; set; }
         public string StatusType { get; set; }
-        public ICollection<Email> Emails { get; set; }
+        public ICollection<ClientEmail> Emails { get; set; }
     }
 }

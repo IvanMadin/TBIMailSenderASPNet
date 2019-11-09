@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace EmailManager.Data.Configurations
 {
-    internal class EmailConfiguration : IEntityTypeConfiguration<Email>
+    internal class EmailConfiguration : IEntityTypeConfiguration<ClientEmail>
     {
-        public void Configure(EntityTypeBuilder<Email> builder)
+        public void Configure(EntityTypeBuilder<ClientEmail> builder)
         {
             builder.HasKey(e => e.Id);
 
@@ -18,7 +18,7 @@ namespace EmailManager.Data.Configurations
                 .WithOne(la => la.Email)
                 .HasForeignKey<LoanApplication>(la => la.EmailId);
 
-            builder.HasOne(e => e.StatusEmail)
+            builder.HasOne(e => e.Status)
                 .WithMany(se => se.Emails)
                 .HasForeignKey(e => e.StatusEmailId);
 
@@ -29,9 +29,12 @@ namespace EmailManager.Data.Configurations
             builder
                 .Property(e => e.OriginalMailId)
                 .IsRequired();
+            builder
+                .Property(e => e.SenderName)
+                .IsRequired();
 
             builder
-                .Property(e => e.Sender)
+                .Property(e => e.SenderEmail)
                 .IsRequired();
 
             builder
@@ -43,8 +46,7 @@ namespace EmailManager.Data.Configurations
                 .IsRequired();
 
             builder
-                .Property(e => e.Body)
-                .IsRequired();
+                .Property(e => e.Body);
         }
     }
 }

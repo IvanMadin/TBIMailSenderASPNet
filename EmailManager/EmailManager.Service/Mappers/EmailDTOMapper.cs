@@ -9,7 +9,7 @@ namespace EmailManager.Service.Mappers
 {
     public static class EmailDTOMapper
     {
-        public static EmailDTO ToDTO(this Email entity)
+        public static EmailDTO ToDTO(this ClientEmail entity)
         {
             if(entity is null)
             {
@@ -21,7 +21,7 @@ namespace EmailManager.Service.Mappers
                 Id = entity.Id,
                 OriginalMailId = entity.OriginalMailId,
                 Subject = entity.Subject,
-                Sender = entity.Sender,
+                Sender = entity.SenderEmail,
                 DateReceived = entity.DateReceived,
                 Body = entity.Body
             };
@@ -29,7 +29,7 @@ namespace EmailManager.Service.Mappers
             return email;
         }
 
-        public static ICollection<EmailDTO> ToDTO(this ICollection<Email> emails)
+        public static ICollection<EmailDTO> ToDTO(this ICollection<ClientEmail> emails)
         {
             return emails.Select(e => e.ToDTO()).ToList();
         }

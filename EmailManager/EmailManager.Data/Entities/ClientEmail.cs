@@ -1,15 +1,17 @@
-﻿using System;
+﻿using EmailManager.Data.Entities.BaseProperties;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace EmailManager.Data.Entities
 {
-    public class Email
+    public class ClientEmail
     {
         public string Id { get; set; }
 
         public string OriginalMailId { get; set; }
-        public string Sender { get; set; }
+        public string SenderName { get; set; }
+        public string SenderEmail { get; set; }
         public string DateReceived { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
@@ -17,7 +19,7 @@ namespace EmailManager.Data.Entities
         public ICollection<EmailAttachments> EmailAttachments { get; set; }
 
         public string StatusEmailId { get; set; }
-        public StatusEmail StatusEmail { get; set; }
+        public StatusEmail Status { get; set; }
 
         public string UserId { get; set; }
         public User User { get; set; }

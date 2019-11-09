@@ -41,40 +41,4 @@ namespace EmailManager.Web
                 .UseSerilog()
                 .UseStartup<Startup>();
     }
-    //    public static void Main(string[] args)
-    //    {
-    //        //    Log.Logger = new LoggerConfiguration()
-    //        //      .Enrich.FromLogContext()
-    //        //      .MinimumLevel.Debug()
-    //        //      .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
-    //        //      .WriteTo.ColoredConsole(
-    //        //          LogEventLevel.Verbose,
-    //        //          "{NewLine}{Timestamp:HH:mm:ss} [{Level}] ({CorrelationToken}) {Message}{NewLine}")
-    //        //          .CreateLogger();
-
-    //        //    try
-    //        //    {
-    //        //        Log.Information("Starting web host");
-    //        //        CreateWebHostBuilder(args).Build().Run();
-    //        //    }
-    //        //    finally
-    //        //    {
-    //        //        Log.CloseAndFlush();
-    //        //    }
-    //        CreateWebHostBuilder(args).Build().Run();
-    //    }
-
-    //    //public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-    //    //    WebHost.CreateDefaultBuilder(args)
-    //    //        .UseSerilog()
-    //    //        .UseStartup<Startup>();
-    //    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-    //             WebHost.CreateDefaultBuilder(args)
-    //            .UseStartup<Startup>()
-    //            // Add the following lines
-    //            .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
-    //            .ReadFrom.Configuration(hostingContext.Configuration));
-    //}
 }
-
-    

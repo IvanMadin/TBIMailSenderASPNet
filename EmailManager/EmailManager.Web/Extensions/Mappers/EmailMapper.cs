@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EmailManager.Web.Mappers
+namespace EmailManager.Web.Extensions.Mappers
 {
     public static class EmailMapper
     {

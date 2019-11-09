@@ -11,7 +11,7 @@ namespace EmailManager.Data.Configurations
             builder.HasKey(se => se.Id);
 
             builder.HasMany(se => se.Emails)
-                .WithOne(e => e.StatusEmail)
+                .WithOne(e => e.Status)
                 .HasForeignKey(e => e.StatusEmailId);
 
             builder
