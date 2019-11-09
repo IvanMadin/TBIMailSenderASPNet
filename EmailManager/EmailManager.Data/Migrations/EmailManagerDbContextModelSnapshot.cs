@@ -233,13 +233,13 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1cb06ee4-1176-4dcf-b813-db4830dd8984",
+                            ConcurrencyStamp = "a0a87f10-53c0-442b-9e48-029b15bb57ab",
                             Email = "krisi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "KRISI@GMAIL.COM",
                             NormalizedUserName = "KRISI",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIK5ywStGlzRJmtJCxZ2IhwXU4NrFJN1La5pwIhpQAqfGscO7NLCKfn/5r5Cv+z5Kw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAgq7pZFuIe+CnP3nJVvQkmC0HYejgsI0Lpm6+33n0PWKf1mEP/CjKSMPHVaLJUO1g==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
                             TwoFactorEnabled = false,
@@ -249,13 +249,13 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4a877f8b-b9fb-4786-aab7-1b3a6c080bd1",
+                            ConcurrencyStamp = "9fe76dba-bf26-4e2b-bd24-207127ed12ad",
                             Email = "madinftw@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "MADINFTW@GMAIL.COM",
                             NormalizedUserName = "MADINFTW",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMVxINJVlkyq2wvrRXWd1rSf+2aJ790Vr3kp+/Xl9krB/UVr8rEbSg0r9SiuntFz5A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM3gnPLeDatBmWXH4k7emO9NzkXhcItn0U5s587fkCCLVsaMfbT39YQRQ5teY1y31A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
                             TwoFactorEnabled = false,
@@ -290,14 +290,14 @@ namespace EmailManager.Data.Migrations
                         new
                         {
                             Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
-                            ConcurrencyStamp = "2036dbdc-5f7d-4f65-b5c3-e55d7f65abeb",
+                            ConcurrencyStamp = "315865bc-2224-485c-aa3d-05007137ea9f",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
                             Id = "93c66dd9-11c5-4836-b104-a9c333549530",
-                            ConcurrencyStamp = "ed6b193e-5839-4aa8-9d60-048912a0d40f",
+                            ConcurrencyStamp = "ee91c18f-0d8b-4d70-95c6-5461e1c777a6",
                             Name = "Operator",
                             NormalizedName = "OPERATOR"
                         });

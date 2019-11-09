@@ -3,6 +3,7 @@ using EmailManager.Data.Entities;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +15,7 @@ namespace EmailManager.Service
     public class ClientService
     {
         private readonly EmailManagerDbContext context;
-
-        public ClientService(EmailManagerDbContext context)
+        public ClientService(EmailManagerDbContext context/*, ILogger logger*/)
         {
             this.context = context;
         }
@@ -31,6 +31,9 @@ namespace EmailManager.Service
             };
 
             this.context.ClientDatas.Add(clientData);
+
+           //LogInformation("Client data with Email: {@email} and EGN: {@egn} was created by {@operatorId} on {@date}", email, egn, operatorId, DateTime.Now);
+
             await this.context.SaveChangesAsync();
 
             return clientData.ToDTO();

@@ -3,6 +3,7 @@ using EmailManager.Data;
 using EmailManager.Data.Entities;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Text;

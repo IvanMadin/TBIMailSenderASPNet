@@ -8,6 +8,7 @@ using EmailManager.Web.Models;
 using EmailManager.GmailConfig;
 using EmailManager.Service;
 using EmailManager.Web.Mappers;
+using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
@@ -47,6 +48,7 @@ namespace EmailManager.Web.Controllers
 
         public async Task<IActionResult> UpdateEmails()
         {
+            Log.Information("All emails are updated!");
             await gmailConfigure.GmailAPI();
             return RedirectToAction(nameof(Index));
         }

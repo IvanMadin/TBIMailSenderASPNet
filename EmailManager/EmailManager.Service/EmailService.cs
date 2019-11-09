@@ -4,6 +4,7 @@ using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -30,8 +31,12 @@ namespace EmailManager.Service
 
             var newEmail = this.emailFactory.CreateEmail(originalMailId, sender, currentCultureDateFormat, subject, body);
 
-            if (newEmail is null)
+            if (newEmail == null)
+            {
                 throw new ArgumentException("Invalid email");
+            }
+
+           
 
             this.context.Emails.Add(newEmail);
             await this.context.SaveChangesAsync();

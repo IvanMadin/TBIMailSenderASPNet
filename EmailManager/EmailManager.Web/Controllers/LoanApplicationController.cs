@@ -9,6 +9,7 @@ using EmailManager.Web.Mappers;
 using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
@@ -42,6 +43,8 @@ namespace EmailManager.Web.Controllers
                 EmailId = email.Id
             };
 
+            Log.Information("Application form for {@email} is loaded!", email);
+
             return View(newLoanApplication);
         }
 
@@ -57,14 +60,17 @@ namespace EmailManager.Web.Controllers
             var emailId = loanModel.EmailId;
 
             var clientData = await this.clientService.FindClientAsync(firstName, lastName, egn);
+            Log.Information("Client with EGN: {@egn} is created!", egn);
 
             if (clientData is null)
             {
+                Log.Error("Client data is null!");
                 clientData = await this.clientService.CreateClientData(firstName, lastName, egn, phone);
             }
 
             var loanApplication = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, emailId, operatorId, amount);
 
+            Log.Information("Loan application for client with EGN: {@egn} is created!", egn);
             return View();
         }
     }

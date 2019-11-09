@@ -18,6 +18,8 @@ using EmailManager.Service;
 using EmailManager.GmailConfig;
 using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.Factories;
+using Serilog;
+using Microsoft.Extensions.Logging;
 
 namespace EmailManager.Web
 {
@@ -26,6 +28,15 @@ namespace EmailManager.Web
 
         public Startup(IConfiguration configuration)
         {
+            //// Init Serilog configuration
+            //Log.Logger = new LoggerConfiguration()
+            //                    .MinimumLevel.Debug()
+            //                    .WriteTo.Console()
+            //                        // .WriteTo.File("E:\\Temp\\log-{Date}.txt",
+            //                    // outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+            //                    .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+            //                    .CreateLogger();
+
             Configuration = configuration;
         }
 
@@ -84,6 +95,7 @@ namespace EmailManager.Web
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+           // loggerFactory.AddSerilog();
 
             app.UseMvc(routes =>
             {
