@@ -17,18 +17,21 @@ namespace EmailManager.Web
         public static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
-               .Enrich.FromLogContext()
-               .MinimumLevel.Debug()
-               .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
-               .WriteTo.ColoredConsole(
-                   LogEventLevel.Verbose,
-                   "{NewLine}{Timestamp:HH:mm:ss} [{Level}] ({CorrelationToken}) {Message}{NewLine}{Exception}")
-                   .CreateLogger();
+           .MinimumLevel.Debug()
+           .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
+           .Enrich.FromLogContext()
+           .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+           .WriteTo.Console()
+           .CreateLogger();
 
             try
             {
-
+                Log.Information("Starting web host");
                 CreateWebHostBuilder(args).Build().Run();
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Host terminated unexpectedly");
             }
             finally
             {
@@ -38,7 +41,7 @@ namespace EmailManager.Web
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseSerilog()
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseSerilog();
     }
 }

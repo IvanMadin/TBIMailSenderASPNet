@@ -40,7 +40,11 @@ namespace EmailManager.Data.Migrations
                     TwoFactorEnabled = table.Column<bool>(nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
-                    AccessFailedCount = table.Column<int>(nullable: false)
+                    AccessFailedCount = table.Column<int>(nullable: false),
+                    ModifiedByUserId = table.Column<string>(nullable: true),
+                    ModifiedOnDate = table.Column<DateTime>(nullable: true),
+                    DeletedByUserId = table.Column<string>(nullable: true),
+                    DeletedOnDate = table.Column<DateTime>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -52,10 +56,16 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
+                    CreatedByUserId = table.Column<string>(nullable: true),
+                    CreatedOnDate = table.Column<DateTime>(nullable: true),
+                    ModifiedOnDate = table.Column<DateTime>(nullable: true),
+                    ModifiedByUserId = table.Column<string>(nullable: true),
+                    DeletedByUserId = table.Column<string>(nullable: true),
+                    DeletedOnDate = table.Column<DateTime>(nullable: true),
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: true),
-                    EncryptedEGN = table.Column<string>(nullable: false),
-                    EncryptedPhone = table.Column<string>(nullable: false)
+                    EGN = table.Column<string>(nullable: false),
+                    Phone = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -198,10 +208,11 @@ namespace EmailManager.Data.Migrations
                 {
                     Id = table.Column<string>(nullable: false),
                     OriginalMailId = table.Column<string>(nullable: false),
-                    Sender = table.Column<string>(nullable: false),
+                    SenderName = table.Column<string>(nullable: false),
+                    SenderEmail = table.Column<string>(nullable: false),
                     DateReceived = table.Column<string>(nullable: false),
                     Subject = table.Column<string>(nullable: false),
-                    Body = table.Column<string>(nullable: false),
+                    Body = table.Column<string>(nullable: true),
                     StatusEmailId = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true)
                 },
@@ -229,7 +240,9 @@ namespace EmailManager.Data.Migrations
                     Id = table.Column<string>(nullable: false),
                     FileName = table.Column<string>(nullable: false),
                     FileSize = table.Column<double>(nullable: false),
-                    EmailId = table.Column<string>(nullable: true)
+                    EmailId = table.Column<string>(nullable: true),
+                    DeletedByUserId = table.Column<string>(nullable: true),
+                    DeletedOnDate = table.Column<DateTime>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -247,6 +260,12 @@ namespace EmailManager.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
+                    CreatedByUserId = table.Column<string>(nullable: true),
+                    CreatedOnDate = table.Column<DateTime>(nullable: true),
+                    ModifiedOnDate = table.Column<DateTime>(nullable: true),
+                    ModifiedByUserId = table.Column<string>(nullable: true),
+                    DeletedByUserId = table.Column<string>(nullable: true),
+                    DeletedOnDate = table.Column<DateTime>(nullable: true),
                     Amount = table.Column<decimal>(type: "numeric(15,2)", nullable: false),
                     UserId = table.Column<string>(nullable: true),
                     ClientDataId = table.Column<string>(nullable: true),
@@ -287,17 +306,17 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "315865bc-2224-485c-aa3d-05007137ea9f", "Manager", "MANAGER" },
-                    { "93c66dd9-11c5-4836-b104-a9c333549530", "ee91c18f-0d8b-4d70-95c6-5461e1c777a6", "Operator", "OPERATOR" }
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "7d0c3170-ddd2-48ed-a519-68dc1b707465", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "b32313d2-0a2f-4f46-8afe-c9e02f72cc67", "Operator", "OPERATOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DeletedByUserId", "DeletedOnDate", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "ModifiedByUserId", "ModifiedOnDate", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "a0a87f10-53c0-442b-9e48-029b15bb57ab", "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEAgq7pZFuIe+CnP3nJVvQkmC0HYejgsI0Lpm6+33n0PWKf1mEP/CjKSMPHVaLJUO1g==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
-                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "9fe76dba-bf26-4e2b-bd24-207127ed12ad", "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEM3gnPLeDatBmWXH4k7emO9NzkXhcItn0U5s587fkCCLVsaMfbT39YQRQ5teY1y31A==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "8bb442b2-2188-4142-b10b-c18bd4708e87", null, null, "krisi@gmail.com", false, true, null, null, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEIng+cJ4JdYvjXr61oThNj+d5nPCJlTfFKSO3ohXuZgk4jwBvvOxrtyhyucbcBedBQ==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "7819eceb-24b4-4dc2-991c-a9fa481ffc73", null, null, "madinftw@gmail.com", false, true, null, null, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEJxGrODc0iyAjsUKSH85goXTSgkrHzLrlquitLet0QkFQ1o2t9q5G2H4WIxQE9y8Fg==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
                 });
 
             migrationBuilder.InsertData(

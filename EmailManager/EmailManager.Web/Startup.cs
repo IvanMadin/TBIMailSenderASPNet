@@ -20,18 +20,8 @@ namespace EmailManager.Web
 {
     public class Startup
     {
-
         public Startup(IConfiguration configuration)
         {
-            //// Init Serilog configuration
-            //Log.Logger = new LoggerConfiguration()
-            //                    .MinimumLevel.Debug()
-            //                    .WriteTo.Console()
-            //                        // .WriteTo.File("E:\\Temp\\log-{Date}.txt",
-            //                    // outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
-            //                    .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
-            //                    .CreateLogger();
-
             Configuration = configuration;
         }
 
@@ -86,7 +76,6 @@ namespace EmailManager.Web
             app.UseCookiePolicy();
 
             app.UseAuthentication();
-           // loggerFactory.AddSerilog();
 
             app.UseMvc(routes =>
             {

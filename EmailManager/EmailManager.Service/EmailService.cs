@@ -5,6 +5,7 @@ using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -33,14 +34,14 @@ namespace EmailManager.Service
 
             if (newEmail == null)
             {
+                Log.Error("Email is null");
                 throw new ArgumentException("Invalid email");
             }
 
-           
-
             this.context.Emails.Add(newEmail);
-            await this.context.SaveChangesAsync();
 
+            await this.context.SaveChangesAsync();
+            Log.Information("Email with Original Mail ID: {0} was created",newEmail.Id);
 
             return newEmail.ToDTO();
         }
@@ -48,12 +49,14 @@ namespace EmailManager.Service
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
             var email = await this.context.Emails.FindAsync(emailId);
+            Log.Information("Email with ID: {0} was found", email.Id);
 
             return email.ToDTO();
         }
         public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
         {
             var email = await this.context.Emails.FirstOrDefaultAsync(e => e.OriginalMailId == originalMailId);
+            Log.Information("Email with ID: {0} was successfully taken", email.Id);
 
             return email;
         }
@@ -61,6 +64,7 @@ namespace EmailManager.Service
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.ToListAsync();
+            Log.Information("Аll emails successfully received");
 
             var mappedEmails = allEmails.ToDTO();
 
@@ -69,6 +73,9 @@ namespace EmailManager.Service
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
+
+            if(doesEmailExist)
+            Log.Information("Email with ID: {0} exists", originalMailId);
 
             return doesEmailExist;
         }
