@@ -3,6 +3,7 @@ using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
+using EmailManager.Service.Providers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,13 @@ namespace EmailManager.Service
     {
         private readonly EmailManagerDbContext context;
         private readonly IEmailFactory emailFactory;
+        private readonly EncryptingHelper encryptingHelper;
 
-        public EmailService(EmailManagerDbContext context, IEmailFactory emailFactory)
+        public EmailService(EmailManagerDbContext context, IEmailFactory emailFactory, EncryptingHelper encryptingHelper)
         {
             this.context = context;
             this.emailFactory = emailFactory;
+            this.encryptingHelper = encryptingHelper;
         }
 
         public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body)
@@ -44,11 +47,15 @@ namespace EmailManager.Service
         {
             var email = await this.context.Emails.FindAsync(emailId);
 
+            email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
+
             return email.ToDTO();
         }
         public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
         {
             var email = await this.context.Emails.FirstOrDefaultAsync(e => e.OriginalMailId == originalMailId);
+            
+            email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
 
             return email;
         }
@@ -56,6 +63,8 @@ namespace EmailManager.Service
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.ToListAsync();
+
+            allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
 
             var mappedEmails = allEmails.ToDTO();
 

@@ -8,7 +8,7 @@
 
         var divHolder = document.getElementById('application-form-div');
 
-        if (divHolder.style.visibility === "hidden") {
+        if (showHideButton.value === 'Show Form') {
             divHolder.style.visibility = "visible";
             showHideButton.value = 'Hide Form';
             showHideButton.classList.remove('btn-outline-success');
@@ -21,3 +21,5 @@
         }
     });
 });
+
+//divHolder.style.visibility === "hidden" that was inside the if condition thats why the first hit of the button was never shown. After the change it appears instantly.

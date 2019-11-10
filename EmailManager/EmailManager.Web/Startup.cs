@@ -24,12 +24,12 @@ namespace EmailManager.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.Configure<CookiePolicyOptions>(options =>
-            //{
-            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-            //    options.CheckConsentNeeded = context => true;
-            //    options.MinimumSameSitePolicy = SameSiteMode.Strict;
-            //});
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
+            });
 
             services.AddDbContext<EmailManagerDbContext>(options =>
                 options.UseSqlServer(

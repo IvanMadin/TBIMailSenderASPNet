@@ -5,6 +5,8 @@
 }
 
 <link rel="stylesheet" href="~/css/application.css">
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/js/application-form.js"></script>
 
 <div class="container">
     <div class="card border-0 shadow my-5">
@@ -12,7 +14,7 @@
             <div class="col-8 card-body p-5 amber-text">
                 <h4>Details for @Model.Sender 
                 @*<button type="submit" class="btn rigth-button button-color">Status</button>*@ 
-                <input type="button" class="btn btn-outline-success" id="show-or-hide-button-form" value="Show form">
+                <input type="button" class="btn btn-outline-success" id="show-or-hide-button-form" value="Show Form">
                 </h4>
 
                 <div>
@@ -52,6 +54,6 @@
 </div>
 
 
-@section Scripts{
-<script type="text/javascript" src="~/js/application-form.js"></script>
-}
+
+
+
