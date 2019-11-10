@@ -8,13 +8,18 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EmailManager.Data.Entities;
 using EmailManager.Data;
+using EmailManager.Service;
+using EmailManager.GmailConfig;
+using EmailManager.Service.Contracts.Factories;
+using EmailManager.Service.Factories;
+using Serilog;
+using Microsoft.Extensions.Logging;
 using EmailManager.Web.Extensions.ServiceHelpers;
 
 namespace EmailManager.Web
 {
     public class Startup
     {
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

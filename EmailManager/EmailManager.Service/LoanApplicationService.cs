@@ -3,6 +3,7 @@ using EmailManager.Data;
 using EmailManager.Data.Entities;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -41,6 +42,8 @@ namespace EmailManager.Service
             this.context.LoanApplications.Add(loanApplication);
 
             await this.context.SaveChangesAsync();
+            Log.Information("Loan application with ID: {0} was successfully created", loanApplication.Id);
+
             return loanApplication.ToDTO();
 
         }
@@ -48,6 +51,7 @@ namespace EmailManager.Service
         public async Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId)
         {
             var application = await this.context.LoanApplications.FindAsync(applicationId);
+            Log.Information("Loan application with ID: {0} was successfully taken", applicationId);
 
             return application.ToDTO();
         }

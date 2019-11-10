@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using EmailManager.Web.Models;
 using EmailManager.GmailConfig;
 using EmailManager.Service;
+using Serilog;
 using EmailManager.Web.Extensions.Mappers;
 
 namespace EmailManager.Web.Controllers
@@ -42,6 +43,7 @@ namespace EmailManager.Web.Controllers
 
         public async Task<IActionResult> UpdateEmails()
         {
+            Log.Information("All emails are updated on {0}!", DateTime.UtcNow);
             await gmailConfigure.GmailAPI();
             return RedirectToAction(nameof(Index));
         }

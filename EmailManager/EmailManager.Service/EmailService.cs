@@ -5,6 +5,8 @@ using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using EmailManager.Service.Providers;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -33,12 +35,16 @@ namespace EmailManager.Service
 
             var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, currentCultureDateFormat, subject, body);
 
-            if (newEmail is null)
+            if (newEmail == null)
+            {
+                Log.Error("Email is null");
                 throw new ArgumentException("Invalid email");
+            }
 
             this.context.Emails.Add(newEmail);
-            await this.context.SaveChangesAsync();
 
+            await this.context.SaveChangesAsync();
+            Log.Information("Email with Original Mail ID: {0} was created",newEmail.Id);
 
             return newEmail.ToDTO();
         }
@@ -46,6 +52,7 @@ namespace EmailManager.Service
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
             var email = await this.context.Emails.FindAsync(emailId);
+            Log.Information("Email with ID: {0} was found", email.Id);
 
             email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
 
@@ -57,12 +64,15 @@ namespace EmailManager.Service
             
             email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
 
+            Log.Information("Email with ID: {0} was successfully taken", email.Id);
+
             return email;
         }
 
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.ToListAsync();
+            Log.Information("Аll emails successfully received");
 
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
 
@@ -73,6 +83,9 @@ namespace EmailManager.Service
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
+
+            if(doesEmailExist)
+            Log.Information("Email with ID: {0} exists", originalMailId);
 
             return doesEmailExist;
         }

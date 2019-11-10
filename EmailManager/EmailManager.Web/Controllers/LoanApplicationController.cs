@@ -10,6 +10,7 @@ using EmailManager.Service.Factories;
 using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
@@ -37,6 +38,20 @@ namespace EmailManager.Web.Controllers
             this.clientDataDTOFactory = clientDataDTOFactory;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> ApplicationForm(string emailId)
+        {
+            var email = await this.emailService.GetEmailByIdAsync(emailId);
+
+            var newLoanApplication = new LoanApplicationViewModel
+            {
+                EmailId = email.Id
+            };
+
+            Log.Information("Email for application form was found successfully!");
+            return View(newLoanApplication);
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ApplicationForm(LoanApplicationViewModel loanModel)
@@ -44,16 +59,17 @@ namespace EmailManager.Web.Controllers
             var operatorId = userManager.GetUserId(User);
 
             var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
-
             if (clientData is null)
             {
                 var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
 
                 clientData = await this.clientService.CreateClientData(clientDataDTO);
+                Log.Information("Client with EGN: {0} was created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
             }
 
             await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, operatorId, loanModel.Amount);
 
+            Log.Information("Loan application for client with EGN: {0} is created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
             return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
         }
     }

@@ -6,6 +6,7 @@ using EmailManager.GmailConfig;
 using EmailManager.Service;
 using EmailManager.Web.Extensions.Mappers;
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
@@ -24,12 +25,15 @@ namespace EmailManager.Web.Controllers
         {
             var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
 
+            Log.Information("Body modal for email with ID: {0} was loaded on {1}!", email.Id, DateTime.UtcNow);
+
             return View(email);
         }
 
         public async Task<IActionResult> Application(string id)
         {
             var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
+            Log.Information("Application for email with ID: {0} was loaded on {1}!", email.Id, DateTime.UtcNow);
 
             return View(email);
         }
@@ -37,6 +41,8 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> AllApplications()
         {
             var list = (await this.emailService.GetAllEmailsAsync()).ToVM();
+            Log.Information("All applications are loaded on {0}!", DateTime.UtcNow);
+
             return View(list);
         }
     }

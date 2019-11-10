@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmailManager.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -64,8 +64,8 @@ namespace EmailManager.Data.Migrations
                     DeletedOnDate = table.Column<DateTime>(nullable: true),
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: true),
-                    EncryptedEGN = table.Column<string>(nullable: false),
-                    EncryptedPhone = table.Column<string>(nullable: false)
+                    EGN = table.Column<string>(nullable: false),
+                    Phone = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -306,8 +306,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "4c6ff8a8-7ffc-4078-acf5-0b9bcea86e3c", "Manager", "MANAGER" },
-                    { "93c66dd9-11c5-4836-b104-a9c333549530", "b94054c1-7a35-40e4-87fa-2ec3681ba3d7", "Operator", "OPERATOR" }
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "7d0c3170-ddd2-48ed-a519-68dc1b707465", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "b32313d2-0a2f-4f46-8afe-c9e02f72cc67", "Operator", "OPERATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -315,8 +315,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DeletedByUserId", "DeletedOnDate", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "ModifiedByUserId", "ModifiedOnDate", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "f285c946-eddd-4d34-9681-c9078bc84b3d", null, null, "krisi@gmail.com", false, true, null, null, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAENrmtNx1QzmitqIpZC+l3N4DwApEMAsLMmQaReNR2Y0aUO0fYbLouVq5HUyE08InGA==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
-                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "e2ef87ba-e5a6-404f-9e99-64c5ff90da69", null, null, "madinftw@gmail.com", false, true, null, null, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEKNnTU6ORrL7MAfr8Sdqf2qCkI48lRo0oL/tp7xAxlBm7+rxoN3WX0WSWr8XXaYHxw==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, "8bb442b2-2188-4142-b10b-c18bd4708e87", null, null, "krisi@gmail.com", false, true, null, null, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEIng+cJ4JdYvjXr61oThNj+d5nPCJlTfFKSO3ohXuZgk4jwBvvOxrtyhyucbcBedBQ==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, "7819eceb-24b4-4dc2-991c-a9fa481ffc73", null, null, "madinftw@gmail.com", false, true, null, null, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEJxGrODc0iyAjsUKSH85goXTSgkrHzLrlquitLet0QkFQ1o2t9q5G2H4WIxQE9y8Fg==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
                 });
 
             migrationBuilder.InsertData(
