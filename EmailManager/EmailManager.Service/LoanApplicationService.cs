@@ -1,8 +1,10 @@
 ﻿
 using EmailManager.Data;
 using EmailManager.Data.Entities;
+using EmailManager.Service.Contracts;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System;
 using System.Collections.Generic;
@@ -11,13 +13,13 @@ using System.Threading.Tasks;
 
 namespace EmailManager.Service
 {
-    public class LoanApplicationService
+    public class LoanApplicationService : ILoanApplicationService
     {
         private readonly EmailManagerDbContext context;
-        private readonly EmailService emailService;
-        private readonly ClientService clientService;
+        private readonly IEmailService emailService;
+        private readonly IClientService clientService;
 
-        public LoanApplicationService(EmailManagerDbContext context, EmailService emailService, ClientService clientService)
+        public LoanApplicationService(EmailManagerDbContext context, IEmailService emailService, IClientService clientService)
         {
             this.context = context;
             this.emailService = emailService;
@@ -50,7 +52,8 @@ namespace EmailManager.Service
 
         public async Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId)
         {
-            var application = await this.context.LoanApplications.FindAsync(applicationId);
+            var application = await this.context.LoanApplications.Include(e => e.StatusApplication).FirstOrDefaultAsync(e => e.Id == applicationId);
+
             Log.Information("Loan application with ID: {0} was successfully taken", applicationId);
 
             return application.ToDTO();

@@ -12,11 +12,16 @@
     <div class="card border-0 shadow my-5">
         <div class="row application-form-holder">
             <div class="col-8 card-body p-5 amber-text">
-                <h4>Details for @Model.Sender 
-                @*<button type="submit" class="btn rigth-button button-color">Status</button>*@ 
-                <input type="button" class="btn btn-outline-success" id="show-or-hide-button-form" value="Show Form">
-                </h4>
-
+                <h2>
+                    Details for @Model.Sender
+                    
+                </h2>
+                <h6>
+                    <a class="btn btn-outline-success" asp-area="" asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">New Application</a>
+                    <a class="btn btn-outline-success" asp-area="" asp-controller="Email" asp-action="UpdateStatusEmail" asp-route-emailId="@Model.Id" asp-route-status="Invalid Application">Invalid Email</a>
+                    <input type="button" class="btn btn-outline-success" id="show-or-hide-button-form" value="Show Form">
+                </h6>
+                <br />
                 <div>
                     <dl class="row">
                         <dt class="col-sm-4">
@@ -43,6 +48,10 @@
                         <dd class="col-sm-8">
                             @Html.Raw(Model.Body)
                         </dd>
+                        @*<dd class="col-sm-8">
+                            <div><a asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">Mark as Invalid Email</a></div>
+                            
+                        </dd>*@
                     </dl>
                 </div>
             </div>

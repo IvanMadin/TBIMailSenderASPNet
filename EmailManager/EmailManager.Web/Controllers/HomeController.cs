@@ -9,15 +9,16 @@ using EmailManager.GmailConfig;
 using EmailManager.Service;
 using Serilog;
 using EmailManager.Web.Extensions.Mappers;
+using EmailManager.Service.Contracts;
 
 namespace EmailManager.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly GmailConfigure gmailConfigure;
-        private readonly EmailService emailService;
+        private readonly IEmailService emailService;
 
-        public HomeController(GmailConfigure gmailConfigure, EmailService emailService)
+        public HomeController(GmailConfigure gmailConfigure, IEmailService emailService)
         {
             this.gmailConfigure = gmailConfigure;
             this.emailService = emailService;

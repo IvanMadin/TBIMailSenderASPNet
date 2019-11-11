@@ -14,5 +14,7 @@ namespace EmailManager.Service.DTOs
         public decimal LoanAmount { get; set; }
         public string EmployeeName { get; set; }
         public string EmailId { get; set; }
+        public string ApplicationStatusId { get; set; }
+        //public string ApplicationStatusName { get; set; }
     }
 }

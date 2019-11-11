@@ -1,5 +1,6 @@
 ﻿using EmailManager.Data;
 using EmailManager.Data.Entities;
+using EmailManager.Service.Contracts;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace EmailManager.Service
 {
-    public class ClientService
+    public class ClientService : IClientService
     {
         private readonly EmailManagerDbContext context;
         public ClientService(EmailManagerDbContext context)

@@ -18,7 +18,9 @@ namespace EmailManager.Web.Extensions.Mappers
                 Id = emailDTO.Id,
                 OriginalMailId = emailDTO.OriginalMailId,
                 Sender = emailDTO.Sender,
-                Subject = emailDTO.Subject
+                Subject = emailDTO.Subject,
+                EmailStatusId = emailDTO.EmailStatusId,
+                //EmailStatusName = emailDTO.EmailStatusName
             };
 
             return emailModel;

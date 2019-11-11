@@ -19,7 +19,9 @@ namespace EmailManager.Web.Extensions.Mappers
                 EGN = dataDTO.ClientEGN,
                 Phone = dataDTO.ClientPhone,
                 Amount = dataDTO.LoanAmount,
-                EmailId = dataDTO.EmailId
+                EmailId = dataDTO.EmailId,
+                ApplicationStatusId=dataDTO.ApplicationStatusId,
+                //ApplicationStatusName=dataDTO.ApplicationStatusName
             };
 
             return dataModel;

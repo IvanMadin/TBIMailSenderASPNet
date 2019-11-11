@@ -40,7 +40,7 @@
                                 @email.DateReceived
                             </td>
                             <td>
-                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Application</a>
+                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Preview email</a>
 
                             </td>
                             <td>
@@ -50,9 +50,6 @@
                                 <div class="email-description">
                                     @await Component.InvokeAsync("BodyModal", email.Id)
                                 </div>
-                            </td>
-                            <td>
-                                <input type="button" class="open-close-email btn btn-warning" value="Status">
                             </td>
                         </tr>
                     }

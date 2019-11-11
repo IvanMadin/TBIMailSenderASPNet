@@ -12,5 +12,7 @@ namespace EmailManager.Service.DTOs
         public string DateReceived { get; set; }
         public string Subject { get; set; }
         public string Body { get; set; }
+        public string EmailStatusId { get; set; }
+        //public string EmailStatusName { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using EmailManager.Service.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace EmailManager.Service.Mappers
@@ -24,13 +25,17 @@ namespace EmailManager.Service.Mappers
                 ClientLastName = entity.ClientData?.LastName,
                 ClientPhone = entity.ClientData?.Phone,
                 EmployeeName = entity.User?.UserName,
-                EmailId = entity.EmailId
-                
-
-
+                EmailId = entity.EmailId,
+                ApplicationStatusId = entity.StatusApplicationId,
+                //ApplicationStatusName=entity.StatusApplication.StatusType
             };
 
             return loanApplication;
+        }
+
+        public static ICollection<LoanApplicationDTO> ToDTO(this ICollection<LoanApplication> loanApplications)
+        {
+            return loanApplications.Select(s => s.ToDTO()).ToList();
         }
     }
 }

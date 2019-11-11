@@ -15,6 +15,7 @@ using EmailManager.Service.Factories;
 using Serilog;
 using Microsoft.Extensions.Logging;
 using EmailManager.Web.Extensions.ServiceHelpers;
+using EmailManager.Service.Contracts;
 
 namespace EmailManager.Web
 {
@@ -52,6 +53,12 @@ namespace EmailManager.Web
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
+
+            services.AddScoped<IEmailService, EmailService>();
+            services.AddScoped<IClientService, ClientService>();
+            services.AddTransient<IEmailStatusService, EmailStatusService>();
+            services.AddScoped<IApplicationStatusService, ApplicationStatusService>();
+            services.AddScoped<ILoanApplicationService, LoanApplicationService>();
 
             services.Registrations();
 

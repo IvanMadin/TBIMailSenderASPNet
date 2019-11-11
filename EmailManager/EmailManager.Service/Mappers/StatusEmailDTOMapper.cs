@@ -2,6 +2,7 @@
 using EmailManager.Service.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace EmailManager.Service.Mappers
@@ -22,6 +23,11 @@ namespace EmailManager.Service.Mappers
             };
 
             return statusEmail;
+        }
+
+        public static ICollection<StatusEmailDTO> ToDTO(this ICollection<StatusEmail> statusEmail)
+        {
+            return statusEmail.Select(s => s.ToDTO()).ToList();
         }
     }
 }

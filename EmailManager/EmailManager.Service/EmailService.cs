@@ -1,5 +1,6 @@
 ﻿using EmailManager.Data;
 using EmailManager.Data.Entities;
+using EmailManager.Service.Contracts;
 using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
@@ -16,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace EmailManager.Service
 {
-    public class EmailService
+    public class EmailService : IEmailService
     {
         private readonly EmailManagerDbContext context;
         private readonly IEmailFactory emailFactory;
@@ -51,8 +52,8 @@ namespace EmailManager.Service
 
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
-            var email = await this.context.Emails.FindAsync(emailId);
-            Log.Information("Email with ID: {0} was found", email.Id);
+            var email = await this.context.Emails.Include(e=> e.Status).FirstOrDefaultAsync(e=> e.Id == emailId);
+           // Log.Information("Email with ID: {0} was found", email.Id);
 
             email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
 
@@ -110,5 +111,6 @@ namespace EmailManager.Service
 
             return date.ToString("d/MM/yyyy H:mm:ss");
         }
+
     }
 }
