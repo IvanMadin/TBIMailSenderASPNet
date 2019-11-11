@@ -52,12 +52,13 @@ namespace EmailManager.Service
 
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
-            var email = await this.context.Emails.Include(e=> e.Status).FirstOrDefaultAsync(e=> e.Id == emailId);
-           // Log.Information("Email with ID: {0} was found", email.Id);
+            var email = await this.context.Emails.Include(e=> e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e=> e.Id == emailId);
+            // Log.Information("Email with ID: {0} was found", email.Id);
 
-            email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
-
-            return email.ToDTO();
+            var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
+            var emailDTO = email.ToDTO();
+            emailDTO.Body = decryptedBody;
+            return emailDTO;
         }
         public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
         {
@@ -72,7 +73,7 @@ namespace EmailManager.Service
 
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
-            var allEmails = await this.context.Emails.ToListAsync();
+            var allEmails = await this.context.Emails.Include(e=>e.Status).Include(a=>a.EmailAttachments).ToListAsync();
             Log.Information("Аll emails successfully received");
 
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));

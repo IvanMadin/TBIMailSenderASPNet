@@ -16,13 +16,22 @@
                 <thead>
                     <tr>
                         <th>
+                            @Html.DisplayNameFor(model => model.Id)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.DateReceived)
+                        </th>
+                        <th>
                             @Html.DisplayNameFor(model => model.Sender)
                         </th>
                         <th>
                             @Html.DisplayNameFor(model => model.Subject)
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.DateReceived)
+                            @Html.DisplayNameFor(model => model.EmailStatusName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Attachments)
                         </th>
                     </tr>
                 </thead>
@@ -31,25 +40,25 @@
                     {
                         <tr>
                             <td>
+                                @email.Id
+                            </td>
+                            <td>
+                                @email.DateReceived
+                            </td>
+                            <td>
                                 @email.Sender
                             </td>
                             <td>
                                 @email.Subject
                             </td>
                             <td>
-                                @email.DateReceived
+                                @email.EmailStatusName
+                            </td>
+                            <td>
                             </td>
                             <td>
                                 <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Preview email</a>
 
-                            </td>
-                            <td>
-                                <input type="button" class="open-close-email btn btn-warning" value="Preview body">
-                            </td>
-                            <td class="email-container">
-                                <div class="email-description">
-                                    @await Component.InvokeAsync("BodyModal", email.Id)
-                                </div>
                             </td>
                         </tr>
                     }
@@ -57,9 +66,4 @@
             </table>
         </div>
     </div>
-
 </div>
-
-@section Scripts{
-    <script type="text/javascript" src="~/js/all-applications.js"></script>
-}

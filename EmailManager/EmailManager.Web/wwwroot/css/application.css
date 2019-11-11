@@ -11,7 +11,7 @@
     width: 120px !important;
 }
 
-.table > thead:first-of-type > tr,
+/*.table > thead:first-of-type > tr,
 .table > tbody:first-of-type > tr {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -21,8 +21,8 @@
     .table > thead:first-of-type > tr > th:nth-of-type(2),
     .table > tbody:first-of-type > tr > td:first-of-type,
     .table > tbody:first-of-type > tr > td:nth-of-type(2) {
-        grid-column: span 3;
-    }
+        grid-column: span 2;
+    }*/
 
 .email-container {
     display: none;

@@ -25,7 +25,7 @@ namespace EmailManager.Service.Mappers
                 DateReceived = entity.DateReceived,
                 Body = entity.Body,
                 EmailStatusId = entity.StatusEmailId,
-                //EmailStatusName = entity.Status.StatusType
+                EmailStatusName = entity.Status?.StatusType
             };
 
             return email;

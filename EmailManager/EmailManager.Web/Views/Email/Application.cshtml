@@ -14,7 +14,7 @@
             <div class="col-8 card-body p-5 amber-text">
                 <h2>
                     Details for @Model.Sender
-                    
+
                 </h2>
                 <h6>
                     <a class="btn btn-outline-success" asp-area="" asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">New Application</a>
@@ -46,12 +46,16 @@
                             @nameof(Model.Body)
                         </dt>
                         <dd class="col-sm-8">
-                            @Html.Raw(Model.Body)
+                            <input type="button" class="open-close-email btn btn-warning" value="Preview body">
+                            <div class="email-description">
+                                @await Component.InvokeAsync("BodyModal", Model.Id)
+                            </div>
+
                         </dd>
                         @*<dd class="col-sm-8">
-                            <div><a asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">Mark as Invalid Email</a></div>
-                            
-                        </dd>*@
+                                <div><a asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">Mark as Invalid Email</a></div>
+
+                            </dd>*@
                     </dl>
                 </div>
             </div>
@@ -61,6 +65,10 @@
         </div>
     </div>
 </div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/js/all-applications.js"></script>
+}
 
 
 
