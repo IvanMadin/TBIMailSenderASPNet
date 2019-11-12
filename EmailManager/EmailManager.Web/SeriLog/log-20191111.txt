@@ -1,0 +1,76 @@
+2019-11-11 22:22:17.150 +02:00 [INF] Starting web host
+2019-11-11 22:22:18.103 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-11 22:22:24.873 +02:00 [INF] User logged in.
+2019-11-11 22:22:25.040 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:22:36.437 +02:00 [INF] All emails are updated on "2019-11-11T20:22:36.4345511Z"!
+2019-11-11 22:22:38.752 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-11 22:22:38.975 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-11 22:22:39.255 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-11 22:22:39.435 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-11 22:22:39.857 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-11 22:22:40.641 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-11 22:22:40.837 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-11 22:22:41.025 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-11 22:22:41.197 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-11 22:22:41.376 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-11 22:22:41.564 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-11 22:22:41.894 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-11 22:22:41.909 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:22:49.438 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:22:49.439 +02:00 [INF] All applications are loaded on "2019-11-11T20:22:49.4390159Z"!
+2019-11-11 22:22:49.481 +02:00 [INF] Email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was found
+2019-11-11 22:22:49.499 +02:00 [INF] Email with ID: 30e58729-972a-4046-907b-5632da65cd94 was found
+2019-11-11 22:22:49.500 +02:00 [INF] Email with ID: 31a8c1b4-5a23-4d9f-a959-3b3b1be3ac6c was found
+2019-11-11 22:22:49.500 +02:00 [INF] Email with ID: 45c28048-97cf-43e0-969d-1bb31d66c0bd was found
+2019-11-11 22:22:49.501 +02:00 [INF] Email with ID: 51834028-3b1d-479a-b614-1a267c52bf8e was found
+2019-11-11 22:22:49.501 +02:00 [INF] Email with ID: 9f696d9d-d636-4190-b171-567db37f8d6a was found
+2019-11-11 22:22:49.502 +02:00 [INF] Email with ID: b85d47e4-7ace-497c-9f2d-837ad63fddc1 was found
+2019-11-11 22:22:49.502 +02:00 [INF] Email with ID: d454b94c-8992-4ee8-8668-07cbcfb2946f was found
+2019-11-11 22:22:49.503 +02:00 [INF] Email with ID: dec5bc37-bba4-49c6-8764-076fbfe8a9b8 was found
+2019-11-11 22:22:49.505 +02:00 [INF] Email with ID: efea8b0e-539f-4e02-9ec0-a11da802b5c7 was found
+2019-11-11 22:22:49.505 +02:00 [INF] Email with ID: f4e450d0-9f5b-4675-ad19-189e8e6bd423 was found
+2019-11-11 22:22:49.506 +02:00 [INF] Email with ID: f66a1317-c833-4817-9c35-9a09a3b29b19 was found
+2019-11-11 22:22:49.506 +02:00 [INF] Email with ID: fe172e25-cd58-4619-b818-217e9c4943a7 was found
+2019-11-11 22:23:19.826 +02:00 [INF] Email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was found
+2019-11-11 22:23:19.827 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-11T20:23:19.8266616Z"!
+2019-11-11 22:23:28.399 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:23:28.399 +02:00 [INF] All applications are loaded on "2019-11-11T20:23:28.3991672Z"!
+2019-11-11 22:23:28.399 +02:00 [INF] Email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was found
+2019-11-11 22:23:28.400 +02:00 [INF] Email with ID: 30e58729-972a-4046-907b-5632da65cd94 was found
+2019-11-11 22:23:28.400 +02:00 [INF] Email with ID: 31a8c1b4-5a23-4d9f-a959-3b3b1be3ac6c was found
+2019-11-11 22:23:28.400 +02:00 [INF] Email with ID: 45c28048-97cf-43e0-969d-1bb31d66c0bd was found
+2019-11-11 22:23:28.400 +02:00 [INF] Email with ID: 51834028-3b1d-479a-b614-1a267c52bf8e was found
+2019-11-11 22:23:28.400 +02:00 [INF] Email with ID: 9f696d9d-d636-4190-b171-567db37f8d6a was found
+2019-11-11 22:23:28.401 +02:00 [INF] Email with ID: b85d47e4-7ace-497c-9f2d-837ad63fddc1 was found
+2019-11-11 22:23:28.401 +02:00 [INF] Email with ID: d454b94c-8992-4ee8-8668-07cbcfb2946f was found
+2019-11-11 22:23:28.401 +02:00 [INF] Email with ID: dec5bc37-bba4-49c6-8764-076fbfe8a9b8 was found
+2019-11-11 22:23:28.402 +02:00 [INF] Email with ID: efea8b0e-539f-4e02-9ec0-a11da802b5c7 was found
+2019-11-11 22:23:28.402 +02:00 [INF] Email with ID: f4e450d0-9f5b-4675-ad19-189e8e6bd423 was found
+2019-11-11 22:23:28.403 +02:00 [INF] Email with ID: f66a1317-c833-4817-9c35-9a09a3b29b19 was found
+2019-11-11 22:23:28.403 +02:00 [INF] Email with ID: fe172e25-cd58-4619-b818-217e9c4943a7 was found
+2019-11-11 22:23:32.138 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:23:33.262 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:23:33.263 +02:00 [INF] All applications are loaded on "2019-11-11T20:23:33.2631415Z"!
+2019-11-11 22:23:33.263 +02:00 [INF] Email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was found
+2019-11-11 22:23:33.263 +02:00 [INF] Email with ID: 30e58729-972a-4046-907b-5632da65cd94 was found
+2019-11-11 22:23:33.264 +02:00 [INF] Email with ID: 31a8c1b4-5a23-4d9f-a959-3b3b1be3ac6c was found
+2019-11-11 22:23:33.264 +02:00 [INF] Email with ID: 45c28048-97cf-43e0-969d-1bb31d66c0bd was found
+2019-11-11 22:23:33.264 +02:00 [INF] Email with ID: 51834028-3b1d-479a-b614-1a267c52bf8e was found
+2019-11-11 22:23:33.265 +02:00 [INF] Email with ID: 9f696d9d-d636-4190-b171-567db37f8d6a was found
+2019-11-11 22:23:33.265 +02:00 [INF] Email with ID: b85d47e4-7ace-497c-9f2d-837ad63fddc1 was found
+2019-11-11 22:23:33.265 +02:00 [INF] Email with ID: d454b94c-8992-4ee8-8668-07cbcfb2946f was found
+2019-11-11 22:23:33.265 +02:00 [INF] Email with ID: dec5bc37-bba4-49c6-8764-076fbfe8a9b8 was found
+2019-11-11 22:23:33.266 +02:00 [INF] Email with ID: efea8b0e-539f-4e02-9ec0-a11da802b5c7 was found
+2019-11-11 22:23:33.267 +02:00 [INF] Email with ID: f4e450d0-9f5b-4675-ad19-189e8e6bd423 was found
+2019-11-11 22:23:33.267 +02:00 [INF] Email with ID: f66a1317-c833-4817-9c35-9a09a3b29b19 was found
+2019-11-11 22:23:33.267 +02:00 [INF] Email with ID: fe172e25-cd58-4619-b818-217e9c4943a7 was found
+2019-11-11 22:25:46.186 +02:00 [INF] Starting web host
+2019-11-11 22:25:47.236 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-11 22:25:48.074 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:25:54.337 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:25:54.342 +02:00 [INF] All applications are loaded on "2019-11-11T20:25:54.3381861Z"!
+2019-11-11 22:27:27.532 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-11T20:27:27.5298446Z"!
+2019-11-11 22:28:25.066 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:28:26.719 +02:00 [INF] Аll emails successfully received
+2019-11-11 22:28:26.719 +02:00 [INF] All applications are loaded on "2019-11-11T20:28:26.7195934Z"!
+2019-11-11 22:28:36.640 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-11T20:28:36.6401902Z"!

@@ -20,7 +20,7 @@ namespace EmailManager.Web
            .MinimumLevel.Debug()
            .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
            .Enrich.FromLogContext()
-           .WriteTo.File("log-.txt", rollingInterval: RollingInterval.Day)
+           .WriteTo.File("SeriLog/log-.txt", rollingInterval: RollingInterval.Day)
            .WriteTo.Console()
            .CreateLogger();
 
