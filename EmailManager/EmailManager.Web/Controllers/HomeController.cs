@@ -46,7 +46,7 @@ namespace EmailManager.Web.Controllers
         {
             Log.Information("All emails are updated on {0}!", DateTime.UtcNow);
             await gmailConfigure.GmailAPI();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("AllEmails", "Email");
         }
     }
 }

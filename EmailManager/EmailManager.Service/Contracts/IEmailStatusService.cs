@@ -8,9 +8,9 @@ namespace EmailManager.Service.Contracts
 {
     public interface IEmailStatusService
     {
-        Task<StatusEmailDTO> CreateStatusEmailAsync(string statusEmail);
+        Task<StatusEmailDTO> GetEmailStatusByName(string emailStatusName);
         Task<StatusEmailDTO> GetEmailStatusByIdAsync(string emailStatusId);
-        Task<StatusEmailDTO> UpdateEmailStatusAsync(EmailDTO emailDTO, string newStatusEmail);
+        Task<StatusEmailDTO> UpdateToInvalid(EmailDTO emailDTO, string newStatusEmail);
         Task<ICollection<EmailDTO>> GetAllEmailByStatusIdAsync(string emailStatusId);
         Task<ICollection<StatusEmailDTO>> AllEmailStatusAsync();
     }

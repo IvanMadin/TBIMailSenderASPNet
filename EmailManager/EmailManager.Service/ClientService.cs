@@ -44,7 +44,9 @@ namespace EmailManager.Service
         public async Task<ClientDataDTO> GetClientDataByIdAsync(string clientId)
         {
             var clientData = await this.context.ClientDatas.FindAsync(clientId);
-            Log.Information("Client data with ID: {0} was found", clientData.Id, DateTime.Now);
+
+            if (clientData != null)
+                Log.Information("Client data with ID: {0} was found", clientData.Id, DateTime.Now);
 
             return clientData.ToDTO();
         }
@@ -53,7 +55,11 @@ namespace EmailManager.Service
         {
             var client = await this.context.ClientDatas
                  .FirstOrDefaultAsync(cd => cd.FirstName == firstName && cd.LastName == lastName && cd.EGN == egn);
-            Log.Information("Client data with EGN: {0} was found", client.EGN, DateTime.Now);
+
+            if (client != null)
+            {
+                Log.Information("Client data with EGN: {0} was found", client.EGN, DateTime.Now);
+            }
 
             return client.ToDTO();
         }

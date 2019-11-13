@@ -1,0 +1,53 @@
+﻿@model IEnumerable<EmailViewModel>
+
+@{
+    ViewData["Title"] = "AllApplications";
+}
+
+
+<link rel="stylesheet" href="~/css/application.css">
+
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5 amber-text">
+            <h1 class="font-weight-light">List of all emails</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <partial name="_ListEmailsHeadPartial" model="Model" />
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.EmailStatusName)
+                        </th>
+                        <th>
+                            Clamps
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var email in Model)
+                    {
+                        <tr>
+                            <partial name="_ListEmailsBodyPartial" model="email" />
+
+                            <td>
+                                @email.EmailStatusName
+                            </td>
+                            <td style="text-align:center; padding: 2%;">
+                                @if (!email.Attachments.Any())
+                                {
+                                    <i class="fas fa-envelope-open-text fa-2x"></i>
+                                }
+                            </td>
+                            <td>
+                                <a class="btn btn-secondary" asp-controller="Email" asp-action="Application" asp-route-id="@email.Id">Preview email</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

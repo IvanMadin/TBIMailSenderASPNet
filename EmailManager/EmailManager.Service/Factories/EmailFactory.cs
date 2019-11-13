@@ -8,7 +8,7 @@ namespace EmailManager.Service.Factories
 {
     public class EmailFactory : IEmailFactory
     {
-        public ClientEmail CreateEmail(string originalMailId,string senderName, string senderEmail, string dateReceived, string subject, string body)
+        public ClientEmail CreateEmail(string originalMailId,string senderName, string senderEmail, DateTime dateReceived, string subject, string body)
         {
             var newEmail = new ClientEmail
             {

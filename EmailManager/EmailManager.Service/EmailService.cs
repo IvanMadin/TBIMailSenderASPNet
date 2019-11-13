@@ -6,13 +6,10 @@ using EmailManager.Service.DTOs;
 using EmailManager.Service.Mappers;
 using EmailManager.Service.Providers;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Serilog;
 using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EmailManager.Service
@@ -30,11 +27,9 @@ namespace EmailManager.Service
             this.encryptingHelper = encryptingHelper;
         }
 
-        public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body)
+        public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, DateTime dateReceived, string subject, string body)
         {
-            var currentCultureDateFormat = this.ParseExactDateAsync(dateReceived);
-
-            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, currentCultureDateFormat, subject, body);
+            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, dateReceived, subject, body);
 
             if (newEmail == null)
             {
@@ -45,14 +40,14 @@ namespace EmailManager.Service
             this.context.Emails.Add(newEmail);
 
             await this.context.SaveChangesAsync();
-            Log.Information("Email with Original Mail ID: {0} was created",newEmail.Id);
+            Log.Information("Email with Original Mail ID: {0} was created", newEmail.Id);
 
             return newEmail.ToDTO();
         }
 
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
-            var email = await this.context.Emails.Include(e=> e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e=> e.Id == emailId);
+            var email = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e => e.Id == emailId);
             // Log.Information("Email with ID: {0} was found", email.Id);
 
             var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
@@ -60,20 +55,10 @@ namespace EmailManager.Service
             emailDTO.Body = decryptedBody;
             return emailDTO;
         }
-        public async Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId)
-        {
-            var email = await this.context.Emails.FirstOrDefaultAsync(e => e.OriginalMailId == originalMailId);
-            
-            email.Body = this.encryptingHelper.DecryptingBase64Data(email.Body);
-
-            Log.Information("Email with ID: {0} was successfully taken", email.Id);
-
-            return email;
-        }
 
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
-            var allEmails = await this.context.Emails.Include(e=>e.Status).Include(a=>a.EmailAttachments).ToListAsync();
+            var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).OrderByDescending(e => e.DateReceived).ToListAsync();
             Log.Information("Аll emails successfully received");
 
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
@@ -82,36 +67,57 @@ namespace EmailManager.Service
 
             return mappedEmails;
         }
+
+        public async Task<ICollection<EmailDTO>> GetAllNewApplicationEmails()
+        {
+            //TODO:
+            return null;
+        }
+        public async Task<ICollection<EmailDTO>> GetAllOpenedApplicationEmails()
+        {
+            return null;
+        }
+
+        public async Task<ICollection<EmailDTO>> GetAllClosedApplicationEmails()
+        {
+            return null;
+        }
+
+        public async Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, StatusEmailDTO newEmailStatus, string userId)
+        {
+            var email = await this.context.Emails.FindAsync(emailDTO.Id);
+            var oldEmailStatus = email.Status.StatusType;
+            if (email is null)
+            {
+                throw new Exception("Email is not found");
+            }
+
+            email.StatusEmailId = newEmailStatus.Id;
+            email.ModifiedOnDate = DateTime.Now;
+            email.ModifiedByUserId = userId;
+
+            if (newEmailStatus.StatusType == "Open Application")
+            {
+                email.UserId = userId;
+            }
+
+            Log.Logger.Information($"[{email.ModifiedOnDate}] - Email Status of Id: [{email.Id}] has been changed from [{oldEmailStatus}] to [{newEmailStatus.StatusType}] by userId: [{userId}]");
+            await this.context.SaveChangesAsync();
+
+            return email.ToDTO();
+        }
+
+        /// <summary>
+        /// Helper Method for quick checks
+        /// </summary>
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
 
-            if(doesEmailExist)
-            Log.Information("Email with ID: {0} exists", originalMailId);
+            if (doesEmailExist)
+                Log.Information("Email with ID: {0} exists", originalMailId);
 
             return doesEmailExist;
         }
-
-        //public async Task<EmailDTO> ChangeEmailStatusAsync(string emailId)
-        //{
-        //    var email = await this.GetEmailByIdAsync(emailId);
-        //}
-        private string ParseExactDateAsync(string dateReceived)
-        {
-            //TODO: Have to find another way. To ignore the exact formatting.
-            var format = "";
-            if (dateReceived.Contains("GMT"))
-            {
-                format = "ddd, d MMM yyyy HH:mm:ss K (GMT)";
-            }
-            else
-            {
-                format = "ddd, d MMM yyyy HH:mm:ss K";
-            }
-            var date = DateTime.ParseExact(dateReceived, format, CultureInfo.InvariantCulture);
-
-            return date.ToString("d/MM/yyyy H:mm:ss");
-        }
-
     }
 }

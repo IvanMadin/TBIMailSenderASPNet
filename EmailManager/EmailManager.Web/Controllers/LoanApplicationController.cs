@@ -20,27 +20,21 @@ namespace EmailManager.Web.Controllers
     public class LoanApplicationController : Controller
     {
         private readonly UserManager<User> userManager;
-        private readonly GmailConfigure gmailConfigure;
         private readonly IEmailService emailService;
         private readonly ILoanApplicationService loanApplicationService;
         private readonly IClientService clientService;
-        private readonly IApplicationStatusService applicationStatusService;
         private readonly IClientDataFactory clientDataDTOFactory;
 
-        public LoanApplicationController(UserManager<User> userManager, 
-                                         GmailConfigure gmailConfigure, 
-                                         IEmailService emailService, 
-                                         ILoanApplicationService loanApplicationService, 
+        public LoanApplicationController(UserManager<User> userManager,
+                                         IEmailService emailService,
+                                         ILoanApplicationService loanApplicationService,
                                          IClientService clientService,
-                                         IApplicationStatusService applicationStatusService,
                                          IClientDataFactory clientDataDTOFactory)
         {
             this.userManager = userManager;
-            this.gmailConfigure = gmailConfigure;
             this.emailService = emailService;
             this.loanApplicationService = loanApplicationService;
             this.clientService = clientService;
-            this.applicationStatusService = applicationStatusService;
             this.clientDataDTOFactory = clientDataDTOFactory;
         }
 
@@ -59,7 +53,6 @@ namespace EmailManager.Web.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ApplicationForm(LoanApplicationViewModel loanModel)
         {
             var operatorId = userManager.GetUserId(User);
@@ -73,9 +66,12 @@ namespace EmailManager.Web.Controllers
                 Log.Information("Client with EGN: {0} was created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
             }
 
-            await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, operatorId, loanModel.Amount);
+            await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
 
             Log.Information("Loan application for client with EGN: {0} is created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
+
+            //TODO: Have to change status of Email to Closed no matter what operation I take.
+
             return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
         }
 
@@ -83,24 +79,16 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> ApplicationStatus(string applicationId, string applicationStatusId)
         {
             var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
-            var applicationStatus = await this.applicationStatusService.GetApplicationStatusByIdAsync(applicationStatusId);
-
+            //TODO: ApplicationStatus have to changed.
             return View();
         }
 
         public async Task<IActionResult> UpdateStatusApplication(string loanApplicationId, string status)
         {
             var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
-            await this.applicationStatusService.UpdateApplicationStatusAsync(loanApplication, status);
+            //TODO: ApplicationStatus have to changed.
 
             return View(loanApplication);
-        }
-
-        public async Task<IActionResult> AllApplicationStatus()
-        {
-            var list = (await this.applicationStatusService.AllApplicationStatusAsync()).ToVM();
-
-            return View(list);
         }
     }
 }

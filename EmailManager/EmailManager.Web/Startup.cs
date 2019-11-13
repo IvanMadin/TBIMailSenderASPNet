@@ -30,12 +30,12 @@ namespace EmailManager.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<CookiePolicyOptions>(options =>
-            {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-                options.CheckConsentNeeded = context => true;
-                options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
-            });
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
+            //});
 
             services.AddDbContext<EmailManagerDbContext>(options =>
                 options.UseSqlServer(
@@ -52,13 +52,6 @@ namespace EmailManager.Web
                 .AddRoles<IdentityRole>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
-
-
-            services.AddScoped<IEmailService, EmailService>();
-            services.AddScoped<IClientService, ClientService>();
-            services.AddTransient<IEmailStatusService, EmailStatusService>();
-            services.AddScoped<IApplicationStatusService, ApplicationStatusService>();
-            services.AddScoped<ILoanApplicationService, LoanApplicationService>();
 
             services.Registrations();
 

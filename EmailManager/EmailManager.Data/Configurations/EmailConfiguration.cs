@@ -12,7 +12,7 @@ namespace EmailManager.Data.Configurations
 
             builder.HasOne(e => e.User)
                 .WithMany(u => u.Emails)
-                .HasForeignKey(u => u.UserId);
+                .HasForeignKey(u => u.UserId).IsRequired(false);
 
             builder.HasOne(e => e.LoanApplication)
                 .WithOne(la => la.Email)

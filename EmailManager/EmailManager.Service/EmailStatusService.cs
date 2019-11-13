@@ -21,16 +21,17 @@ namespace EmailManager.Service
             this.context = context;
         }
 
-
-        // maybe is not necessary
-        public async Task<StatusEmailDTO> CreateStatusEmailAsync(string statusEmail)
+        public async Task<StatusEmailDTO> GetEmailStatusByName(string emailStatusName)
         {
-            var status = new StatusEmail() { StatusType = statusEmail };
+            var emailStatus = await this.context.StatusEmails.FirstOrDefaultAsync(se => se.StatusType.ToLower() == emailStatusName.ToLower());
 
-            await this.context.SaveChangesAsync();
-            return status.ToDTO();
+            if(emailStatus is null)
+            {
+                throw new ArgumentNullException("EmailStatus with that name does not exist!");
+            }
+
+            return emailStatus.ToDTO();
         }
-
         public async Task<StatusEmailDTO> GetEmailStatusByIdAsync(string emailStatusId)
         {
             var emailStatus = await this.context.StatusEmails.FindAsync(emailStatusId);
@@ -61,7 +62,7 @@ namespace EmailManager.Service
             return status.ToDTO();
         }
 
-        public async Task<StatusEmailDTO> UpdateEmailStatusAsync(EmailDTO emailDTO, string newStatusEmail)
+        public async Task<StatusEmailDTO> UpdateToInvalid(EmailDTO emailDTO, string newStatusEmail)
         {
             var statusEmail = await this.context.StatusEmails.FirstOrDefaultAsync(x => x.StatusType == newStatusEmail);
 

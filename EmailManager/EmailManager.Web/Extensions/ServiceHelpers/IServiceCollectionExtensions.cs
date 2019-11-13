@@ -1,5 +1,6 @@
 ﻿using EmailManager.GmailConfig;
 using EmailManager.Service;
+using EmailManager.Service.Contracts;
 using EmailManager.Service.Contracts.Factories;
 using EmailManager.Service.Factories;
 using EmailManager.Service.Providers;
@@ -17,11 +18,13 @@ namespace EmailManager.Web.Extensions.ServiceHelpers
         {
             services.AddScoped<GmailConfigure>();
             services.AddScoped<IEmailFactory, EmailFactory>();
-            services.AddScoped<EmailService>();
-            services.AddScoped<LoanApplicationService>();
             services.AddScoped<ClientService>();
             services.AddScoped<EncryptingHelper>();
-            services.AddScoped<ClientDataDTOFactory>();
+            services.AddTransient<IEmailService, EmailService>();
+            services.AddScoped<IClientService, ClientService>();
+            services.AddTransient<IEmailStatusService, EmailStatusService>();
+            services.AddScoped<ILoanApplicationService, LoanApplicationService>();
+            services.AddTransient<IClientDataFactory, ClientDataFactory>();
         }
     }
 }

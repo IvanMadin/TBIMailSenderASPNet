@@ -17,9 +17,14 @@
 
                 </h2>
                 <h6>
-                    <a class="btn btn-outline-success" asp-area="" asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">New Application</a>
-                    <a class="btn btn-outline-success" asp-area="" asp-controller="Email" asp-action="UpdateStatusEmail" asp-route-emailId="@Model.Id" asp-route-status="Invalid Application">Invalid Email</a>
-                    <input type="button" class="btn btn-outline-success" id="show-or-hide-button-form" value="Show Form">
+                    @if (User.IsInRole("Operator"))
+                    {
+                        <partial name="_ApplicationOperatorButtons" model="@Model" />
+                    }
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <partial name="_ApplicationOperatorButtons" model="@Model" />
+                    }
                 </h6>
                 <br />
                 <div>
@@ -43,15 +48,24 @@
                             @Model.DateReceived
                         </dd>
                         <dt class="col-sm-4">
+                            @nameof(Model.EmailStatusName)
+                        </dt>
+                        <dd class="col-sm-8">
+                            @Model.EmailStatusName
+                        </dd>
+                        <dt class="col-sm-4">
                             @nameof(Model.Body)
                         </dt>
                         <dd class="col-sm-8">
-                            <input type="button" class="open-close-email btn btn-warning" value="Preview body">
-                            <div class="email-description">
-                                @await Component.InvokeAsync("BodyModal", Model.Id)
-                            </div>
-
+                            @Html.Raw(Model.Body)
                         </dd>
+                        @*<dd class="col-sm-8">
+                                <input type="button" class="open-close-email btn btn-warning" value="Preview body">
+                                <div class="email-description">
+                                    @await Component.InvokeAsync("BodyModal", Model.Id)
+                                </div>
+
+                            </dd>*@
                         @*<dd class="col-sm-8">
                                 <div><a asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">Mark as Invalid Email</a></div>
 

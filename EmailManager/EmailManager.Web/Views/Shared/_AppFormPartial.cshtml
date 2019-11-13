@@ -34,7 +34,8 @@
                         <input asp-for="Amount" class="form-control" />
                         <span asp-validation-for="Amount" class="text-danger"></span>
                     </div>
-                    <button type="submit" class="btn button-color">Confirm</button>
+                    <input type="submit" class="btn btn-success" asp-for="Status" value="Approved">
+                    <input type="submit" class="btn btn-danger" style="margin-left:10px;" asp-for="Status" value="Rejected">
                 </form>
             </div>
         </div>

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmailManager.Data.Migrations
 {
     [DbContext(typeof(EmailManagerDbContext))]
-    [Migration("20191109171029_initial")]
-    partial class initial
+    [Migration("20191113224926_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,8 +61,11 @@ namespace EmailManager.Data.Migrations
 
                     b.Property<string>("Body");
 
-                    b.Property<string>("DateReceived")
-                        .IsRequired();
+                    b.Property<DateTime>("DateReceived");
+
+                    b.Property<string>("ModifiedByUserId");
+
+                    b.Property<DateTime?>("ModifiedOnDate");
 
                     b.Property<string>("OriginalMailId")
                         .IsRequired();
@@ -120,6 +123,9 @@ namespace EmailManager.Data.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("numeric(15,2)");
 
+                    b.Property<string>("ApplicationStatus")
+                        .IsRequired();
+
                     b.Property<string>("ClientDataId");
 
                     b.Property<string>("CreatedByUserId");
@@ -130,13 +136,12 @@ namespace EmailManager.Data.Migrations
 
                     b.Property<DateTime?>("DeletedOnDate");
 
-                    b.Property<string>("EmailId");
+                    b.Property<string>("EmailId")
+                        .IsRequired();
 
                     b.Property<string>("ModifiedByUserId");
 
                     b.Property<DateTime?>("ModifiedOnDate");
-
-                    b.Property<string>("StatusApplicationId");
 
                     b.Property<string>("UserId");
 
@@ -145,44 +150,11 @@ namespace EmailManager.Data.Migrations
                     b.HasIndex("ClientDataId");
 
                     b.HasIndex("EmailId")
-                        .IsUnique()
-                        .HasFilter("[EmailId] IS NOT NULL");
-
-                    b.HasIndex("StatusApplicationId");
+                        .IsUnique();
 
                     b.HasIndex("UserId");
 
                     b.ToTable("LoanApplications");
-                });
-
-            modelBuilder.Entity("EmailManager.Data.Entities.StatusApplication", b =>
-                {
-                    b.Property<string>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("StatusType")
-                        .IsRequired();
-
-                    b.HasKey("Id");
-
-                    b.ToTable("StatusApplications");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "61cb6584-591b-4560-bc4a-a89950b15cc3",
-                            StatusType = "New"
-                        },
-                        new
-                        {
-                            Id = "645ad030-3b7f-47fb-93e1-1c9315b34673",
-                            StatusType = "Open"
-                        },
-                        new
-                        {
-                            Id = "6c60cb0a-5395-49b1-abfd-40a4db7a355a",
-                            StatusType = "Closed"
-                        });
                 });
 
             modelBuilder.Entity("EmailManager.Data.Entities.StatusEmail", b =>
@@ -207,6 +179,21 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "165e4e23-7fed-4bd6-a859-530026625ffc",
                             StatusType = "Invalid Application"
+                        },
+                        new
+                        {
+                            Id = "45d30b68-d0c1-499b-9ed0-c7385d4119b8",
+                            StatusType = "New Application"
+                        },
+                        new
+                        {
+                            Id = "645ad030-3b7f-47fb-93e1-1c9315b34673",
+                            StatusType = "Open Application"
+                        },
+                        new
+                        {
+                            Id = "6c60cb0a-5395-49b1-abfd-40a4db7a355a",
+                            StatusType = "Closed Application"
                         });
                 });
 
@@ -216,6 +203,8 @@ namespace EmailManager.Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("AccessFailedCount");
+
+                    b.Property<bool>("ChangedPassword");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
@@ -232,10 +221,6 @@ namespace EmailManager.Data.Migrations
                     b.Property<bool>("LockoutEnabled");
 
                     b.Property<DateTimeOffset?>("LockoutEnd");
-
-                    b.Property<string>("ModifiedByUserId");
-
-                    b.Property<DateTime?>("ModifiedOnDate");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256);
@@ -273,13 +258,14 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8bb442b2-2188-4142-b10b-c18bd4708e87",
+                            ChangedPassword = true,
+                            ConcurrencyStamp = "d98b93de-ad5c-42f9-b49b-9bd6721ad86f",
                             Email = "krisi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "KRISI@GMAIL.COM",
                             NormalizedUserName = "KRISI",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIng+cJ4JdYvjXr61oThNj+d5nPCJlTfFKSO3ohXuZgk4jwBvvOxrtyhyucbcBedBQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFvX5yitf/Stim9hAq2k1WbEGEV/Z6cfDY9kzWi46XdMNEvBBnpMM7b+d3Mj8/ycHA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
                             TwoFactorEnabled = false,
@@ -289,13 +275,14 @@ namespace EmailManager.Data.Migrations
                         {
                             Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7819eceb-24b4-4dc2-991c-a9fa481ffc73",
+                            ChangedPassword = true,
+                            ConcurrencyStamp = "8bc0e618-558a-4702-855b-729d96b8edd4",
                             Email = "madinftw@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "MADINFTW@GMAIL.COM",
                             NormalizedUserName = "MADINFTW",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJxGrODc0iyAjsUKSH85goXTSgkrHzLrlquitLet0QkFQ1o2t9q5G2H4WIxQE9y8Fg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHjV2SLjPDPn7bG8dEi4xTCThDTF1SF0x/NQUGIPiCKFU4IU068+xUXMYB9oN1syZA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
                             TwoFactorEnabled = false,
@@ -330,14 +317,14 @@ namespace EmailManager.Data.Migrations
                         new
                         {
                             Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
-                            ConcurrencyStamp = "7d0c3170-ddd2-48ed-a519-68dc1b707465",
+                            ConcurrencyStamp = "fcae7c83-e3ba-4c97-9e99-1bc303cf046c",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
                             Id = "93c66dd9-11c5-4836-b104-a9c333549530",
-                            ConcurrencyStamp = "b32313d2-0a2f-4f46-8afe-c9e02f72cc67",
+                            ConcurrencyStamp = "05889dd6-c11d-4e0f-a162-b23a6be7c242",
                             Name = "Operator",
                             NormalizedName = "OPERATOR"
                         });
@@ -471,11 +458,8 @@ namespace EmailManager.Data.Migrations
 
                     b.HasOne("EmailManager.Data.Entities.ClientEmail", "Email")
                         .WithOne("LoanApplication")
-                        .HasForeignKey("EmailManager.Data.Entities.LoanApplication", "EmailId");
-
-                    b.HasOne("EmailManager.Data.Entities.StatusApplication", "StatusApplication")
-                        .WithMany("LoanApplications")
-                        .HasForeignKey("StatusApplicationId");
+                        .HasForeignKey("EmailManager.Data.Entities.LoanApplication", "EmailId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EmailManager.Data.Entities.User", "User")
                         .WithMany("LoanApplications")

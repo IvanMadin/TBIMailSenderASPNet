@@ -1,0 +1,353 @@
+2019-11-14 00:00:00.042 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T22:00:00.0395017Z"!
+2019-11-14 00:09:25.402 +02:00 [INF] Starting web host
+2019-11-14 00:09:27.311 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 00:09:28.153 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:09:30.747 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T22:09:30.7438796Z"!
+2019-11-14 00:14:06.578 +02:00 [INF] Starting web host
+2019-11-14 00:14:08.706 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 00:14:09.548 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:14:24.003 +02:00 [INF] All emails are updated on "2019-11-13T22:14:24.0011689Z"!
+2019-11-14 00:14:25.322 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-14 00:14:25.538 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-14 00:14:25.730 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-14 00:14:25.900 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-14 00:14:26.076 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-14 00:14:26.313 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-14 00:14:26.806 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-14 00:14:26.984 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-14 00:14:27.170 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-14 00:14:27.343 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-14 00:14:27.577 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-14 00:14:27.843 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-14 00:14:27.873 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:14:27.873 +02:00 [INF] All applications are loaded on "2019-11-13T22:14:27.8732347Z"!
+2019-11-14 00:16:01.659 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T22:16:01.6590405Z"!
+2019-11-14 00:16:16.233 +02:00 [ERR] The view 'SetToNew' was not found. Searched locations: ["/Views/Email/SetToNew.cshtml","/Views/Shared/SetToNew.cshtml","/Pages/Shared/SetToNew.cshtml"]
+2019-11-14 00:16:16.242 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'SetToNew' was not found. The following locations were searched:
+/Views/Email/SetToNew.cshtml
+/Views/Shared/SetToNew.cshtml
+/Pages/Shared/SetToNew.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-14 00:16:25.321 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:16:28.610 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:16:28.610 +02:00 [INF] All applications are loaded on "2019-11-13T22:16:28.6105509Z"!
+2019-11-14 00:16:29.643 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T22:16:29.6439744Z"!
+2019-11-14 00:38:24.783 +02:00 [INF] Starting web host
+2019-11-14 00:38:26.743 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 00:38:27.672 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:38:37.722 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T22:38:37.7190857Z"!
+2019-11-14 00:45:34.193 +02:00 [INF] Starting web host
+2019-11-14 00:45:35.712 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 00:45:36.500 +02:00 [ERR] Failed executing DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Body], [e].[DateReceived], [e].[ModifiedByUserId], [e].[ModifiedOnDate], [e].[OriginalMailId], [e].[SenderEmail], [e].[SenderName], [e].[StatusEmailId], [e].[Subject], [e].[UserId], [e.Status].[Id], [e.Status].[StatusType]
+FROM [Emails] AS [e]
+LEFT JOIN [StatusEmails] AS [e.Status] ON [e].[StatusEmailId] = [e.Status].[Id]
+ORDER BY [e].[DateReceived] DESC, [e].[Id]
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ModifiedByUserId'.
+Invalid column name 'ModifiedOnDate'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:13f0c172-76dd-4b40-96f4-88f08bfa75f2
+Error Number:207,State:1,Class:16
+2019-11-14 00:45:36.582 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ModifiedByUserId'.
+Invalid column name 'ModifiedOnDate'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:13f0c172-76dd-4b40-96f4-88f08bfa75f2
+Error Number:207,State:1,Class:16
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ModifiedByUserId'.
+Invalid column name 'ModifiedOnDate'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:13f0c172-76dd-4b40-96f4-88f08bfa75f2
+Error Number:207,State:1,Class:16
+2019-11-14 00:58:17.465 +02:00 [INF] Starting web host
+2019-11-14 00:58:17.956 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 00:58:18.567 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:58:37.908 +02:00 [INF] All emails are updated on "2019-11-13T22:58:37.9059894Z"!
+2019-11-14 00:58:39.066 +02:00 [INF] Email with Original Mail ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was created
+2019-11-14 00:58:39.245 +02:00 [INF] Email with Original Mail ID: db55def5-ca56-457d-8516-ceb2d7c610ad was created
+2019-11-14 00:58:39.449 +02:00 [INF] Email with Original Mail ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was created
+2019-11-14 00:58:39.618 +02:00 [INF] Email with Original Mail ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was created
+2019-11-14 00:58:39.799 +02:00 [INF] Email with Original Mail ID: 89c60ca1-e526-4768-96f8-e336b08850b2 was created
+2019-11-14 00:58:39.985 +02:00 [INF] Email with Original Mail ID: 4eebac53-14e0-4672-9263-40ab963154f9 was created
+2019-11-14 00:58:40.165 +02:00 [INF] Email with Original Mail ID: eabe5b77-a50e-469b-a04d-9aba6e99ec55 was created
+2019-11-14 00:58:40.340 +02:00 [INF] Email with Original Mail ID: 17df330f-236d-4517-9dd9-d3ee2950640f was created
+2019-11-14 00:58:40.508 +02:00 [INF] Email with Original Mail ID: 0e84b690-c122-42e8-88b5-daec55af5ff3 was created
+2019-11-14 00:58:40.684 +02:00 [INF] Email with Original Mail ID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc was created
+2019-11-14 00:58:40.867 +02:00 [INF] Email with Original Mail ID: 54a42d12-865a-4f83-98b3-6a957ba25b93 was created
+2019-11-14 00:58:41.065 +02:00 [INF] Email with Original Mail ID: 10469c3a-f87b-4a7b-88fc-48f9855a8006 was created
+2019-11-14 00:58:41.114 +02:00 [INF] Аll emails successfully received
+2019-11-14 00:58:41.115 +02:00 [INF] All applications are loaded on "2019-11-13T22:58:41.1151678Z"!
+2019-11-14 00:59:04.168 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T22:59:04.1681127Z"!
+2019-11-14 01:08:35.484 +02:00 [INF] Starting web host
+2019-11-14 01:08:36.998 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:08:38.292 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:09:42.880 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:09:42.8776182Z"!
+2019-11-14 01:09:45.756 +02:00 [ERR] The view 'SetToNew' was not found. Searched locations: ["/Views/Email/SetToNew.cshtml","/Views/Shared/SetToNew.cshtml","/Pages/Shared/SetToNew.cshtml"]
+2019-11-14 01:09:45.766 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'SetToNew' was not found. The following locations were searched:
+/Views/Email/SetToNew.cshtml
+/Views/Shared/SetToNew.cshtml
+/Pages/Shared/SetToNew.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-14 01:09:49.820 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:09:51.066 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:09:51.0666659Z"!
+2019-11-14 01:11:45.485 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:11:46.622 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:11:47.423 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:11:47.430 +02:00 [INF] All applications are loaded on "2019-11-13T23:11:47.4237081Z"!
+2019-11-14 01:11:55.975 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:11:57.627 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:11:57.627 +02:00 [INF] All applications are loaded on "2019-11-13T23:11:57.6276796Z"!
+2019-11-14 01:23:26.570 +02:00 [INF] Starting web host
+2019-11-14 01:23:27.319 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:23:28.090 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:23:31.733 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:23:31.7316869Z"!
+2019-11-14 01:25:20.232 +02:00 [INF] Starting web host
+2019-11-14 01:25:21.683 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:25:22.805 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:25:24.569 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:25:24.5663237Z"!
+2019-11-14 01:25:28.436 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:27:29.596 +02:00 [INF] Starting web host
+2019-11-14 01:27:30.079 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:27:30.649 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:27:32.290 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:27:32.2878617Z"!
+2019-11-14 01:27:33.987 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:27:47.383 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:27:47.383 +02:00 [INF] All applications are loaded on "2019-11-13T23:27:47.3833541Z"!
+2019-11-14 01:27:55.252 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:27:55.2524784Z"!
+2019-11-14 01:32:41.109 +02:00 [INF] Starting web host
+2019-11-14 01:32:43.055 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:32:44.037 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:34:59.993 +02:00 [INF] Starting web host
+2019-11-14 01:35:01.778 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:35:02.615 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:35:19.514 +02:00 [INF] Starting web host
+2019-11-14 01:35:21.052 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:35:21.909 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:35:28.706 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:35:28.709 +02:00 [INF] All applications are loaded on "2019-11-13T23:35:28.7065821Z"!
+2019-11-14 01:35:30.379 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:35:30.3784075Z"!
+2019-11-14 01:36:07.564 +02:00 [INF] [14.11.2019 г. 1:36:06] - Email Status of Id: [45ee0e5e-a1bb-44f4-a9af-7c731835a4bf] has been changed from New Application to Open Application by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-14 01:36:14.986 +02:00 [ERR] Failed executing DbCommand (35ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 450), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (45ee0e5e-a1bb-44f4-a9af-7c731835a4bf).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:f6d47f9a-37bf-45b2-944d-52debd1328ea
+Error Number:2601,State:1,Class:14
+2019-11-14 01:36:15.019 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (45ee0e5e-a1bb-44f4-a9af-7c731835a4bf).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (45ee0e5e-a1bb-44f4-a9af-7c731835a4bf).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-14 01:47:34.362 +02:00 [INF] Starting web host
+2019-11-14 01:47:36.306 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:47:37.455 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:47:56.427 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:47:56.429 +02:00 [INF] All applications are loaded on "2019-11-13T23:47:56.4272450Z"!
+2019-11-14 01:47:58.054 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:47:58.0541234Z"!
+2019-11-14 01:48:25.146 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EmailManager.Service.ClientService.FindClientAsync(String firstName, String lastName, String egn) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Service\ClientService.cs:line 56
+   at EmailManager.Web.Controllers.LoanApplicationController.ApplicationForm(LoanApplicationViewModel loanModel) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Controllers\LoanApplicationController.cs:line 60
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-14 01:50:20.408 +02:00 [INF] Starting web host
+2019-11-14 01:50:22.316 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:50:23.271 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:50:28.928 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:50:28.9266244Z"!
+2019-11-14 01:51:18.174 +02:00 [INF] Client data with EGN: 123123 was successfully added
+2019-11-14 01:51:19.822 +02:00 [INF] Client data with EGN: 123123 was created by operator with ID: 565dfbc0-2681-4f29-bc97-a619eacf339c on "2019-11-14T01:51:19.8110044+02:00"
+2019-11-14 01:51:23.589 +02:00 [INF] Client with EGN: 123123 was created by operator with ID: 565dfbc0-2681-4f29-bc97-a619eacf339c on "2019-11-13T23:51:23.5782842Z"!
+2019-11-14 01:51:41.876 +02:00 [ERR] Failed executing DbCommand (43ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 450), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = DateTime2), @p8='?' (Size = 450), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_LoanApplications'. Cannot insert duplicate key in object 'dbo.LoanApplications'. The duplicate key value is (19a0d713-82e3-4bb0-b276-60433728d00c).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:b99b2a6f-95fd-4ecf-80c8-c0f5cc67de05
+Error Number:2627,State:1,Class:14
+2019-11-14 01:51:41.919 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK_LoanApplications'. Cannot insert duplicate key in object 'dbo.LoanApplications'. The duplicate key value is (19a0d713-82e3-4bb0-b276-60433728d00c).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of PRIMARY KEY constraint 'PK_LoanApplications'. Cannot insert duplicate key in object 'dbo.LoanApplications'. The duplicate key value is (19a0d713-82e3-4bb0-b276-60433728d00c).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-14 01:54:32.266 +02:00 [INF] Starting web host
+2019-11-14 01:54:34.097 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:54:35.048 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:54:36.767 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:54:36.7632371Z"!
+2019-11-14 01:54:48.245 +02:00 [INF] Client data with EGN: 123123 was found
+2019-11-14 01:54:48.367 +02:00 [INF] Loan application with ID: 19a0d713-82e3-4bb0-b276-60433728d00c was successfully created
+2019-11-14 01:54:48.369 +02:00 [INF] Loan application for client with EGN: 123123 is created by operator with ID: 565dfbc0-2681-4f29-bc97-a619eacf339c on "2019-11-13T23:54:48.3685325Z"!
+2019-11-14 01:54:48.384 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:54:48.3846408Z"!
+2019-11-14 01:54:53.092 +02:00 [INF] Аll emails successfully received
+2019-11-14 01:54:54.490 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-13T23:54:54.4904276Z"!
+2019-11-14 01:55:51.614 +02:00 [INF] Starting web host
+2019-11-14 01:55:52.374 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-14 01:55:52.998 +02:00 [INF] Аll emails successfully received

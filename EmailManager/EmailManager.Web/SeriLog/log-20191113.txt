@@ -1,0 +1,992 @@
+2019-11-13 00:42:42.866 +02:00 [INF] Starting web host
+2019-11-13 00:42:46.547 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 00:43:08.278 +02:00 [INF] User logged in.
+2019-11-13 00:43:08.588 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:43:15.044 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-12T22:43:15.0384623Z"!
+2019-11-13 00:44:29.477 +02:00 [INF] Starting web host
+2019-11-13 00:44:30.776 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 00:44:32.321 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-12T22:44:32.3159887Z"!
+2019-11-13 00:44:39.251 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:44:41.707 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:44:41.708 +02:00 [INF] All applications are loaded on "2019-11-12T22:44:41.7074566Z"!
+2019-11-13 00:45:37.019 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:45:37.020 +02:00 [INF] All applications are loaded on "2019-11-12T22:45:37.0200597Z"!
+2019-11-13 00:45:43.518 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:02.576 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:23.150 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:25.250 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:27.124 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:28.679 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:28.679 +02:00 [INF] All applications are loaded on "2019-11-12T22:46:28.6797469Z"!
+2019-11-13 00:46:45.042 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-12T22:46:45.0426336Z"!
+2019-11-13 00:46:54.843 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:46:54.843 +02:00 [INF] All applications are loaded on "2019-11-12T22:46:54.8433065Z"!
+2019-11-13 00:47:21.390 +02:00 [INF] Application for email with ID: 1e410ff1-4b8e-4bcf-bcbe-807b3a8e123f was loaded on "2019-11-12T22:47:21.3902923Z"!
+2019-11-13 00:47:44.145 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:47:44.145 +02:00 [INF] All applications are loaded on "2019-11-12T22:47:44.1453340Z"!
+2019-11-13 00:47:46.624 +02:00 [INF] Application for email with ID: 30e58729-972a-4046-907b-5632da65cd94 was loaded on "2019-11-12T22:47:46.6244718Z"!
+2019-11-13 00:49:56.750 +02:00 [INF] Application for email with ID: 30e58729-972a-4046-907b-5632da65cd94 was loaded on "2019-11-12T22:49:56.7506276Z"!
+2019-11-13 00:51:40.882 +02:00 [INF] Starting web host
+2019-11-13 00:51:42.952 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 00:51:44.381 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:51:48.230 +02:00 [INF] All emails are updated on "2019-11-12T22:51:48.2222904Z"!
+2019-11-13 00:51:51.886 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 00:51:52.238 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 00:51:52.561 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 00:51:52.852 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 00:51:53.120 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 00:51:53.363 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 00:51:53.565 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 00:51:53.750 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 00:51:53.923 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 00:51:54.101 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 00:51:54.317 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 00:51:54.604 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 00:51:54.659 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:53:11.899 +02:00 [INF] Starting web host
+2019-11-13 00:53:13.755 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 00:53:14.891 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:53:19.494 +02:00 [INF] All emails are updated on "2019-11-12T22:53:19.4861416Z"!
+2019-11-13 00:53:21.290 +02:00 [INF] Email with Original Mail ID: e9bcc7dc-1a6b-4254-aaa4-1575a633927c was created
+2019-11-13 00:53:21.529 +02:00 [INF] Email with Original Mail ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was created
+2019-11-13 00:53:21.847 +02:00 [INF] Email with Original Mail ID: 594eb6e0-6e29-43f1-8c3d-92c8dc4ffa78 was created
+2019-11-13 00:53:22.153 +02:00 [INF] Email with Original Mail ID: ebb4c9c1-ea51-4960-8657-0bb12fe2427e was created
+2019-11-13 00:53:22.351 +02:00 [INF] Email with Original Mail ID: fa8fe56e-558a-4659-bca3-3c7ce37786c7 was created
+2019-11-13 00:53:22.580 +02:00 [INF] Email with Original Mail ID: 6d8fc946-7386-4d2e-9e30-a7dbd399378e was created
+2019-11-13 00:53:22.796 +02:00 [INF] Email with Original Mail ID: 213a6fb9-0ad9-4ce7-8510-0632e0e91711 was created
+2019-11-13 00:53:23.068 +02:00 [INF] Email with Original Mail ID: 14a4a3b5-0609-44f7-b87b-a5785c71d47c was created
+2019-11-13 00:53:23.272 +02:00 [INF] Email with Original Mail ID: 3c63e4f4-f2c8-4fb9-b9af-451c98d732a6 was created
+2019-11-13 00:53:23.479 +02:00 [INF] Email with Original Mail ID: ced8d403-0660-4b1a-b31e-feef52023b95 was created
+2019-11-13 00:53:23.679 +02:00 [INF] Email with Original Mail ID: a53e96c7-a8bf-4ad2-9986-8e545c0f1c14 was created
+2019-11-13 00:53:24.024 +02:00 [INF] Email with Original Mail ID: 9d22094a-5579-46d9-bf82-29178b8e3398 was created
+2019-11-13 00:53:24.166 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:53:43.645 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:53:43.646 +02:00 [INF] All applications are loaded on "2019-11-12T22:53:43.6461402Z"!
+2019-11-13 00:54:54.083 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T22:54:54.0815406Z"!
+2019-11-13 00:55:28.010 +02:00 [INF] Starting web host
+2019-11-13 00:55:30.011 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 00:55:31.480 +02:00 [INF] Аll emails successfully received
+2019-11-13 00:55:34.278 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T22:55:34.2712121Z"!
+2019-11-13 00:59:36.731 +02:00 [ERR] The view 'UpdateStatusEmail' was not found. Searched locations: ["/Views/Email/UpdateStatusEmail.cshtml","/Views/Shared/UpdateStatusEmail.cshtml","/Pages/Shared/UpdateStatusEmail.cshtml"]
+2019-11-13 00:59:36.744 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'UpdateStatusEmail' was not found. The following locations were searched:
+/Views/Email/UpdateStatusEmail.cshtml
+/Views/Shared/UpdateStatusEmail.cshtml
+/Pages/Shared/UpdateStatusEmail.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 01:01:22.105 +02:00 [INF] Starting web host
+2019-11-13 01:01:22.811 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 01:01:23.681 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:01:26.594 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T23:01:26.5919874Z"!
+2019-11-13 01:01:29.230 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:01:31.201 +02:00 [INF] Application for email with ID: 594eb6e0-6e29-43f1-8c3d-92c8dc4ffa78 was loaded on "2019-11-12T23:01:31.2018207Z"!
+2019-11-13 01:01:32.681 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No route matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.RedirectToActionResultExecutor.ExecuteAsync(ActionContext context, RedirectToActionResult result)
+   at Microsoft.AspNetCore.Mvc.RedirectToActionResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 01:02:04.129 +02:00 [INF] Starting web host
+2019-11-13 01:02:04.888 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 01:02:05.794 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:02:54.621 +02:00 [INF] Application for email with ID: 3c63e4f4-f2c8-4fb9-b9af-451c98d732a6 was loaded on "2019-11-12T23:02:54.6160385Z"!
+2019-11-13 01:02:56.786 +02:00 [INF] Application for email with ID: 3c63e4f4-f2c8-4fb9-b9af-451c98d732a6 was loaded on "2019-11-12T23:02:56.7869357Z"!
+2019-11-13 01:04:14.103 +02:00 [INF] Starting web host
+2019-11-13 01:04:14.753 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 01:04:32.343 +02:00 [INF] User logged in.
+2019-11-13 01:04:32.650 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:04:35.026 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T23:04:35.0205723Z"!
+2019-11-13 01:05:34.823 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T23:05:34.8231390Z"!
+2019-11-13 01:27:02.610 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T23:27:02.6105645Z"!
+2019-11-13 01:27:33.934 +02:00 [INF] Application for email with ID: 0da962df-7b06-44aa-aa91-bc5ee1bdbb2c was loaded on "2019-11-12T23:27:33.9345084Z"!
+2019-11-13 01:27:38.162 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:27:41.052 +02:00 [INF] Application for email with ID: 213a6fb9-0ad9-4ce7-8510-0632e0e91711 was loaded on "2019-11-12T23:27:41.0525500Z"!
+2019-11-13 01:27:43.478 +02:00 [INF] Application for email with ID: 213a6fb9-0ad9-4ce7-8510-0632e0e91711 was loaded on "2019-11-12T23:27:43.4789046Z"!
+2019-11-13 01:27:45.227 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:27:47.716 +02:00 [INF] Application for email with ID: 14a4a3b5-0609-44f7-b87b-a5785c71d47c was loaded on "2019-11-12T23:27:47.7163663Z"!
+2019-11-13 01:52:56.059 +02:00 [INF] Starting web host
+2019-11-13 01:52:57.070 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 01:53:04.369 +02:00 [INF] User logged in.
+2019-11-13 01:53:04.671 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:53:08.746 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:59:11.295 +02:00 [INF] Starting web host
+2019-11-13 01:59:11.751 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 01:59:18.001 +02:00 [INF] User logged in.
+2019-11-13 01:59:18.076 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:59:21.542 +02:00 [INF] All emails are updated on "2019-11-12T23:59:21.5403547Z"!
+2019-11-13 01:59:22.980 +02:00 [INF] Email with Original Mail ID: 260ed38f-7e99-4555-80c7-876e71486561 was created
+2019-11-13 01:59:23.223 +02:00 [INF] Email with Original Mail ID: 01e8d0eb-95d8-45d0-9442-d1724d63ba77 was created
+2019-11-13 01:59:23.442 +02:00 [INF] Email with Original Mail ID: db24ee5c-4017-4850-89ae-081b326b63ee was created
+2019-11-13 01:59:23.616 +02:00 [INF] Email with Original Mail ID: 6441a4cb-7091-4c84-9e82-3e1a23e161f1 was created
+2019-11-13 01:59:23.811 +02:00 [INF] Email with Original Mail ID: fa06d6ac-3a84-4dd6-94ad-7b17a4508e87 was created
+2019-11-13 01:59:24.017 +02:00 [INF] Email with Original Mail ID: 867c2a9d-486a-4576-b40b-5d5f6ba1fde0 was created
+2019-11-13 01:59:24.239 +02:00 [INF] Email with Original Mail ID: 3cf5507f-975d-4766-a0c0-dd95d3ac0ee7 was created
+2019-11-13 01:59:24.479 +02:00 [INF] Email with Original Mail ID: 4e686093-cffb-42f2-b9bc-ed48d68b2838 was created
+2019-11-13 01:59:24.654 +02:00 [INF] Email with Original Mail ID: 1f4a4877-833c-409c-bbf3-ea0d37662f10 was created
+2019-11-13 01:59:24.836 +02:00 [INF] Email with Original Mail ID: 1ec9703b-c045-43ed-90d6-789fd43d43d6 was created
+2019-11-13 01:59:25.031 +02:00 [INF] Email with Original Mail ID: a37f8737-37a0-42d8-ae3e-28b423a0b0c5 was created
+2019-11-13 01:59:25.594 +02:00 [INF] Email with Original Mail ID: 0b8d6125-6038-4961-9d67-6e9ab45d5278 was created
+2019-11-13 01:59:25.628 +02:00 [INF] Аll emails successfully received
+2019-11-13 01:59:29.521 +02:00 [INF] Application for email with ID: 01e8d0eb-95d8-45d0-9442-d1724d63ba77 was loaded on "2019-11-12T23:59:29.5207425Z"!
+2019-11-13 19:25:14.216 +02:00 [INF] Starting web host
+2019-11-13 19:25:15.913 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:26:31.801 +02:00 [INF] User logged in.
+2019-11-13 19:26:31.985 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:26:34.083 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:26:34.085 +02:00 [INF] All applications are loaded on "2019-11-13T17:26:34.0835470Z"!
+2019-11-13 19:26:36.848 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:27:34.528 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:27:47.966 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:27:49.222 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:29:34.098 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:33:33.077 +02:00 [INF] Starting web host
+2019-11-13 19:33:33.574 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:33:34.148 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:33:40.021 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:33:46.381 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:33:46.384 +02:00 [INF] All applications are loaded on "2019-11-13T17:33:46.3819318Z"!
+2019-11-13 19:35:43.200 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:35:43.200 +02:00 [INF] All applications are loaded on "2019-11-13T17:35:43.2004589Z"!
+2019-11-13 19:36:45.775 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:36:45.775 +02:00 [INF] All applications are loaded on "2019-11-13T17:36:45.7758110Z"!
+2019-11-13 19:36:57.041 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:36:57.041 +02:00 [INF] All applications are loaded on "2019-11-13T17:36:57.0417892Z"!
+2019-11-13 19:36:58.804 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:36:58.804 +02:00 [INF] All applications are loaded on "2019-11-13T17:36:58.8043634Z"!
+2019-11-13 19:37:03.372 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:37:06.432 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:37:57.627 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:02.329 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:04.139 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:04.139 +02:00 [INF] All applications are loaded on "2019-11-13T17:38:04.1394251Z"!
+2019-11-13 19:38:05.473 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:06.969 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:12.670 +02:00 [INF] Starting web host
+2019-11-13 19:38:13.164 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:38:13.755 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:17.406 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:18.486 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:19.086 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:19.639 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:20.608 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:21.063 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:38:21.649 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:39:08.957 +02:00 [INF] Starting web host
+2019-11-13 19:39:09.428 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:39:10.044 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:39:12.471 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:39:26.997 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:39:27.000 +02:00 [INF] All applications are loaded on "2019-11-13T17:39:26.9977728Z"!
+2019-11-13 19:39:28.574 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:39:55.170 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:42:37.101 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:42:39.259 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:42:40.887 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:42:40.888 +02:00 [INF] All applications are loaded on "2019-11-13T17:42:40.8880502Z"!
+2019-11-13 19:43:09.930 +02:00 [INF] Application for email with ID: 01e8d0eb-95d8-45d0-9442-d1724d63ba77 was loaded on "2019-11-13T17:43:09.9300637Z"!
+2019-11-13 19:43:21.242 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:43:21.242 +02:00 [INF] All applications are loaded on "2019-11-13T17:43:21.2428219Z"!
+2019-11-13 19:48:05.384 +02:00 [INF] Starting web host
+2019-11-13 19:48:05.832 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:48:06.398 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:48:12.051 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:48:12.054 +02:00 [INF] All applications are loaded on "2019-11-13T17:48:12.0520814Z"!
+2019-11-13 19:48:12.074 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Collections.Generic.List`1[EmailManager.Web.Models.EmailViewModel]', but this ViewDataDictionary instance requires a model item of type 'EmailManager.Web.Models.EmailViewModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_AllEmails.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\AllEmails.cshtml:line 18
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 19:48:48.147 +02:00 [INF] Starting web host
+2019-11-13 19:48:48.602 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:48:49.189 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:48:50.807 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:48:50.810 +02:00 [INF] All applications are loaded on "2019-11-13T17:48:50.8079204Z"!
+2019-11-13 19:50:28.780 +02:00 [INF] Starting web host
+2019-11-13 19:50:29.238 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:50:29.973 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:50:32.189 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:50:32.191 +02:00 [INF] All applications are loaded on "2019-11-13T17:50:32.1891750Z"!
+2019-11-13 19:51:06.910 +02:00 [INF] Starting web host
+2019-11-13 19:51:08.310 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:51:09.025 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:51:11.726 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:51:11.728 +02:00 [INF] All applications are loaded on "2019-11-13T17:51:11.7261498Z"!
+2019-11-13 19:52:27.243 +02:00 [INF] Starting web host
+2019-11-13 19:52:27.819 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 19:52:28.418 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:52:50.608 +02:00 [INF] Аll emails successfully received
+2019-11-13 19:52:50.610 +02:00 [INF] All applications are loaded on "2019-11-13T17:52:50.6082876Z"!
+2019-11-13 20:11:00.256 +02:00 [INF] Starting web host
+2019-11-13 20:11:02.031 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:11:03.146 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'EmailManager.Service.EmailService' while attempting to activate 'EmailManager.GmailConfig.GmailConfigure'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(Type serviceType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 20:11:32.565 +02:00 [INF] Starting web host
+2019-11-13 20:11:33.071 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:11:33.658 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:11:39.907 +02:00 [INF] Starting web host
+2019-11-13 20:11:41.263 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:11:42.263 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:11:44.058 +02:00 [INF] All emails are updated on "2019-11-13T18:11:44.0557848Z"!
+2019-11-13 20:11:45.723 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:11:45.944 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 20:11:46.162 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 20:11:46.337 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 20:11:46.523 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 20:11:46.724 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 20:11:46.927 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 20:11:47.121 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 20:11:47.309 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 20:11:47.496 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 20:11:47.695 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 20:11:48.248 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 20:11:48.269 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:11:51.327 +02:00 [INF] All emails are updated on "2019-11-13T18:11:51.3276371Z"!
+2019-11-13 20:11:51.728 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:11:51.928 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 20:11:52.121 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 20:11:52.290 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 20:11:52.476 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 20:11:52.669 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 20:11:52.878 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 20:11:53.065 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 20:11:53.238 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 20:11:53.417 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 20:11:53.617 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 20:11:53.924 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 20:11:53.941 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:11:55.403 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:12:26.630 +02:00 [INF] Starting web host
+2019-11-13 20:12:28.149 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:12:29.015 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:12:30.657 +02:00 [INF] All emails are updated on "2019-11-13T18:12:30.6545159Z"!
+2019-11-13 20:12:31.524 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:15:07.677 +02:00 [INF] Starting web host
+2019-11-13 20:15:09.265 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:15:10.138 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:15:41.778 +02:00 [INF] All emails are updated on "2019-11-13T18:15:41.7758382Z"!
+2019-11-13 20:15:42.677 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:24:05.729 +02:00 [INF] Starting web host
+2019-11-13 20:24:06.165 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:24:06.760 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:24:32.311 +02:00 [INF] All emails are updated on "2019-11-13T18:24:32.3090211Z"!
+2019-11-13 20:24:33.181 +02:00 [INF] Email with Original Mail ID: 3f5a7820-2bab-4eef-93c1-cafdb098b792 was created
+2019-11-13 20:24:33.398 +02:00 [INF] Email with Original Mail ID: 7c81fe45-fa95-48a6-ab71-e6a9f932989c was created
+2019-11-13 20:24:33.624 +02:00 [INF] Email with Original Mail ID: 73256ab7-2b73-4529-a444-ea3b07ad7391 was created
+2019-11-13 20:24:33.808 +02:00 [INF] Email with Original Mail ID: 10437457-ff47-40a2-ac10-0073a6126b8b was created
+2019-11-13 20:24:34.004 +02:00 [INF] Email with Original Mail ID: 156e31bb-ced8-4ce7-99c8-2a5ecc90a1e2 was created
+2019-11-13 20:24:34.202 +02:00 [INF] Email with Original Mail ID: 94e02d73-d1b1-47fa-85cc-d63ff1da35a8 was created
+2019-11-13 20:24:34.406 +02:00 [INF] Email with Original Mail ID: d3382b8f-ad24-426b-bf28-761b4af168d3 was created
+2019-11-13 20:24:34.586 +02:00 [INF] Email with Original Mail ID: 6f7c6440-bf5c-4fc3-b9d1-5dc32255563e was created
+2019-11-13 20:24:34.759 +02:00 [INF] Email with Original Mail ID: 7afe1573-bd58-43d1-b5c9-cf9216fa14c5 was created
+2019-11-13 20:24:34.941 +02:00 [INF] Email with Original Mail ID: dc711c8d-7c46-4d94-a26a-ae402637df1a was created
+2019-11-13 20:24:35.142 +02:00 [INF] Email with Original Mail ID: 252252ff-879c-4126-a12c-a54058550314 was created
+2019-11-13 20:24:35.535 +02:00 [INF] Email with Original Mail ID: 418ff41d-c764-4b3b-ba89-fd14193f6b31 was created
+2019-11-13 20:24:35.574 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:24:38.905 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:24:38.906 +02:00 [INF] All applications are loaded on "2019-11-13T18:24:38.9061493Z"!
+2019-11-13 20:27:28.300 +02:00 [INF] Application for email with ID: 10437457-ff47-40a2-ac10-0073a6126b8b was loaded on "2019-11-13T18:27:28.3002048Z"!
+2019-11-13 20:28:10.203 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:28:10.203 +02:00 [INF] All applications are loaded on "2019-11-13T18:28:10.2036411Z"!
+2019-11-13 20:30:00.398 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:01.887 +02:00 [INF] All emails are updated on "2019-11-13T18:30:01.8877060Z"!
+2019-11-13 20:30:02.312 +02:00 [INF] Email with Original Mail ID: afc74195-0c60-4214-96b9-a21501fe1336 was created
+2019-11-13 20:30:02.508 +02:00 [INF] Email with Original Mail ID: 7fce0cab-f6d4-4e02-8339-27b1a7b40958 was created
+2019-11-13 20:30:02.718 +02:00 [INF] Email with Original Mail ID: 00fca38f-393e-4c3b-b229-d3641f49f8be was created
+2019-11-13 20:30:02.889 +02:00 [INF] Email with Original Mail ID: 4d3727dd-37ca-476a-b6b9-3b4cca36faad was created
+2019-11-13 20:30:03.078 +02:00 [INF] Email with Original Mail ID: 3f4b4d90-57a7-48ef-a5e7-9316403e25ed was created
+2019-11-13 20:30:03.560 +02:00 [INF] Email with Original Mail ID: 03420abd-b658-4807-888d-ae307c559cbe was created
+2019-11-13 20:30:03.761 +02:00 [INF] Email with Original Mail ID: 127f248f-4855-4d65-bdc4-a4eb6f0f0c37 was created
+2019-11-13 20:30:03.949 +02:00 [INF] Email with Original Mail ID: a89b51d3-3054-402c-95d3-c33ebf263f3a was created
+2019-11-13 20:30:04.123 +02:00 [INF] Email with Original Mail ID: 2933aa6c-2534-4fd2-82e4-627beb059df8 was created
+2019-11-13 20:30:04.301 +02:00 [INF] Email with Original Mail ID: b1308dbf-ae64-4a2b-a751-0f38ee0642d3 was created
+2019-11-13 20:30:04.502 +02:00 [INF] Email with Original Mail ID: 7ae5eed4-759e-43fb-944d-2a408378948e was created
+2019-11-13 20:30:05.058 +02:00 [INF] Email with Original Mail ID: 6ff11985-09ea-4fe0-a27b-0b0431dae761 was created
+2019-11-13 20:30:05.075 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:08.204 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:08.860 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:08.860 +02:00 [INF] All applications are loaded on "2019-11-13T18:30:08.8602092Z"!
+2019-11-13 20:30:19.272 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:38.976 +02:00 [INF] Starting web host
+2019-11-13 20:30:39.463 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:30:39.970 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:43.150 +02:00 [INF] All emails are updated on "2019-11-13T18:30:43.1469616Z"!
+2019-11-13 20:30:44.012 +02:00 [INF] Email with Original Mail ID: f07cb8ae-6672-4cf2-ba33-5bb603533c73 was created
+2019-11-13 20:30:44.234 +02:00 [INF] Email with Original Mail ID: b9139ed0-c8ba-4814-80fb-7f964c3249e2 was created
+2019-11-13 20:30:44.436 +02:00 [INF] Email with Original Mail ID: 7bf6a1f0-7706-4af1-94d4-fc02a2956397 was created
+2019-11-13 20:30:44.609 +02:00 [INF] Email with Original Mail ID: 09ec2d33-113d-41c1-9115-7b14f6f26cba was created
+2019-11-13 20:30:44.849 +02:00 [INF] Email with Original Mail ID: 289d463e-46c6-4a19-9042-c1f70c680e80 was created
+2019-11-13 20:30:45.042 +02:00 [INF] Email with Original Mail ID: c194a5b9-bf3a-48d2-b641-0fad247e9b64 was created
+2019-11-13 20:30:45.241 +02:00 [INF] Email with Original Mail ID: 2f8b3040-3f5a-4199-b8d6-f7eec4f42eb1 was created
+2019-11-13 20:30:45.691 +02:00 [INF] Email with Original Mail ID: f124329b-5934-4614-8b93-54f97cc57a78 was created
+2019-11-13 20:30:45.868 +02:00 [INF] Email with Original Mail ID: c85bf69b-08bd-4b5d-8c43-7746b0577463 was created
+2019-11-13 20:30:46.068 +02:00 [INF] Email with Original Mail ID: 6fd96626-0f59-4093-8d4d-56a012313c03 was created
+2019-11-13 20:30:46.265 +02:00 [INF] Email with Original Mail ID: d61c30af-a4c4-4985-b936-dc30380c6ee9 was created
+2019-11-13 20:30:46.811 +02:00 [INF] Email with Original Mail ID: 96fbf2b5-9c97-4b42-ba12-2d7d01cfd236 was created
+2019-11-13 20:30:46.861 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:49.364 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:30:49.364 +02:00 [INF] All applications are loaded on "2019-11-13T18:30:49.3641589Z"!
+2019-11-13 20:32:49.988 +02:00 [INF] Starting web host
+2019-11-13 20:32:50.476 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:32:51.003 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:32:52.409 +02:00 [INF] All emails are updated on "2019-11-13T18:32:52.4064629Z"!
+2019-11-13 20:32:53.205 +02:00 [INF] Email with Original Mail ID: c4c77b09-612a-409e-9341-7de20523a23d was created
+2019-11-13 20:32:53.414 +02:00 [INF] Email with Original Mail ID: 1c455578-b979-42ad-9bd3-4a7724872301 was created
+2019-11-13 20:32:53.602 +02:00 [INF] Email with Original Mail ID: 84d13670-0a1c-4fcf-b27e-819975db07c7 was created
+2019-11-13 20:32:53.778 +02:00 [INF] Email with Original Mail ID: acbd17e3-8c65-41b3-b246-781d0fa96dd9 was created
+2019-11-13 20:32:53.969 +02:00 [INF] Email with Original Mail ID: 01501a8b-ab3b-4d04-962a-cc03cfae38a1 was created
+2019-11-13 20:32:54.208 +02:00 [INF] Email with Original Mail ID: 82c14092-bee3-463e-918c-21a2a4fbbee7 was created
+2019-11-13 20:32:54.411 +02:00 [INF] Email with Original Mail ID: 47b4bc29-9129-41b2-8c8d-875c27ac0733 was created
+2019-11-13 20:32:54.600 +02:00 [INF] Email with Original Mail ID: fbef864c-1158-4d46-8327-3523ffa1bf2d was created
+2019-11-13 20:32:54.770 +02:00 [INF] Email with Original Mail ID: 301ac115-bc88-4a6c-a0d4-6e85d42a6ae8 was created
+2019-11-13 20:32:54.946 +02:00 [INF] Email with Original Mail ID: c6493b1c-ff98-4848-b8d2-4f5f44e6f2c2 was created
+2019-11-13 20:32:55.149 +02:00 [INF] Email with Original Mail ID: af1af080-119d-47d7-8747-3bc9eeae6c90 was created
+2019-11-13 20:32:55.699 +02:00 [INF] Email with Original Mail ID: af5014bf-d115-4884-a207-0bdd64d41c55 was created
+2019-11-13 20:32:55.735 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:32:56.596 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:32:56.596 +02:00 [INF] All applications are loaded on "2019-11-13T18:32:56.5965675Z"!
+2019-11-13 20:52:04.676 +02:00 [INF] Starting web host
+2019-11-13 20:52:06.146 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:52:07.415 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:52:09.511 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:52:09.515 +02:00 [INF] All applications are loaded on "2019-11-13T18:52:09.5120637Z"!
+2019-11-13 20:52:11.442 +02:00 [INF] All emails are updated on "2019-11-13T18:52:11.4420618Z"!
+2019-11-13 20:52:12.655 +02:00 [INF] Email with Original Mail ID: 57250deb-5b97-4911-99e9-352afbc2d403 was created
+2019-11-13 20:52:12.855 +02:00 [INF] Email with Original Mail ID: 1e218582-d332-4ef7-9ea8-94310fe5f110 was created
+2019-11-13 20:52:13.059 +02:00 [INF] Email with Original Mail ID: 9488c370-5cba-4b0e-9779-c458c7392b88 was created
+2019-11-13 20:52:13.235 +02:00 [INF] Email with Original Mail ID: df7815e8-717f-4d38-a010-ba5dd8045873 was created
+2019-11-13 20:52:13.433 +02:00 [INF] Email with Original Mail ID: 2afb772f-1be4-4732-b703-c4a07cab79c1 was created
+2019-11-13 20:52:13.636 +02:00 [INF] Email with Original Mail ID: 75978ead-2ffe-4b2d-adc8-24a9ac670993 was created
+2019-11-13 20:52:13.839 +02:00 [INF] Email with Original Mail ID: 6897ae40-aad5-4346-8a38-5ef934560682 was created
+2019-11-13 20:52:14.024 +02:00 [INF] Email with Original Mail ID: 94c9b980-c0b4-40d5-9bda-314cdd07076a was created
+2019-11-13 20:52:14.202 +02:00 [INF] Email with Original Mail ID: b4d6eba1-3892-4b25-8b9e-8789ea0ef5ef was created
+2019-11-13 20:52:14.373 +02:00 [INF] Email with Original Mail ID: aea9c9c3-7542-4a96-988c-15fb4ccf518b was created
+2019-11-13 20:52:14.572 +02:00 [INF] Email with Original Mail ID: caceadae-a818-4770-81e7-d84b64614b04 was created
+2019-11-13 20:52:14.948 +02:00 [INF] Email with Original Mail ID: 47a665de-a81b-4250-ac89-18d0796d6ec3 was created
+2019-11-13 20:52:14.988 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:52:16.419 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:52:16.419 +02:00 [INF] All applications are loaded on "2019-11-13T18:52:16.4197442Z"!
+2019-11-13 20:53:08.716 +02:00 [INF] Starting web host
+2019-11-13 20:53:09.209 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:53:09.816 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:11.231 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:11.234 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:11.2321553Z"!
+2019-11-13 20:53:13.762 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:14.243 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:14.243 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:14.2433108Z"!
+2019-11-13 20:53:15.322 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:15.785 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:15.785 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:15.7854095Z"!
+2019-11-13 20:53:16.865 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:17.304 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:17.304 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:17.3045371Z"!
+2019-11-13 20:53:18.006 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:18.468 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:18.468 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:18.4682398Z"!
+2019-11-13 20:53:18.955 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:19.420 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:19.420 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:19.4204930Z"!
+2019-11-13 20:53:19.889 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:20.540 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:53:20.540 +02:00 [INF] All applications are loaded on "2019-11-13T18:53:20.5407991Z"!
+2019-11-13 20:54:20.939 +02:00 [INF] Starting web host
+2019-11-13 20:54:21.402 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:54:21.985 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:54:34.047 +02:00 [INF] All emails are updated on "2019-11-13T18:54:34.0441628Z"!
+2019-11-13 20:54:34.768 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:54:34.998 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 20:54:35.188 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 20:54:35.356 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 20:54:35.539 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 20:54:35.740 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 20:54:35.937 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 20:54:36.120 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 20:54:36.294 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 20:54:36.474 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 20:54:36.668 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 20:54:37.209 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 20:54:37.229 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:54:37.229 +02:00 [INF] All applications are loaded on "2019-11-13T18:54:37.2296382Z"!
+2019-11-13 20:55:39.035 +02:00 [INF] Starting web host
+2019-11-13 20:55:39.573 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:55:40.299 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:55:42.112 +02:00 [INF] All emails are updated on "2019-11-13T18:55:42.1094769Z"!
+2019-11-13 20:55:42.844 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 20:55:43.045 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 20:55:43.223 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 20:55:43.402 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 20:55:43.583 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 20:55:43.851 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 20:55:44.033 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 20:55:44.216 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 20:55:44.436 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 20:55:44.746 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 20:55:44.941 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 20:55:45.181 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 20:55:45.200 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:55:45.200 +02:00 [INF] All applications are loaded on "2019-11-13T18:55:45.2001325Z"!
+2019-11-13 20:59:21.952 +02:00 [INF] Starting web host
+2019-11-13 20:59:22.436 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 20:59:23.160 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:59:25.464 +02:00 [INF] Аll emails successfully received
+2019-11-13 20:59:25.467 +02:00 [INF] All applications are loaded on "2019-11-13T18:59:25.4649707Z"!
+2019-11-13 21:00:14.024 +02:00 [INF] Starting web host
+2019-11-13 21:00:14.493 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:00:15.172 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:00:18.059 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:00:18.062 +02:00 [INF] All applications are loaded on "2019-11-13T19:00:18.0602448Z"!
+2019-11-13 21:03:48.216 +02:00 [INF] Starting web host
+2019-11-13 21:03:48.681 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:03:49.292 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:03:51.218 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:03:51.220 +02:00 [INF] All applications are loaded on "2019-11-13T19:03:51.2183332Z"!
+2019-11-13 21:04:04.002 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:04.002 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:04.0024373Z"!
+2019-11-13 21:04:29.904 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:29.904 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:29.9040993Z"!
+2019-11-13 21:04:32.194 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:32.194 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:32.1946539Z"!
+2019-11-13 21:04:32.576 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:32.576 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:32.5763334Z"!
+2019-11-13 21:04:33.372 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:33.372 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:33.3723489Z"!
+2019-11-13 21:04:33.587 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:33.587 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:33.5877567Z"!
+2019-11-13 21:04:33.786 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:04:33.786 +02:00 [INF] All applications are loaded on "2019-11-13T19:04:33.7867883Z"!
+2019-11-13 21:05:49.618 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:05:49.618 +02:00 [INF] All applications are loaded on "2019-11-13T19:05:49.6186430Z"!
+2019-11-13 21:07:13.699 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:07:13.699 +02:00 [INF] All applications are loaded on "2019-11-13T19:07:13.6995190Z"!
+2019-11-13 21:07:23.091 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:07:23.091 +02:00 [INF] All applications are loaded on "2019-11-13T19:07:23.0917286Z"!
+2019-11-13 21:08:19.898 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:19.899 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:19.8989967Z"!
+2019-11-13 21:08:47.318 +02:00 [INF] Starting web host
+2019-11-13 21:08:47.832 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:08:48.432 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:51.039 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:51.042 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:51.0397064Z"!
+2019-11-13 21:08:53.813 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:53.813 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:53.8134134Z"!
+2019-11-13 21:08:54.487 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:54.487 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:54.4875817Z"!
+2019-11-13 21:08:54.866 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:54.866 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:54.8661041Z"!
+2019-11-13 21:08:55.261 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:08:55.262 +02:00 [INF] All applications are loaded on "2019-11-13T19:08:55.2620235Z"!
+2019-11-13 21:09:01.266 +02:00 [INF] All emails are updated on "2019-11-13T19:09:01.2659942Z"!
+2019-11-13 21:09:02.155 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 21:09:02.363 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 21:09:02.557 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 21:09:02.726 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 21:09:02.903 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 21:09:03.105 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 21:09:03.301 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 21:09:03.548 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 21:09:03.718 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 21:09:03.890 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 21:09:04.085 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 21:09:04.106 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:09:04.420 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 21:09:11.521 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:09:14.410 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:09:15.384 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:21:01.363 +02:00 [INF] Starting web host
+2019-11-13 21:21:01.795 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:21:02.380 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:21:02.385 +02:00 [INF] All applications are loaded on "2019-11-13T19:21:02.3830343Z"!
+2019-11-13 21:22:03.490 +02:00 [INF] Starting web host
+2019-11-13 21:22:04.021 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:22:04.738 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:22:06.888 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:22:06.890 +02:00 [INF] All applications are loaded on "2019-11-13T19:22:06.8884270Z"!
+2019-11-13 21:23:25.395 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:25.395 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:25.3959619Z"!
+2019-11-13 21:23:29.821 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:29.821 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:29.8212044Z"!
+2019-11-13 21:23:30.338 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:30.338 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:30.3381849Z"!
+2019-11-13 21:23:30.960 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:30.960 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:30.9603758Z"!
+2019-11-13 21:23:31.263 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:31.263 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:31.2635807Z"!
+2019-11-13 21:23:31.476 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:31.476 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:31.4763216Z"!
+2019-11-13 21:23:31.676 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:31.676 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:31.6768213Z"!
+2019-11-13 21:23:31.879 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:31.879 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:31.8792981Z"!
+2019-11-13 21:23:45.912 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:23:45.912 +02:00 [INF] All applications are loaded on "2019-11-13T19:23:45.9125792Z"!
+2019-11-13 21:24:04.968 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:24:04.968 +02:00 [INF] All applications are loaded on "2019-11-13T19:24:04.9683490Z"!
+2019-11-13 21:24:18.410 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:24:18.410 +02:00 [INF] All applications are loaded on "2019-11-13T19:24:18.4107253Z"!
+2019-11-13 21:28:21.411 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:28:21.411 +02:00 [INF] All applications are loaded on "2019-11-13T19:28:21.4112325Z"!
+2019-11-13 21:28:49.596 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:28:49.5961437Z"!
+2019-11-13 21:29:11.726 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:29:11.7267333Z"!
+2019-11-13 21:29:31.795 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:29:31.7958773Z"!
+2019-11-13 21:36:22.911 +02:00 [INF] Starting web host
+2019-11-13 21:36:23.369 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:36:23.970 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:36:23.9682235Z"!
+2019-11-13 21:36:24.102 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot determine the 'href' attribute for <a>. The following attributes are mutually exclusive:
+asp-route
+asp-controller, asp-action
+asp-page, asp-page-handler
+   at Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Shared__AppFormPartial.<ExecuteAsync>b__23_0() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Shared\_AppFormPartial.cshtml:line 38
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Shared__AppFormPartial.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_Application.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\Application.cshtml:line 82
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 21:39:48.851 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:39:48.8515286Z"!
+2019-11-13 21:40:04.855 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:40:04.8552554Z"!
+2019-11-13 21:40:25.264 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:40:25.2640958Z"!
+2019-11-13 21:41:03.678 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:41:03.6787806Z"!
+2019-11-13 21:41:36.631 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:41:36.6316965Z"!
+2019-11-13 21:41:54.381 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:41:54.3817000Z"!
+2019-11-13 21:43:11.074 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:43:11.0746616Z"!
+2019-11-13 21:44:31.878 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:44:31.8787840Z"!
+2019-11-13 21:44:32.743 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:44:32.7438161Z"!
+2019-11-13 21:45:04.372 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:04.374 +02:00 [INF] All applications are loaded on "2019-11-13T19:45:04.3738186Z"!
+2019-11-13 21:45:07.216 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:07.216 +02:00 [INF] All applications are loaded on "2019-11-13T19:45:07.2165898Z"!
+2019-11-13 21:45:08.500 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:08.500 +02:00 [INF] All applications are loaded on "2019-11-13T19:45:08.5004121Z"!
+2019-11-13 21:45:10.746 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:26.724 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:41.850 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:42.722 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:45:42.722 +02:00 [INF] All applications are loaded on "2019-11-13T19:45:42.7225421Z"!
+2019-11-13 21:45:44.152 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:47:40.192 +02:00 [INF] Starting web host
+2019-11-13 21:47:41.974 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:47:42.810 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:47:44.881 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:47:44.884 +02:00 [INF] All applications are loaded on "2019-11-13T19:47:44.8813932Z"!
+2019-11-13 21:47:46.200 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:47:46.1994356Z"!
+2019-11-13 21:47:54.902 +02:00 [ERR] The view 'EmailStatus' was not found. Searched locations: ["/Views/Email/EmailStatus.cshtml","/Views/Shared/EmailStatus.cshtml","/Pages/Shared/EmailStatus.cshtml"]
+2019-11-13 21:47:54.910 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'EmailStatus' was not found. The following locations were searched:
+/Views/Email/EmailStatus.cshtml
+/Views/Shared/EmailStatus.cshtml
+/Pages/Shared/EmailStatus.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 21:48:02.702 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:48:02.7024044Z"!
+2019-11-13 21:48:04.145 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:48:05.203 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:48:05.2039058Z"!
+2019-11-13 21:48:21.705 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:48:21.7058967Z"!
+2019-11-13 21:48:54.187 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:48:54.1876623Z"!
+2019-11-13 21:49:35.691 +02:00 [INF] Starting web host
+2019-11-13 21:49:37.262 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:49:38.071 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:49:52.876 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:49:52.881 +02:00 [INF] All applications are loaded on "2019-11-13T19:49:52.8773569Z"!
+2019-11-13 21:49:54.084 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:49:54.0839016Z"!
+2019-11-13 21:50:01.100 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'EmailManager.Service.Contracts.Factories.IClientDataFactory' while attempting to activate 'EmailManager.Web.Controllers.LoanApplicationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 21:52:40.611 +02:00 [INF] Starting web host
+2019-11-13 21:52:42.390 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:52:43.235 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:52:48.261 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:52:49.792 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:52:49.794 +02:00 [INF] All applications are loaded on "2019-11-13T19:52:49.7924037Z"!
+2019-11-13 21:52:51.189 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:52:51.1886342Z"!
+2019-11-13 21:54:47.804 +02:00 [INF] Starting web host
+2019-11-13 21:54:49.395 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:54:50.444 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:55:00.042 +02:00 [INF] All emails are updated on "2019-11-13T19:55:00.0395316Z"!
+2019-11-13 21:55:01.180 +02:00 [INF] Email with ID: 16e4547537fc5b6c exists
+2019-11-13 21:55:01.368 +02:00 [INF] Email with ID: 16e426c9ba71121a exists
+2019-11-13 21:55:01.588 +02:00 [INF] Email with ID: 16e2e971f5cc2f6d exists
+2019-11-13 21:55:01.767 +02:00 [INF] Email with ID: 16e1a1059b582639 exists
+2019-11-13 21:55:01.955 +02:00 [INF] Email with ID: 16e1a0bb1a8b30ff exists
+2019-11-13 21:55:02.168 +02:00 [INF] Email with ID: 16e1a090adaf0244 exists
+2019-11-13 21:55:02.374 +02:00 [INF] Email with ID: 16e188dc737de5d3 exists
+2019-11-13 21:55:02.555 +02:00 [INF] Email with ID: 16e188c45316a547 exists
+2019-11-13 21:55:02.729 +02:00 [INF] Email with ID: 16e18889172e6620 exists
+2019-11-13 21:55:02.900 +02:00 [INF] Email with ID: 16e18800ad120c97 exists
+2019-11-13 21:55:03.081 +02:00 [INF] Email with ID: 16e184e0d1db824a exists
+2019-11-13 21:55:03.359 +02:00 [INF] Email with ID: 16e1837a93069bad exists
+2019-11-13 21:55:03.383 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:55:03.383 +02:00 [INF] All applications are loaded on "2019-11-13T19:55:03.3836752Z"!
+2019-11-13 21:55:04.477 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:55:04.4768877Z"!
+2019-11-13 21:55:11.674 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:55:11.6741059Z"!
+2019-11-13 21:55:33.356 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EmailManager.Service.EmailService.GetEmailByIdAsync(String emailId) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Service\EmailService.cs:line 53
+   at EmailManager.Web.Controllers.EmailController.Application(String id) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Controllers\EmailController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-13 21:56:22.332 +02:00 [INF] Starting web host
+2019-11-13 21:56:23.916 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:56:24.803 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:56:45.516 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:56:45.5140413Z"!
+2019-11-13 21:56:52.851 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:56:52.8510185Z"!
+2019-11-13 21:58:26.471 +02:00 [INF] Starting web host
+2019-11-13 21:58:28.027 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:58:28.841 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:58:30.124 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:58:30.1228146Z"!
+2019-11-13 21:58:36.863 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:58:36.8638475Z"!
+2019-11-13 21:59:23.710 +02:00 [INF] Starting web host
+2019-11-13 21:59:24.950 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 21:59:25.721 +02:00 [INF] Аll emails successfully received
+2019-11-13 21:59:28.506 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:59:28.5044624Z"!
+2019-11-13 21:59:31.603 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:59:31.6035101Z"!
+2019-11-13 21:59:38.992 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T19:59:38.9926467Z"!
+2019-11-13 22:00:34.008 +02:00 [INF] Starting web host
+2019-11-13 22:00:35.461 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:00:36.281 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:00:37.578 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:00:37.5756025Z"!
+2019-11-13 22:00:39.697 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:00:39.6979347Z"!
+2019-11-13 22:01:46.659 +02:00 [INF] Starting web host
+2019-11-13 22:01:48.195 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:01:49.003 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:04:46.238 +02:00 [INF] Starting web host
+2019-11-13 22:04:48.235 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:04:49.205 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:04:57.067 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:04:57.0652036Z"!
+2019-11-13 22:04:59.601 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:04:59.6017362Z"!
+2019-11-13 22:06:12.844 +02:00 [INF] Starting web host
+2019-11-13 22:06:14.374 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:06:15.273 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:06:17.175 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:06:17.177 +02:00 [INF] All applications are loaded on "2019-11-13T20:06:17.1752068Z"!
+2019-11-13 22:06:18.371 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:06:18.3706130Z"!
+2019-11-13 22:07:36.359 +02:00 [INF] Starting web host
+2019-11-13 22:07:38.043 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:07:38.963 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:09:00.014 +02:00 [INF] Starting web host
+2019-11-13 22:09:01.606 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:09:02.521 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:09:06.469 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:09:06.4669920Z"!
+2019-11-13 22:09:37.942 +02:00 [INF] Starting web host
+2019-11-13 22:09:39.298 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:09:40.126 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:09:41.850 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:09:41.8480405Z"!
+2019-11-13 22:11:19.701 +02:00 [INF] Starting web host
+2019-11-13 22:11:21.253 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:11:22.193 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:11:28.998 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:11:28.9957983Z"!
+2019-11-13 22:11:58.909 +02:00 [INF] Starting web host
+2019-11-13 22:12:00.428 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:12:01.223 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:12:04.118 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:12:04.1168817Z"!
+2019-11-13 22:13:46.765 +02:00 [INF] Starting web host
+2019-11-13 22:13:48.117 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:13:49.117 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:13:50.529 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:13:50.5275794Z"!
+2019-11-13 22:14:26.759 +02:00 [INF] Starting web host
+2019-11-13 22:14:28.194 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:14:29.124 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:14:31.044 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:14:31.0416753Z"!
+2019-11-13 22:17:16.103 +02:00 [INF] Starting web host
+2019-11-13 22:17:17.876 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:17:18.729 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:17:19.998 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:17:19.9959374Z"!
+2019-11-13 22:18:03.624 +02:00 [INF] Starting web host
+2019-11-13 22:18:05.392 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:18:06.351 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:18:07.817 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:18:07.8150837Z"!
+2019-11-13 22:18:15.246 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:18:15.2463095Z"!
+2019-11-13 22:18:29.744 +02:00 [INF] Starting web host
+2019-11-13 22:18:31.234 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:18:32.047 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:18:33.766 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:18:33.7632613Z"!
+2019-11-13 22:18:45.829 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:18:45.8294541Z"!
+2019-11-13 22:19:11.338 +02:00 [INF] Starting web host
+2019-11-13 22:19:12.619 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:19:13.455 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:19:18.169 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:19:18.1674581Z"!
+2019-11-13 22:19:25.026 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:19:25.0265272Z"!
+2019-11-13 22:19:39.303 +02:00 [INF] Starting web host
+2019-11-13 22:19:40.761 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:19:41.567 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:19:43.108 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:19:43.1063707Z"!
+2019-11-13 22:20:25.227 +02:00 [INF] Starting web host
+2019-11-13 22:20:26.737 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:20:27.570 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:20:29.313 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:20:29.3104183Z"!
+2019-11-13 22:21:16.269 +02:00 [INF] Starting web host
+2019-11-13 22:21:17.581 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:21:18.345 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:21:19.708 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:21:19.7059287Z"!
+2019-11-13 22:21:44.686 +02:00 [INF] Starting web host
+2019-11-13 22:21:46.621 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:21:47.459 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:21:49.013 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:21:49.0100623Z"!
+2019-11-13 22:21:50.923 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:21:50.9232151Z"!
+2019-11-13 22:22:46.718 +02:00 [INF] Starting web host
+2019-11-13 22:22:48.238 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:22:49.067 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:22:50.397 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:22:50.3952373Z"!
+2019-11-13 22:23:23.550 +02:00 [INF] Starting web host
+2019-11-13 22:23:25.003 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:23:25.829 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:23:27.159 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:23:27.1578081Z"!
+2019-11-13 22:23:28.795 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:23:28.7952791Z"!
+2019-11-13 22:24:04.563 +02:00 [INF] Starting web host
+2019-11-13 22:24:06.025 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:24:06.858 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:24:08.071 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:24:08.0696123Z"!
+2019-11-13 22:24:56.090 +02:00 [INF] Starting web host
+2019-11-13 22:24:57.599 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:24:58.576 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:24:59.849 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:24:59.8466663Z"!
+2019-11-13 22:25:34.494 +02:00 [INF] Starting web host
+2019-11-13 22:25:35.841 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:25:36.707 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:25:38.093 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:25:38.0908821Z"!
+2019-11-13 22:26:02.502 +02:00 [INF] Starting web host
+2019-11-13 22:26:04.078 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:26:20.739 +02:00 [INF] Starting web host
+2019-11-13 22:26:22.266 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:26:23.102 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:26:24.735 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:26:24.7329908Z"!
+2019-11-13 22:27:34.361 +02:00 [INF] Starting web host
+2019-11-13 22:27:35.610 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:27:36.383 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:27:38.059 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:27:38.0569774Z"!
+2019-11-13 22:28:26.315 +02:00 [INF] Starting web host
+2019-11-13 22:28:27.750 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:28:28.672 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:28:31.088 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:28:31.0860201Z"!
+2019-11-13 22:40:12.956 +02:00 [INF] Starting web host
+2019-11-13 22:40:14.688 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:40:15.589 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:40:36.207 +02:00 [INF] Starting web host
+2019-11-13 22:40:37.987 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:40:38.802 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:40:55.604 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:40:55.6021747Z"!
+2019-11-13 22:41:08.760 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:41:08.7605879Z"!
+2019-11-13 22:42:02.092 +02:00 [INF] Starting web host
+2019-11-13 22:42:03.472 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:42:04.378 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:42:08.531 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:42:08.5293772Z"!
+2019-11-13 22:43:34.747 +02:00 [INF] Starting web host
+2019-11-13 22:43:36.230 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:43:37.064 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:44:11.327 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:44:11.3251883Z"!
+2019-11-13 22:48:47.324 +02:00 [INF] Starting web host
+2019-11-13 22:48:48.765 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:48:49.577 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:49:29.505 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:49:29.5034891Z"!
+2019-11-13 22:49:45.282 +02:00 [INF] Starting web host
+2019-11-13 22:49:46.523 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 22:49:47.310 +02:00 [INF] Аll emails successfully received
+2019-11-13 22:50:08.005 +02:00 [INF] Application for email with ID: 57250deb-5b97-4911-99e9-352afbc2d403 was loaded on "2019-11-13T20:50:08.0032352Z"!
+2019-11-13 23:56:47.518 +02:00 [INF] Starting web host
+2019-11-13 23:56:49.138 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 23:56:50.462 +02:00 [INF] Аll emails successfully received
+2019-11-13 23:56:53.429 +02:00 [INF] All emails are updated on "2019-11-13T21:56:53.4269097Z"!
+2019-11-13 23:56:54.770 +02:00 [INF] Email with Original Mail ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was created
+2019-11-13 23:56:54.978 +02:00 [INF] Email with Original Mail ID: 955d8c82-0fe9-4549-9d23-b24a82b9bfa4 was created
+2019-11-13 23:56:55.183 +02:00 [INF] Email with Original Mail ID: 910d5ba6-4cf6-4d88-8ac2-4a408a4a822b was created
+2019-11-13 23:56:55.357 +02:00 [INF] Email with Original Mail ID: 0050d390-0cdb-44c3-8975-0ba95aed2c52 was created
+2019-11-13 23:56:55.547 +02:00 [INF] Email with Original Mail ID: 3981250e-a815-4c6c-8f49-89bc1e13eba5 was created
+2019-11-13 23:56:55.774 +02:00 [INF] Email with Original Mail ID: 8e98afbd-d852-4a26-8b4e-e9a616a8ebac was created
+2019-11-13 23:56:55.971 +02:00 [INF] Email with Original Mail ID: 1999d653-647e-430d-aa3f-07829d84205d was created
+2019-11-13 23:56:56.155 +02:00 [INF] Email with Original Mail ID: 685597cb-dd1f-4b93-994a-3a593c22cc3d was created
+2019-11-13 23:56:56.358 +02:00 [INF] Email with Original Mail ID: 72621611-cd0c-4e79-b7e4-044f80f73acd was created
+2019-11-13 23:56:56.535 +02:00 [INF] Email with Original Mail ID: 81b11b07-69d6-446e-9157-7a39a559be5e was created
+2019-11-13 23:56:56.717 +02:00 [INF] Email with Original Mail ID: 2487a5a1-d5d7-41c7-ad3f-ffda093199e8 was created
+2019-11-13 23:56:56.999 +02:00 [INF] Email with Original Mail ID: 06432196-3ba3-4192-970d-cfb7b6b6998a was created
+2019-11-13 23:56:57.045 +02:00 [INF] Аll emails successfully received
+2019-11-13 23:56:57.046 +02:00 [INF] All applications are loaded on "2019-11-13T21:56:57.0467430Z"!
+2019-11-13 23:56:59.139 +02:00 [INF] Application for email with ID: 8260ee1e-5ca3-4824-9895-4a05de6b3ffc was loaded on "2019-11-13T21:56:59.1385087Z"!
+2019-11-13 23:58:26.251 +02:00 [INF] Starting web host
+2019-11-13 23:58:28.149 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-13 23:58:28.986 +02:00 [INF] Аll emails successfully received

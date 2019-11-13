@@ -9,10 +9,10 @@ namespace EmailManager.Service.Contracts
 {
     public interface IEmailService
     {
-        Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body);
+        Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, DateTime dateReceived, string subject, string body);
         Task<EmailDTO> GetEmailByIdAsync(string emailId);
-        Task<ClientEmail> GetEmailByOriginalIdAsync(string originalMailId);
         Task<ICollection<EmailDTO>> GetAllEmailsAsync();
+        Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, StatusEmailDTO newEmailStatus, string userId);
         Task<bool> CheckIfEmailExists(string originalMailId);
     }
 }

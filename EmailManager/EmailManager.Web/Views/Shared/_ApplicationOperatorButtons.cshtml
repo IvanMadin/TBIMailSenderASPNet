@@ -1,0 +1,19 @@
+﻿@model EmailViewModel
+
+@if (Model.EmailStatusName == "Not Reviewed")
+{
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="SetToNew" asp-route-emailId="@Model.Id">New Application</a>
+    <a class="btn btn-outline-danger" asp-area="" asp-controller="Email" asp-action="UpdateStatusEmail" asp-route-emailId="@Model.Id" asp-route-status="Invalid Application">Invalid Email</a>
+}
+@if (Model.EmailStatusName == "Invalid Application")
+{
+
+}
+@if (Model.EmailStatusName == "New Application")
+{
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="SetToOpen" asp-route-emailId="@Model.Id">Open Application</a>
+}
+@if (Model.EmailStatusName == "Open Application")
+{
+    <input type="button" class="btn btn-outline-warning" id="show-or-hide-button-form" value="Show Form">
+}

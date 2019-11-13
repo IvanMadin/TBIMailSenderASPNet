@@ -6,12 +6,11 @@ using System.Text;
 
 namespace EmailManager.Data.Entities
 {
-    public class User : IdentityUser, IModified, IDeleted
+    public class User : IdentityUser, IDeleted
     {
         public ICollection<ClientEmail> Emails { get; set; }
         public ICollection<LoanApplication> LoanApplications { get; set; }
-        public string ModifiedByUserId { get; set; }
-        public DateTime? ModifiedOnDate { get; set; }
+        public bool ChangedPassword { get; set; }
         public string DeletedByUserId { get; set; }
         public DateTime? DeletedOnDate { get; set; }
     }

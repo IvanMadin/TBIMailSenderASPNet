@@ -5,6 +5,6 @@ namespace EmailManager.Service.Contracts.Factories
 {
     public interface IEmailFactory
     {
-        ClientEmail CreateEmail(string originalMailId, string senderName, string senderEmail, string dateReceived, string subject, string body);
+        ClientEmail CreateEmail(string originalMailId, string senderName, string senderEmail, DateTime dateReceived, string subject, string body);
     }
 }

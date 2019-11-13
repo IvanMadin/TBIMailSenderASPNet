@@ -26,8 +26,7 @@ namespace EmailManager.Service.Mappers
                 ClientPhone = entity.ClientData?.Phone,
                 EmployeeName = entity.User?.UserName,
                 EmailId = entity.EmailId,
-                ApplicationStatusId = entity.StatusApplicationId,
-                //ApplicationStatusName=entity.StatusApplication.StatusType
+                ApplicationStatusName = entity.ApplicationStatus.ToString(),
             };
 
             return loanApplication;

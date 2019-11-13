@@ -10,6 +10,7 @@ using System.Threading;
 using EmailManager.Service;
 using System.Threading.Tasks;
 using EmailManager.Service.Providers;
+using EmailManager.Service.Contracts;
 
 namespace EmailManager.GmailConfig
 {
@@ -17,9 +18,9 @@ namespace EmailManager.GmailConfig
     {
         static string[] Scopes = { GmailService.Scope.GmailReadonly };
         static string ApplicationName = "Gmail API .NET Quickstart";
-        private readonly EmailService emailService;
+        private readonly IEmailService emailService;
 
-        public GmailConfigure(EmailService emailService)
+        public GmailConfigure(IEmailService emailService)
         {
             this.emailService = emailService;
         }
@@ -71,11 +72,11 @@ namespace EmailManager.GmailConfig
 
                         var IsAlreadyAtDatabase = await emailService.CheckIfEmailExists(originalMailId);
 
+
                         if (!IsAlreadyAtDatabase)
                         {
-                            string dateReceived = emailFullResponse.Payload.Headers
-                                .FirstOrDefault(x => x.Name == "Date")
-                                .Value;
+                            long timeStamp = (long)emailFullResponse.InternalDate;
+                            DateTime dateReceived = DateTimeOffset.FromUnixTimeMilliseconds(timeStamp).DateTime.ToLocalTime();
 
                             string sender = emailFullResponse.Payload.Headers
                                .FirstOrDefault(x => x.Name == "From")
@@ -86,10 +87,8 @@ namespace EmailManager.GmailConfig
                                 .FirstOrDefault(x => x.Name == "Subject")
                                 .Value;
 
-                            var stringBuilder = new StringBuilder();
-
-                            string body = "";
                             var bodyToResolve = emailFullResponse.Payload.Parts[1];
+                            string body = "";
 
                             if (bodyToResolve.MimeType == "text/html")
                             {
@@ -101,7 +100,6 @@ namespace EmailManager.GmailConfig
                             }
 
 
-
                             await emailService.CreateAsync(originalMailId, senderName, senderEmail, dateReceived, subject, body);
                         }
                     }
@@ -109,17 +107,21 @@ namespace EmailManager.GmailConfig
             }
         }
 
+        /// <summary>
+        /// Returns 2 strings first is the SenderName and 2nd SenderEmail
+        /// </summary>
         private (string, string) SplitSender(string sender)
         {
             var input = sender.Split();
             var senderName = "";
+
             for (int i = 0; i < input.Length - 1; i++)
             {
                 senderName += input[i] + " ";
             }
             var senderEmail = input[input.Length - 1].Replace("<", "").Replace(">", "");
 
-            return (senderName, senderEmail);
+            return (senderName.TrimEnd(), senderEmail);
         }
     }
 }

@@ -20,8 +20,7 @@ namespace EmailManager.Web.Extensions.Mappers
                 Phone = dataDTO.ClientPhone,
                 Amount = dataDTO.LoanAmount,
                 EmailId = dataDTO.EmailId,
-                ApplicationStatusId=dataDTO.ApplicationStatusId,
-                //ApplicationStatusName=dataDTO.ApplicationStatusName
+                Status=dataDTO.ApplicationStatusName,
             };
 
             return dataModel;

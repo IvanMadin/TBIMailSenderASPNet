@@ -14,7 +14,6 @@ namespace EmailManager.Web.Models
         public string Phone { get; set; }
         public decimal Amount { get; set; }
         public string EmailId { get; set; }
-        public string ApplicationStatusId { get; set; }
-        //public string ApplicationStatusName { get; set; }
+        public string Status { get; set; }
     }
 }

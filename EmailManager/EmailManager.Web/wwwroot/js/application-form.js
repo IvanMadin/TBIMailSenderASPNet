@@ -11,13 +11,13 @@
         if (showHideButton.value === 'Show Form') {
             divHolder.style.visibility = "visible";
             showHideButton.value = 'Hide Form';
-            showHideButton.classList.remove('btn-outline-success');
-            showHideButton.classList.add('btn-success');
+            showHideButton.classList.remove('btn-outline-warning');
+            showHideButton.classList.add('btn-warning');
         } else {
             divHolder.style.visibility = "hidden";
             showHideButton.value = 'Show Form';
-            showHideButton.classList.remove('btn-success');
-            showHideButton.classList.add('btn-outline-success');
+            showHideButton.classList.remove('btn-warning');
+            showHideButton.classList.add('btn-outline-warning');
         }
     });
 });
