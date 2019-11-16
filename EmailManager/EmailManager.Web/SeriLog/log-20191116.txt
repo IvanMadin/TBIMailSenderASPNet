@@ -1,0 +1,573 @@
+2019-11-16 14:39:52.236 +02:00 [INF] Starting web host
+2019-11-16 14:39:56.499 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 14:40:12.618 +02:00 [ERR] An error occurred using the connection to database 'EmailManager' on server '.\SQLExpress'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:12.934 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:12.955 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:13.004 +02:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:13.011 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:24.322 +02:00 [INF] Starting web host
+2019-11-16 14:40:24.939 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 14:40:39.949 +02:00 [ERR] An error occurred using the connection to database 'EmailManager' on server '.\SQLExpress'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:40.129 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:40.165 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:40.251 +02:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:40.262 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\First.cs:line 144
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2019-11-16 14:40:55.238 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:00.326 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:00.334 +02:00 [INF] All applications are loaded on "2019-11-16T12:41:00.3271662Z"!
+2019-11-16 14:41:02.381 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-16T12:41:02.3799545Z"!
+2019-11-16 14:41:17.431 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:20.103 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:20.103 +02:00 [INF] All applications are loaded on "2019-11-16T12:41:20.1037026Z"!
+2019-11-16 14:41:23.053 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T12:41:23.0538887Z"!
+2019-11-16 14:41:28.450 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T12:41:28.4500957Z"!
+2019-11-16 14:41:36.576 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:39.463 +02:00 [INF] Аll emails successfully received
+2019-11-16 14:41:39.463 +02:00 [INF] All applications are loaded on "2019-11-16T12:41:39.4635008Z"!
+2019-11-16 14:42:36.485 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-16T12:42:36.4850373Z"!
+2019-11-16 15:01:53.805 +02:00 [INF] Starting web host
+2019-11-16 15:01:55.744 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:01:56.768 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:02:01.735 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:02:01.738 +02:00 [INF] All applications are loaded on "2019-11-16T13:02:01.7356757Z"!
+2019-11-16 15:02:31.800 +02:00 [INF] Application for email with ID: 45ee0e5e-a1bb-44f4-a9af-7c731835a4bf was loaded on "2019-11-16T13:02:31.7984068Z"!
+2019-11-16 15:02:43.507 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:02:43.507 +02:00 [INF] All applications are loaded on "2019-11-16T13:02:43.5073497Z"!
+2019-11-16 15:02:53.396 +02:00 [INF] Application for email with ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was loaded on "2019-11-16T13:02:53.3961070Z"!
+2019-11-16 15:02:55.756 +02:00 [INF] [16.11.2019 г. 15:02:55] - Email Status of Id: [7862a24a-1c63-4ce0-8291-0dcde07c0aa5] has been changed from [Not Reviewed] to [New Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:02:56.012 +02:00 [INF] Application for email with ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was loaded on "2019-11-16T13:02:56.0127867Z"!
+2019-11-16 15:02:59.238 +02:00 [INF] [16.11.2019 г. 15:02:59] - Email Status of Id: [7862a24a-1c63-4ce0-8291-0dcde07c0aa5] has been changed from [New Application] to [Open Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:02:59.293 +02:00 [INF] Application for email with ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was loaded on "2019-11-16T13:02:59.2936609Z"!
+2019-11-16 15:03:07.082 +02:00 [INF] Application for email with ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was loaded on "2019-11-16T13:03:07.0821560Z"!
+2019-11-16 15:03:08.293 +02:00 [INF] Application for email with ID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 was loaded on "2019-11-16T13:03:08.2936432Z"!
+2019-11-16 15:03:09.126 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:03:09.126 +02:00 [INF] All applications are loaded on "2019-11-16T13:03:09.1262336Z"!
+2019-11-16 15:03:12.210 +02:00 [INF] Application for email with ID: db55def5-ca56-457d-8516-ceb2d7c610ad was loaded on "2019-11-16T13:03:12.2105203Z"!
+2019-11-16 15:03:14.159 +02:00 [INF] [16.11.2019 г. 15:03:14] - Email Status of Id: [db55def5-ca56-457d-8516-ceb2d7c610ad] has been changed from [Not Reviewed] to [New Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:03:14.181 +02:00 [INF] Application for email with ID: db55def5-ca56-457d-8516-ceb2d7c610ad was loaded on "2019-11-16T13:03:14.1814574Z"!
+2019-11-16 15:03:16.278 +02:00 [INF] Application for email with ID: db55def5-ca56-457d-8516-ceb2d7c610ad was loaded on "2019-11-16T13:03:16.2782989Z"!
+2019-11-16 15:03:17.902 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:03:17.903 +02:00 [INF] All applications are loaded on "2019-11-16T13:03:17.9029928Z"!
+2019-11-16 15:03:21.332 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:03:21.3323106Z"!
+2019-11-16 15:03:26.217 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:03:26.2172729Z"!
+2019-11-16 15:03:27.187 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:03:27.1875590Z"!
+2019-11-16 15:03:27.638 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:03:27.6381929Z"!
+2019-11-16 15:03:27.978 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:03:27.9781636Z"!
+2019-11-16 15:03:29.505 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:03:32.559 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:03:32.559 +02:00 [INF] All applications are loaded on "2019-11-16T13:03:32.5593508Z"!
+2019-11-16 15:03:39.711 +02:00 [INF] Application for email with ID: db55def5-ca56-457d-8516-ceb2d7c610ad was loaded on "2019-11-16T13:03:39.7110147Z"!
+2019-11-16 15:03:44.676 +02:00 [INF] [16.11.2019 г. 15:03:44] - Email Status of Id: [db55def5-ca56-457d-8516-ceb2d7c610ad] has been changed from [New Application] to [Open Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:03:44.690 +02:00 [INF] Application for email with ID: db55def5-ca56-457d-8516-ceb2d7c610ad was loaded on "2019-11-16T13:03:44.6905225Z"!
+2019-11-16 15:04:11.863 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:04:13.196 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:18:28.714 +02:00 [INF] Starting web host
+2019-11-16 15:18:30.345 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:18:31.268 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:18:33.221 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:18:33.223 +02:00 [INF] All applications are loaded on "2019-11-16T13:18:33.2216657Z"!
+2019-11-16 15:18:38.922 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:18:38.9218953Z"!
+2019-11-16 15:26:01.953 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:26:01.9530360Z"!
+2019-11-16 15:26:03.465 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Shared\_ApplicationOperatorButtons.cshtml(7,135): error CS1061: 'EmailViewModel' does not contain a definition for 'NewStatusName' and no extension method 'NewStatusName' accepting a first argument of type 'EmailViewModel' could be found (are you missing a using directive or an assembly reference?)
+E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Shared\_ApplicationOperatorButtons.cshtml(8,135): error CS1061: 'EmailViewModel' does not contain a definition for 'NewStatusName' and no extension method 'NewStatusName' accepting a first argument of type 'EmailViewModel' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.FindView(String partialName)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_Application.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\Application.cshtml:line 26
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-16 15:26:27.872 +02:00 [INF] Starting web host
+2019-11-16 15:26:28.401 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:26:28.968 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:26:31.581 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:26:31.584 +02:00 [INF] All applications are loaded on "2019-11-16T13:26:31.5818826Z"!
+2019-11-16 15:26:33.805 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:26:33.8046045Z"!
+2019-11-16 15:28:34.567 +02:00 [INF] Starting web host
+2019-11-16 15:28:36.079 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:28:37.009 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:28:47.970 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:28:47.972 +02:00 [INF] All applications are loaded on "2019-11-16T13:28:47.9703166Z"!
+2019-11-16 15:28:50.005 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:28:50.0045423Z"!
+2019-11-16 15:30:02.332 +02:00 [INF] Starting web host
+2019-11-16 15:30:03.756 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:30:04.552 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:30:06.027 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:30:06.031 +02:00 [INF] All applications are loaded on "2019-11-16T13:30:06.0275267Z"!
+2019-11-16 15:30:07.173 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:30:07.1730627Z"!
+2019-11-16 15:31:22.205 +02:00 [INF] Starting web host
+2019-11-16 15:31:23.588 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:31:24.393 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:31:27.668 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:31:27.671 +02:00 [INF] All applications are loaded on "2019-11-16T13:31:27.6686263Z"!
+2019-11-16 15:31:29.301 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:31:29.3008060Z"!
+2019-11-16 15:32:51.490 +02:00 [INF] Starting web host
+2019-11-16 15:32:53.593 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:32:54.763 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:32:56.450 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:32:56.454 +02:00 [INF] All applications are loaded on "2019-11-16T13:32:56.4507728Z"!
+2019-11-16 15:32:58.961 +02:00 [INF] Application for email with ID: 89c60ca1-e526-4768-96f8-e336b08850b2 was loaded on "2019-11-16T13:32:58.9604278Z"!
+2019-11-16 15:33:22.629 +02:00 [INF] Application for email with ID: 89c60ca1-e526-4768-96f8-e336b08850b2 was loaded on "2019-11-16T13:33:22.6294203Z"!
+2019-11-16 15:33:56.068 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:33:57.696 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:33:57.696 +02:00 [INF] All applications are loaded on "2019-11-16T13:33:57.6962538Z"!
+2019-11-16 15:34:00.331 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:34:00.3314065Z"!
+2019-11-16 15:35:40.970 +02:00 [INF] Starting web host
+2019-11-16 15:35:42.182 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:35:43.035 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:35:44.226 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:35:44.229 +02:00 [INF] All applications are loaded on "2019-11-16T13:35:44.2266247Z"!
+2019-11-16 15:35:45.875 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:35:45.8747023Z"!
+2019-11-16 15:36:40.705 +02:00 [INF] Starting web host
+2019-11-16 15:36:41.870 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:36:42.692 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:36:45.227 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:36:45.230 +02:00 [INF] All applications are loaded on "2019-11-16T13:36:45.2276508Z"!
+2019-11-16 15:36:46.286 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:46.2858788Z"!
+2019-11-16 15:36:53.434 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:53.4343154Z"!
+2019-11-16 15:36:54.851 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:54.8510537Z"!
+2019-11-16 15:36:55.437 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:55.4374366Z"!
+2019-11-16 15:36:55.957 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:55.9573413Z"!
+2019-11-16 15:36:56.486 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:56.4863044Z"!
+2019-11-16 15:36:56.965 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:56.9651733Z"!
+2019-11-16 15:36:57.465 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:57.4653031Z"!
+2019-11-16 15:36:57.792 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:57.7922700Z"!
+2019-11-16 15:36:58.133 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:58.1335438Z"!
+2019-11-16 15:36:58.446 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:58.4463577Z"!
+2019-11-16 15:36:58.742 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:58.7423468Z"!
+2019-11-16 15:36:59.069 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:36:59.0693294Z"!
+2019-11-16 15:37:02.997 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:37:02.9971291Z"!
+2019-11-16 15:37:04.102 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:37:04.1028987Z"!
+2019-11-16 15:37:55.845 +02:00 [INF] Starting web host
+2019-11-16 15:37:57.057 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:37:57.868 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:38:26.547 +02:00 [INF] Starting web host
+2019-11-16 15:38:27.730 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:38:28.534 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:38:30.538 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:38:30.541 +02:00 [INF] All applications are loaded on "2019-11-16T13:38:30.5388400Z"!
+2019-11-16 15:38:31.707 +02:00 [INF] Application for email with ID: 89c60ca1-e526-4768-96f8-e336b08850b2 was loaded on "2019-11-16T13:38:31.7071808Z"!
+2019-11-16 15:47:21.923 +02:00 [INF] Starting web host
+2019-11-16 15:47:23.250 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:47:24.047 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:47:26.992 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:47:26.994 +02:00 [INF] All applications are loaded on "2019-11-16T13:47:26.9923108Z"!
+2019-11-16 15:47:44.705 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:47:44.7046940Z"!
+2019-11-16 15:47:56.411 +02:00 [INF] Starting web host
+2019-11-16 15:47:57.798 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:47:58.522 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:48:00.347 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:48:00.350 +02:00 [INF] All applications are loaded on "2019-11-16T13:48:00.3475196Z"!
+2019-11-16 15:48:02.111 +02:00 [INF] Application for email with ID: 4eebac53-14e0-4672-9263-40ab963154f9 was loaded on "2019-11-16T13:48:02.1110515Z"!
+2019-11-16 15:48:11.983 +02:00 [INF] Starting web host
+2019-11-16 15:48:13.347 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 15:48:14.062 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:48:15.549 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:48:15.551 +02:00 [INF] All applications are loaded on "2019-11-16T13:48:15.5494745Z"!
+2019-11-16 15:48:17.572 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:48:17.5721669Z"!
+2019-11-16 15:48:28.048 +02:00 [INF] [16.11.2019 г. 15:48:28] - Email Status of Id: [9d8d8027-6bd9-4779-99fb-11196dcba431] has been changed from [Not Reviewed] to [New Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:48:38.326 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:48:38.3269175Z"!
+2019-11-16 15:48:49.638 +02:00 [INF] [16.11.2019 г. 15:48:49] - Email Status of Id: [9d8d8027-6bd9-4779-99fb-11196dcba431] has been changed from [New Application] to [Open Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 15:48:49.680 +02:00 [INF] Application for email with ID: 9d8d8027-6bd9-4779-99fb-11196dcba431 was loaded on "2019-11-16T13:48:49.6808431Z"!
+2019-11-16 15:48:54.986 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:49:06.541 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:49:06.541 +02:00 [INF] All applications are loaded on "2019-11-16T13:49:06.5419327Z"!
+2019-11-16 15:49:07.959 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:49:07.959 +02:00 [INF] All applications are loaded on "2019-11-16T13:49:07.9594882Z"!
+2019-11-16 15:49:09.042 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:49:09.042 +02:00 [INF] All applications are loaded on "2019-11-16T13:49:09.0429624Z"!
+2019-11-16 15:49:10.010 +02:00 [INF] Аll emails successfully received
+2019-11-16 15:49:10.010 +02:00 [INF] All applications are loaded on "2019-11-16T13:49:10.0102617Z"!
+2019-11-16 16:09:38.152 +02:00 [INF] Starting web host
+2019-11-16 16:09:38.634 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:09:39.200 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:40.918 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:42.681 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:44.326 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:44.329 +02:00 [INF] All applications are loaded on "2019-11-16T14:09:44.3268787Z"!
+2019-11-16 16:09:45.747 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:45.747 +02:00 [INF] All applications are loaded on "2019-11-16T14:09:45.7478097Z"!
+2019-11-16 16:09:47.180 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:47.180 +02:00 [INF] All applications are loaded on "2019-11-16T14:09:47.1809651Z"!
+2019-11-16 16:09:48.438 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:09:48.438 +02:00 [INF] All applications are loaded on "2019-11-16T14:09:48.4386313Z"!
+2019-11-16 16:10:37.286 +02:00 [INF] Starting web host
+2019-11-16 16:10:37.768 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:10:38.308 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:10:40.310 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:10:42.128 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:14:38.070 +02:00 [INF] Starting web host
+2019-11-16 16:14:38.513 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:14:39.039 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:14:42.151 +02:00 [INF] All emails with status name: Open Application are loaded on 16.11.2019 г. 14:14:42!
+2019-11-16 16:14:43.606 +02:00 [INF] All emails with status name: New Application are loaded on 16.11.2019 г. 14:14:43!
+2019-11-16 16:14:45.058 +02:00 [INF] All emails with status name: Invalid Application are loaded on 16.11.2019 г. 14:14:45!
+2019-11-16 16:14:46.295 +02:00 [INF] All emails with status name: Open Application are loaded on 16.11.2019 г. 14:14:46!
+2019-11-16 16:14:50.144 +02:00 [INF] All emails with status name: Open Application are loaded on 16.11.2019 г. 14:14:50!
+2019-11-16 16:14:51.371 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:14:51.374 +02:00 [INF] All applications are loaded on "2019-11-16T14:14:51.3715065Z"!
+2019-11-16 16:14:52.763 +02:00 [INF] All emails with status name: Closed Application are loaded on 16.11.2019 г. 14:14:52!
+2019-11-16 16:14:55.731 +02:00 [INF] All emails with status name: New Application are loaded on 16.11.2019 г. 14:14:55!
+2019-11-16 16:14:57.990 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:14:57.990 +02:00 [INF] All applications are loaded on "2019-11-16T14:14:57.9906967Z"!
+2019-11-16 16:14:59.578 +02:00 [INF] Application for email with ID: 4eebac53-14e0-4672-9263-40ab963154f9 was loaded on "2019-11-16T14:14:59.5782959Z"!
+2019-11-16 16:15:00.784 +02:00 [INF] [16.11.2019 г. 16:15:00] - Email Status of Id: [4eebac53-14e0-4672-9263-40ab963154f9] has been changed from [Not Reviewed] to [New Application] by userId: [565dfbc0-2681-4f29-bc97-a619eacf339c]
+2019-11-16 16:15:00.879 +02:00 [INF] Application for email with ID: 4eebac53-14e0-4672-9263-40ab963154f9 was loaded on "2019-11-16T14:15:00.8799774Z"!
+2019-11-16 16:15:03.470 +02:00 [INF] All emails with status name: New Application are loaded on 16.11.2019 г. 14:15:03!
+2019-11-16 16:15:06.512 +02:00 [INF] All emails with status name: Closed Application are loaded on 16.11.2019 г. 14:15:06!
+2019-11-16 16:15:07.908 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:15:12.321 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:15:12.322 +02:00 [INF] All applications are loaded on "2019-11-16T14:15:12.3219986Z"!
+2019-11-16 16:15:19.312 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:16:14.625 +02:00 [INF] Starting web host
+2019-11-16 16:16:15.077 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:16:15.603 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:16:49.715 +02:00 [INF] Starting web host
+2019-11-16 16:16:50.153 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:16:50.685 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:09.915 +02:00 [INF] Starting web host
+2019-11-16 16:17:10.359 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-16 16:17:10.882 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:18.482 +02:00 [INF] All emails with status name: Open Application are loaded on 16.11.2019 г. 14:17:18!
+2019-11-16 16:17:20.265 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:21.491 +02:00 [INF] All emails with status name: Invalid Application are loaded on 16.11.2019 г. 14:17:21!
+2019-11-16 16:17:22.399 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:23.004 +02:00 [INF] All emails with status name: Closed Application are loaded on 16.11.2019 г. 14:17:23!
+2019-11-16 16:17:23.724 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:24.271 +02:00 [INF] Аll emails successfully received
+2019-11-16 16:17:24.273 +02:00 [INF] All applications are loaded on "2019-11-16T14:17:24.2713559Z"!
+2019-11-16 16:17:26.628 +02:00 [INF] Аll emails successfully received

@@ -19,12 +19,17 @@ namespace EmailManager.Service
         private readonly EmailManagerDbContext context;
         private readonly IEmailFactory emailFactory;
         private readonly EncryptingHelper encryptingHelper;
+        private readonly IEmailStatusService emailStatusService;
 
-        public EmailService(EmailManagerDbContext context, IEmailFactory emailFactory, EncryptingHelper encryptingHelper)
+        public EmailService(EmailManagerDbContext context, 
+            IEmailFactory emailFactory, 
+            EncryptingHelper encryptingHelper,
+            IEmailStatusService emailStatusService)
         {
             this.context = context;
             this.emailFactory = emailFactory;
             this.encryptingHelper = encryptingHelper;
+            this.emailStatusService = emailStatusService;
         }
 
         public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, DateTime dateReceived, string subject, string body)
@@ -45,10 +50,10 @@ namespace EmailManager.Service
             return newEmail.ToDTO();
         }
 
+        
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
             var email = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e => e.Id == emailId);
-            // Log.Information("Email with ID: {0} was found", email.Id);
 
             var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
             var emailDTO = email.ToDTO();
@@ -56,6 +61,9 @@ namespace EmailManager.Service
             return emailDTO;
         }
 
+        /// <summary>
+        /// Get All Emails - No matter of the statuses.
+        /// </summary>
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).OrderByDescending(e => e.DateReceived).ToListAsync();
@@ -68,19 +76,17 @@ namespace EmailManager.Service
             return mappedEmails;
         }
 
-        public async Task<ICollection<EmailDTO>> GetAllNewApplicationEmails()
+        
+        public async Task<ICollection<EmailDTO>> GetAllEmailsByStatusNameAsync(string statusName)
         {
-            //TODO:
-            return null;
-        }
-        public async Task<ICollection<EmailDTO>> GetAllOpenedApplicationEmails()
-        {
-            return null;
-        }
+            var status = await this.emailStatusService.GetEmailStatusByNameAsync(statusName);
+            var listOfEmails = await this.context.Emails
+                .Include(e => e.Status)
+                .Include(e => e.EmailAttachments)
+                .Where(e => e.StatusEmailId == status.Id)
+                .ToListAsync();
 
-        public async Task<ICollection<EmailDTO>> GetAllClosedApplicationEmails()
-        {
-            return null;
+            return listOfEmails.ToDTO();
         }
 
         public async Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, StatusEmailDTO newEmailStatus, string userId)
@@ -107,9 +113,6 @@ namespace EmailManager.Service
             return email.ToDTO();
         }
 
-        /// <summary>
-        /// Helper Method for quick checks
-        /// </summary>
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);

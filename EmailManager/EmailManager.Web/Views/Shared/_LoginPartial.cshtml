@@ -19,13 +19,17 @@
 
                 <a class="nav-link text-dark" asp-controller="Email" asp-action="AllEmails">All emails</a>
                 <div class="dropdown-divider"></div>
-                <a class="nav-link text-dark" asp-controller="Email" asp-action="OpenApplications">Open emails</a>
+                <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                   asp-route-statusName="New Application">New Applications</a>
                 <div class="dropdown-divider"></div>
-                <a class="nav-link text-dark" asp-controller="Email" asp-action="NewApplications">New emails</a>
+                <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                   asp-route-statusName="Open Application">Open Applications</a>
                 <div class="dropdown-divider"></div>
-                <a class="nav-link text-dark" asp-controller="Email" asp-action="NotValidApplications">Not valid emails</a>
+                <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                   asp-route-statusName="Invalid Application">Invalid Applications</a>
                 <div class="dropdown-divider"></div>
-                <a class="nav-link text-dark" asp-controller="Email" asp-action="ClosedApplications">Closed emails</a>
+                <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                   asp-route-statusName="Closed Application">Closed Applications</a>
 
                 <div class="dropdown-divider"></div>
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">

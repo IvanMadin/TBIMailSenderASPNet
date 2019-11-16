@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using EmailManager.Data.Entities;
-using EmailManager.GmailConfig;
-using EmailManager.Service;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
-using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
@@ -49,6 +44,9 @@ namespace EmailManager.Web.Controllers
             return View(email);
         }
 
+        /// <summary>
+        /// List All Emails.
+        /// </summary>
         public async Task<IActionResult> AllEmails()
         {
             var list = (await this.emailService.GetAllEmailsAsync()).ToVM();
@@ -57,38 +55,43 @@ namespace EmailManager.Web.Controllers
             return View(list);
         }
 
-        public async Task<IActionResult> SetToNew(string emailId)
+        public async Task<IActionResult> ShowEmailsByStatus(string statusName)
+        {
+            try
+            {
+                var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
+                Log.Information($"All emails with status name: {statusName} are loaded on {DateTime.UtcNow}!");
+
+                return View("AllEmails", list);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Log.Information(ex.Message);
+                //TODO: Have to make a custom User Message.
+            }
+            return LocalRedirect("~");
+        }
+
+        /// <summary>
+        /// Changing status with the given StatusName.
+        /// </summary>
+        public async Task<IActionResult> ChangeStatus(string emailId, string newStatusName)
         {
             var userId = this.userManager.GetUserId(User);
             var emailDTO = await this.emailService.GetEmailByIdAsync(emailId);
-            var newStatus = await this.emailStatusService.GetEmailStatusByName("New Application");
-            await this.emailService.UpdateEmailStatus(emailDTO, newStatus, userId);
-            await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
+            var statusToSet = await this.emailStatusService.GetEmailStatusByNameAsync(newStatusName);
+            await this.emailService.UpdateEmailStatus(emailDTO, statusToSet, userId);
+
+            if (newStatusName == "New Application")
+            {
+                await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
+            }
+            else if (newStatusName == "Open Application")
+            {
+                await this.applicationService.OpenLoanApplication(emailDTO.Id, userId);
+            }
+
             return RedirectToAction("Application", new { id = emailDTO.Id });
-        }
-        public async Task<IActionResult> SetToOpen(string emailId)
-        {
-            var userId = this.userManager.GetUserId(User);
-            var emailDTO = await this.emailService.GetEmailByIdAsync(emailId);
-            var newStatus = await this.emailStatusService.GetEmailStatusByName("Open Application");
-            await this.emailService.UpdateEmailStatus(emailDTO, newStatus, userId);
-            await this.applicationService.OpenLoanApplication(emailDTO.Id, userId);
-            return RedirectToAction("Application", new { id = emailDTO.Id });
-        }
-
-        public async Task<IActionResult> SetToInvalid(string emailId, string status)
-        {
-            var email = await this.emailService.GetEmailByIdAsync(emailId);
-            await this.emailStatusService.UpdateToInvalid(email, status);
-
-            return RedirectToAction(nameof(Application), new { id = emailId });
-        }
-
-        public async Task<IActionResult> AllEmailStatus()
-        {
-            var list = (await this.emailStatusService.AllEmailStatusAsync()).ToVM();
-
-            return View(list);
         }
     }
 }

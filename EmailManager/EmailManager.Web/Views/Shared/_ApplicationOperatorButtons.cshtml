@@ -2,16 +2,12 @@
 
 @if (Model.EmailStatusName == "Not Reviewed")
 {
-    <a class="btn btn-outline-success" asp-controller="Email" asp-action="SetToNew" asp-route-emailId="@Model.Id">New Application</a>
-    <a class="btn btn-outline-danger" asp-area="" asp-controller="Email" asp-action="UpdateStatusEmail" asp-route-emailId="@Model.Id" asp-route-status="Invalid Application">Invalid Email</a>
-}
-@if (Model.EmailStatusName == "Invalid Application")
-{
-
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">New Application</a>
+    <a class="btn btn-outline-danger" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Invalid Application">Invalid Email</a>
 }
 @if (Model.EmailStatusName == "New Application")
 {
-    <a class="btn btn-outline-success" asp-controller="Email" asp-action="SetToOpen" asp-route-emailId="@Model.Id">Open Application</a>
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Open Application">Open Application</a>
 }
 @if (Model.EmailStatusName == "Open Application")
 {

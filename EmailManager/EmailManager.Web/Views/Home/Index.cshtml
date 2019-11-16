@@ -10,15 +10,19 @@
                 <div class="card-body p-5 amber-text">
                     <h4>Select option</h4>
                     <div class="dropdown-divider"></div>
-                    <a area="" asp-controller="Email" asp-action="AllEmails">All emails</a>
+                    <a class="nav-link text-dark" asp-controller="Email" asp-action="AllEmails">All emails</a>
                     <div class="dropdown-divider"></div>
-                    <a area="" asp-controller="Email" asp-action="OpenApplications">Open emails</a>
+                    <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                       asp-route-statusName="New Application">New Applications</a>
                     <div class="dropdown-divider"></div>
-                    <a area="" asp-controller="Email" asp-action="NewApplications">New emails</a>
+                    <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                       asp-route-statusName="Open Application">Open Applications</a>
                     <div class="dropdown-divider"></div>
-                    <a area="" asp-controller="Email" asp-action="NotValidApplications">Not valid emails</a>
+                    <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                       asp-route-statusName="Invalid Application">Invalid Applications</a>
                     <div class="dropdown-divider"></div>
-                    <a area="" asp-controller="Email" asp-action="ClosedApplications">Closed emails</a>
+                    <a class="nav-link text-dark" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                       asp-route-statusName="Closed Application">Closed Applications</a>
                 </div>
             </div>
         </div>

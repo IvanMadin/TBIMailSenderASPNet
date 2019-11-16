@@ -59,17 +59,6 @@
                         <dd class="col-sm-8">
                             @Html.Raw(Model.Body)
                         </dd>
-                        @*<dd class="col-sm-8">
-                                <input type="button" class="open-close-email btn btn-warning" value="Preview body">
-                                <div class="email-description">
-                                    @await Component.InvokeAsync("BodyModal", Model.Id)
-                                </div>
-
-                            </dd>*@
-                        @*<dd class="col-sm-8">
-                                <div><a asp-controller="Email" asp-action="EmailStatus" asp-route-emailId="@Model.Id" asp-route-emailStatusId="@Model.EmailStatusId">Mark as Invalid Email</a></div>
-
-                            </dd>*@
                     </dl>
                 </div>
             </div>

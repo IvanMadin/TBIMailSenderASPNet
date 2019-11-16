@@ -21,7 +21,7 @@ namespace EmailManager.Service
             this.context = context;
         }
 
-        public async Task<StatusEmailDTO> GetEmailStatusByName(string emailStatusName)
+        public async Task<StatusEmailDTO> GetEmailStatusByNameAsync(string emailStatusName)
         {
             var emailStatus = await this.context.StatusEmails.FirstOrDefaultAsync(se => se.StatusType.ToLower() == emailStatusName.ToLower());
 
@@ -43,52 +43,6 @@ namespace EmailManager.Service
             }
 
             return emailStatus.ToDTO();
-        }
-
-        public async Task<ICollection<EmailDTO>> GetAllEmailByStatusIdAsync(string emailStatusId)
-        {
-            var emailStatus = await this.context.StatusEmails.FindAsync(emailStatusId);
-
-            if (emailStatus == null)
-            {
-                throw new Exception();
-            }
-
-            var status = await this.context.Emails
-                         .Include(s => s.Status)
-                         .Where(e => e.StatusEmailId == emailStatusId)
-                         .ToListAsync();
-
-            return status.ToDTO();
-        }
-
-        public async Task<StatusEmailDTO> UpdateToInvalid(EmailDTO emailDTO, string newStatusEmail)
-        {
-            var statusEmail = await this.context.StatusEmails.FirstOrDefaultAsync(x => x.StatusType == newStatusEmail);
-
-            if(statusEmail is null)
-            {
-                throw new Exception("Email status is not found");
-            }
-
-            var email = await this.context.Emails.FindAsync(emailDTO.Id);
-
-            if(email is null)
-            {
-                throw new Exception("Email is not found");
-            }
-
-            email.StatusEmailId = statusEmail.Id;
-            await this.context.SaveChangesAsync();
-
-            return statusEmail.ToDTO();
-        }
-
-        public async Task<ICollection<StatusEmailDTO>> AllEmailStatusAsync()
-        {
-            var statusEmails = await this.context.StatusEmails.ToListAsync();
-
-            return statusEmails.ToDTO();
         }
     }
 }
