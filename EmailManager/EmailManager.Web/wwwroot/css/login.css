@@ -15,12 +15,12 @@
     margin-bottom:7%;
 }
 
-.button-color{
-    background-color:orange;
-    color:black;
+.button-color {
+    background-color: #e66b00;
+    color: black;
 }
-.orange-color{
-    color: orange;
+.orange-color {
+    color: #e66b00;
 }
 .content {
     max-width: 500px;

@@ -29,6 +29,7 @@
   <ItemGroup>
     <Folder Include="Areas\Manager\" />
     <Folder Include="Areas\Operator\" />
+    <Folder Include="wwwroot\image\" />
   </ItemGroup>
 
 </Project>
