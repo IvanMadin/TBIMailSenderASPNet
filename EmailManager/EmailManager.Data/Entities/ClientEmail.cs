@@ -25,7 +25,7 @@ namespace EmailManager.Data.Entities
 
         public string UserId { get; set; }
         public User User { get; set; }
-
+        public string ModifiedByUserName { get; set; }
         public LoanApplication LoanApplication { get; set; }
     }
 }

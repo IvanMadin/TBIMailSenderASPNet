@@ -80,6 +80,15 @@
                                 <p>Refresh emails</p>
                             </a>
                         </li>
+                        @if (User.IsInRole("Manager"))
+                        {
+                            <li>
+                                <div class="divider"></div>
+                                <a class="nav-link" area="" asp-area="Identity" asp-page="/Account/Register">
+                                    <i class="fas fa-user-plus"></i>Register Employee
+                                </a>
+                            </li>
+                        }
                     </ul>
                 </div>
                 <div class="sidebar-background"><img src="~/image/sidebar-5.jpg" style="width:260px; height:100%" /></div>

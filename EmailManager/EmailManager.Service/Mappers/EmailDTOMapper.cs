@@ -27,7 +27,8 @@ namespace EmailManager.Service.Mappers
                 EmailStatusId = entity.StatusEmailId,
                 EmailStatusName = entity.Status?.StatusType,
                 ModifiedOnDate = entity.ModifiedOnDate,
-                ModifiedByUserId = entity.ModifiedByUserId
+                ModifiedByUserId = entity.ModifiedByUserId,
+                ModifiedByUserName=entity.ModifiedByUserName
             };
 
             return email;

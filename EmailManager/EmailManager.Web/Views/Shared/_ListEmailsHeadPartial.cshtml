@@ -1,4 +1,6 @@
 ﻿@model IEnumerable<EmailViewModel>
+
+
 <th>Email Id</th>
 <th>Date Received</th>
 <th>Sender</th>
@@ -8,22 +10,31 @@
     <th>Status</th>
     <th>Attachments</th>
 }
-@if (Model.Any(e => e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Invalid")))
+else
 {
-    <th>CurrentStatus Since</th>
-    if (User.IsInRole("Manager"))
+    @if (Model.Any(e => e.EmailStatusName.StartsWith("New")))
     {
-        //TODO: Кой User е сложил в този статус.
+        <th>CurrentStatus Since</th>
+    }
+    @if (Model.Any(e => e.EmailStatusName.StartsWith("Open")))
+    {
+        <th>CurrentStatus Since</th>
+        @if (User.IsInRole("Manager"))
+        {
+            <th>Changed by</th>
+        }
+    }
+    @if (Model.Any(e => e.EmailStatusName.StartsWith("Closed")))
+    {
+        <th>Application Status</th>
+        @if (User.IsInRole("Manager"))
+        {
+            <th>Changed by</th>
+        }
+    }
+    @if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid")))
+    {
     }
 }
-@if (Model.Any(e => e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Invalid")))
-{
-    <th>CurrentStatus Since</th>
-}
-@if (Model.Any(e => e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Invalid")))
-{
-}
-@if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Closed")))
-{
-}
+
 <th>View</th>

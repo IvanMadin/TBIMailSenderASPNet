@@ -66,7 +66,7 @@ namespace EmailManager.Service
         /// </summary>
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
-            var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).OrderByDescending(e => e.DateReceived).ToListAsync();
+            var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).Include(u=>u.User).OrderByDescending(e => e.DateReceived).ToListAsync();
             Log.Information("Аll emails successfully received");
 
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));

@@ -11,45 +11,65 @@
             <tbody>
                 @foreach (var email in Model)
                 {
-                <tr>
-                    <partial name="_ListEmailsBodyPartial" model="@email" />
-                    @if (Model.Any(e => e.EmailStatusName.StartsWith("Not")))
-                    {
-                        <td>
-                            @email.EmailStatusName
-                        </td>
-                        <td>
-                            <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
-                        </td>
+                    <tr>
+                        <partial name="_ListEmailsBodyPartial" model="@email" />
+                        @if (Model.Any(e => e.EmailStatusName.StartsWith("Not")))
+                        {
+                            <td>
+                                @email.EmailStatusName
+                            </td>
+                            <td>
+                                <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
+                            </td>
 
-                    }
-                    @if (Model.Any(e => e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Invalid")))
-                    {
-                        <td>
-                            @email.ModifiedOnDate
-                        </td>
-                    }
-                    @if (Model.Any(e => e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Invalid")))
-                    {
-                        <td>
-                            @email.ModifiedOnDate
-                        </td>
-                    }
-                    @if (Model.Any(e => e.EmailStatusName.StartsWith("Closed") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Invalid")))
-                    {
-                    }
-                    @if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid") && !e.EmailStatusName.StartsWith("Not") && !e.EmailStatusName.StartsWith("New") && !e.EmailStatusName.StartsWith("Open") && !e.EmailStatusName.StartsWith("Closed")))
-                    {
-                    }
-                    <td>
-                        <div>
-                            <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id" style="color: #e66b00">Preview email</a>
-                        </div>
+                        }
+                        else
+                        {
+                            @if (Model.Any(e => e.EmailStatusName.StartsWith("New")))
+                            {
+                                <td>
+                                    @email.ModifiedOnDate
+                                </td>
+                            }
+                            @if (Model.Any(e => e.EmailStatusName.StartsWith("Open")))
+                            {
+                                <td>
+                                    @email.ModifiedOnDate
+                                </td>
+                                @if (User.IsInRole("Manager"))
+                                {
+                                    <td>
+                                        @email.ModifiedByUserName
+                                    </td>
+                                }
+                            }
+                            @if (Model.Any(e => e.EmailStatusName.StartsWith("Closed")))
+                            {
+                                <td>
+                                    Approve or Reject
+                                </td>
+                                @if (User.IsInRole("Manager"))
+                                {
+                                    <td>
+                                        @email.ModifiedByUserName
+                                    </td>
+                                }
+                            }
+                            @if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid")))
+                            {
+                            }
+                        }
 
-                    </td>
-                </tr>
+                        <td>
+                            <div>
+                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id" style="color: #e66b00">Preview email</a>
+                            </div>
+
+                        </td>
+                    </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
+
