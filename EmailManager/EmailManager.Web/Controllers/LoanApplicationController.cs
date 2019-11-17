@@ -1,22 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using EmailManager.Data.Entities;
-using EmailManager.GmailConfig;
-using EmailManager.Service;
 using EmailManager.Service.Contracts;
 using EmailManager.Service.Contracts.Factories;
-using EmailManager.Service.DTOs;
-using EmailManager.Service.Factories;
-using EmailManager.Web.Extensions.Mappers;
 using EmailManager.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
+    [Authorize]
     public class LoanApplicationController : Controller
     {
         private readonly UserManager<User> userManager;

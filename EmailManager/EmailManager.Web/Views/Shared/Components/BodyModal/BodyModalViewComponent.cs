@@ -1,9 +1,6 @@
 ﻿using EmailManager.Service;
 using EmailManager.Web.Extensions.Mappers;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace EmailManager.Web.Views.Email.BodyModal

@@ -3,12 +3,14 @@ using System.Threading.Tasks;
 using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
+    [Authorize]
     public class EmailController : Controller
     {
         private readonly UserManager<User> userManager;

@@ -3,16 +3,16 @@
 }
 
 .centerheader {
-    text-align: center;
+    margin-left:17% !important;
 }
 
 .rigth-button {
     text-align: center;
-    width: 460px !important;
+    width: 500px !important;
 }
 
 .mg{
-    margin-bottom:7%;
+    margin-bottom:4% !important;
 }
 
 .button-color {
@@ -22,13 +22,14 @@
 .orange-color {
     color: #e66b00;
 }
+
 .content {
-    max-width: 500px;
-    margin:auto;
-    margin-top:5%;
+    /* max-width: 500px; */
+    margin: auto;
+    margin-top: 4%;
     background-color: white;
     padding: 20px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .scroll-hide

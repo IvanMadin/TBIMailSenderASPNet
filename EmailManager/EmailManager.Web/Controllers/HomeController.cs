@@ -10,30 +10,23 @@ using EmailManager.Service;
 using Serilog;
 using EmailManager.Web.Extensions.Mappers;
 using EmailManager.Service.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EmailManager.Web.Controllers
 {
     public class HomeController : Controller
     {
         private readonly GmailConfigure gmailConfigure;
-        private readonly IEmailService emailService;
 
-        public HomeController(GmailConfigure gmailConfigure, IEmailService emailService)
+        public HomeController(GmailConfigure gmailConfigure)
         {
             this.gmailConfigure = gmailConfigure;
-            this.emailService = emailService;
         }
 
+        [Authorize]
         public async Task<IActionResult> Index()
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                return LocalRedirect("~/Identity/Account/Login");
-            }
-
-            var model = (await emailService.GetAllEmailsAsync()).ToVM();
-
-            return View(model);
+            return RedirectToAction("AllEmails", "Email");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -42,6 +35,7 @@ namespace EmailManager.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
+        [Authorize]
         public async Task<IActionResult> UpdateEmails()
         {
             Log.Information("All emails are updated on {0}!", DateTime.UtcNow);

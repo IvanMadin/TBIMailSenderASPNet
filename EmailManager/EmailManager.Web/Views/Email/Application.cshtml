@@ -9,64 +9,58 @@
 <script type="text/javascript" src="~/js/application-form.js"></script>
 
 <div class="container">
-    <div class="card border-0 shadow my-5">
-        <div class="row application-form-holder">
-            <div class="col-8 card-body p-5 amber-text">
-                <h2>
-                    Details for @Model.Sender
+    <h2>
+        Details for @Model.Sender
 
-                </h2>
-                <h6>
-                    @if (User.IsInRole("Operator"))
-                    {
-                        <partial name="_ApplicationOperatorButtons" model="@Model" />
-                    }
-                    @if (User.IsInRole("Manager"))
-                    {
-                        <partial name="_ApplicationOperatorButtons" model="@Model" />
-                    }
-                </h6>
-                <br />
-                <div>
-                    <dl class="row">
-                        <dt class="col-sm-4">
-                            @nameof(Model.Sender)
-                        </dt>
-                        <dd class="col-sm-8">
-                            @Model.Sender
-                        </dd>
-                        <dt class="col-sm-4">
-                            @nameof(Model.Subject)
-                        </dt>
-                        <dd class="col-sm-8">
-                            @Model.Subject
-                        </dd>
-                        <dt class="col-sm-4">
-                            @nameof(Model.DateReceived)
-                        </dt>
-                        <dd class="col-sm-8">
-                            @Model.DateReceived
-                        </dd>
-                        <dt class="col-sm-4">
-                            @nameof(Model.EmailStatusName)
-                        </dt>
-                        <dd class="col-sm-8">
-                            @Model.EmailStatusName
-                        </dd>
-                        <dt class="col-sm-4">
-                            @nameof(Model.Body)
-                        </dt>
-                        <dd class="col-sm-8">
-                            @Html.Raw(Model.Body)
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="col-4" id="application-form-div">
-                <partial name="_AppFormPartial" model="new LoanApplicationViewModel { EmailId = Model.Id }" />
-            </div>
-        </div>
+    </h2>
+    <h6>
+        @if (User.IsInRole("Operator"))
+        {
+            <partial name="_ApplicationOperatorButtons" model="@Model" />
+        }
+        @if (User.IsInRole("Manager"))
+        {
+            <partial name="_ApplicationOperatorButtons" model="@Model" />
+        }
+    </h6>
+    <br />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-4">
+                @nameof(Model.Sender)
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Sender
+            </dd>
+            <dt class="col-sm-4">
+                @nameof(Model.Subject)
+            </dt>
+            <dd class="col-sm-8">
+                @Model.Subject
+            </dd>
+            <dt class="col-sm-4">
+                @nameof(Model.DateReceived)
+            </dt>
+            <dd class="col-sm-8">
+                @Model.DateReceived
+            </dd>
+            <dt class="col-sm-4">
+                @nameof(Model.EmailStatusName)
+            </dt>
+            <dd class="col-sm-8">
+                @Model.EmailStatusName
+            </dd>
+            <dt class="col-sm-4">
+                @nameof(Model.Body)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.Raw(Model.Body)
+            </dd>
+        </dl>
     </div>
+</div>
+<div class="col-4" id="application-form-div">
+    <partial name="_AppFormPartial" model="new LoanApplicationViewModel { EmailId = Model.Id }" />
 </div>
 
 @section Scripts{

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<EmailViewModel>
+
+<div class="content">
+    <div class="container-fluid">
+        <table id="application-form-div" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Email Id</th>
+                    <th>Date Received</th>
+                    <th>Sender</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                    <th>Attachments</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var email in Model)
+                {
+                    <tr>
+                        <td>
+                            @email.Id
+                        </td>
+                        <td>
+                            @email.DateReceived
+                        </td>
+                        <td>
+                            @email.Sender
+                        </td>
+                        <td>
+                            @email.Subject
+                        </td>
+                        <td>
+                            @email.EmailStatusName
+                        </td>
+                        <td>
+                            <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id" style="color: #e66b00">Preview email</a>
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+     </div>
+</div>
