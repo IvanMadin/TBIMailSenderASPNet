@@ -16,5 +16,8 @@ namespace EmailManager.Web.Models
         public ICollection<AttachmentViewModel> Attachments { get; set; } = new List<AttachmentViewModel>();
         public string EmailStatusId { get; set; }
         public string EmailStatusName { get; set; }
+        public DateTime? ModifiedOnDate { get; set; }
+        public string ModifiedByUserId { get; set; }
+        public string ModifiedByUserName { get; set; }
     }
 }
