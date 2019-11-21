@@ -43,7 +43,7 @@ namespace EmailManager.Web.Controllers
                 EmailId = email.Id
             };
 
-            Log.Information("Email for application form was found successfully!");
+            Log.Information($"{DateTime.Now} Application Form with email ID: {emailId} has been accessed by {User}.");
             return View(newLoanApplication);
         }
 
@@ -58,12 +58,11 @@ namespace EmailManager.Web.Controllers
                 var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
 
                 clientData = await this.clientService.CreateClientData(clientDataDTO);
-                Log.Information("Client with EGN: {0} was created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
+                Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
             }
 
             await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
-
-            Log.Information("Loan application for client with EGN: {0} is created by operator with ID: {1} on {2}!", loanModel.EGN, operatorId, DateTime.UtcNow);
+            Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
 
             //TODO: Have to change status of Email to Closed no matter what operation I take.
 
@@ -75,6 +74,8 @@ namespace EmailManager.Web.Controllers
         {
             var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
             //TODO: ApplicationStatus have to changed.
+
+           // Log.Information($"{DateTime.Now} Changed Application Status by {User}, from: {application.ApplicationStatusName} to {newStatusName}.");
             return View();
         }
 
@@ -83,6 +84,7 @@ namespace EmailManager.Web.Controllers
             var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
             //TODO: ApplicationStatus have to changed.
 
+            Log.Information($"{DateTime.Now} Update Application Status by {User}, from: {loanApplication.ApplicationStatusName} to {status}.");
             return View(loanApplication);
         }
     }

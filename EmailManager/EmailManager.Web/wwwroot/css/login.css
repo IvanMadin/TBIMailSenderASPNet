@@ -1,18 +1,26 @@
-﻿body {
-    background-color:white;
+﻿
+
+body {
+    background-image: url('../image/kiki.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
 }
 
 .centerheader {
-    margin-left:17% !important;
+    margin-left:14% !important;
+    margin-top:5%;
+}
+
+.centerform {
+    margin-left: 5% !important;
 }
 
 .rigth-button {
     text-align: center;
     width: 500px !important;
-}
-
-.mg{
-    margin-bottom:4% !important;
 }
 
 .button-color {
@@ -24,10 +32,9 @@
 }
 
 .content {
-    /* max-width: 500px; */
+     /*max-width: 500px;*/ 
     margin: auto;
-    margin-top: 4%;
-    background-color: white;
+    margin-top: 8%;
     padding: 20px;
     overflow: hidden;
 }

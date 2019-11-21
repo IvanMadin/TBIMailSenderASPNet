@@ -32,8 +32,7 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> BodyModal(string id)
         {
             var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
-
-            Log.Information("Body modal for email with ID: {0} was loaded on {1}!", email.Id, DateTime.UtcNow);
+            Log.Information($"{DateTime.Now} Body modal with email ID: {email.Id} was accessible by {email.ModifiedByUserName}.");
 
             return View(email);
         }
@@ -41,7 +40,7 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> Application(string id)
         {
             var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
-            Log.Information("Application for email with ID: {0} was loaded on {1}!", email.Id, DateTime.UtcNow);
+            Log.Information($"{DateTime.Now} Application with emailID: {email.Id} has been accessed by {email.ModifiedByUserName}.");
 
             return View(email);
         }
@@ -52,7 +51,7 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> AllEmails()
         {
             var list = (await this.emailService.GetAllEmailsAsync()).ToVM();
-            Log.Information("All applications are loaded on {0}!", DateTime.UtcNow);
+            Log.Information($"{DateTime.Now} All emails has been accessed by {User}.");
 
             return View(list);
         }
@@ -62,7 +61,7 @@ namespace EmailManager.Web.Controllers
             try
             {
                 var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
-                Log.Information($"All emails with status name: {statusName} are loaded on {DateTime.UtcNow}!");
+                Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} by User Id: {User}.");
 
                 return View("AllEmails", list);
             }
@@ -87,12 +86,15 @@ namespace EmailManager.Web.Controllers
             if (newStatusName == "New Application")
             {
                 await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
+                Log.Information($"{DateTime.Now} Create Loan Application by User Id: {userId} with Status: {newStatusName}.");
             }
             else if (newStatusName == "Open Application")
             {
                 await this.applicationService.OpenLoanApplication(emailDTO.Id, userId);
+                Log.Information($"{emailDTO.ModifiedOnDate} Open Loan Application by User Id: {userId}.");
             }
 
+            Log.Information($"{emailDTO.ModifiedOnDate} Changed Status by User Id: {userId}, from: {emailDTO.EmailStatusName} to {newStatusName}.");
             return RedirectToAction("Application", new { id = emailDTO.Id });
         }
     }

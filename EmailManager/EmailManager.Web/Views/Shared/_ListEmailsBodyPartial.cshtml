@@ -1,10 +1,15 @@
 ﻿@model EmailViewModel
 
+@{
+    var dateTimeAsString = String.Format("{0:u}", Model.DateReceived);
+    dateTimeAsString = dateTimeAsString.Remove(dateTimeAsString.Length - 1, 1);
+}
+
 <td>
     @Model.Id
 </td>
 <td>
-    @Model.DateReceived
+    @dateTimeAsString
 </td>
 <td>
     @Model.Sender

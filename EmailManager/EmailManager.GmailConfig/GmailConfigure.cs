@@ -65,15 +65,14 @@ namespace EmailManager.GmailConfig
                     var emailRequest = gmailService.Users.Messages.Get("krisi.madin123@gmail.com", email.Id);
 
                     var emailFullResponse = emailRequest.ExecuteAsync().Result;
-
+                    
                     if (emailFullResponse != null)
                     {
                         string originalMailId = emailFullResponse.Id;
 
                         var IsAlreadyAtDatabase = await emailService.CheckIfEmailExists(originalMailId);
 
-
-                        if (!IsAlreadyAtDatabase)
+                        if (!IsAlreadyAtDatabase && !emailFullResponse.LabelIds.Contains("CATEGORY_PROMOTIONS"))
                         {
                             long timeStamp = (long)emailFullResponse.InternalDate;
                             DateTime dateReceived = DateTimeOffset.FromUnixTimeMilliseconds(timeStamp).DateTime.ToLocalTime();

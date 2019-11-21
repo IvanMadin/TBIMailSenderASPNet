@@ -38,15 +38,14 @@ namespace EmailManager.Service
 
             if (newEmail == null)
             {
-                Log.Error("Email is null");
+                Log.Error($"{DateTime.Now} Email is not found");
                 throw new ArgumentException("Invalid email");
             }
 
             this.context.Emails.Add(newEmail);
-
             await this.context.SaveChangesAsync();
-            Log.Information("Email with Original Mail ID: {0} was created", newEmail.Id);
 
+            Log.Information($"{newEmail.ModifiedOnDate} Create Email with Id: {newEmail.Id} by {newEmail.ModifiedByUserName}.");
             return newEmail.ToDTO();
         }
 
@@ -58,6 +57,8 @@ namespace EmailManager.Service
             var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
             var emailDTO = email.ToDTO();
             emailDTO.Body = decryptedBody;
+
+            Log.Information($"{DateTime.Now} Get Email with Id: {email.Id} by {email.ModifiedByUserName}.");
             return emailDTO;
         }
 
@@ -67,12 +68,10 @@ namespace EmailManager.Service
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).Include(u=>u.User).OrderByDescending(e => e.DateReceived).ToListAsync();
-            Log.Information("Аll emails successfully received");
-
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
-
             var mappedEmails = allEmails.ToDTO();
 
+            Log.Information($"{DateTime.Now} Get All Emails.");
             return mappedEmails;
         }
 
@@ -86,6 +85,7 @@ namespace EmailManager.Service
                 .Where(e => e.StatusEmailId == status.Id)
                 .ToListAsync();
 
+            Log.Information($"{DateTime.Now} Get All Emails with Status: {statusName}.");
             return listOfEmails.ToDTO();
         }
 
@@ -95,6 +95,7 @@ namespace EmailManager.Service
             var oldEmailStatus = email.Status.StatusType;
             if (email is null)
             {
+                Log.Information($"{DateTime.Now} Email not found.");
                 throw new Exception("Email is not found");
             }
 
@@ -107,7 +108,7 @@ namespace EmailManager.Service
                 email.UserId = userId;
             }
 
-            Log.Logger.Information($"[{email.ModifiedOnDate}] - Email Status of Id: [{email.Id}] has been changed from [{oldEmailStatus}] to [{newEmailStatus.StatusType}] by userId: [{userId}]");
+            Log.Information($"{email.ModifiedOnDate} Update Emails by User Id: {userId}, from: {oldEmailStatus} to {newEmailStatus.StatusType}.");
             await this.context.SaveChangesAsync();
 
             return email.ToDTO();
@@ -118,7 +119,9 @@ namespace EmailManager.Service
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
 
             if (doesEmailExist)
-                Log.Information("Email with ID: {0} exists", originalMailId);
+            {
+
+            }
 
             return doesEmailExist;
         }
