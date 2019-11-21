@@ -36,6 +36,7 @@ namespace EmailManager.Service
             this.context.LoanApplications.Add(loan);
             await this.context.SaveChangesAsync();
 
+            Log.Information($"{loan.CreatedOnDate} Create Loan Application by User Id: {loan.CreatedByUserId}.");
             return loan.ToDTO();
         }
         public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string clientId, string emailId, string status, string operatorId, decimal amount)
@@ -52,8 +53,8 @@ namespace EmailManager.Service
             loan.UserId = operatorId;
 
             await this.context.SaveChangesAsync();
-            Log.Information("Loan application with ID: {0} was successfully created", loan.Id);
 
+            Log.Information($"{loan.ModifiedOnDate} Create Loan Application by User Id: {loan.ModifiedByUserId}.");
             return loan.ToDTO();
 
         }
@@ -62,14 +63,14 @@ namespace EmailManager.Service
         {
             var loan = await this.context.LoanApplications.FirstOrDefaultAsync(la => la.EmailId == emailId);
 
+            Log.Information($"{DateTime.Now} Get Loan Application with Email Id: {emailId} by User Id: {loan.ModifiedByUserId}.");
             return loan;
         }
         public async Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId)
         {
             var application = await this.context.LoanApplications.FirstOrDefaultAsync(e => e.Id == applicationId);
 
-            Log.Information("Loan application with ID: {0} was successfully taken", applicationId);
-
+            Log.Information($"{DateTime.Now} Get Loan Application with Application Id: {application.Id} by UserId: {application.ModifiedByUserId}.");
             return application.ToDTO();
         }
 
@@ -82,6 +83,7 @@ namespace EmailManager.Service
 
             await this.context.SaveChangesAsync();
 
+            Log.Information($"{loan.ModifiedOnDate} Open Loan Application with Email ID: {loan.EmailId} by UserId: {loan.ModifiedByUserId}.");
             return loan.ToDTO();
         }
     }

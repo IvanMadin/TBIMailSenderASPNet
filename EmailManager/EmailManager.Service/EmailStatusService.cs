@@ -27,9 +27,11 @@ namespace EmailManager.Service
 
             if(emailStatus is null)
             {
+                Log.Information($"{DateTime.Now} Email with Status Name: {emailStatusName} not found.");
                 throw new ArgumentNullException("EmailStatus with that name does not exist!");
             }
 
+            Log.Information($"{DateTime.Now} Get Emails with Status Name: {emailStatusName}.");
             return emailStatus.ToDTO();
         }
         public async Task<StatusEmailDTO> GetEmailStatusByIdAsync(string emailStatusId)
@@ -38,10 +40,11 @@ namespace EmailManager.Service
 
             if (emailStatus == null)
             {
-                Log.Error("Email status is null");
+                Log.Information($"{DateTime.Now} Email with Status Id: {emailStatusId} not found.");
                 throw new Exception("Emails status is null");
             }
 
+            Log.Information($"{DateTime.Now} Get Emails with Status Id: {emailStatusId}.");
             return emailStatus.ToDTO();
         }
     }

@@ -24,7 +24,7 @@ namespace EmailManager.Web.Controllers
         }
 
         [Authorize]
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
             return RedirectToAction("AllEmails", "Email");
         }
@@ -38,8 +38,9 @@ namespace EmailManager.Web.Controllers
         [Authorize]
         public async Task<IActionResult> UpdateEmails()
         {
-            Log.Information("All emails are updated on {0}!", DateTime.UtcNow);
             await gmailConfigure.GmailAPI();
+
+            Log.Information($"{DateTime.Now} Update Emails by {User}.");
             return RedirectToAction("AllEmails", "Email");
         }
     }

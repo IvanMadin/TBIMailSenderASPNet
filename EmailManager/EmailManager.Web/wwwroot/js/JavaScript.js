@@ -15,6 +15,6 @@ $('#someElement').on('click', 'a', function (event) {
     } else {
         secondClick = false;
     }
-}
+});
 
-    //Delaying and blocking and preventing second click.
+    //Delaying and blocking and preventing second click

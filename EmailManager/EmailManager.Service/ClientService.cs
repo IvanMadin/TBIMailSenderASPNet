@@ -32,12 +32,9 @@ namespace EmailManager.Service
             };
 
             this.context.ClientDatas.Add(clientData);
-
-            Log.Information("Client data with EGN: {0} was successfully added", clientData.EGN);
-
             await this.context.SaveChangesAsync();
-            Log.Information("Client data with EGN: {0} was created by operator with ID: {1} on {2}", clientDataDTO.EGN, clientDataDTO.OperatorId, DateTime.Now);
 
+            Log.Information($"{clientData.CreatedOnDate} Create Client Data by User Id: {clientData.CreatedByUserId}.");
             return clientData.ToDTO();
         }
 
@@ -46,7 +43,9 @@ namespace EmailManager.Service
             var clientData = await this.context.ClientDatas.FindAsync(clientId);
 
             if (clientData != null)
-                Log.Information("Client data with ID: {0} was found", clientData.Id, DateTime.Now);
+            {
+                Log.Information($"{DateTime.Now} Get Client Data with ID: {clientId} by User Id: {clientData.ModifiedByUserId}.");
+            }
 
             return clientData.ToDTO();
         }
@@ -58,7 +57,7 @@ namespace EmailManager.Service
 
             if (client != null)
             {
-                Log.Information("Client data with EGN: {0} was found", client.EGN, DateTime.Now);
+                Log.Information($"{DateTime.Now} Find Client Data.");
             }
 
             return client.ToDTO();
