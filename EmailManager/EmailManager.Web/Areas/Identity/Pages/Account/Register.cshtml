@@ -5,9 +5,9 @@
     
 }
 
-<div class="container" style="margin-left:5%">
+<div class="container" style="margin-left:7%">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <h1>@ViewData["Title"]</h1>
             <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
                 <h4>Create a new account.</h4>
@@ -33,7 +33,7 @@
                     <input asp-for="Input.ConfirmPassword" class="form-control" />
                     <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
                 </div>
-                <button type="submit" class="btn button-color">Register</button>
+                <button type="submit" class="btn" style="background-color: #e66b00; color:black; text-align:right !important; margin-top:3%">Register</button>
             </form>
         </div>
     </div>

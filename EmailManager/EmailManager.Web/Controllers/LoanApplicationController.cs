@@ -7,6 +7,7 @@ using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Serilog;
 
 namespace EmailManager.Web.Controllers
@@ -52,21 +53,51 @@ namespace EmailManager.Web.Controllers
         {
             var operatorId = userManager.GetUserId(User);
 
-            var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
-            if (clientData is null)
+            try
             {
-                var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
+                var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
 
-                clientData = await this.clientService.CreateClientData(clientDataDTO);
-                Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
+                if (!ModelState.IsValid || clientData.FirstName == null || clientData.LastName == null || clientData.EGN == null)
+                {
+                    var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
+
+                    if (string.IsNullOrEmpty(clientData.FirstName))
+                    {
+                        TempData["firstNameMessage"] = "FirstName must be between 3 and 50 symbols.";
+                    }
+
+                    if (string.IsNullOrEmpty(clientData.LastName))
+                    {
+                        TempData["lastNameMessage"] = "LastName must be between 3 and 50 symbols.";
+                    }
+
+                    if (string.IsNullOrEmpty(clientData.EGN))
+                    {
+                        TempData["egnMessage"] = "EGN must be 10 symbols.";
+                    }
+
+                    if (string.IsNullOrEmpty(clientData.Phone))
+                    {
+                        TempData["phoneMessage"] = "Phone must be between 10 and 13 symbols.";
+                    }
+
+                    clientData = await this.clientService.CreateClientData(clientDataDTO);
+                    Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
+                }
+
+                await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
+                Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
+
+                //TODO: Have to change status of Email to Closed no matter what operation I take.
+
+                return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
             }
-
-            await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
-            Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
-
-            //TODO: Have to change status of Email to Closed no matter what operation I take.
-
-            return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
+            catch (Exception ex)
+            {
+                TempData["errorMessage"] = ex.Message;
+            }
+            // should return the same page with open client form
+            return View(loanModel);
         }
 
         [HttpGet]

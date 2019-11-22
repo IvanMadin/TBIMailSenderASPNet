@@ -14,13 +14,20 @@ namespace EmailManager.Service
     public class ClientService : IClientService
     {
         private readonly EmailManagerDbContext context;
-        public ClientService(EmailManagerDbContext context)
+        private readonly IValidation validation;
+        public ClientService(EmailManagerDbContext context, IValidation validation)
         {
             this.context = context;
+            this.validation = validation;
         }
 
         public async Task<ClientDataDTO> CreateClientData(ClientDataDTO clientDataDTO)
         {
+            this.validation.IsNameInRange(clientDataDTO.FirstName);
+            this.validation.IsNameInRange(clientDataDTO.LastName);
+            this.validation.IsEGNInRange(clientDataDTO.EGN);
+            this.validation.IsPhoneInRange(clientDataDTO.Phone);
+
             var clientData = new ClientData
             {
                 FirstName = clientDataDTO.FirstName,
@@ -52,6 +59,10 @@ namespace EmailManager.Service
 
         public async Task<ClientDataDTO> FindClientAsync(string firstName, string lastName, string egn)
         {
+            this.validation.IsNameInRange(firstName);
+            this.validation.IsNameInRange(lastName);
+            this.validation.IsEGNInRange(egn);
+
             var client = await this.context.ClientDatas
                  .FirstOrDefaultAsync(cd => cd.FirstName == firstName && cd.LastName == lastName && cd.EGN == egn);
 

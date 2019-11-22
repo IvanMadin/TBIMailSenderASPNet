@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Views\Email\AllApplications.cshtml" />
+    <Content Remove="wwwroot\css\login.css~RF2d54b4b.TMP" />
   </ItemGroup>
 
 
