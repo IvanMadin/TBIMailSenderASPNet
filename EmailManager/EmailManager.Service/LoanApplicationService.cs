@@ -54,6 +54,7 @@ namespace EmailManager.Service
 
             await this.context.SaveChangesAsync();
 
+
             Log.Information($"{loan.ModifiedOnDate} Create Loan Application by User Id: {loan.ModifiedByUserId}.");
             return loan.ToDTO();
 

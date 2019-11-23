@@ -54,7 +54,7 @@ namespace EmailManager.Web
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
             services.Registrations();
-
+            services.AddMvc().AddNToastNotifyToastr();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -76,6 +76,7 @@ namespace EmailManager.Web
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+            app.UseNToastNotify();
 
             app.UseMvc(routes =>
             {

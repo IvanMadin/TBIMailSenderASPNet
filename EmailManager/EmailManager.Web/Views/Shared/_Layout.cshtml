@@ -42,39 +42,37 @@
                             </h3>
                         </div>
                     </div>
-
                     <ul class="nav">
-                        <li class="nav-item active">
-                        <li>
-                            <a class="nav-link" area="" asp-controller="Email" asp-action="AllEmails">
+                        <li class="nav-item">
+                            <a class="nav-link active" area="" asp-controller="Email" asp-action="AllEmails">
                                 <i class="fas fa-inbox"></i>Inbox
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" area="" asp-controller="Email" asp-action="ShowEmailsByStatus"
                                asp-route-statusName="New Application">
                                 <i class="fas fa-envelope"></i>New Applications
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" area="" asp-controller="Email" asp-action="ShowEmailsByStatus"
                                asp-route-statusName="Open Application">
                                 <i class="fas fa-envelope-open-text"></i>Open Applications
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" area="" asp-controller="Email" asp-action="ShowEmailsByStatus"
                                asp-route-statusName="Closed Application">
                                 <i class="far fa-envelope"></i>Closed Applications
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-item">
                             <a class="nav-link" area="" asp-controller="Email" asp-action="ShowEmailsByStatus"
                                asp-route-statusName="Invalid Application">
                                 <i class="fas fa-times-circle"></i>Invalid Applications
                             </a>
                         </li>
-                        <li class="nav-item active active-pro">
+                        <li class="nav-item">
                             <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="UpdateEmails">
                                 <i class="fas fa-sync-alt"></i>
                                 <p>Refresh emails</p>
@@ -127,5 +125,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script type="text/javascript" src="~/js/font-awesome.js"></script>
     @RenderSection("Scripts", required: false)
+    @await Component.InvokeAsync("NToastNotify")
 </body>
 </html>

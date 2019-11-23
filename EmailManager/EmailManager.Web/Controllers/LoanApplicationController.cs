@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using NToastNotify;
 using Serilog;
 
 namespace EmailManager.Web.Controllers
@@ -20,41 +21,52 @@ namespace EmailManager.Web.Controllers
         private readonly ILoanApplicationService loanApplicationService;
         private readonly IClientService clientService;
         private readonly IClientDataFactory clientDataDTOFactory;
+        private readonly IToastNotification toast;
 
         public LoanApplicationController(UserManager<User> userManager,
                                          IEmailService emailService,
                                          ILoanApplicationService loanApplicationService,
                                          IClientService clientService,
-                                         IClientDataFactory clientDataDTOFactory)
+                                         IClientDataFactory clientDataDTOFactory,
+                                         IToastNotification toast)
         {
             this.userManager = userManager;
             this.emailService = emailService;
             this.loanApplicationService = loanApplicationService;
             this.clientService = clientService;
             this.clientDataDTOFactory = clientDataDTOFactory;
+            this.toast = toast;
         }
 
         [HttpGet]
         public async Task<IActionResult> ApplicationForm(string emailId)
         {
-            var email = await this.emailService.GetEmailByIdAsync(emailId);
-
-            var newLoanApplication = new LoanApplicationViewModel
+            try
             {
-                EmailId = email.Id
-            };
+                var email = await this.emailService.GetEmailByIdAsync(emailId);
 
-            Log.Information($"{DateTime.Now} Application Form with email ID: {emailId} has been accessed by {User}.");
-            return View(newLoanApplication);
+                var newLoanApplication = new LoanApplicationViewModel
+                {
+                    EmailId = email.Id
+                };
+
+                Log.Information($"{DateTime.Now} Application Form with email ID: {emailId} has been accessed by {User}.");
+                return View(newLoanApplication);
+            }
+            catch
+            {
+                Log.Error($"Application form wasn't accessible!");
+                return RedirectToAction("Error", "Home");
+            }
+            
         }
 
         [HttpPost]
         public async Task<IActionResult> ApplicationForm(LoanApplicationViewModel loanModel)
         {
-            var operatorId = userManager.GetUserId(User);
-
             try
             {
+                var operatorId = userManager.GetUserId(User);
                 var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
 
                 if (!ModelState.IsValid || clientData.FirstName == null || clientData.LastName == null || clientData.EGN == null)
@@ -86,6 +98,7 @@ namespace EmailManager.Web.Controllers
                 }
 
                 await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
+                this.toast.AddSuccessToastMessage($"Client data was created successfully!");
                 Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
 
                 //TODO: Have to change status of Email to Closed no matter what operation I take.
@@ -94,6 +107,7 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 TempData["errorMessage"] = ex.Message;
             }
             // should return the same page with open client form
@@ -103,20 +117,37 @@ namespace EmailManager.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> ApplicationStatus(string applicationId, string applicationStatusId)
         {
-            var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
-            //TODO: ApplicationStatus have to changed.
+            try
+            {
+                var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
+                //TODO: ApplicationStatus have to changed.
 
-           // Log.Information($"{DateTime.Now} Changed Application Status by {User}, from: {application.ApplicationStatusName} to {newStatusName}.");
-            return View();
+                // Log.Information($"{DateTime.Now} Changed Application Status by {User}, from: {application.ApplicationStatusName} to {newStatusName}.");
+                return View();
+            }
+            catch
+            {
+                Log.Error($"Application status wasn't changed!");
+                return RedirectToAction("Error", "Home");
+            }
         }
 
         public async Task<IActionResult> UpdateStatusApplication(string loanApplicationId, string status)
         {
-            var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
-            //TODO: ApplicationStatus have to changed.
+            try
+            {
+                var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
+                //TODO: ApplicationStatus have to changed.
 
-            Log.Information($"{DateTime.Now} Update Application Status by {User}, from: {loanApplication.ApplicationStatusName} to {status}.");
-            return View(loanApplication);
+                this.toast.AddSuccessToastMessage($"Status was updated successfully!");
+                Log.Information($"{DateTime.Now} Update Application Status by {User}, from: {loanApplication.ApplicationStatusName} to {status}.");
+                return View(loanApplication);
+            }
+            catch
+            {
+                Log.Error($"Application status wasn't updated!");
+                return RedirectToAction("Error", "Home");
+            }
         }
     }
 }
