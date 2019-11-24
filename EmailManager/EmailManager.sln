@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManager.Service", "Ema
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManager.GmailConfig", "EmailManager.GmailConfig\EmailManager.GmailConfig.csproj", "{1A868E21-D7D3-4702-A534-E75FD04DAFA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManaget.Tests", "EmailManaget.Tests\EmailManaget.Tests.csproj", "{220CBF34-6482-49AF-8ACD-DA3C4A10415D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1A868E21-D7D3-4702-A534-E75FD04DAFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A868E21-D7D3-4702-A534-E75FD04DAFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A868E21-D7D3-4702-A534-E75FD04DAFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220CBF34-6482-49AF-8ACD-DA3C4A10415D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220CBF34-6482-49AF-8ACD-DA3C4A10415D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220CBF34-6482-49AF-8ACD-DA3C4A10415D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220CBF34-6482-49AF-8ACD-DA3C4A10415D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
