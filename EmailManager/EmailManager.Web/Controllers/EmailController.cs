@@ -18,18 +18,24 @@ namespace EmailManager.Web.Controllers
         private readonly IEmailService emailService;
         private readonly IEmailStatusService emailStatusService;
         private readonly ILoanApplicationService applicationService;
+        private readonly IUsersService usersService;
+        private readonly IAttachmentsService attachmentsService;
         private readonly IToastNotification toast;
 
         public EmailController(UserManager<User> userManager,
             IEmailService emailService,
             IEmailStatusService emailStatusService,
             ILoanApplicationService applicationService,
+            IUsersService usersService,
+            IAttachmentsService attachmentsService,
             IToastNotification toast)
         {
             this.userManager = userManager;
             this.emailService = emailService;
             this.emailStatusService = emailStatusService;
             this.applicationService = applicationService;
+            this.usersService = usersService;
+            this.attachmentsService = attachmentsService;
             this.toast = toast;
         }
 
@@ -56,7 +62,7 @@ namespace EmailManager.Web.Controllers
             {
                 var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
                 Log.Information($"{DateTime.Now} Application with emailID: {email.Id} has been accessed by {email.ModifiedByUserName}.");
-
+                email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
                 return View(email);
             }
             catch (Exception ex)
@@ -75,6 +81,10 @@ namespace EmailManager.Web.Controllers
             try
             {
                 var list = (await this.emailService.GetAllEmailsAsync()).ToVM();
+                foreach (var email in list)
+                {
+                    email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
+                }
                 Log.Information($"{DateTime.Now} All emails has been accessed by {User}.");
 
                 return View(list);
@@ -92,6 +102,13 @@ namespace EmailManager.Web.Controllers
             try
             {
                 var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
+                foreach (var email in list)
+                {
+                    var userName = (await this.usersService.GetUserByIdAsync(email.ModifiedByUserId)).UserName;
+                    email.ModifiedByUserName = userName;
+                }
+                
+
                 Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} by User Id: {User}.");
 
                 return View("AllEmails", list);
@@ -100,7 +117,6 @@ namespace EmailManager.Web.Controllers
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Information(ex.Message);
-                //TODO: Have to make a custom User Message.
             }
             return LocalRedirect("~");
         }

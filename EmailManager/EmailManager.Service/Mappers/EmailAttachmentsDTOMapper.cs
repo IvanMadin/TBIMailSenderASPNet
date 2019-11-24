@@ -2,6 +2,7 @@
 using EmailManager.Service.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace EmailManager.Service.Mappers
@@ -22,6 +23,16 @@ namespace EmailManager.Service.Mappers
             };
 
             return emailAttachment;
+        }
+
+        public static ICollection<EmailAttachmentsDTO> ToDTO(this ICollection<EmailAttachments> attachments)
+        {
+            var newCollection =  attachments.Select(ea => ea.ToDTO()).ToList();
+
+            if (newCollection is null)
+                return new List<EmailAttachmentsDTO>();
+
+            return newCollection;
         }
     }
 }

@@ -98,7 +98,7 @@ namespace EmailManager.Web.Controllers
                     Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
                 }
 
-                await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
+            var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
                 this.toast.AddSuccessToastMessage($"Client data was created successfully!");
                 Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
 
@@ -111,9 +111,8 @@ namespace EmailManager.Web.Controllers
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 TempData["errorMessage"] = ex.Message;
             }
-            // should return the same page with open client form
-            return View(loanModel);
+        
+            return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
         }
-
     }
 }

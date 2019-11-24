@@ -1,0 +1,168 @@
+2019-11-22 01:09:55.281 +02:00 [INF] Starting web host
+2019-11-22 01:09:56.782 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-22 01:10:58.723 +02:00 [INF] User logged in.
+2019-11-22 01:10:58.880 +02:00 [INF] 22.11.2019 г. 1:10:58 Get All Emails.
+2019-11-22 01:10:58.882 +02:00 [INF] 22.11.2019 г. 1:10:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:00.250 +02:00 [INF] 22.11.2019 г. 1:11:00 Get Emails with Status Name: New Application.
+2019-11-22 01:11:00.287 +02:00 [INF] 22.11.2019 г. 1:11:00 Get All Emails with Status: New Application.
+2019-11-22 01:11:00.287 +02:00 [INF] 22.11.2019 г. 1:11:00 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:00.845 +02:00 [INF] 22.11.2019 г. 1:11:00 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:00.848 +02:00 [INF] 22.11.2019 г. 1:11:00 Get All Emails with Status: Open Application.
+2019-11-22 01:11:00.848 +02:00 [INF] 22.11.2019 г. 1:11:00 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:01.333 +02:00 [INF] 22.11.2019 г. 1:11:01 Get Emails with Status Name: Closed Application.
+2019-11-22 01:11:01.335 +02:00 [INF] 22.11.2019 г. 1:11:01 Get All Emails with Status: Closed Application.
+2019-11-22 01:11:01.335 +02:00 [INF] 22.11.2019 г. 1:11:01 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:03.027 +02:00 [INF] 22.11.2019 г. 1:11:03 Get Emails with Status Name: Invalid Application.
+2019-11-22 01:11:03.028 +02:00 [INF] 22.11.2019 г. 1:11:03 Get All Emails with Status: Invalid Application.
+2019-11-22 01:11:03.028 +02:00 [INF] 22.11.2019 г. 1:11:03 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:03.586 +02:00 [INF] 22.11.2019 г. 1:11:03 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:03.589 +02:00 [INF] 22.11.2019 г. 1:11:03 Get All Emails with Status: Open Application.
+2019-11-22 01:11:03.589 +02:00 [INF] 22.11.2019 г. 1:11:03 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:03.952 +02:00 [INF] 22.11.2019 г. 1:11:03 Get Emails with Status Name: New Application.
+2019-11-22 01:11:03.954 +02:00 [INF] 22.11.2019 г. 1:11:03 Get All Emails with Status: New Application.
+2019-11-22 01:11:03.954 +02:00 [INF] 22.11.2019 г. 1:11:03 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:04.394 +02:00 [INF] 22.11.2019 г. 1:11:04 Get All Emails.
+2019-11-22 01:11:04.395 +02:00 [INF] 22.11.2019 г. 1:11:04 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:04.749 +02:00 [INF] 22.11.2019 г. 1:11:04 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:04.761 +02:00 [INF] 22.11.2019 г. 1:11:04 Get All Emails with Status: Open Application.
+2019-11-22 01:11:04.761 +02:00 [INF] 22.11.2019 г. 1:11:04 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:05.090 +02:00 [INF] 22.11.2019 г. 1:11:05 Get Emails with Status Name: Closed Application.
+2019-11-22 01:11:05.091 +02:00 [INF] 22.11.2019 г. 1:11:05 Get All Emails with Status: Closed Application.
+2019-11-22 01:11:05.091 +02:00 [INF] 22.11.2019 г. 1:11:05 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:05.686 +02:00 [INF] 22.11.2019 г. 1:11:05 Get Emails with Status Name: Invalid Application.
+2019-11-22 01:11:05.687 +02:00 [INF] 22.11.2019 г. 1:11:05 Get All Emails with Status: Invalid Application.
+2019-11-22 01:11:05.687 +02:00 [INF] 22.11.2019 г. 1:11:05 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:06.090 +02:00 [INF] 22.11.2019 г. 1:11:06 Get Emails with Status Name: Closed Application.
+2019-11-22 01:11:06.092 +02:00 [INF] 22.11.2019 г. 1:11:06 Get All Emails with Status: Closed Application.
+2019-11-22 01:11:06.092 +02:00 [INF] 22.11.2019 г. 1:11:06 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:06.408 +02:00 [INF] 22.11.2019 г. 1:11:06 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:06.415 +02:00 [INF] 22.11.2019 г. 1:11:06 Get All Emails with Status: Open Application.
+2019-11-22 01:11:06.415 +02:00 [INF] 22.11.2019 г. 1:11:06 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:07.326 +02:00 [INF] 22.11.2019 г. 1:11:07 Get Emails with Status Name: New Application.
+2019-11-22 01:11:07.328 +02:00 [INF] 22.11.2019 г. 1:11:07 Get All Emails with Status: New Application.
+2019-11-22 01:11:07.328 +02:00 [INF] 22.11.2019 г. 1:11:07 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:07.835 +02:00 [INF] 22.11.2019 г. 1:11:07 Get All Emails.
+2019-11-22 01:11:07.835 +02:00 [INF] 22.11.2019 г. 1:11:07 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:08.360 +02:00 [INF] 22.11.2019 г. 1:11:08 Get Emails with Status Name: New Application.
+2019-11-22 01:11:08.361 +02:00 [INF] 22.11.2019 г. 1:11:08 Get All Emails with Status: New Application.
+2019-11-22 01:11:08.362 +02:00 [INF] 22.11.2019 г. 1:11:08 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:09.193 +02:00 [INF] 22.11.2019 г. 1:11:09 Get All Emails.
+2019-11-22 01:11:09.193 +02:00 [INF] 22.11.2019 г. 1:11:09 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:09.721 +02:00 [INF] 22.11.2019 г. 1:11:09 Get Emails with Status Name: New Application.
+2019-11-22 01:11:09.722 +02:00 [INF] 22.11.2019 г. 1:11:09 Get All Emails with Status: New Application.
+2019-11-22 01:11:09.722 +02:00 [INF] 22.11.2019 г. 1:11:09 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:43.001 +02:00 [INF] 22.11.2019 г. 1:11:43 Get Emails with Status Name: New Application.
+2019-11-22 01:11:43.006 +02:00 [INF] 22.11.2019 г. 1:11:43 Get All Emails with Status: New Application.
+2019-11-22 01:11:43.006 +02:00 [INF] 22.11.2019 г. 1:11:43 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:43.546 +02:00 [INF] 22.11.2019 г. 1:11:43 Get All Emails.
+2019-11-22 01:11:43.546 +02:00 [INF] 22.11.2019 г. 1:11:43 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:43.992 +02:00 [INF] 22.11.2019 г. 1:11:43 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:44.002 +02:00 [INF] 22.11.2019 г. 1:11:44 Get All Emails with Status: Open Application.
+2019-11-22 01:11:44.002 +02:00 [INF] 22.11.2019 г. 1:11:44 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:44.684 +02:00 [INF] 22.11.2019 г. 1:11:44 Get Emails with Status Name: Closed Application.
+2019-11-22 01:11:44.686 +02:00 [INF] 22.11.2019 г. 1:11:44 Get All Emails with Status: Closed Application.
+2019-11-22 01:11:44.686 +02:00 [INF] 22.11.2019 г. 1:11:44 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:46.214 +02:00 [INF] 22.11.2019 г. 1:11:46 Get Emails with Status Name: Closed Application.
+2019-11-22 01:11:46.217 +02:00 [INF] 22.11.2019 г. 1:11:46 Get All Emails with Status: Closed Application.
+2019-11-22 01:11:46.217 +02:00 [INF] 22.11.2019 г. 1:11:46 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:49.584 +02:00 [INF] 22.11.2019 г. 1:11:49 Get Emails with Status Name: Open Application.
+2019-11-22 01:11:49.591 +02:00 [INF] 22.11.2019 г. 1:11:49 Get All Emails with Status: Open Application.
+2019-11-22 01:11:49.591 +02:00 [INF] 22.11.2019 г. 1:11:49 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:50.061 +02:00 [INF] 22.11.2019 г. 1:11:50 Get Emails with Status Name: New Application.
+2019-11-22 01:11:50.066 +02:00 [INF] 22.11.2019 г. 1:11:50 Get All Emails with Status: New Application.
+2019-11-22 01:11:50.066 +02:00 [INF] 22.11.2019 г. 1:11:50 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:11:50.398 +02:00 [INF] 22.11.2019 г. 1:11:50 Get All Emails.
+2019-11-22 01:11:50.398 +02:00 [INF] 22.11.2019 г. 1:11:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:12:02.638 +02:00 [INF] 22.11.2019 г. 1:12:02 Get All Emails.
+2019-11-22 01:12:02.639 +02:00 [INF] 22.11.2019 г. 1:12:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:15:49.455 +02:00 [INF] 22.11.2019 г. 1:15:49 Get Emails with Status Name: New Application.
+2019-11-22 01:15:49.461 +02:00 [INF] 22.11.2019 г. 1:15:49 Get All Emails with Status: New Application.
+2019-11-22 01:15:49.461 +02:00 [INF] 22.11.2019 г. 1:15:49 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:15:50.507 +02:00 [INF] 22.11.2019 г. 1:15:50 Get All Emails.
+2019-11-22 01:15:50.507 +02:00 [INF] 22.11.2019 г. 1:15:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:15:52.587 +02:00 [INF] 22.11.2019 г. 1:15:52 Get All Emails.
+2019-11-22 01:15:52.587 +02:00 [INF] 22.11.2019 г. 1:15:52 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:15:54.160 +02:00 [INF] 22.11.2019 г. 1:15:54 Get Emails with Status Name: New Application.
+2019-11-22 01:15:54.164 +02:00 [INF] 22.11.2019 г. 1:15:54 Get All Emails with Status: New Application.
+2019-11-22 01:15:54.164 +02:00 [INF] 22.11.2019 г. 1:15:54 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:15:54.503 +02:00 [INF] 22.11.2019 г. 1:15:54 Get All Emails.
+2019-11-22 01:15:54.504 +02:00 [INF] 22.11.2019 г. 1:15:54 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:23.359 +02:00 [INF] 22.11.2019 г. 1:21:23 Get Emails with Status Name: New Application.
+2019-11-22 01:21:23.366 +02:00 [INF] 22.11.2019 г. 1:21:23 Get All Emails with Status: New Application.
+2019-11-22 01:21:23.366 +02:00 [INF] 22.11.2019 г. 1:21:23 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:24.285 +02:00 [INF] 22.11.2019 г. 1:21:24 Get Emails with Status Name: Closed Application.
+2019-11-22 01:21:24.298 +02:00 [INF] 22.11.2019 г. 1:21:24 Get All Emails with Status: Closed Application.
+2019-11-22 01:21:24.298 +02:00 [INF] 22.11.2019 г. 1:21:24 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:25.493 +02:00 [INF] 22.11.2019 г. 1:21:25 Get Emails with Status Name: Invalid Application.
+2019-11-22 01:21:25.498 +02:00 [INF] 22.11.2019 г. 1:21:25 Get All Emails with Status: Invalid Application.
+2019-11-22 01:21:25.498 +02:00 [INF] 22.11.2019 г. 1:21:25 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:25.933 +02:00 [INF] 22.11.2019 г. 1:21:25 Get Emails with Status Name: Closed Application.
+2019-11-22 01:21:25.934 +02:00 [INF] 22.11.2019 г. 1:21:25 Get All Emails with Status: Closed Application.
+2019-11-22 01:21:25.935 +02:00 [INF] 22.11.2019 г. 1:21:25 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:26.438 +02:00 [INF] 22.11.2019 г. 1:21:26 Get Emails with Status Name: New Application.
+2019-11-22 01:21:26.440 +02:00 [INF] 22.11.2019 г. 1:21:26 Get All Emails with Status: New Application.
+2019-11-22 01:21:26.440 +02:00 [INF] 22.11.2019 г. 1:21:26 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:26.871 +02:00 [INF] 22.11.2019 г. 1:21:26 Get All Emails.
+2019-11-22 01:21:26.871 +02:00 [INF] 22.11.2019 г. 1:21:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:27.610 +02:00 [INF] 22.11.2019 г. 1:21:27 Get Emails with Status Name: Invalid Application.
+2019-11-22 01:21:27.612 +02:00 [INF] 22.11.2019 г. 1:21:27 Get All Emails with Status: Invalid Application.
+2019-11-22 01:21:27.612 +02:00 [INF] 22.11.2019 г. 1:21:27 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:30.090 +02:00 [INF] 22.11.2019 г. 1:21:30 Get Emails with Status Name: Invalid Application.
+2019-11-22 01:21:30.091 +02:00 [INF] 22.11.2019 г. 1:21:30 Get All Emails with Status: Invalid Application.
+2019-11-22 01:21:30.091 +02:00 [INF] 22.11.2019 г. 1:21:30 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:30.163 +02:00 [INF] 22.11.2019 г. 1:21:30 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:30.627 +02:00 [INF] 22.11.2019 г. 1:21:30 Get Emails with Status Name: Closed Application.
+2019-11-22 01:21:30.629 +02:00 [INF] 22.11.2019 г. 1:21:30 Get All Emails with Status: Closed Application.
+2019-11-22 01:21:30.629 +02:00 [INF] 22.11.2019 г. 1:21:30 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:31.205 +02:00 [INF] 22.11.2019 г. 1:21:31 Get Emails with Status Name: New Application.
+2019-11-22 01:21:31.206 +02:00 [INF] 22.11.2019 г. 1:21:31 Get All Emails with Status: New Application.
+2019-11-22 01:21:31.206 +02:00 [INF] 22.11.2019 г. 1:21:31 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:31.642 +02:00 [INF] 22.11.2019 г. 1:21:31 Get All Emails.
+2019-11-22 01:21:31.642 +02:00 [INF] 22.11.2019 г. 1:21:31 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:21:33.888 +02:00 [INF] 22.11.2019 г. 1:21:33 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 01:22:00.736 +02:00 [INF] User logged out.
+2019-11-22 02:15:17.754 +02:00 [INF] Starting web host
+2019-11-22 02:15:18.320 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-22 02:15:24.469 +02:00 [INF] User logged in.
+2019-11-22 02:15:24.616 +02:00 [INF] 22.11.2019 г. 2:15:24 Get All Emails.
+2019-11-22 02:15:24.618 +02:00 [INF] 22.11.2019 г. 2:15:24 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:26.015 +02:00 [INF] 22.11.2019 г. 2:15:26 Get All Emails.
+2019-11-22 02:15:26.015 +02:00 [INF] 22.11.2019 г. 2:15:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:27.819 +02:00 [INF] 22.11.2019 г. 2:15:27 Get Emails with Status Name: Open Application.
+2019-11-22 02:15:27.866 +02:00 [INF] 22.11.2019 г. 2:15:27 Get All Emails with Status: Open Application.
+2019-11-22 02:15:27.866 +02:00 [INF] 22.11.2019 г. 2:15:27 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:30.183 +02:00 [INF] 22.11.2019 г. 2:15:30 Get Emails with Status Name: Invalid Application.
+2019-11-22 02:15:30.185 +02:00 [INF] 22.11.2019 г. 2:15:30 Get All Emails with Status: Invalid Application.
+2019-11-22 02:15:30.185 +02:00 [INF] 22.11.2019 г. 2:15:30 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:30.839 +02:00 [INF] 22.11.2019 г. 2:15:30 Get Emails with Status Name: Closed Application.
+2019-11-22 02:15:30.841 +02:00 [INF] 22.11.2019 г. 2:15:30 Get All Emails with Status: Closed Application.
+2019-11-22 02:15:30.841 +02:00 [INF] 22.11.2019 г. 2:15:30 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:31.296 +02:00 [INF] 22.11.2019 г. 2:15:31 Get Emails with Status Name: Open Application.
+2019-11-22 02:15:31.300 +02:00 [INF] 22.11.2019 г. 2:15:31 Get All Emails with Status: Open Application.
+2019-11-22 02:15:31.300 +02:00 [INF] 22.11.2019 г. 2:15:31 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:31.736 +02:00 [INF] 22.11.2019 г. 2:15:31 Get Emails with Status Name: New Application.
+2019-11-22 02:15:31.737 +02:00 [INF] 22.11.2019 г. 2:15:31 Get All Emails with Status: New Application.
+2019-11-22 02:15:31.737 +02:00 [INF] 22.11.2019 г. 2:15:31 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:32.313 +02:00 [INF] 22.11.2019 г. 2:15:32 Get All Emails.
+2019-11-22 02:15:32.313 +02:00 [INF] 22.11.2019 г. 2:15:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:32.923 +02:00 [INF] 22.11.2019 г. 2:15:32 Get Emails with Status Name: New Application.
+2019-11-22 02:15:32.925 +02:00 [INF] 22.11.2019 г. 2:15:32 Get All Emails with Status: New Application.
+2019-11-22 02:15:32.925 +02:00 [INF] 22.11.2019 г. 2:15:32 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:33.411 +02:00 [INF] 22.11.2019 г. 2:15:33 Get All Emails.
+2019-11-22 02:15:33.411 +02:00 [INF] 22.11.2019 г. 2:15:33 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:33.951 +02:00 [INF] 22.11.2019 г. 2:15:33 Get Emails with Status Name: New Application.
+2019-11-22 02:15:33.982 +02:00 [INF] 22.11.2019 г. 2:15:33 Get All Emails with Status: New Application.
+2019-11-22 02:15:33.982 +02:00 [INF] 22.11.2019 г. 2:15:33 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:34.518 +02:00 [INF] 22.11.2019 г. 2:15:34 Get All Emails.
+2019-11-22 02:15:34.518 +02:00 [INF] 22.11.2019 г. 2:15:34 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:35.324 +02:00 [INF] 22.11.2019 г. 2:15:35 Get Emails with Status Name: New Application.
+2019-11-22 02:15:35.325 +02:00 [INF] 22.11.2019 г. 2:15:35 Get All Emails with Status: New Application.
+2019-11-22 02:15:35.325 +02:00 [INF] 22.11.2019 г. 2:15:35 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:15:35.686 +02:00 [INF] 22.11.2019 г. 2:15:35 Get All Emails.
+2019-11-22 02:15:35.686 +02:00 [INF] 22.11.2019 г. 2:15:35 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-22 02:16:18.232 +02:00 [INF] User logged out.
+2019-11-22 02:16:39.122 +02:00 [INF] Starting web host
+2019-11-22 02:16:39.578 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-22 02:16:47.868 +02:00 [INF] User logged in.
+2019-11-22 02:16:48.015 +02:00 [INF] 22.11.2019 г. 2:16:48 Get All Emails.
+2019-11-22 02:16:48.017 +02:00 [INF] 22.11.2019 г. 2:16:48 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.

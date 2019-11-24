@@ -1,0 +1,50 @@
+﻿@model UserChangePassViewModel
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/login.css" />
+</head>
+
+
+<link href="~/image/kiki.jpg" rel='stylesheet' type='text/css' style="width:1500px; height:300px">
+
+
+<div class="content scroll-hide card col-sm-6" style="margin-left:-7%; opacity:0.8">
+    <div class="centerheader"><h2>E-mail Manager <span style="color:#e66b00">TBI</span>Bank</h2></div>
+    <div class="row col-md-4 centerform">
+        <section>
+            <form id="account" method="post">
+                <div>
+                    <h6>Welcome, @Model.UserName to proceed you have to change your password!</h6>
+                </div>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="OldPassword"></label>
+                    <input asp-for="OldPassword" class="form-control" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="NewPassword"></label>
+                    <input asp-for="NewPassword" class="form-control" />
+                    <span asp-validation-for="NewPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn rigth-button button-color">Update password</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

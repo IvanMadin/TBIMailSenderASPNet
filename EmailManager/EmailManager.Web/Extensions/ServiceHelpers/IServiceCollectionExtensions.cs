@@ -26,6 +26,9 @@ namespace EmailManager.Web.Extensions.ServiceHelpers
             services.AddScoped<ILoanApplicationService, LoanApplicationService>();
             services.AddTransient<IClientDataFactory, ClientDataFactory>();
             services.AddScoped<IValidation, Validation>();
+            services.AddScoped<IRolesService, UsersService>();
+            services.AddScoped<IUsersService, UsersService>();
+            services.AddScoped<IAttachmentsService, AttachmentsService>();
         }
     }
 }
