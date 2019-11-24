@@ -1,4 +1,7 @@
 ﻿@model IEnumerable<EmailViewModel>
+@{
+    var color = "darkgrey";
+}
 
 <div class="content">
     <div class="container-fluid">
@@ -11,7 +14,15 @@
             <tbody>
                 @foreach (var email in Model)
                 {
-                    <tr>
+                    @if (email.EmailStatusName.Contains("Invalid"))
+                    {
+                        color = "darkgrey";
+                    }
+                    else
+                    {
+                        color = "black";
+                    }
+                    <tr style="color:@color">
                         <partial name="_ListEmailsBodyPartial" model="@email" />
                         @if (Model.Any(e => e.EmailStatusName.StartsWith("Not")))
                         {
@@ -19,7 +30,10 @@
                                 @email.EmailStatusName
                             </td>
                             <td>
-                                <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
+                                @if (email.Attachments != null)
+                                {
+                                    <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
+                                }
                             </td>
 
                         }
@@ -46,7 +60,7 @@
                             @if (Model.Any(e => e.EmailStatusName.StartsWith("Closed")))
                             {
                                 <td>
-                                    Approve or Reject
+                                    @email.ApplicationStatus
                                 </td>
                                 @if (User.IsInRole("Manager"))
                                 {

@@ -1,0 +1,416 @@
+2019-11-24 00:12:43.148 +02:00 [INF] Starting web host
+2019-11-24 00:12:44.343 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 00:12:46.369 +02:00 [INF] 24.11.2019 г. 0:12:46 Get All Emails.
+2019-11-24 00:12:46.374 +02:00 [INF] 24.11.2019 г. 0:12:46 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:15:41.925 +02:00 [INF] 24.11.2019 г. 0:15:41 Get Emails with Status Name: Invalid Application.
+2019-11-24 00:15:41.977 +02:00 [INF] 24.11.2019 г. 0:15:41 Get All Emails with Status: Invalid Application.
+2019-11-24 00:15:41.978 +02:00 [INF] 24.11.2019 г. 0:15:41 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:33.068 +02:00 [INF] Starting web host
+2019-11-24 00:33:33.702 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 00:33:35.051 +02:00 [INF] 24.11.2019 г. 0:33:35 Get Emails with Status Name: New Application.
+2019-11-24 00:33:35.190 +02:00 [INF] 24.11.2019 г. 0:33:35 Get All Emails with Status: New Application.
+2019-11-24 00:33:35.196 +02:00 [INF] 24.11.2019 г. 0:33:35 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:35.202 +02:00 [INF] 24.11.2019 г. 0:33:35 Get All Emails.
+2019-11-24 00:33:35.202 +02:00 [INF] 24.11.2019 г. 0:33:35 Get All Emails.
+2019-11-24 00:33:35.202 +02:00 [INF] 24.11.2019 г. 0:33:35 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:35.202 +02:00 [INF] 24.11.2019 г. 0:33:35 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:37.890 +02:00 [INF] 24.11.2019 г. 0:33:37 Get Emails with Status Name: New Application.
+2019-11-24 00:33:37.892 +02:00 [INF] 24.11.2019 г. 0:33:37 Get All Emails with Status: New Application.
+2019-11-24 00:33:37.892 +02:00 [INF] 24.11.2019 г. 0:33:37 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:38.832 +02:00 [INF] 24.11.2019 г. 0:33:38 Get All Emails.
+2019-11-24 00:33:38.832 +02:00 [INF] 24.11.2019 г. 0:33:38 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:39.706 +02:00 [INF] 24.11.2019 г. 0:33:39 Get All Emails.
+2019-11-24 00:33:39.706 +02:00 [INF] 24.11.2019 г. 0:33:39 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:40.356 +02:00 [INF] 24.11.2019 г. 0:33:40 Get All Emails.
+2019-11-24 00:33:40.356 +02:00 [INF] 24.11.2019 г. 0:33:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:41.761 +02:00 [INF] 24.11.2019 г. 0:33:41 Get Emails with Status Name: Open Application.
+2019-11-24 00:33:41.789 +02:00 [INF] 24.11.2019 г. 0:33:41 Get All Emails with Status: Open Application.
+2019-11-24 00:33:41.789 +02:00 [INF] 24.11.2019 г. 0:33:41 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:43.358 +02:00 [INF] 24.11.2019 г. 0:33:43 Get Emails with Status Name: Invalid Application.
+2019-11-24 00:33:43.363 +02:00 [INF] 24.11.2019 г. 0:33:43 Get All Emails with Status: Invalid Application.
+2019-11-24 00:33:43.364 +02:00 [INF] 24.11.2019 г. 0:33:43 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:43.957 +02:00 [INF] 24.11.2019 г. 0:33:43 Get Emails with Status Name: Closed Application.
+2019-11-24 00:33:43.962 +02:00 [INF] 24.11.2019 г. 0:33:43 Get All Emails with Status: Closed Application.
+2019-11-24 00:33:43.962 +02:00 [INF] 24.11.2019 г. 0:33:43 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:44.569 +02:00 [INF] 24.11.2019 г. 0:33:44 Get Emails with Status Name: Open Application.
+2019-11-24 00:33:44.576 +02:00 [INF] 24.11.2019 г. 0:33:44 Get All Emails with Status: Open Application.
+2019-11-24 00:33:44.576 +02:00 [INF] 24.11.2019 г. 0:33:44 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:45.494 +02:00 [INF] 24.11.2019 г. 0:33:45 Get All Emails.
+2019-11-24 00:33:45.494 +02:00 [INF] 24.11.2019 г. 0:33:45 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:33:55.430 +02:00 [INF] 24.11.2019 г. 0:33:55 Get Email with Id: 65874251-e6ba-4e28-b0e9-e96687ec7e9e by .
+2019-11-24 00:33:55.430 +02:00 [INF] 24.11.2019 г. 0:33:55 Application with emailID: 65874251-e6ba-4e28-b0e9-e96687ec7e9e has been accessed by .
+2019-11-24 00:34:47.434 +02:00 [INF] 24.11.2019 г. 0:34:47 Get All Emails.
+2019-11-24 00:34:47.434 +02:00 [INF] 24.11.2019 г. 0:34:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:34:49.835 +02:00 [INF] 24.11.2019 г. 0:34:49 Get Email with Id: 14a9a6f3-2255-4636-baa1-670e7c8f656a by .
+2019-11-24 00:34:49.835 +02:00 [INF] 24.11.2019 г. 0:34:49 Application with emailID: 14a9a6f3-2255-4636-baa1-670e7c8f656a has been accessed by .
+2019-11-24 00:34:51.148 +02:00 [INF] 24.11.2019 г. 0:34:51 Get All Emails.
+2019-11-24 00:34:51.148 +02:00 [INF] 24.11.2019 г. 0:34:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:34:53.213 +02:00 [INF] 24.11.2019 г. 0:34:53 Get Email with Id: 0e84b690-c122-42e8-88b5-daec55af5ff3 by .
+2019-11-24 00:34:53.213 +02:00 [INF] 24.11.2019 г. 0:34:53 Application with emailID: 0e84b690-c122-42e8-88b5-daec55af5ff3 has been accessed by .
+2019-11-24 00:34:58.186 +02:00 [INF] 24.11.2019 г. 0:34:58 Get All Emails.
+2019-11-24 00:34:58.187 +02:00 [INF] 24.11.2019 г. 0:34:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:36:01.338 +02:00 [INF] 24.11.2019 г. 0:36:01 Get Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by .
+2019-11-24 00:36:01.338 +02:00 [INF] 24.11.2019 г. 0:36:01 Application with emailID: 10469c3a-f87b-4a7b-88fc-48f9855a8006 has been accessed by .
+2019-11-24 00:36:18.343 +02:00 [INF] 24.11.2019 г. 0:36:18 Get All Emails.
+2019-11-24 00:36:18.343 +02:00 [INF] 24.11.2019 г. 0:36:18 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:36:20.046 +02:00 [INF] 24.11.2019 г. 0:36:20 Get Emails with Status Name: Open Application.
+2019-11-24 00:36:20.056 +02:00 [INF] 24.11.2019 г. 0:36:20 Get All Emails with Status: Open Application.
+2019-11-24 00:36:20.056 +02:00 [INF] 24.11.2019 г. 0:36:20 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 00:36:21.781 +02:00 [INF] 24.11.2019 г. 0:36:21 Get Email with Id: 65874251-e6ba-4e28-b0e9-e96687ec7e9e by .
+2019-11-24 00:36:21.781 +02:00 [INF] 24.11.2019 г. 0:36:21 Application with emailID: 65874251-e6ba-4e28-b0e9-e96687ec7e9e has been accessed by .
+2019-11-24 01:08:12.258 +02:00 [INF] Starting web host
+2019-11-24 01:08:14.003 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:08:15.500 +02:00 [INF] 24.11.2019 г. 1:08:15 Get All Emails.
+2019-11-24 01:08:15.502 +02:00 [INF] 24.11.2019 г. 1:08:15 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:23.674 +02:00 [INF] 24.11.2019 г. 1:08:23 Get Emails with Status Name: Closed Application.
+2019-11-24 01:08:23.717 +02:00 [INF] 24.11.2019 г. 1:08:23 Get All Emails with Status: Closed Application.
+2019-11-24 01:08:23.717 +02:00 [INF] 24.11.2019 г. 1:08:23 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:30.382 +02:00 [INF] 24.11.2019 г. 1:08:30 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:08:30.384 +02:00 [INF] 24.11.2019 г. 1:08:30 Get All Emails with Status: Invalid Application.
+2019-11-24 01:08:30.384 +02:00 [INF] 24.11.2019 г. 1:08:30 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:30.949 +02:00 [INF] 24.11.2019 г. 1:08:30 Get Emails with Status Name: Closed Application.
+2019-11-24 01:08:30.955 +02:00 [INF] 24.11.2019 г. 1:08:30 Get All Emails with Status: Closed Application.
+2019-11-24 01:08:30.955 +02:00 [INF] 24.11.2019 г. 1:08:30 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:31.678 +02:00 [INF] 24.11.2019 г. 1:08:31 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:08:31.681 +02:00 [INF] 24.11.2019 г. 1:08:31 Get All Emails with Status: Invalid Application.
+2019-11-24 01:08:31.681 +02:00 [INF] 24.11.2019 г. 1:08:31 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:32.186 +02:00 [INF] 24.11.2019 г. 1:08:32 Get Emails with Status Name: Closed Application.
+2019-11-24 01:08:32.191 +02:00 [INF] 24.11.2019 г. 1:08:32 Get All Emails with Status: Closed Application.
+2019-11-24 01:08:32.191 +02:00 [INF] 24.11.2019 г. 1:08:32 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:08:35.052 +02:00 [INF] 24.11.2019 г. 1:08:35 Get Emails with Status Name: Closed Application.
+2019-11-24 01:08:35.058 +02:00 [INF] 24.11.2019 г. 1:08:35 Get All Emails with Status: Closed Application.
+2019-11-24 01:08:35.058 +02:00 [INF] 24.11.2019 г. 1:08:35 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:10:33.710 +02:00 [INF] Starting web host
+2019-11-24 01:10:35.339 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:10:36.387 +02:00 [INF] 24.11.2019 г. 1:10:36 Get All Emails.
+2019-11-24 01:10:36.389 +02:00 [INF] 24.11.2019 г. 1:10:36 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:10:38.525 +02:00 [INF] 24.11.2019 г. 1:10:38 Get Emails with Status Name: Closed Application.
+2019-11-24 01:10:38.584 +02:00 [INF] 24.11.2019 г. 1:10:38 Get All Emails with Status: Closed Application.
+2019-11-24 01:10:38.584 +02:00 [INF] 24.11.2019 г. 1:10:38 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:01.997 +02:00 [INF] 24.11.2019 г. 1:11:01 Get All Emails.
+2019-11-24 01:11:01.997 +02:00 [INF] 24.11.2019 г. 1:11:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:03.196 +02:00 [INF] 24.11.2019 г. 1:11:03 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:11:03.198 +02:00 [INF] 24.11.2019 г. 1:11:03 Get All Emails with Status: Invalid Application.
+2019-11-24 01:11:03.198 +02:00 [INF] 24.11.2019 г. 1:11:03 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:03.718 +02:00 [INF] 24.11.2019 г. 1:11:03 Get Emails with Status Name: Closed Application.
+2019-11-24 01:11:03.722 +02:00 [INF] 24.11.2019 г. 1:11:03 Get All Emails with Status: Closed Application.
+2019-11-24 01:11:03.722 +02:00 [INF] 24.11.2019 г. 1:11:03 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:04.430 +02:00 [INF] 24.11.2019 г. 1:11:04 Get Emails with Status Name: Open Application.
+2019-11-24 01:11:04.435 +02:00 [INF] 24.11.2019 г. 1:11:04 Get All Emails with Status: Open Application.
+2019-11-24 01:11:04.435 +02:00 [INF] 24.11.2019 г. 1:11:04 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:04.960 +02:00 [INF] 24.11.2019 г. 1:11:04 Get Emails with Status Name: New Application.
+2019-11-24 01:11:04.990 +02:00 [INF] 24.11.2019 г. 1:11:04 Get All Emails with Status: New Application.
+2019-11-24 01:11:04.990 +02:00 [INF] 24.11.2019 г. 1:11:04 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:05.672 +02:00 [INF] 24.11.2019 г. 1:11:05 Get All Emails.
+2019-11-24 01:11:05.672 +02:00 [INF] 24.11.2019 г. 1:11:05 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:06.897 +02:00 [INF] 24.11.2019 г. 1:11:06 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:11:06.899 +02:00 [INF] 24.11.2019 г. 1:11:06 Get All Emails with Status: Invalid Application.
+2019-11-24 01:11:06.899 +02:00 [INF] 24.11.2019 г. 1:11:06 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:11:07.922 +02:00 [INF] 24.11.2019 г. 1:11:07 Get Emails with Status Name: Closed Application.
+2019-11-24 01:11:07.926 +02:00 [INF] 24.11.2019 г. 1:11:07 Get All Emails with Status: Closed Application.
+2019-11-24 01:11:07.926 +02:00 [INF] 24.11.2019 г. 1:11:07 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:49.378 +02:00 [INF] Starting web host
+2019-11-24 01:24:50.741 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:24:51.702 +02:00 [INF] 24.11.2019 г. 1:24:51 Get All Emails.
+2019-11-24 01:24:51.707 +02:00 [INF] 24.11.2019 г. 1:24:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:54.758 +02:00 [INF] 24.11.2019 г. 1:24:54 Get Emails with Status Name: Closed Application.
+2019-11-24 01:24:54.824 +02:00 [INF] 24.11.2019 г. 1:24:54 Get All Emails with Status: Closed Application.
+2019-11-24 01:24:54.849 +02:00 [INF] 24.11.2019 г. 1:24:54 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:55.860 +02:00 [INF] 24.11.2019 г. 1:24:55 Get Emails with Status Name: Open Application.
+2019-11-24 01:24:55.866 +02:00 [INF] 24.11.2019 г. 1:24:55 Get All Emails with Status: Open Application.
+2019-11-24 01:24:55.869 +02:00 [INF] 24.11.2019 г. 1:24:55 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:56.756 +02:00 [INF] 24.11.2019 г. 1:24:56 Get Emails with Status Name: Closed Application.
+2019-11-24 01:24:56.761 +02:00 [INF] 24.11.2019 г. 1:24:56 Get All Emails with Status: Closed Application.
+2019-11-24 01:24:56.767 +02:00 [INF] 24.11.2019 г. 1:24:56 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:57.472 +02:00 [INF] 24.11.2019 г. 1:24:57 Get Emails with Status Name: Open Application.
+2019-11-24 01:24:57.476 +02:00 [INF] 24.11.2019 г. 1:24:57 Get All Emails with Status: Open Application.
+2019-11-24 01:24:57.479 +02:00 [INF] 24.11.2019 г. 1:24:57 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:24:58.214 +02:00 [INF] 24.11.2019 г. 1:24:58 Get Emails with Status Name: New Application.
+2019-11-24 01:24:58.217 +02:00 [INF] 24.11.2019 г. 1:24:58 Get All Emails with Status: New Application.
+2019-11-24 01:24:58.219 +02:00 [INF] 24.11.2019 г. 1:24:58 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:00.879 +02:00 [INF] 24.11.2019 г. 1:25:00 Get All Emails.
+2019-11-24 01:25:00.879 +02:00 [INF] 24.11.2019 г. 1:25:00 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:02.305 +02:00 [INF] 24.11.2019 г. 1:25:02 Get Emails with Status Name: Closed Application.
+2019-11-24 01:25:02.310 +02:00 [INF] 24.11.2019 г. 1:25:02 Get All Emails with Status: Closed Application.
+2019-11-24 01:25:02.316 +02:00 [INF] 24.11.2019 г. 1:25:02 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:04.190 +02:00 [INF] 24.11.2019 г. 1:25:04 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:25:04.192 +02:00 [INF] 24.11.2019 г. 1:25:04 Get All Emails with Status: Invalid Application.
+2019-11-24 01:25:04.195 +02:00 [INF] 24.11.2019 г. 1:25:04 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:04.709 +02:00 [INF] 24.11.2019 г. 1:25:04 Get Emails with Status Name: Closed Application.
+2019-11-24 01:25:04.714 +02:00 [INF] 24.11.2019 г. 1:25:04 Get All Emails with Status: Closed Application.
+2019-11-24 01:25:04.719 +02:00 [INF] 24.11.2019 г. 1:25:04 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:05.537 +02:00 [INF] 24.11.2019 г. 1:25:05 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:25:05.539 +02:00 [INF] 24.11.2019 г. 1:25:05 Get All Emails with Status: Invalid Application.
+2019-11-24 01:25:05.541 +02:00 [INF] 24.11.2019 г. 1:25:05 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:06.254 +02:00 [INF] 24.11.2019 г. 1:25:06 Get Emails with Status Name: Closed Application.
+2019-11-24 01:25:06.258 +02:00 [INF] 24.11.2019 г. 1:25:06 Get All Emails with Status: Closed Application.
+2019-11-24 01:25:06.265 +02:00 [INF] 24.11.2019 г. 1:25:06 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:08.001 +02:00 [INF] 24.11.2019 г. 1:25:08 Get Emails with Status Name: Closed Application.
+2019-11-24 01:25:08.006 +02:00 [INF] 24.11.2019 г. 1:25:08 Get All Emails with Status: Closed Application.
+2019-11-24 01:25:08.011 +02:00 [INF] 24.11.2019 г. 1:25:08 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:08.682 +02:00 [INF] 24.11.2019 г. 1:25:08 Get Emails with Status Name: Open Application.
+2019-11-24 01:25:08.700 +02:00 [INF] 24.11.2019 г. 1:25:08 Get All Emails with Status: Open Application.
+2019-11-24 01:25:08.702 +02:00 [INF] 24.11.2019 г. 1:25:08 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:09.503 +02:00 [INF] 24.11.2019 г. 1:25:09 Get Emails with Status Name: Closed Application.
+2019-11-24 01:25:09.507 +02:00 [INF] 24.11.2019 г. 1:25:09 Get All Emails with Status: Closed Application.
+2019-11-24 01:25:09.514 +02:00 [INF] 24.11.2019 г. 1:25:09 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:11.306 +02:00 [INF] 24.11.2019 г. 1:25:11 Get All Emails.
+2019-11-24 01:25:11.306 +02:00 [INF] 24.11.2019 г. 1:25:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:11.804 +02:00 [INF] 24.11.2019 г. 1:25:11 Get Emails with Status Name: New Application.
+2019-11-24 01:25:11.807 +02:00 [INF] 24.11.2019 г. 1:25:11 Get All Emails with Status: New Application.
+2019-11-24 01:25:11.809 +02:00 [INF] 24.11.2019 г. 1:25:11 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:25:12.239 +02:00 [INF] 24.11.2019 г. 1:25:12 Get Emails with Status Name: Open Application.
+2019-11-24 01:25:12.246 +02:00 [INF] 24.11.2019 г. 1:25:12 Get All Emails with Status: Open Application.
+2019-11-24 01:25:12.248 +02:00 [INF] 24.11.2019 г. 1:25:12 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:32:57.422 +02:00 [INF] Starting web host
+2019-11-24 01:32:59.084 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:33:00.186 +02:00 [INF] 24.11.2019 г. 1:33:00 Get All Emails.
+2019-11-24 01:33:00.188 +02:00 [INF] 24.11.2019 г. 1:33:00 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:03.196 +02:00 [INF] 24.11.2019 г. 1:33:03 Get All Emails.
+2019-11-24 01:33:03.196 +02:00 [INF] 24.11.2019 г. 1:33:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:05.139 +02:00 [INF] 24.11.2019 г. 1:33:05 Get All Emails.
+2019-11-24 01:33:05.140 +02:00 [INF] 24.11.2019 г. 1:33:05 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:05.970 +02:00 [INF] 24.11.2019 г. 1:33:05 Get Emails with Status Name: New Application.
+2019-11-24 01:33:06.020 +02:00 [INF] 24.11.2019 г. 1:33:06 Get All Emails with Status: New Application.
+2019-11-24 01:33:06.036 +02:00 [INF] 24.11.2019 г. 1:33:06 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:06.651 +02:00 [INF] 24.11.2019 г. 1:33:06 Get Emails with Status Name: Open Application.
+2019-11-24 01:33:06.674 +02:00 [INF] 24.11.2019 г. 1:33:06 Get All Emails with Status: Open Application.
+2019-11-24 01:33:06.680 +02:00 [INF] 24.11.2019 г. 1:33:06 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:07.368 +02:00 [INF] 24.11.2019 г. 1:33:07 Get Emails with Status Name: Closed Application.
+2019-11-24 01:33:07.376 +02:00 [INF] 24.11.2019 г. 1:33:07 Get All Emails with Status: Closed Application.
+2019-11-24 01:33:07.382 +02:00 [INF] 24.11.2019 г. 1:33:07 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:08.021 +02:00 [INF] 24.11.2019 г. 1:33:08 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:33:08.026 +02:00 [INF] 24.11.2019 г. 1:33:08 Get All Emails with Status: Invalid Application.
+2019-11-24 01:33:08.029 +02:00 [INF] 24.11.2019 г. 1:33:08 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:09.316 +02:00 [INF] 24.11.2019 г. 1:33:09 Get All Emails.
+2019-11-24 01:33:09.316 +02:00 [INF] 24.11.2019 г. 1:33:09 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:24.473 +02:00 [INF] 24.11.2019 г. 1:33:24 Get All Emails.
+2019-11-24 01:33:24.473 +02:00 [INF] 24.11.2019 г. 1:33:24 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:28.892 +02:00 [INF] 24.11.2019 г. 1:33:28 Get All Emails.
+2019-11-24 01:33:28.892 +02:00 [INF] 24.11.2019 г. 1:33:28 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:29.397 +02:00 [INF] 24.11.2019 г. 1:33:29 Get All Emails.
+2019-11-24 01:33:29.397 +02:00 [INF] 24.11.2019 г. 1:33:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:29.684 +02:00 [INF] 24.11.2019 г. 1:33:29 Get All Emails.
+2019-11-24 01:33:29.684 +02:00 [INF] 24.11.2019 г. 1:33:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:47.990 +02:00 [INF] 24.11.2019 г. 1:33:47 Get All Emails.
+2019-11-24 01:33:47.991 +02:00 [INF] 24.11.2019 г. 1:33:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:50.796 +02:00 [INF] 24.11.2019 г. 1:33:50 Get All Emails.
+2019-11-24 01:33:50.796 +02:00 [INF] 24.11.2019 г. 1:33:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:51.342 +02:00 [INF] 24.11.2019 г. 1:33:51 Get All Emails.
+2019-11-24 01:33:51.342 +02:00 [INF] 24.11.2019 г. 1:33:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:51.587 +02:00 [INF] 24.11.2019 г. 1:33:51 Get All Emails.
+2019-11-24 01:33:51.587 +02:00 [INF] 24.11.2019 г. 1:33:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:51.822 +02:00 [INF] 24.11.2019 г. 1:33:51 Get All Emails.
+2019-11-24 01:33:51.822 +02:00 [INF] 24.11.2019 г. 1:33:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:52.014 +02:00 [INF] 24.11.2019 г. 1:33:52 Get All Emails.
+2019-11-24 01:33:52.014 +02:00 [INF] 24.11.2019 г. 1:33:52 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:33:52.227 +02:00 [INF] 24.11.2019 г. 1:33:52 Get All Emails.
+2019-11-24 01:33:52.227 +02:00 [INF] 24.11.2019 г. 1:33:52 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:35:28.584 +02:00 [INF] 24.11.2019 г. 1:35:28 Get All Emails.
+2019-11-24 01:35:28.584 +02:00 [INF] 24.11.2019 г. 1:35:28 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:36:24.036 +02:00 [INF] 24.11.2019 г. 1:36:24 Get All Emails.
+2019-11-24 01:36:24.036 +02:00 [INF] 24.11.2019 г. 1:36:24 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:36:33.835 +02:00 [INF] 24.11.2019 г. 1:36:33 Get All Emails.
+2019-11-24 01:36:33.835 +02:00 [INF] 24.11.2019 г. 1:36:33 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:36:34.633 +02:00 [INF] 24.11.2019 г. 1:36:34 Get All Emails.
+2019-11-24 01:36:34.633 +02:00 [INF] 24.11.2019 г. 1:36:34 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:37:08.997 +02:00 [INF] Starting web host
+2019-11-24 01:37:10.296 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:37:11.129 +02:00 [INF] 24.11.2019 г. 1:37:11 Get All Emails.
+2019-11-24 01:37:11.131 +02:00 [INF] 24.11.2019 г. 1:37:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:38:14.283 +02:00 [INF] Starting web host
+2019-11-24 01:38:15.588 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 01:38:16.619 +02:00 [INF] 24.11.2019 г. 1:38:16 Get All Emails.
+2019-11-24 01:38:16.621 +02:00 [INF] 24.11.2019 г. 1:38:16 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:38:29.138 +02:00 [INF] 24.11.2019 г. 1:38:29 Get Email with Id: 54a42d12-865a-4f83-98b3-6a957ba25b93 by .
+2019-11-24 01:38:29.138 +02:00 [INF] 24.11.2019 г. 1:38:29 Application with emailID: 54a42d12-865a-4f83-98b3-6a957ba25b93 has been accessed by .
+2019-11-24 01:38:30.541 +02:00 [INF] 24.11.2019 г. 1:38:30 Get Email with Id: 54a42d12-865a-4f83-98b3-6a957ba25b93 by .
+2019-11-24 01:38:30.553 +02:00 [INF] 24.11.2019 г. 1:38:30 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:38:30.555 +02:00 [INF] 24.11.2019 г. 1:38:30 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-24 01:38:30.607 +02:00 [INF]  Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-24 01:38:30.615 +02:00 [INF] 24.11.2019 г. 1:38:30 Get Email with Id: 54a42d12-865a-4f83-98b3-6a957ba25b93 by .
+2019-11-24 01:38:30.615 +02:00 [INF] 24.11.2019 г. 1:38:30 Application with emailID: 54a42d12-865a-4f83-98b3-6a957ba25b93 has been accessed by .
+2019-11-24 01:38:32.491 +02:00 [INF] 24.11.2019 г. 1:38:32 Get All Emails.
+2019-11-24 01:38:32.491 +02:00 [INF] 24.11.2019 г. 1:38:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:38:45.479 +02:00 [INF] 24.11.2019 г. 1:38:45 Get Email with Id: 17df330f-236d-4517-9dd9-d3ee2950640f by .
+2019-11-24 01:38:45.479 +02:00 [INF] 24.11.2019 г. 1:38:45 Application with emailID: 17df330f-236d-4517-9dd9-d3ee2950640f has been accessed by .
+2019-11-24 01:38:48.358 +02:00 [INF] 24.11.2019 г. 1:38:48 Get All Emails.
+2019-11-24 01:38:48.358 +02:00 [INF] 24.11.2019 г. 1:38:48 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:38:56.133 +02:00 [INF] 24.11.2019 г. 1:38:56 Get Email with Id: ad495abc-4fbc-4a1a-a058-b800dbd133e8 by .
+2019-11-24 01:38:56.133 +02:00 [INF] 24.11.2019 г. 1:38:56 Application with emailID: ad495abc-4fbc-4a1a-a058-b800dbd133e8 has been accessed by .
+2019-11-24 01:38:57.220 +02:00 [INF] 24.11.2019 г. 1:38:57 Get Email with Id: ad495abc-4fbc-4a1a-a058-b800dbd133e8 by .
+2019-11-24 01:38:57.221 +02:00 [INF] 24.11.2019 г. 1:38:57 Get Emails with Status Name: Invalid Application.
+2019-11-24 01:38:57.221 +02:00 [INF] 24.11.2019 г. 1:38:57 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-24 01:38:57.225 +02:00 [INF]  Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-24 01:38:57.234 +02:00 [INF] 24.11.2019 г. 1:38:57 Get Email with Id: ad495abc-4fbc-4a1a-a058-b800dbd133e8 by .
+2019-11-24 01:38:57.234 +02:00 [INF] 24.11.2019 г. 1:38:57 Application with emailID: ad495abc-4fbc-4a1a-a058-b800dbd133e8 has been accessed by .
+2019-11-24 01:38:58.096 +02:00 [INF] 24.11.2019 г. 1:38:58 Get All Emails.
+2019-11-24 01:38:58.096 +02:00 [INF] 24.11.2019 г. 1:38:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 01:41:34.477 +02:00 [INF] 24.11.2019 г. 1:41:34 Get All Emails.
+2019-11-24 01:41:34.477 +02:00 [INF] 24.11.2019 г. 1:41:34 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:12:24.303 +02:00 [INF] Starting web host
+2019-11-24 03:12:25.995 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:12:27.502 +02:00 [INF] 24.11.2019 г. 3:12:27 Get All Emails.
+2019-11-24 03:12:27.505 +02:00 [INF] 24.11.2019 г. 3:12:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:13:13.643 +02:00 [INF] 24.11.2019 г. 3:13:13 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:13:13.692 +02:00 [INF] 24.11.2019 г. 3:13:13 Get All Emails.
+2019-11-24 03:13:13.692 +02:00 [INF] 24.11.2019 г. 3:13:13 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:14:40.465 +02:00 [INF] 24.11.2019 г. 3:14:40 Get All Emails.
+2019-11-24 03:14:40.465 +02:00 [INF] 24.11.2019 г. 3:14:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:17:26.392 +02:00 [INF]  Create Email with Id: 3615cee9-bf89-4d1b-a827-d4a4864b8982 by .
+2019-11-24 03:19:51.017 +02:00 [INF] Starting web host
+2019-11-24 03:19:52.555 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:19:54.215 +02:00 [INF] 24.11.2019 г. 3:19:54 Get All Emails.
+2019-11-24 03:19:54.218 +02:00 [INF] 24.11.2019 г. 3:19:54 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:26:45.786 +02:00 [INF] Starting web host
+2019-11-24 03:26:47.424 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:26:48.611 +02:00 [INF] 24.11.2019 г. 3:26:48 Get All Emails.
+2019-11-24 03:26:48.614 +02:00 [INF] 24.11.2019 г. 3:26:48 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:27:57.235 +02:00 [INF]  Create Email with Id: 320a3456-5115-46c4-a647-ebff03e63619 by .
+2019-11-24 03:28:07.743 +02:00 [INF] 24.11.2019 г. 3:28:07 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:28:07.773 +02:00 [INF] 24.11.2019 г. 3:28:07 Get All Emails.
+2019-11-24 03:28:07.773 +02:00 [INF] 24.11.2019 г. 3:28:07 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:28:14.924 +02:00 [INF] 24.11.2019 г. 3:28:14 Get All Emails.
+2019-11-24 03:28:14.924 +02:00 [INF] 24.11.2019 г. 3:28:14 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:37:38.104 +02:00 [INF] Starting web host
+2019-11-24 03:37:39.586 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:37:41.235 +02:00 [INF] 24.11.2019 г. 3:37:41 Get All Emails.
+2019-11-24 03:37:41.239 +02:00 [INF] 24.11.2019 г. 3:37:41 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:42:24.300 +02:00 [INF] Starting web host
+2019-11-24 03:42:25.660 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:42:26.598 +02:00 [INF] 24.11.2019 г. 3:42:26 Get All Emails.
+2019-11-24 03:42:26.600 +02:00 [INF] 24.11.2019 г. 3:42:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 03:48:35.313 +02:00 [INF] Starting web host
+2019-11-24 03:48:36.566 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 03:48:37.847 +02:00 [INF] 24.11.2019 г. 3:48:37 Get All Emails.
+2019-11-24 03:48:37.849 +02:00 [INF] 24.11.2019 г. 3:48:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:03:12.428 +02:00 [INF] Starting web host
+2019-11-24 04:03:13.759 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:03:14.699 +02:00 [INF] 24.11.2019 г. 4:03:14 Get All Emails.
+2019-11-24 04:03:14.701 +02:00 [INF] 24.11.2019 г. 4:03:14 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:05:38.340 +02:00 [INF]  Create Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 04:06:13.714 +02:00 [INF] 24.11.2019 г. 4:06:13 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:06:13.746 +02:00 [INF] 24.11.2019 г. 4:06:13 Get All Emails.
+2019-11-24 04:06:13.746 +02:00 [INF] 24.11.2019 г. 4:06:13 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:06:17.397 +02:00 [INF] 24.11.2019 г. 4:06:17 Get All Emails.
+2019-11-24 04:06:17.397 +02:00 [INF] 24.11.2019 г. 4:06:17 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:06:18.733 +02:00 [INF] 24.11.2019 г. 4:06:18 Get All Emails.
+2019-11-24 04:06:18.733 +02:00 [INF] 24.11.2019 г. 4:06:18 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:06:19.595 +02:00 [INF] 24.11.2019 г. 4:06:19 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:06:30.253 +02:00 [INF] 24.11.2019 г. 4:06:30 Get All Emails.
+2019-11-24 04:06:30.254 +02:00 [INF] 24.11.2019 г. 4:06:30 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:07:44.385 +02:00 [INF] Starting web host
+2019-11-24 04:07:44.850 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:07:45.511 +02:00 [INF] 24.11.2019 г. 4:07:45 Get All Emails.
+2019-11-24 04:07:45.513 +02:00 [INF] 24.11.2019 г. 4:07:45 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:22:21.461 +02:00 [INF] Starting web host
+2019-11-24 04:22:22.025 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:22:22.773 +02:00 [INF] 24.11.2019 г. 4:22:22 Get All Emails.
+2019-11-24 04:22:22.775 +02:00 [INF] 24.11.2019 г. 4:22:22 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:24:03.750 +02:00 [INF] Starting web host
+2019-11-24 04:24:05.321 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:24:06.314 +02:00 [INF] 24.11.2019 г. 4:24:06 Get All Emails.
+2019-11-24 04:24:06.316 +02:00 [INF] 24.11.2019 г. 4:24:06 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:24:08.227 +02:00 [INF] 24.11.2019 г. 4:24:08 Get All Emails.
+2019-11-24 04:24:08.228 +02:00 [INF] 24.11.2019 г. 4:24:08 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:24:42.166 +02:00 [INF] 24.11.2019 г. 4:24:42 Get All Emails.
+2019-11-24 04:24:42.167 +02:00 [INF] 24.11.2019 г. 4:24:42 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:26:38.718 +02:00 [INF] Starting web host
+2019-11-24 04:26:39.954 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:26:40.873 +02:00 [INF] 24.11.2019 г. 4:26:40 Get All Emails.
+2019-11-24 04:26:40.875 +02:00 [INF] 24.11.2019 г. 4:26:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:27:24.805 +02:00 [INF] Starting web host
+2019-11-24 04:27:26.408 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:27:27.347 +02:00 [INF] 24.11.2019 г. 4:27:27 Get All Emails.
+2019-11-24 04:27:27.349 +02:00 [INF] 24.11.2019 г. 4:27:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:27:35.516 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Shared__EmailTablePartial.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Shared\_EmailTablePartial.cshtml:line 33
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_AllEmails.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\AllEmails.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 04:30:00.820 +02:00 [INF] Starting web host
+2019-11-24 04:30:01.369 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:30:02.035 +02:00 [INF] 24.11.2019 г. 4:30:02 Get All Emails.
+2019-11-24 04:30:02.037 +02:00 [INF] 24.11.2019 г. 4:30:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:30:02.092 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Shared__EmailTablePartial.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Shared\_EmailTablePartial.cshtml:line 33
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_AllEmails.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\AllEmails.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 04:32:08.907 +02:00 [INF] Starting web host
+2019-11-24 04:32:10.215 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:32:11.135 +02:00 [INF] 24.11.2019 г. 4:32:11 Get All Emails.
+2019-11-24 04:32:11.137 +02:00 [INF] 24.11.2019 г. 4:32:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:32:48.255 +02:00 [INF] Starting web host
+2019-11-24 04:32:48.701 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 04:32:49.355 +02:00 [INF] 24.11.2019 г. 4:32:49 Get All Emails.
+2019-11-24 04:32:49.357 +02:00 [INF] 24.11.2019 г. 4:32:49 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:32:51.484 +02:00 [INF] 24.11.2019 г. 4:32:51 Get Emails with Status Name: New Application.
+2019-11-24 04:32:51.546 +02:00 [INF] 24.11.2019 г. 4:32:51 Get All Emails with Status: New Application.
+2019-11-24 04:32:51.571 +02:00 [INF] 24.11.2019 г. 4:32:51 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 04:32:53.542 +02:00 [INF] 24.11.2019 г. 4:32:53 Get All Emails.
+2019-11-24 04:32:53.542 +02:00 [INF] 24.11.2019 г. 4:32:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.

@@ -16,6 +16,6 @@ namespace EmailManager.Service.DTOs
         public string EmailStatusName { get; set; }
         public DateTime? ModifiedOnDate { get; set; }
         public string ModifiedByUserId { get; set; }
-        public string ModifiedByUserName { get; set; }
+        public string ApplicationStatus { get; set; }
     }
 }

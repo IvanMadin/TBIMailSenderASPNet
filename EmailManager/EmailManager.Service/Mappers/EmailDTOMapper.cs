@@ -15,7 +15,7 @@ namespace EmailManager.Service.Mappers
             {
                 return null;
             }
-            
+
             var email = new EmailDTO
             {
                 Id = entity.Id,
@@ -28,7 +28,7 @@ namespace EmailManager.Service.Mappers
                 EmailStatusName = entity.Status?.StatusType,
                 ModifiedOnDate = entity.ModifiedOnDate,
                 ModifiedByUserId = entity.ModifiedByUserId,
-                ModifiedByUserName=entity.ModifiedByUserName
+                ApplicationStatus = entity.LoanApplication?.ApplicationStatus.ToString()
             };
 
             return email;

@@ -12,27 +12,27 @@
 }
 else
 {
-    @if (Model.Any(e => e.EmailStatusName.StartsWith("New")))
+    if (Model.Any(e => e.EmailStatusName.StartsWith("New")))
     {
         <th>CurrentStatus Since</th>
     }
-    @if (Model.Any(e => e.EmailStatusName.StartsWith("Open")))
+    if (Model.Any(e => e.EmailStatusName.StartsWith("Open")))
     {
         <th>CurrentStatus Since</th>
-        @if (User.IsInRole("Manager"))
+        if (User.IsInRole("Manager"))
         {
             <th>Changed by</th>
         }
     }
-    @if (Model.Any(e => e.EmailStatusName.StartsWith("Closed")))
+    if (Model.Any(e => e.EmailStatusName.StartsWith("Closed")))
     {
         <th>Application Status</th>
-        @if (User.IsInRole("Manager"))
+        if (User.IsInRole("Manager"))
         {
             <th>Changed by</th>
         }
     }
-    @if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid")))
+    if (Model.Any(e => e.EmailStatusName.StartsWith("Invalid")))
     {
     }
 }

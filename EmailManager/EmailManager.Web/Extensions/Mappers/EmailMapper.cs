@@ -23,7 +23,7 @@ namespace EmailManager.Web.Extensions.Mappers
                 EmailStatusName = emailDTO.EmailStatusName,
                 ModifiedOnDate = emailDTO.ModifiedOnDate,
                 ModifiedByUserId = emailDTO.ModifiedByUserId,
-                ModifiedByUserName=emailDTO.ModifiedByUserName
+                ApplicationStatus = emailDTO.ApplicationStatus
             };
 
             return emailModel;

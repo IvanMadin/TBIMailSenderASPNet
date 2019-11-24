@@ -11,5 +11,6 @@ namespace EmailManager.Web.Models
         public string Id { get; set; }
         public string FileName { get; set; }
         public double FileSize { get; set; }
+        public string EmailId { get; set; }
     }
 }

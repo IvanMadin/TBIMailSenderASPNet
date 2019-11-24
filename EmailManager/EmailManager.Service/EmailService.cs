@@ -21,8 +21,8 @@ namespace EmailManager.Service
         private readonly EncryptingHelper encryptingHelper;
         private readonly IEmailStatusService emailStatusService;
 
-        public EmailService(EmailManagerDbContext context, 
-            IEmailFactory emailFactory, 
+        public EmailService(EmailManagerDbContext context,
+            IEmailFactory emailFactory,
             EncryptingHelper encryptingHelper,
             IEmailStatusService emailStatusService)
         {
@@ -49,7 +49,7 @@ namespace EmailManager.Service
             return newEmail.ToDTO();
         }
 
-        
+
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
             var email = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e => e.Id == emailId);
@@ -67,7 +67,7 @@ namespace EmailManager.Service
         /// </summary>
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
-            var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).Include(u=>u.User).OrderByDescending(e => e.DateReceived).ToListAsync();
+            var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).Include(u => u.User).OrderByDescending(e => e.DateReceived).ToListAsync();
             allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
             var mappedEmails = allEmails.ToDTO();
 
@@ -75,13 +75,14 @@ namespace EmailManager.Service
             return mappedEmails;
         }
 
-        
+
         public async Task<ICollection<EmailDTO>> GetAllEmailsByStatusNameAsync(string statusName)
         {
             var status = await this.emailStatusService.GetEmailStatusByNameAsync(statusName);
             var listOfEmails = await this.context.Emails
                 .Include(e => e.Status)
                 .Include(e => e.EmailAttachments)
+                .Include(e => e.LoanApplication)
                 .Where(e => e.StatusEmailId == status.Id)
                 .ToListAsync();
 

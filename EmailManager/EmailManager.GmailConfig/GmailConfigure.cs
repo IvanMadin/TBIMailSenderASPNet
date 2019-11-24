@@ -11,6 +11,8 @@ using EmailManager.Service;
 using System.Threading.Tasks;
 using EmailManager.Service.Providers;
 using EmailManager.Service.Contracts;
+using Google.Apis.Gmail.v1.Data;
+using System.Collections.Generic;
 
 namespace EmailManager.GmailConfig
 {
@@ -19,14 +21,59 @@ namespace EmailManager.GmailConfig
         static string[] Scopes = { GmailService.Scope.GmailReadonly };
         static string ApplicationName = "Gmail API .NET Quickstart";
         private readonly IEmailService emailService;
+        private readonly IAttachmentsService attachmentsService;
 
-        public GmailConfigure(IEmailService emailService)
+        public GmailConfigure(IEmailService emailService, IAttachmentsService attachmentsService)
         {
             this.emailService = emailService;
+            this.attachmentsService = attachmentsService;
         }
 
 
         public async Task GmailAPI()
+        {
+            UserCredential credential = ApproveCredentialFromFile();
+
+            GmailService gmailService = CreateGmailService(credential);
+
+            var emailListRequest = gmailService.Users.Messages.List("krisi.madin123@gmail.com");
+
+            emailListRequest.LabelIds = "INBOX";
+            emailListRequest.IncludeSpamTrash = false;
+
+            var emailListResponse = emailListRequest.ExecuteAsync().Result;
+
+            if (emailListResponse != null && emailListResponse.Messages != null)
+            {
+                foreach (var email in emailListResponse.Messages)
+                {
+                    var emailRequest = gmailService.Users.Messages.Get("krisi.madin123@gmail.com", email.Id);
+
+                    Message emailFullResponse = emailRequest.ExecuteAsync().Result;
+
+                    if (emailFullResponse != null)
+                    {
+                        string originalMailId = emailFullResponse.Id;
+
+                        bool checkIfEmailIsInDB = await emailService.CheckIfEmailExists(originalMailId);
+
+                        if (!checkIfEmailIsInDB && !emailFullResponse.LabelIds.Contains("CATEGORY_PROMOTIONS"))
+                        {
+
+                            GetEmailInformationByParts(emailFullResponse, out DateTime dateReceived, out string senderName, out string senderEmail, out string subject, out string body, out List<string> attachmentNames, out List<double> attachmentSizes);
+
+                            var createdEmail = await emailService.CreateAsync(originalMailId, senderName, senderEmail, dateReceived, subject, body);
+
+                            await this.attachmentsService.CreateAsync(createdEmail.Id, attachmentNames, attachmentSizes);
+                        }
+                    }
+                }
+            }
+
+            gmailService.Dispose();
+        }
+
+        private static UserCredential ApproveCredentialFromFile()
         {
             UserCredential credential;
 
@@ -43,67 +90,58 @@ namespace EmailManager.GmailConfig
                     new FileDataStore(credPath, true)).Result;
             }
 
-            var gmailService = new GmailService(new BaseClientService.Initializer()
+            return credential;
+        }
+        private static GmailService CreateGmailService(UserCredential credential)
+        {
+            return new GmailService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
                 ApplicationName = ApplicationName,
             });
+        }
+        private void GetEmailInformationByParts(Message emailFullResponse, out DateTime dateReceived, out string senderName, out string senderEmail, out string subject, out string body, out List<string> attachmentNames, out List<double> attachmentSizes)
+        {
+            attachmentNames = new List<string>();
+            attachmentSizes = new List<double>();
+            long timeStamp = (long)emailFullResponse.InternalDate;
+            dateReceived = DateTimeOffset.FromUnixTimeMilliseconds(timeStamp).DateTime.ToLocalTime();
+            string sender = emailFullResponse.Payload.Headers
+               .FirstOrDefault(x => x.Name == "From")
+               .Value;
+            (senderName, senderEmail) = SplitSender(sender);
 
+            subject = emailFullResponse.Payload.Headers
+                .FirstOrDefault(x => x.Name == "Subject")
+                .Value;
 
-
-            var emailListRequest = gmailService.Users.Messages.List("krisi.madin123@gmail.com");
-
-            emailListRequest.LabelIds = "INBOX";
-            emailListRequest.IncludeSpamTrash = false;
-
-            var emailListResponse = emailListRequest.ExecuteAsync().Result;
-
-            if (emailListResponse != null && emailListResponse.Messages != null)
+            var multiPartToResolve = emailFullResponse.Payload;
+            if (multiPartToResolve.MimeType == "multipart/mixed")
             {
-                foreach (var email in emailListResponse.Messages)
+                foreach (var part in multiPartToResolve.Parts.Where(x => !x.MimeType.StartsWith("multi")))
                 {
-                    var emailRequest = gmailService.Users.Messages.Get("krisi.madin123@gmail.com", email.Id);
-
-                    var emailFullResponse = emailRequest.ExecuteAsync().Result;
-                    
-                    if (emailFullResponse != null)
-                    {
-                        string originalMailId = emailFullResponse.Id;
-
-                        var IsAlreadyAtDatabase = await emailService.CheckIfEmailExists(originalMailId);
-
-                        if (!IsAlreadyAtDatabase && !emailFullResponse.LabelIds.Contains("CATEGORY_PROMOTIONS"))
-                        {
-                            long timeStamp = (long)emailFullResponse.InternalDate;
-                            DateTime dateReceived = DateTimeOffset.FromUnixTimeMilliseconds(timeStamp).DateTime.ToLocalTime();
-
-                            string sender = emailFullResponse.Payload.Headers
-                               .FirstOrDefault(x => x.Name == "From")
-                               .Value;
-                            (var senderName, var senderEmail) = SplitSender(sender);
-
-                            string subject = emailFullResponse.Payload.Headers
-                                .FirstOrDefault(x => x.Name == "Subject")
-                                .Value;
-
-                            var bodyToResolve = emailFullResponse.Payload.Parts[1];
-                            string body = "";
-
-                            if (bodyToResolve.MimeType == "text/html")
-                            {
-                                body = bodyToResolve.Body.Data;
-                            }
-                            else
-                            {
-                                body = bodyToResolve.Parts[1].Body.Data;
-                            }
-
-
-                            await emailService.CreateAsync(originalMailId, senderName, senderEmail, dateReceived, subject, body);
-                        }
-                    }
+                    attachmentNames.Add(part.Filename);
+                    attachmentSizes.Add((double)part.Body.Size);
                 }
+
+                body = multiPartToResolve.Parts[0].Parts[1].Body.Data;
             }
+            else
+            {
+                body = multiPartToResolve.Parts[1].Body.Data;
+            }
+
+            //var bodyToResolve = emailFullResponse.Payload.Parts[1];
+            //// Attachments: "multipart/mixed"
+            ////multipart/alternative
+            //if (bodyToResolve.MimeType == "text/html")
+            //{
+            //    body = bodyToResolve.Body.Data;
+            //}
+            //else
+            //{
+            //    body = bodyToResolve.Parts[1].Body.Data;
+            //}
         }
 
         /// <summary>

@@ -13,11 +13,12 @@ namespace EmailManager.Web.Models
         public string Subject { get; set; }
         public DateTime DateReceived { get; set; }
         public string Body { get; set; }
-        public ICollection<AttachmentViewModel> Attachments { get; set; } = new List<AttachmentViewModel>();
+        public ICollection<AttachmentViewModel> Attachments { get; set; }
         public string EmailStatusId { get; set; }
         public string EmailStatusName { get; set; }
         public DateTime? ModifiedOnDate { get; set; }
         public string ModifiedByUserId { get; set; }
         public string ModifiedByUserName { get; set; }
+        public string ApplicationStatus { get; set; }
     }
 }

@@ -17,16 +17,22 @@ namespace EmailManager.Web.Controllers
         private readonly IEmailService emailService;
         private readonly IEmailStatusService emailStatusService;
         private readonly ILoanApplicationService applicationService;
+        private readonly IUsersService usersService;
+        private readonly IAttachmentsService attachmentsService;
 
         public EmailController(UserManager<User> userManager,
             IEmailService emailService,
             IEmailStatusService emailStatusService,
-            ILoanApplicationService applicationService)
+            ILoanApplicationService applicationService,
+            IUsersService usersService,
+            IAttachmentsService attachmentsService)
         {
             this.userManager = userManager;
             this.emailService = emailService;
             this.emailStatusService = emailStatusService;
             this.applicationService = applicationService;
+            this.usersService = usersService;
+            this.attachmentsService = attachmentsService;
         }
 
         public async Task<IActionResult> BodyModal(string id)
@@ -61,6 +67,14 @@ namespace EmailManager.Web.Controllers
             try
             {
                 var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
+                foreach (var email in list)
+                {
+                    email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
+                    var userName = (await this.usersService.GetUserById(email.ModifiedByUserId)).UserName;
+                    email.ModifiedByUserName = userName;
+                }
+                
+
                 Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} by User Id: {User}.");
 
                 return View("AllEmails", list);
