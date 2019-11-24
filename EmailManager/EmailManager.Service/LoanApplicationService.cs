@@ -41,8 +41,6 @@ namespace EmailManager.Service
         }
         public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string clientId, string emailId, string status, string operatorId, decimal amount)
         {
-            //TODO: After the new application is applied to status Open you have access to that metod. Have to change status from Open to Close after that method is done.
-
             var loan = await this.context.LoanApplications.FirstOrDefaultAsync(la => la.EmailId == emailId);
 
             loan.ClientDataId = clientId;
@@ -54,12 +52,12 @@ namespace EmailManager.Service
 
             await this.context.SaveChangesAsync();
 
-            Log.Information($"{loan.ModifiedOnDate} Create Loan Application by User Id: {loan.ModifiedByUserId}.");
+            Log.Information($"{loan.ModifiedOnDate} Filled Loan Application with id: {loan.Id} by User Id: {loan.ModifiedByUserId}.");
             return loan.ToDTO();
 
         }
 
-        public async Task<LoanApplication> GetLoanApplicationByEmailIdAsync(string emailId)
+        private async Task<LoanApplication> GetLoanApplicationByEmailIdAsync(string emailId)
         {
             var loan = await this.context.LoanApplications.FirstOrDefaultAsync(la => la.EmailId == emailId);
 

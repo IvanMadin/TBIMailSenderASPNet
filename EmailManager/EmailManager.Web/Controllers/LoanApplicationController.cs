@@ -85,8 +85,8 @@ namespace EmailManager.Web.Controllers
                     Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
                 }
 
-                await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
-                Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
+            var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
+            Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
 
                 //TODO: Have to change status of Email to Closed no matter what operation I take.
 
@@ -96,27 +96,8 @@ namespace EmailManager.Web.Controllers
             {
                 TempData["errorMessage"] = ex.Message;
             }
-            // should return the same page with open client form
-            return View(loanModel);
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> ApplicationStatus(string applicationId, string applicationStatusId)
-        {
-            var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
-            //TODO: ApplicationStatus have to changed.
-
-           // Log.Information($"{DateTime.Now} Changed Application Status by {User}, from: {application.ApplicationStatusName} to {newStatusName}.");
-            return View();
-        }
-
-        public async Task<IActionResult> UpdateStatusApplication(string loanApplicationId, string status)
-        {
-            var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
-            //TODO: ApplicationStatus have to changed.
-
-            Log.Information($"{DateTime.Now} Update Application Status by {User}, from: {loanApplication.ApplicationStatusName} to {status}.");
-            return View(loanApplication);
+        
+            return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
         }
     }
 }

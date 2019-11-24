@@ -1,0 +1,12 @@
+﻿@model EmailViewModel
+
+
+@if (Model.Attachments.Any())
+{
+    <dt class="col-sm-2">
+        Attachments:
+    </dt>
+    <dd class="col-sm-10">
+        @string.Join(", ", Model.Attachments.Select(a => a.FileName))
+    </dd>
+}

@@ -15,10 +15,15 @@ namespace EmailManager.Web.Extensions.Mappers
             {
                 Id = attachmentDTO.Id,
                 FileName = attachmentDTO.FileName,
-                FileSize = attachmentDTO.FileSize
+                FileSize = attachmentDTO.FileSize,
+                EmailId = attachmentDTO.EmailId
             };
 
             return model;
+        }
+        public static ICollection<AttachmentViewModel> ToVM(this ICollection<EmailAttachmentsDTO> attachments)
+        {
+            return attachments.Select(a => a.ToVM()).ToList();
         }
     }
 }

@@ -16,6 +16,7 @@ using Serilog;
 using Microsoft.Extensions.Logging;
 using EmailManager.Web.Extensions.ServiceHelpers;
 using EmailManager.Service.Contracts;
+using EmailManager.Service.Utilities;
 
 namespace EmailManager.Web
 {
@@ -55,11 +56,13 @@ namespace EmailManager.Web
 
             services.Registrations();
 
+            services.AddHostedService<AutomatedService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            //TODO: Make a MiddleWare who is gonna block the page on one place for the password changing page, till it is not changed, once for all.
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
