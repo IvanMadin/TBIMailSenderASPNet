@@ -19,7 +19,8 @@ namespace EmailManager.Service.Mappers
             {
                 Id = entity.Id,
                 UserName = entity.UserName,
-                Email = entity.Email
+                Email = entity.Email,
+                ChangedPassword = entity.ChangedPassword
             };
 
             return user;

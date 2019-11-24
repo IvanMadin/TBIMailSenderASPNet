@@ -52,7 +52,7 @@ namespace EmailManager.Service
 
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
-            var email = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).FirstOrDefaultAsync(e => e.Id == emailId);
+            var email = await this.context.Emails.Include(e => e.Status).FirstOrDefaultAsync(e => e.Id == emailId);
 
             var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
             var emailDTO = email.ToDTO();

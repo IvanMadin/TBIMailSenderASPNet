@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using EmailManager.Service.Contracts;
 
 namespace EmailManager.Web.Areas.Identity.Pages.Account
 {
@@ -18,11 +19,13 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<User> signInManager;
         private readonly ILogger<LoginModel> logger;
+        private readonly IUsersService usersService;
 
-        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<User> signInManager, ILogger<LoginModel> logger, IUsersService usersService)
         {
             this.signInManager = signInManager;
             this.logger = logger;
+            this.usersService = usersService;
         }
 
         [BindProperty]
@@ -38,7 +41,7 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [Display(Name ="Username")]
+            [Display(Name = "Username")]
             public string UserName { get; set; }
 
             [Required]
@@ -55,7 +58,6 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
 
             returnUrl = returnUrl ?? Url.Content("~/");
 
-            // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ReturnUrl = returnUrl;
@@ -67,7 +69,21 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
 
             if (ModelState.IsValid)
             {
-                
+                try
+                {
+                    var user = await this.usersService.CheckUserCredentialsAsync(Input.UserName, Input.Password);
+
+                    if (user.ChangedPassword == false)
+                    {
+                        return RedirectToActionPermanent("Change", "Password", user);
+                    }
+                }
+                catch(ArgumentNullException ex)
+                {
+                    //TODO: log Exception;
+                    //TODO: Show Message for the client with Toast;
+                }
+
                 var result = await signInManager.PasswordSignInAsync(Input.UserName, Input.Password, true, lockoutOnFailure: true);
                 if (result.Succeeded)
                 {

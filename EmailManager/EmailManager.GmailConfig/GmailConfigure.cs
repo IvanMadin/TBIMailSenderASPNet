@@ -104,6 +104,7 @@ namespace EmailManager.GmailConfig
         {
             attachmentNames = new List<string>();
             attachmentSizes = new List<double>();
+
             long timeStamp = (long)emailFullResponse.InternalDate;
             dateReceived = DateTimeOffset.FromUnixTimeMilliseconds(timeStamp).DateTime.ToLocalTime();
             string sender = emailFullResponse.Payload.Headers

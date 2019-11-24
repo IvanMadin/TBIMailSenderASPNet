@@ -8,6 +8,7 @@ namespace EmailManager.Service.Contracts
 {
     public interface IUsersService
     {
-        Task<UserDTO> GetUserById(string userId);
+        Task<UserDTO> GetUserByIdAsync(string userId);
+        Task<UserDTO> CheckUserCredentialsAsync(string userName, string password);
     }
 }

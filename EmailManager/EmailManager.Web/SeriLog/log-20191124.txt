@@ -414,3 +414,245 @@ Parameter name: source
 2019-11-24 04:32:51.571 +02:00 [INF] 24.11.2019 г. 4:32:51 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
 2019-11-24 04:32:53.542 +02:00 [INF] 24.11.2019 г. 4:32:53 Get All Emails.
 2019-11-24 04:32:53.542 +02:00 [INF] 24.11.2019 г. 4:32:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 15:54:28.113 +02:00 [INF] Starting web host
+2019-11-24 15:54:30.894 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 15:54:32.357 +02:00 [INF] 24.11.2019 г. 15:54:32 Get All Emails.
+2019-11-24 15:54:32.359 +02:00 [INF] 24.11.2019 г. 15:54:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 15:55:42.315 +02:00 [INF] User logged out.
+2019-11-24 15:56:04.205 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The supplied URL is not local. A URL with an absolute path is considered local if it does not have a host/authority part. URLs using virtual paths ('~/') are also local.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.LocalRedirectResultExecutor.ExecuteAsync(ActionContext context, LocalRedirectResult result)
+   at Microsoft.AspNetCore.Mvc.LocalRedirectResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 15:58:25.926 +02:00 [INF] Starting web host
+2019-11-24 15:58:27.419 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 15:58:53.529 +02:00 [INF] Starting web host
+2019-11-24 15:58:54.976 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 15:59:52.127 +02:00 [INF] Starting web host
+2019-11-24 15:59:53.404 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:00:15.505 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No page named './ChangePassword' matches the supplied values.
+   at Microsoft.AspNetCore.Mvc.Infrastructure.RedirectToPageResultExecutor.ExecuteAsync(ActionContext context, RedirectToPageResult result)
+   at Microsoft.AspNetCore.Mvc.RedirectToPageResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 16:06:22.990 +02:00 [INF] Starting web host
+2019-11-24 16:06:23.492 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:06:28.631 +02:00 [INF] User logged in.
+2019-11-24 16:06:28.815 +02:00 [INF] 24.11.2019 г. 16:06:28 Get All Emails.
+2019-11-24 16:06:28.833 +02:00 [INF] 24.11.2019 г. 16:06:28 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:07:07.057 +02:00 [INF] Starting web host
+2019-11-24 16:07:07.532 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:07:08.387 +02:00 [INF] 24.11.2019 г. 16:07:08 Get All Emails.
+2019-11-24 16:07:08.410 +02:00 [INF] 24.11.2019 г. 16:07:08 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:07:36.311 +02:00 [INF] 24.11.2019 г. 16:07:36 Get Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 16:07:36.311 +02:00 [INF] 24.11.2019 г. 16:07:36 Application with emailID: b3470720-fcfe-4b92-85e4-4acb39cc239a has been accessed by .
+2019-11-24 16:11:24.855 +02:00 [INF] Starting web host
+2019-11-24 16:11:25.313 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:11:25.957 +02:00 [INF] 24.11.2019 г. 16:11:25 Get All Emails.
+2019-11-24 16:11:25.982 +02:00 [INF] 24.11.2019 г. 16:11:25 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:11:30.734 +02:00 [INF] 24.11.2019 г. 16:11:30 Get Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 16:11:30.734 +02:00 [INF] 24.11.2019 г. 16:11:30 Application with emailID: b3470720-fcfe-4b92-85e4-4acb39cc239a has been accessed by .
+2019-11-24 16:11:30.749 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   at AspNetCore.Views_Email_Application.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\Application.cshtml:line 51
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 16:16:26.504 +02:00 [INF]  Create Email with Id: eef06e24-34eb-4452-aba0-d6a29b06773b by .
+2019-11-24 16:17:00.711 +02:00 [INF] Starting web host
+2019-11-24 16:17:01.238 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:17:01.911 +02:00 [INF] 24.11.2019 г. 16:17:01 Get All Emails.
+2019-11-24 16:17:01.934 +02:00 [INF] 24.11.2019 г. 16:17:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:17:10.723 +02:00 [INF] 24.11.2019 г. 16:17:10 Get Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 16:17:10.724 +02:00 [INF] 24.11.2019 г. 16:17:10 Application with emailID: b3470720-fcfe-4b92-85e4-4acb39cc239a has been accessed by .
+2019-11-24 16:17:45.372 +02:00 [INF] 24.11.2019 г. 16:17:45 Get Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 16:17:45.372 +02:00 [INF] 24.11.2019 г. 16:17:45 Application with emailID: b3470720-fcfe-4b92-85e4-4acb39cc239a has been accessed by .
+2019-11-24 16:18:02.338 +02:00 [INF] 24.11.2019 г. 16:18:02 Get All Emails.
+2019-11-24 16:18:02.347 +02:00 [INF] 24.11.2019 г. 16:18:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:18:05.001 +02:00 [INF] 24.11.2019 г. 16:18:05 Get Email with Id: 0e84b690-c122-42e8-88b5-daec55af5ff3 by .
+2019-11-24 16:18:05.001 +02:00 [INF] 24.11.2019 г. 16:18:05 Application with emailID: 0e84b690-c122-42e8-88b5-daec55af5ff3 has been accessed by .
+2019-11-24 16:18:07.749 +02:00 [INF] 24.11.2019 г. 16:18:07 Get All Emails.
+2019-11-24 16:18:07.757 +02:00 [INF] 24.11.2019 г. 16:18:07 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:22:01.986 +02:00 [INF]  Create Email with Id: e5cc25bd-9f7e-44f2-a6f2-2a9fc9cbb368 by .
+2019-11-24 16:22:02.162 +02:00 [INF]  Create Email with Id: a2efd553-8f24-4a10-b6e4-6373caedc6cf by .
+2019-11-24 16:28:01.608 +02:00 [INF]  Create Email with Id: 7eb9bbdd-dccb-493b-9cbd-85668b949aed by .
+2019-11-24 16:49:23.526 +02:00 [INF] Starting web host
+2019-11-24 16:49:24.047 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:49:24.837 +02:00 [INF] 24.11.2019 г. 16:49:24 Get All Emails.
+2019-11-24 16:49:24.856 +02:00 [INF] 24.11.2019 г. 16:49:24 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 16:49:29.804 +02:00 [INF] User logged out.
+2019-11-24 16:50:09.639 +02:00 [INF] Starting web host
+2019-11-24 16:50:10.164 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:55:07.305 +02:00 [INF] Starting web host
+2019-11-24 16:55:07.768 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 16:55:16.695 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_Password_Change.<ExecuteAsync>b__27_2() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Password\Change.cshtml:line 21
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Password_Change.ExecuteAsync() in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Password\Change.cshtml:line 3
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 16:59:59.147 +02:00 [INF] Starting web host
+2019-11-24 16:59:59.628 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:02:42.607 +02:00 [INF] Starting web host
+2019-11-24 17:02:43.830 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:04:00.886 +02:00 [INF] Starting web host
+2019-11-24 17:04:02.373 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:13:56.685 +02:00 [INF] Starting web host
+2019-11-24 17:13:58.160 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:16:56.152 +02:00 [INF] 24.11.2019 г. 17:16:56 Get All Emails.
+2019-11-24 17:16:56.184 +02:00 [INF] 24.11.2019 г. 17:16:56 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:05.349 +02:00 [INF] 24.11.2019 г. 17:17:05 Get All Emails.
+2019-11-24 17:17:05.371 +02:00 [INF] 24.11.2019 г. 17:17:05 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:06.681 +02:00 [INF] 24.11.2019 г. 17:17:06 Get Emails with Status Name: New Application.
+2019-11-24 17:17:06.729 +02:00 [INF] 24.11.2019 г. 17:17:06 Get All Emails with Status: New Application.
+2019-11-24 17:17:06.740 +02:00 [INF] 24.11.2019 г. 17:17:06 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:08.272 +02:00 [INF] 24.11.2019 г. 17:17:08 Get Emails with Status Name: Open Application.
+2019-11-24 17:17:08.276 +02:00 [INF] 24.11.2019 г. 17:17:08 Get All Emails with Status: Open Application.
+2019-11-24 17:17:08.281 +02:00 [INF] 24.11.2019 г. 17:17:08 Show Emails with Status: Open Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:09.971 +02:00 [INF] 24.11.2019 г. 17:17:09 Get Emails with Status Name: New Application.
+2019-11-24 17:17:09.974 +02:00 [INF] 24.11.2019 г. 17:17:09 Get All Emails with Status: New Application.
+2019-11-24 17:17:09.976 +02:00 [INF] 24.11.2019 г. 17:17:09 Show Emails with Status: New Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:11.217 +02:00 [INF] 24.11.2019 г. 17:17:11 Get Emails with Status Name: Closed Application.
+2019-11-24 17:17:11.222 +02:00 [INF] 24.11.2019 г. 17:17:11 Get All Emails with Status: Closed Application.
+2019-11-24 17:17:11.229 +02:00 [INF] 24.11.2019 г. 17:17:11 Show Emails with Status: Closed Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:17:13.317 +02:00 [INF] 24.11.2019 г. 17:17:13 Get Emails with Status Name: Invalid Application.
+2019-11-24 17:17:13.324 +02:00 [INF] 24.11.2019 г. 17:17:13 Get All Emails with Status: Invalid Application.
+2019-11-24 17:17:13.328 +02:00 [INF] 24.11.2019 г. 17:17:13 Show Emails with Status: Invalid Application by User Id: System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:22:01.333 +02:00 [INF] Starting web host
+2019-11-24 17:22:01.848 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:22:11.835 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: Invalid account details
+   at EmailManager.Service.UsersService.CheckUserCredentialsAsync(String userName, String password) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Service\UsersService.cs:line 44
+   at EmailManager.Web.Areas.Identity.Pages.Account.LoginModel.OnPostAsync(String returnUrl) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Areas\Identity\Pages\Account\Login.cshtml.cs:line 73
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.ExecutorFactory.GenericTaskHandlerMethod.Convert[T](Object taskAsObject)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.ExecutorFactory.GenericTaskHandlerMethod.Execute(Object receiver, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeHandlerMethodAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeNextPageFilterAsync()
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.Rethrow(PageHandlerExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.RazorPages.Internal.PageActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-24 17:22:59.973 +02:00 [INF] 24.11.2019 г. 17:22:59 Get All Emails.
+2019-11-24 17:22:59.992 +02:00 [INF] 24.11.2019 г. 17:22:59 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:23:03.224 +02:00 [INF] 24.11.2019 г. 17:23:03 Get All Emails.
+2019-11-24 17:23:03.236 +02:00 [INF] 24.11.2019 г. 17:23:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:27:36.134 +02:00 [INF] Starting web host
+2019-11-24 17:27:36.582 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:27:36.760 +02:00 [INF] User logged out.
+2019-11-24 17:27:52.025 +02:00 [INF] 24.11.2019 г. 17:27:52 Get All Emails.
+2019-11-24 17:27:52.044 +02:00 [INF] 24.11.2019 г. 17:27:52 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:27:55.219 +02:00 [INF] User logged out.
+2019-11-24 17:28:03.867 +02:00 [INF] User logged in.
+2019-11-24 17:28:03.886 +02:00 [INF] 24.11.2019 г. 17:28:03 Get All Emails.
+2019-11-24 17:28:03.894 +02:00 [INF] 24.11.2019 г. 17:28:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:28:06.212 +02:00 [INF] 24.11.2019 г. 17:28:06 Get All Emails.
+2019-11-24 17:28:06.222 +02:00 [INF] 24.11.2019 г. 17:28:06 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:33:08.999 +02:00 [INF] Starting web host
+2019-11-24 17:33:10.363 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-24 17:33:11.329 +02:00 [INF] 24.11.2019 г. 17:33:11 Get All Emails.
+2019-11-24 17:33:11.387 +02:00 [INF] 24.11.2019 г. 17:33:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:33:23.771 +02:00 [INF] 24.11.2019 г. 17:33:23 Get All Emails.
+2019-11-24 17:33:23.796 +02:00 [INF] 24.11.2019 г. 17:33:23 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:33:33.445 +02:00 [INF] 24.11.2019 г. 17:33:33 Get Email with Id: b3470720-fcfe-4b92-85e4-4acb39cc239a by .
+2019-11-24 17:33:33.445 +02:00 [INF] 24.11.2019 г. 17:33:33 Application with emailID: b3470720-fcfe-4b92-85e4-4acb39cc239a has been accessed by .
+2019-11-24 17:33:37.657 +02:00 [INF] 24.11.2019 г. 17:33:37 Get All Emails.
+2019-11-24 17:33:37.701 +02:00 [INF] 24.11.2019 г. 17:33:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-24 17:33:50.787 +02:00 [INF] 24.11.2019 г. 17:33:50 Get Email with Id: 7eb9bbdd-dccb-493b-9cbd-85668b949aed by .
+2019-11-24 17:33:50.787 +02:00 [INF] 24.11.2019 г. 17:33:50 Application with emailID: 7eb9bbdd-dccb-493b-9cbd-85668b949aed has been accessed by .

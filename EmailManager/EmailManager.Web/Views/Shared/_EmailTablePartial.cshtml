@@ -30,7 +30,7 @@
                                 @email.EmailStatusName
                             </td>
                             <td>
-                                @if (email.Attachments != null)
+                                @if (email.Attachments.Any())
                                 {
                                     <i class="fas fa-link" style="font-size:18px; text-align:center"></i>
                                 }

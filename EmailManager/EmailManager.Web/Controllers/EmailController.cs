@@ -47,6 +47,7 @@ namespace EmailManager.Web.Controllers
         {
             var email = (await this.emailService.GetEmailByIdAsync(id)).ToVM();
             Log.Information($"{DateTime.Now} Application with emailID: {email.Id} has been accessed by {email.ModifiedByUserName}.");
+            email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
 
             return View(email);
         }
@@ -57,6 +58,10 @@ namespace EmailManager.Web.Controllers
         public async Task<IActionResult> AllEmails()
         {
             var list = (await this.emailService.GetAllEmailsAsync()).ToVM();
+            foreach (var email in list)
+            {
+                email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
+            }
             Log.Information($"{DateTime.Now} All emails has been accessed by {User}.");
 
             return View(list);
@@ -69,8 +74,7 @@ namespace EmailManager.Web.Controllers
                 var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
                 foreach (var email in list)
                 {
-                    email.Attachments = (await this.attachmentsService.GetEmailAttachmentsByEmailIdAsync(email.Id)).ToVM();
-                    var userName = (await this.usersService.GetUserById(email.ModifiedByUserId)).UserName;
+                    var userName = (await this.usersService.GetUserByIdAsync(email.ModifiedByUserId)).UserName;
                     email.ModifiedByUserName = userName;
                 }
                 
