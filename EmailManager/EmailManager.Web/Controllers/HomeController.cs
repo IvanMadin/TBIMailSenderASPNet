@@ -51,6 +51,7 @@ namespace EmailManager.Web.Controllers
             }
             catch
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Emails weren't updated!");
                 return RedirectToAction("Error", "Home");
             }

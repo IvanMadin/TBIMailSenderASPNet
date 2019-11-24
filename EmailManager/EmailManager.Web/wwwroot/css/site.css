@@ -59,3 +59,8 @@ body {
     max-height: 1280px;
     max-width: 1920px;
 }
+
+/*.navbar-nav > li.nav-item.active > a.nav-link {
+    text-decoration: none;
+    color: red;
+}*/

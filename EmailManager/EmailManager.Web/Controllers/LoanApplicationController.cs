@@ -55,6 +55,7 @@ namespace EmailManager.Web.Controllers
             }
             catch
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Application form wasn't accessible!");
                 return RedirectToAction("Error", "Home");
             }
@@ -114,40 +115,5 @@ namespace EmailManager.Web.Controllers
             return View(loanModel);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ApplicationStatus(string applicationId, string applicationStatusId)
-        {
-            try
-            {
-                var application = await this.loanApplicationService.GetLoanApplicationByIdAsync(applicationId);
-                //TODO: ApplicationStatus have to changed.
-
-                // Log.Information($"{DateTime.Now} Changed Application Status by {User}, from: {application.ApplicationStatusName} to {newStatusName}.");
-                return View();
-            }
-            catch
-            {
-                Log.Error($"Application status wasn't changed!");
-                return RedirectToAction("Error", "Home");
-            }
-        }
-
-        public async Task<IActionResult> UpdateStatusApplication(string loanApplicationId, string status)
-        {
-            try
-            {
-                var loanApplication = await this.loanApplicationService.GetLoanApplicationByIdAsync(loanApplicationId);
-                //TODO: ApplicationStatus have to changed.
-
-                this.toast.AddSuccessToastMessage($"Status was updated successfully!");
-                Log.Information($"{DateTime.Now} Update Application Status by {User}, from: {loanApplication.ApplicationStatusName} to {status}.");
-                return View(loanApplication);
-            }
-            catch
-            {
-                Log.Error($"Application status wasn't updated!");
-                return RedirectToAction("Error", "Home");
-            }
-        }
     }
 }

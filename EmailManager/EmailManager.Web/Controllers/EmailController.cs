@@ -44,6 +44,7 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Emails weren't updated!");
                 return RedirectToAction("Error", "Home");
             }
@@ -60,6 +61,7 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Application wasn't accessible");
                 return RedirectToAction("Error", "Home");
             }
@@ -79,6 +81,7 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"All emails weren't accessible");
                 return RedirectToAction("Error", "Home");
             }
@@ -135,6 +138,7 @@ namespace EmailManager.Web.Controllers
             }
             catch
             {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Status wasn't changed!");
                 return RedirectToAction("Error", "Home");
             }
