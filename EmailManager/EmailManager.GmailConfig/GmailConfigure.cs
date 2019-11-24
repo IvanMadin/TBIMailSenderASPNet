@@ -131,18 +131,6 @@ namespace EmailManager.GmailConfig
             {
                 body = multiPartToResolve.Parts[1].Body.Data;
             }
-
-            //var bodyToResolve = emailFullResponse.Payload.Parts[1];
-            //// Attachments: "multipart/mixed"
-            ////multipart/alternative
-            //if (bodyToResolve.MimeType == "text/html")
-            //{
-            //    body = bodyToResolve.Body.Data;
-            //}
-            //else
-            //{
-            //    body = bodyToResolve.Parts[1].Body.Data;
-            //}
         }
 
         /// <summary>
