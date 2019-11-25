@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<EmailViewModel>
 
 @{
-    ViewData["Title"] = "AllApplications";
+    ViewData["Title"] = "All Emails";
 }
 
 
@@ -19,7 +19,9 @@
     <script>
 
         $(document).ready(function () {
-            $('#application-form-div').DataTable();
+            $('#application-form-div').DataTable({
+                "order": [[1, "desc"]]
+            });
         });
     </script>
 }

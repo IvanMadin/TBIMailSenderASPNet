@@ -12,6 +12,7 @@ namespace EmailManager.Service.Contracts
         Task<LoanApplicationDTO> CreateLoanApplicationAsync(string emailId, string operatorId);
         Task<LoanApplicationDTO> CreateLoanApplicationAsync(string clientId, string emailId, string status, string operatorId, decimal amount);
         Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId);
+        Task<LoanApplicationDTO> GetLoanApplicationByEmailIdAsync(string emailId);
 
     }
 }

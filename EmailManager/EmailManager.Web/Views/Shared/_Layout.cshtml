@@ -43,13 +43,21 @@
                         </div>
                     </div>
                     <ul class="nav nav-pills">
-                        <li class="active" ></li>
+                        <li class="active"></li>
                         <li class="nav-item ">
                             <a class="nav-link" asp-controller="Email" asp-action="AllEmails">
                                 <i class="fas fa-inbox"></i>Inbox
                             </a>
                         </li>
-                        <li class="nav-item">
+                        @if (User.IsInRole("Operator"))
+                        {
+                            <partial name="_LayoutOperatorButtons" />
+                        }
+                        else if (User.IsInRole("Manager"))
+                        {
+                            <partial name="_LayoutManagerButtons" />
+                        }
+                        @*<li class="nav-item">
                             <a class="nav-link" asp-controller="Email" asp-action="ShowEmailsByStatus"
                                asp-route-statusName="New Application">
                                 <i class="fas fa-envelope"></i>New Applications
@@ -67,27 +75,28 @@
                                 <i class="far fa-envelope"></i>Closed Applications
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Email" asp-action="ShowEmailsByStatus"
-                               asp-route-statusName="Invalid Application">
-                                <i class="fas fa-times-circle"></i>Invalid Applications
-                            </a>
-                        </li>
+                        @if (User.IsInRole("Manager"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-route="Manager" asp-controller="Email" asp-action="ShowEmailsByStatus"
+                                   asp-route-statusName="Invalid Application">
+                                    <i class="fas fa-times-circle"></i>Invalid Applications
+                                </a>
+                            </li>
+
+                            <li>
+                                <div class="divider"></div>
+                                <a class="nav-link" area="" asp-area="Identity" asp-page="/Account/Register">
+                                    <i class="fas fa-user-plus"></i>Register Employee
+                                </a>
+                            </li>
+                        }*@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="UpdateEmails">
                                 <i class="fas fa-sync-alt"></i>
                                 <p>Refresh emails</p>
                             </a>
                         </li>
-                        @if (User.IsInRole("Manager"))
-                        {
-                            <li>
-                                <div class="divider"></div>
-                                <a class="nav-link"  area="" asp-area="Identity" asp-page="/Account/Register">
-                                    <i class="fas fa-user-plus"></i>Register Employee
-                                </a>
-                            </li>
-                        }
                     </ul>
                 </div>
                 <div class="sidebar-background"><img src="~/image/sidebar-5.jpg" style="width:260px; height:100%" /></div>

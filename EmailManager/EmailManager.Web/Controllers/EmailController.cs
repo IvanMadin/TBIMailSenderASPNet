@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
+using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -18,7 +21,6 @@ namespace EmailManager.Web.Controllers
         private readonly IEmailService emailService;
         private readonly IEmailStatusService emailStatusService;
         private readonly ILoanApplicationService applicationService;
-        private readonly IUsersService usersService;
         private readonly IAttachmentsService attachmentsService;
         private readonly IToastNotification toast;
 
@@ -26,7 +28,6 @@ namespace EmailManager.Web.Controllers
             IEmailService emailService,
             IEmailStatusService emailStatusService,
             ILoanApplicationService applicationService,
-            IUsersService usersService,
             IAttachmentsService attachmentsService,
             IToastNotification toast)
         {
@@ -34,7 +35,6 @@ namespace EmailManager.Web.Controllers
             this.emailService = emailService;
             this.emailStatusService = emailStatusService;
             this.applicationService = applicationService;
-            this.usersService = usersService;
             this.attachmentsService = attachmentsService;
             this.toast = toast;
         }
@@ -51,7 +51,7 @@ namespace EmailManager.Web.Controllers
             catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Emails weren't updated!");
+                Log.Error($"[{DateTime.Now}]: {ex.Message}");
                 return RedirectToAction("Error", "Home");
             }
         }
@@ -97,29 +97,6 @@ namespace EmailManager.Web.Controllers
             }
         }
 
-        public async Task<IActionResult> ShowEmailsByStatus(string statusName)
-        {
-            try
-            {
-                var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName)).ToVM();
-                foreach (var email in list)
-                {
-                    var userName = (await this.usersService.GetUserByIdAsync(email.ModifiedByUserId)).UserName;
-                    email.ModifiedByUserName = userName;
-                }
-                
-
-                Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} by User Id: {User}.");
-
-                return View("AllEmails", list);
-            }
-            catch (ArgumentNullException ex)
-            {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Information(ex.Message);
-            }
-            return LocalRedirect("~");
-        }
 
         /// <summary>
         /// Changing status with the given StatusName.
@@ -135,17 +112,27 @@ namespace EmailManager.Web.Controllers
 
                 if (newStatusName == "New Application")
                 {
-                    await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
+                    if (User.IsInRole("Manager"))
+                    {
+                        var application = await this.applicationService.GetLoanApplicationByEmailIdAsync(emailDTO.Id);
+                        //TODO: Fix that...
+                    }
+                    else
+                    {
+                        await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
 
-                    //this.toast.AddSuccessToastMessage($"Application with status New was created successfully!");
-                    Log.Information($"{DateTime.Now} Create Loan Application by User Id: {userId} with Status: {newStatusName}.");
+                        Log.Information($"{DateTime.Now} Create Loan Application by User Id: {userId} with Status: {newStatusName}.");
+                    }
                 }
                 else if (newStatusName == "Open Application")
                 {
                     await this.applicationService.OpenLoanApplication(emailDTO.Id, userId);
 
-                    //this.toast.AddSuccessToastMessage($"Application with status Open was created successfully!");
                     Log.Information($"{emailDTO.ModifiedOnDate} Open Loan Application by User Id: {userId}.");
+                }
+                else if (newStatusName.StartsWith("Not"))
+                {
+
                 }
 
                 this.toast.AddSuccessToastMessage($"Status was changed successfully!");

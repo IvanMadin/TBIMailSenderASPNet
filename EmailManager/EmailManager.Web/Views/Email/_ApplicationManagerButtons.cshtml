@@ -3,13 +3,24 @@
 @if (Model.EmailStatusName == "Not Reviewed")
 {
     <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">New Application</a>
+
     <a class="btn btn-outline-danger" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Invalid Application">Invalid Email</a>
 }
-@if (Model.EmailStatusName == "New Application")
+else if (Model.EmailStatusName == "New Application")
 {
+    <a class="btn btn-outline-warning" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Not Reviewed">Not Reviewed</a>
+
     <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Open Application">Open Application</a>
 }
-@if (Model.EmailStatusName == "Open Application")
+else if (Model.EmailStatusName == "Open Application")
 {
     <input type="button" class="btn btn-outline-warning" id="show-or-hide-button-form" value="Show Form">
+}
+else if (Model.EmailStatusName.StartsWith("Closed"))
+{
+    <a class="btn btn-outline-warning" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">New Application</a>
+}
+else
+{
+    <a class="btn btn-outline-warning" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Not Reviewed">Not Reviewed</a>
 }

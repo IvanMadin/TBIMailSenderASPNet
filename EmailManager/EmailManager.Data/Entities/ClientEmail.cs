@@ -8,7 +8,6 @@ namespace EmailManager.Data.Entities
     public class ClientEmail : IModified
     {
         public string Id { get; set; }
-
         public string OriginalMailId { get; set; }
         public string SenderName { get; set; }
         public string SenderEmail { get; set; }
@@ -25,7 +24,6 @@ namespace EmailManager.Data.Entities
 
         public string UserId { get; set; }
         public User User { get; set; }
-        public string ModifiedByUserName { get; set; }
         public LoanApplication LoanApplication { get; set; }
     }
 }

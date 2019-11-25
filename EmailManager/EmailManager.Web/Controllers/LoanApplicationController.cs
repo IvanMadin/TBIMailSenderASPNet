@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Service.Contracts.Factories;
+using EmailManager.Service.DTOs;
 using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -22,13 +23,15 @@ namespace EmailManager.Web.Controllers
         private readonly IClientService clientService;
         private readonly IClientDataFactory clientDataDTOFactory;
         private readonly IToastNotification toast;
+        private readonly IEmailStatusService emailStatusService;
 
         public LoanApplicationController(UserManager<User> userManager,
                                          IEmailService emailService,
                                          ILoanApplicationService loanApplicationService,
                                          IClientService clientService,
                                          IClientDataFactory clientDataDTOFactory,
-                                         IToastNotification toast)
+                                         IToastNotification toast,
+                                         IEmailStatusService emailStatusService)
         {
             this.userManager = userManager;
             this.emailService = emailService;
@@ -36,6 +39,7 @@ namespace EmailManager.Web.Controllers
             this.clientService = clientService;
             this.clientDataDTOFactory = clientDataDTOFactory;
             this.toast = toast;
+            this.emailStatusService = emailStatusService;
         }
 
         [HttpGet]
@@ -59,50 +63,56 @@ namespace EmailManager.Web.Controllers
                 Log.Error($"Application form wasn't accessible!");
                 return RedirectToAction("Error", "Home");
             }
-            
+
         }
 
         [HttpPost]
+        [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> ApplicationForm(LoanApplicationViewModel loanModel)
         {
+            if (!ModelState.IsValid || loanModel.FirstName == null || loanModel.LastName == null || loanModel.EGN == null)
+            {
+                if (string.IsNullOrEmpty(loanModel.FirstName))
+                {
+                    TempData["firstNameMessage"] = "FirstName must be between 3 and 50 symbols.";
+                }
+
+                if (string.IsNullOrEmpty(loanModel.LastName))
+                {
+                    TempData["lastNameMessage"] = "LastName must be between 3 and 50 symbols.";
+                }
+
+                if (string.IsNullOrEmpty(loanModel.EGN))
+                {
+                    TempData["egnMessage"] = "EGN must be 10 symbols.";
+                }
+
+                if (string.IsNullOrEmpty(loanModel.Phone))
+                {
+                    TempData["phoneMessage"] = "Phone must be between 10 and 13 symbols.";
+                }
+                this.toast.AddWarningToastMessage("Not valid data.");
+                return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
+            }
+
             try
             {
                 var operatorId = userManager.GetUserId(User);
-                var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
 
-                if (!ModelState.IsValid || clientData.FirstName == null || clientData.LastName == null || clientData.EGN == null)
+                var clientData = await this.clientService.FindClientAsync(loanModel.FirstName, loanModel.LastName, loanModel.EGN);
+                if (clientData is null)
                 {
                     var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
-
-                    if (string.IsNullOrEmpty(clientData.FirstName))
-                    {
-                        TempData["firstNameMessage"] = "FirstName must be between 3 and 50 symbols.";
-                    }
-
-                    if (string.IsNullOrEmpty(clientData.LastName))
-                    {
-                        TempData["lastNameMessage"] = "LastName must be between 3 and 50 symbols.";
-                    }
-
-                    if (string.IsNullOrEmpty(clientData.EGN))
-                    {
-                        TempData["egnMessage"] = "EGN must be 10 symbols.";
-                    }
-
-                    if (string.IsNullOrEmpty(clientData.Phone))
-                    {
-                        TempData["phoneMessage"] = "Phone must be between 10 and 13 symbols.";
-                    }
-
                     clientData = await this.clientService.CreateClientData(clientDataDTO);
                     Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
                 }
 
-            var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
+                var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
                 this.toast.AddSuccessToastMessage($"Client data was created successfully!");
                 Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
 
-                //TODO: Have to change status of Email to Closed no matter what operation I take.
+                var emailStatus = await this.emailStatusService.GetEmailStatusByNameAsync("Closed Application");
+                await this.emailService.UpdateEmailStatus(new EmailDTO { Id = loanModel.EmailId }, emailStatus, operatorId);
 
                 return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
             }
@@ -111,7 +121,7 @@ namespace EmailManager.Web.Controllers
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 TempData["errorMessage"] = ex.Message;
             }
-        
+
             return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
         }
     }

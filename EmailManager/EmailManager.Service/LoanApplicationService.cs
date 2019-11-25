@@ -4,6 +4,7 @@ using EmailManager.Data.Entities;
 using EmailManager.Data.Entities.Types;
 using EmailManager.Service.Contracts;
 using EmailManager.Service.DTOs;
+using EmailManager.Service.DTOs.ToEntities;
 using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
@@ -57,12 +58,13 @@ namespace EmailManager.Service
 
         }
 
-        private async Task<LoanApplication> GetLoanApplicationByEmailIdAsync(string emailId)
+        public async Task<LoanApplicationDTO> GetLoanApplicationByEmailIdAsync(string emailId)
         {
             var loan = await this.context.LoanApplications.FirstOrDefaultAsync(la => la.EmailId == emailId);
 
             Log.Information($"{DateTime.Now} Get Loan Application with Email Id: {emailId} by User Id: {loan.ModifiedByUserId}.");
-            return loan;
+
+            return loan.ToDTO();
         }
         public async Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId)
         {
@@ -74,7 +76,7 @@ namespace EmailManager.Service
 
         public async Task<LoanApplicationDTO> OpenLoanApplication(string emailId, string userId)
         {
-           var loan = await GetLoanApplicationByEmailIdAsync(emailId);
+           var loan = (await GetLoanApplicationByEmailIdAsync(emailId)).ToEntity();
             loan.ModifiedOnDate = DateTime.Now;
             loan.ModifiedByUserId = userId;
             loan.UserId = userId;
