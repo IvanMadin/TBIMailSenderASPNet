@@ -20,6 +20,7 @@ namespace EmailManager.Service.DTOs.ToEntities
                 Amount = dto.LoanAmount,
                 ApplicationStatus = (ApplicationStatus)Enum.Parse(typeof(ApplicationStatus), dto.ApplicationStatusName),
                 EmailId = dto.EmailId,
+                
             };
             return entity;
         }

@@ -1,5 +1,4 @@
-﻿
-using EmailManager.Data;
+﻿using EmailManager.Data;
 using EmailManager.Data.Entities;
 using EmailManager.Data.Entities.Types;
 using EmailManager.Service.Contracts;
@@ -9,8 +8,6 @@ using EmailManager.Service.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EmailManager.Service
@@ -24,20 +21,19 @@ namespace EmailManager.Service
             this.context = context;
         }
 
-        public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string emailId, string operatorId)
+        public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string emailId)
         {
             var loan = new LoanApplication
             {
                 EmailId = emailId,
                 ApplicationStatus = ApplicationStatus.New,
                 CreatedOnDate = DateTime.Now,
-                CreatedByUserId = operatorId
             };
 
             this.context.LoanApplications.Add(loan);
             await this.context.SaveChangesAsync();
 
-            Log.Information($"{loan.CreatedOnDate} Create Loan Application by User Id: {loan.CreatedByUserId}.");
+            Log.Information($"{loan.CreatedOnDate} Created new Loan Application with Email Id: {loan.EmailId}.");
             return loan.ToDTO();
         }
         public async Task<LoanApplicationDTO> CreateLoanApplicationAsync(string clientId, string emailId, string status, string operatorId, decimal amount)
@@ -60,7 +56,8 @@ namespace EmailManager.Service
 
         public async Task<LoanApplicationDTO> GetLoanApplicationByEmailIdAsync(string emailId)
         {
-            var loan = await this.context.LoanApplications.FirstOrDefaultAsync(la => la.EmailId == emailId);
+            var loan = await this.context.LoanApplications
+                .FirstOrDefaultAsync(la => la.EmailId == emailId && la.DeletedOnDate == null);
 
             Log.Information($"{DateTime.Now} Get Loan Application with Email Id: {emailId} by User Id: {loan.ModifiedByUserId}.");
 
@@ -68,15 +65,16 @@ namespace EmailManager.Service
         }
         public async Task<LoanApplicationDTO> GetLoanApplicationByIdAsync(string applicationId)
         {
-            var application = await this.context.LoanApplications.FirstOrDefaultAsync(e => e.Id == applicationId);
+            var application = await this.context.LoanApplications
+                .FirstOrDefaultAsync(e => e.Id == applicationId && e.DeletedOnDate == null);
 
             Log.Information($"{DateTime.Now} Get Loan Application with Application Id: {application.Id} by UserId: {application.ModifiedByUserId}.");
             return application.ToDTO();
         }
 
-        public async Task<LoanApplicationDTO> OpenLoanApplication(string emailId, string userId)
+        public async Task<LoanApplicationDTO> OpenLoanApplicationAsync(string emailId, string userId)
         {
-           var loan = (await GetLoanApplicationByEmailIdAsync(emailId)).ToEntity();
+            var loan = (await GetLoanApplicationByEmailIdAsync(emailId)).ToEntity();
             loan.ModifiedOnDate = DateTime.Now;
             loan.ModifiedByUserId = userId;
             loan.UserId = userId;
@@ -85,6 +83,33 @@ namespace EmailManager.Service
 
             Log.Information($"{loan.ModifiedOnDate} Open Loan Application with Email ID: {loan.EmailId} by UserId: {loan.ModifiedByUserId}.");
             return loan.ToDTO();
+        }
+
+        public async Task<bool> RemoveOldApplicationByEmailIdAsync(string emailId, string operatorId)
+        {
+            try
+            {
+                var loan = await this.context.LoanApplications.FirstOrDefaultAsync(e => e.EmailId == emailId);
+                if (loan is null)
+                {
+                    throw new ArgumentNullException($"{DateTime.Now} Remove Application could not found Loan with email Id {emailId}.");
+                }
+
+                loan.ChangedCloseToNewStatusForEmailId = loan.EmailId;
+                loan.DeletedOnDate = DateTime.Now;
+                loan.DeletedByUserId = operatorId;
+                loan.EmailId = null;
+                loan.ApplicationStatus = ApplicationStatus.Deleted;
+                this.context.LoanApplications.Update(loan);
+                await this.context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                Log.Logger.Error(ex.Message);
+                return false;
+            }
         }
     }
 }

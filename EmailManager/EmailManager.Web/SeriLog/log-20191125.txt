@@ -1299,3 +1299,1245 @@ System.InvalidOperationException: The view 'Views/AllEmails' was not found. The 
 2019-11-25 07:25:36.969 +02:00 [INF] 25.11.2019 г. 7:25:36 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Open Application to Closed Application.
 2019-11-25 07:25:36.993 +02:00 [INF] 25.11.2019 г. 7:25:36 Get Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
 2019-11-25 07:25:36.993 +02:00 [INF] 25.11.2019 г. 7:25:36 Application with emailID: 10469c3a-f87b-4a7b-88fc-48f9855a8006 has been accessed by .
+2019-11-25 15:51:35.726 +02:00 [INF] Starting web host
+2019-11-25 15:51:39.820 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 15:51:42.651 +02:00 [INF] 25.11.2019 г. 15:51:42 Get All Emails.
+2019-11-25 15:51:42.717 +02:00 [INF] 25.11.2019 г. 15:51:42 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:28.331 +02:00 [INF] User logged out.
+2019-11-25 15:52:33.271 +02:00 [INF] User logged in.
+2019-11-25 15:52:33.521 +02:00 [INF] 25.11.2019 г. 15:52:33 Get All Emails.
+2019-11-25 15:52:33.552 +02:00 [INF] 25.11.2019 г. 15:52:33 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:35.559 +02:00 [INF] 25.11.2019 г. 15:52:35 Get Emails with Status Name: New Application.
+2019-11-25 15:52:35.690 +02:00 [INF] 25.11.2019 г. 15:52:35 Get All Emails with Status: New Application.
+2019-11-25 15:52:35.712 +02:00 [INF] 25.11.2019 г. 15:52:35 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:37.494 +02:00 [INF] 25.11.2019 г. 15:52:37 Get All Emails.
+2019-11-25 15:52:37.528 +02:00 [INF] 25.11.2019 г. 15:52:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:39.063 +02:00 [INF] 25.11.2019 г. 15:52:39 Get Emails with Status Name: New Application.
+2019-11-25 15:52:39.068 +02:00 [INF] 25.11.2019 г. 15:52:39 Get All Emails with Status: New Application.
+2019-11-25 15:52:39.071 +02:00 [INF] 25.11.2019 г. 15:52:39 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:40.433 +02:00 [INF] 25.11.2019 г. 15:52:40 Get All Emails.
+2019-11-25 15:52:40.483 +02:00 [INF] 25.11.2019 г. 15:52:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:41.488 +02:00 [INF] 25.11.2019 г. 15:52:41 Get Emails with Status Name: New Application.
+2019-11-25 15:52:41.491 +02:00 [INF] 25.11.2019 г. 15:52:41 Get All Emails with Status: New Application.
+2019-11-25 15:52:41.495 +02:00 [INF] 25.11.2019 г. 15:52:41 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:42.971 +02:00 [INF] 25.11.2019 г. 15:52:42 Get All Emails.
+2019-11-25 15:52:43.009 +02:00 [INF] 25.11.2019 г. 15:52:43 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:44.100 +02:00 [INF] 25.11.2019 г. 15:52:44 Get Emails with Status Name: Open Application.
+2019-11-25 15:52:44.107 +02:00 [INF] 25.11.2019 г. 15:52:44 Get All Emails with Status: Open Application.
+2019-11-25 15:52:44.109 +02:00 [INF] 25.11.2019 г. 15:52:44 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:45.778 +02:00 [INF] 25.11.2019 г. 15:52:45 Get All Emails.
+2019-11-25 15:52:45.812 +02:00 [INF] 25.11.2019 г. 15:52:45 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:47.129 +02:00 [INF] 25.11.2019 г. 15:52:47 Get Emails with Status Name: Closed Application.
+2019-11-25 15:52:47.139 +02:00 [INF] 25.11.2019 г. 15:52:47 Get All Emails with Status: Closed Application.
+2019-11-25 15:52:47.147 +02:00 [INF] 25.11.2019 г. 15:52:47 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:48.736 +02:00 [INF] 25.11.2019 г. 15:52:48 Get Emails with Status Name: Invalid Application.
+2019-11-25 15:52:48.881 +02:00 [INF] 25.11.2019 г. 15:52:48 Get All Emails with Status: Invalid Application.
+2019-11-25 15:52:48.888 +02:00 [INF] 25.11.2019 г. 15:52:48 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:50.638 +02:00 [INF] 25.11.2019 г. 15:52:50 Get All Emails.
+2019-11-25 15:52:50.671 +02:00 [INF] 25.11.2019 г. 15:52:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 15:52:52.520 +02:00 [INF] 25.11.2019 г. 15:52:52 Get Emails with Status Name: New Application.
+2019-11-25 15:52:52.524 +02:00 [INF] 25.11.2019 г. 15:52:52 Get All Emails with Status: New Application.
+2019-11-25 15:52:52.528 +02:00 [INF] 25.11.2019 г. 15:52:52 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:52:56.325 +02:00 [INF] 25.11.2019 г. 15:52:56 Get Emails with Status Name: Invalid Application.
+2019-11-25 15:52:56.542 +02:00 [INF] 25.11.2019 г. 15:52:56 Get All Emails with Status: Invalid Application.
+2019-11-25 15:52:56.551 +02:00 [INF] 25.11.2019 г. 15:52:56 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 15:53:04.067 +02:00 [INF] 25.11.2019 г. 15:53:04 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 16:05:28.939 +02:00 [INF] User logged out.
+2019-11-25 16:05:41.461 +02:00 [WRN] Invalid password for user ac3fe5bf-4f03-4560-ad78-f29320aa30fd.
+2019-11-25 16:05:41.469 +02:00 [WRN] User ac3fe5bf-4f03-4560-ad78-f29320aa30fd failed to provide the correct password.
+2019-11-25 16:05:46.936 +02:00 [WRN] Invalid password for user ac3fe5bf-4f03-4560-ad78-f29320aa30fd.
+2019-11-25 16:05:46.936 +02:00 [WRN] User ac3fe5bf-4f03-4560-ad78-f29320aa30fd failed to provide the correct password.
+2019-11-25 16:06:00.621 +02:00 [WRN] Invalid password for user ac3fe5bf-4f03-4560-ad78-f29320aa30fd.
+2019-11-25 16:06:00.621 +02:00 [WRN] User ac3fe5bf-4f03-4560-ad78-f29320aa30fd failed to provide the correct password.
+2019-11-25 17:51:55.451 +02:00 [INF] Starting web host
+2019-11-25 17:51:57.903 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 17:53:00.895 +02:00 [WRN] Invalid password for user ac3fe5bf-4f03-4560-ad78-f29320aa30fd.
+2019-11-25 17:53:00.897 +02:00 [WRN] User ac3fe5bf-4f03-4560-ad78-f29320aa30fd failed to provide the correct password.
+2019-11-25 17:53:56.894 +02:00 [INF] User logged in.
+2019-11-25 17:53:57.127 +02:00 [INF] 25.11.2019 г. 17:53:57 Get All Emails.
+2019-11-25 17:53:57.164 +02:00 [INF] 25.11.2019 г. 17:53:57 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 17:57:07.040 +02:00 [INF] 25.11.2019 г. 17:57:07 Get Emails with Status Name: New Application.
+2019-11-25 17:57:07.118 +02:00 [INF] 25.11.2019 г. 17:57:07 Get All Emails with Status: New Application.
+2019-11-25 17:57:07.131 +02:00 [INF] 25.11.2019 г. 17:57:07 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 17:57:09.282 +02:00 [INF] 25.11.2019 г. 17:57:09 Get Emails with Status Name: Closed Application.
+2019-11-25 17:57:09.523 +02:00 [INF] 25.11.2019 г. 17:57:09 Get All Emails with Status: Closed Application.
+2019-11-25 17:57:09.531 +02:00 [INF] 25.11.2019 г. 17:57:09 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 17:57:10.229 +02:00 [INF] 25.11.2019 г. 17:57:10 Get Emails with Status Name: Invalid Application.
+2019-11-25 17:57:10.314 +02:00 [INF] 25.11.2019 г. 17:57:10 Get All Emails with Status: Invalid Application.
+2019-11-25 17:57:10.320 +02:00 [INF] 25.11.2019 г. 17:57:10 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 17:57:12.447 +02:00 [INF] 25.11.2019 г. 17:57:12 Get All Emails.
+2019-11-25 17:57:12.476 +02:00 [INF] 25.11.2019 г. 17:57:12 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 17:57:33.551 +02:00 [INF] 25.11.2019 г. 17:57:33 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 17:57:33.552 +02:00 [INF] 25.11.2019 г. 17:57:33 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 17:57:38.684 +02:00 [INF] 25.11.2019 г. 17:57:38 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 17:57:38.686 +02:00 [INF] 25.11.2019 г. 17:57:38 Get Emails with Status Name: New Application.
+2019-11-25 17:57:38.700 +02:00 [INF] 25.11.2019 г. 17:57:38 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 17:57:38.762 +02:00 [INF] 25.11.2019 г. 17:57:38 Created new Loan Application with Email Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f.
+2019-11-25 17:57:38.763 +02:00 [INF] 25.11.2019 г. 17:57:38 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 17:57:38.783 +02:00 [INF]  Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 17:57:38.817 +02:00 [INF] 25.11.2019 г. 17:57:38 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 17:57:38.817 +02:00 [INF] 25.11.2019 г. 17:57:38 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 17:58:07.799 +02:00 [INF] 25.11.2019 г. 17:58:07 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 17:58:38.905 +02:00 [INF] 25.11.2019 г. 17:58:38 Get Loan Application with Email Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by User Id: .
+2019-11-25 18:00:21.618 +02:00 [INF] 25.11.2019 г. 18:00:21 Get Emails with Status Name: Not Reviewed.
+2019-11-25 18:01:53.418 +02:00 [INF] 25.11.2019 г. 18:01:26 Updated Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f, from: New Application to Not Reviewed.
+2019-11-25 18:02:25.600 +02:00 [INF] 25.11.2019 г. 18:02:25 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 18:02:25.600 +02:00 [INF] 25.11.2019 г. 18:02:25 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 18:03:16.622 +02:00 [INF] 25.11.2019 г. 18:03:16 Get All Emails.
+2019-11-25 18:03:16.652 +02:00 [INF] 25.11.2019 г. 18:03:16 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:06:45.604 +02:00 [INF] Starting web host
+2019-11-25 18:06:46.888 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:06:47.772 +02:00 [INF] 25.11.2019 г. 18:06:47 Get All Emails.
+2019-11-25 18:06:47.797 +02:00 [INF] 25.11.2019 г. 18:06:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:06:53.434 +02:00 [INF] 25.11.2019 г. 18:06:53 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by a4933821-4610-4e85-a9fa-030162c19433.
+2019-11-25 18:06:53.435 +02:00 [INF] 25.11.2019 г. 18:06:53 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:06:55.345 +02:00 [INF] 25.11.2019 г. 18:06:55 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by a4933821-4610-4e85-a9fa-030162c19433.
+2019-11-25 18:06:55.358 +02:00 [ERR] Object reference not set to an instance of an object.
+2019-11-25 18:06:55.369 +02:00 [INF] 25.11.2019 г. 18:06:55 Get Emails with Status Name: Not Reviewed.
+2019-11-25 18:06:55.428 +02:00 [INF] 25.11.2019 г. 18:06:55 Updated Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515, from: Invalid Application to Not Reviewed.
+2019-11-25 18:06:55.578 +02:00 [INF] 25.11.2019 г. 18:06:55 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:06:55.579 +02:00 [INF] 25.11.2019 г. 18:06:55 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:08:14.449 +02:00 [INF] Starting web host
+2019-11-25 18:08:16.102 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:08:17.252 +02:00 [INF] 25.11.2019 г. 18:08:17 Get All Emails.
+2019-11-25 18:08:17.304 +02:00 [INF] 25.11.2019 г. 18:08:17 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:08:20.274 +02:00 [INF] 25.11.2019 г. 18:08:20 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:08:20.274 +02:00 [INF] 25.11.2019 г. 18:08:20 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:08:22.082 +02:00 [INF] 25.11.2019 г. 18:08:22 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:08:22.094 +02:00 [INF] 25.11.2019 г. 18:08:22 Get Emails with Status Name: Invalid Application.
+2019-11-25 18:08:22.163 +02:00 [INF] 25.11.2019 г. 18:08:22 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 18:08:22.239 +02:00 [INF] 25.11.2019 г. 18:06:55 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 18:08:22.316 +02:00 [INF] 25.11.2019 г. 18:08:22 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:08:22.316 +02:00 [INF] 25.11.2019 г. 18:08:22 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:08:26.152 +02:00 [INF] 25.11.2019 г. 18:08:26 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:08:26.246 +02:00 [ERR] Object reference not set to an instance of an object.
+2019-11-25 18:08:26.250 +02:00 [INF] 25.11.2019 г. 18:08:26 Get Emails with Status Name: Not Reviewed.
+2019-11-25 18:08:26.357 +02:00 [INF] 25.11.2019 г. 18:08:26 Updated Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515, from: Invalid Application to Not Reviewed.
+2019-11-25 18:08:26.428 +02:00 [INF] 25.11.2019 г. 18:08:26 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:08:26.428 +02:00 [INF] 25.11.2019 г. 18:08:26 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:08:47.285 +02:00 [INF] Starting web host
+2019-11-25 18:08:48.688 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:08:49.816 +02:00 [INF] 25.11.2019 г. 18:08:49 Get All Emails.
+2019-11-25 18:08:49.862 +02:00 [INF] 25.11.2019 г. 18:08:49 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:08:57.641 +02:00 [INF] 25.11.2019 г. 18:08:57 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:08:57.641 +02:00 [INF] 25.11.2019 г. 18:08:57 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:08:59.104 +02:00 [INF] 25.11.2019 г. 18:08:59 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by .
+2019-11-25 18:08:59.114 +02:00 [INF] 25.11.2019 г. 18:08:59 Get Emails with Status Name: Invalid Application.
+2019-11-25 18:08:59.177 +02:00 [INF] 25.11.2019 г. 18:08:59 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 18:08:59.252 +02:00 [INF] 25.11.2019 г. 18:08:26 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 18:08:59.326 +02:00 [INF] 25.11.2019 г. 18:08:59 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:08:59.326 +02:00 [INF] 25.11.2019 г. 18:08:59 Application with emailID: e3c764f1-3926-4976-b7a7-06a84a916515 has been accessed by .
+2019-11-25 18:09:01.236 +02:00 [INF] 25.11.2019 г. 18:09:01 Get Email with Id: e3c764f1-3926-4976-b7a7-06a84a916515 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:12:19.401 +02:00 [INF] Starting web host
+2019-11-25 18:12:19.948 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:12:20.820 +02:00 [INF] 25.11.2019 г. 18:12:20 Get All Emails.
+2019-11-25 18:12:20.849 +02:00 [INF] 25.11.2019 г. 18:12:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:12:27.395 +02:00 [INF] Starting web host
+2019-11-25 18:12:28.770 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:12:29.805 +02:00 [INF] 25.11.2019 г. 18:12:29 Get All Emails.
+2019-11-25 18:12:29.857 +02:00 [INF] 25.11.2019 г. 18:12:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:13:04.607 +02:00 [INF] 25.11.2019 г. 18:13:04 Get Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:13:04.607 +02:00 [INF] 25.11.2019 г. 18:13:04 Application with emailID: 10469c3a-f87b-4a7b-88fc-48f9855a8006 has been accessed by .
+2019-11-25 18:13:06.174 +02:00 [INF] 25.11.2019 г. 18:13:06 Get Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:13:06.190 +02:00 [INF] 25.11.2019 г. 18:13:06 Get Emails with Status Name: New Application.
+2019-11-25 18:13:06.209 +02:00 [INF] 25.11.2019 г. 18:13:06 Updated Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006, from: Closed Application to New Application.
+2019-11-25 18:13:29.242 +02:00 [INF] 25.11.2019 г. 18:13:29 Get Loan Application with Email Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:17:30.010 +02:00 [INF] 25.11.2019 г. 18:16:59 Created new Loan Application with Email Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006.
+2019-11-25 18:17:44.891 +02:00 [INF] 25.11.2019 г. 18:17:44 Get Email with Id: 10469c3a-f87b-4a7b-88fc-48f9855a8006 by .
+2019-11-25 18:17:44.891 +02:00 [INF] 25.11.2019 г. 18:17:44 Application with emailID: 10469c3a-f87b-4a7b-88fc-48f9855a8006 has been accessed by .
+2019-11-25 18:23:51.565 +02:00 [INF] Starting web host
+2019-11-25 18:23:53.117 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:23:54.072 +02:00 [INF] 25.11.2019 г. 18:23:54 Get All Emails.
+2019-11-25 18:23:54.117 +02:00 [INF] 25.11.2019 г. 18:23:54 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:24:18.998 +02:00 [INF] 25.11.2019 г. 18:24:18 Get Emails with Status Name: Closed Application.
+2019-11-25 18:24:19.049 +02:00 [INF] 25.11.2019 г. 18:24:19 Get All Emails with Status: Closed Application.
+2019-11-25 18:24:19.066 +02:00 [INF] 25.11.2019 г. 18:24:19 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:24:25.748 +02:00 [INF] 25.11.2019 г. 18:24:25 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:24:25.749 +02:00 [INF] 25.11.2019 г. 18:24:25 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 18:24:35.299 +02:00 [INF] Starting web host
+2019-11-25 18:24:36.703 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:24:37.597 +02:00 [INF] 25.11.2019 г. 18:24:37 Get All Emails.
+2019-11-25 18:24:37.642 +02:00 [INF] 25.11.2019 г. 18:24:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:25:03.836 +02:00 [INF] 25.11.2019 г. 18:25:03 Get Emails with Status Name: Closed Application.
+2019-11-25 18:25:03.890 +02:00 [INF] 25.11.2019 г. 18:25:03 Get All Emails with Status: Closed Application.
+2019-11-25 18:25:03.909 +02:00 [INF] 25.11.2019 г. 18:25:03 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:25:09.106 +02:00 [INF] 25.11.2019 г. 18:25:09 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:25:09.106 +02:00 [INF] 25.11.2019 г. 18:25:09 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 18:25:13.694 +02:00 [INF] 25.11.2019 г. 18:25:13 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:25:28.910 +02:00 [INF] 25.11.2019 г. 18:25:28 Get Loan Application with Email Id: db55def5-ca56-457d-8516-ceb2d7c610ad by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:33:28.066 +02:00 [INF] Starting web host
+2019-11-25 18:33:29.454 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:33:30.404 +02:00 [INF] 25.11.2019 г. 18:33:30 Get All Emails.
+2019-11-25 18:33:30.450 +02:00 [INF] 25.11.2019 г. 18:33:30 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:33:34.580 +02:00 [INF] 25.11.2019 г. 18:33:34 Get Emails with Status Name: Invalid Application.
+2019-11-25 18:33:34.673 +02:00 [INF] 25.11.2019 г. 18:33:34 Get All Emails with Status: Invalid Application.
+2019-11-25 18:33:34.689 +02:00 [INF] 25.11.2019 г. 18:33:34 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:33:35.637 +02:00 [INF] 25.11.2019 г. 18:33:35 Get Emails with Status Name: Closed Application.
+2019-11-25 18:33:35.663 +02:00 [INF] 25.11.2019 г. 18:33:35 Get All Emails with Status: Closed Application.
+2019-11-25 18:33:35.670 +02:00 [INF] 25.11.2019 г. 18:33:35 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:33:40.406 +02:00 [INF] 25.11.2019 г. 18:33:40 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:33:40.406 +02:00 [INF] 25.11.2019 г. 18:33:40 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 18:33:42.365 +02:00 [INF] 25.11.2019 г. 18:33:42 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:34:43.112 +02:00 [ERR] Failed executing DbCommand (42ms) [Parameters=[@p11='?' (Size = 450), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 450), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [LoanApplications] SET [Amount] = @p0, [ApplicationStatus] = @p1, [ClientDataId] = @p2, [CreatedByUserId] = @p3, [CreatedOnDate] = @p4, [DeletedByUserId] = @p5, [DeletedOnDate] = @p6, [EmailId] = @p7, [ModifiedByUserId] = @p8, [ModifiedOnDate] = @p9, [UserId] = @p10
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+System.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:e6a15d96-2b0c-44e1-9a38-c157f5dcb0cd
+Error Number:547,State:0,Class:16
+2019-11-25 18:34:43.156 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 18:42:28.648 +02:00 [INF] Starting web host
+2019-11-25 18:42:30.152 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:42:31.098 +02:00 [INF] 25.11.2019 г. 18:42:31 Get All Emails.
+2019-11-25 18:42:31.142 +02:00 [INF] 25.11.2019 г. 18:42:31 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:42:37.649 +02:00 [INF] 25.11.2019 г. 18:42:37 Get Emails with Status Name: Closed Application.
+2019-11-25 18:42:37.701 +02:00 [INF] 25.11.2019 г. 18:42:37 Get All Emails with Status: Closed Application.
+2019-11-25 18:42:37.717 +02:00 [INF] 25.11.2019 г. 18:42:37 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:42:42.027 +02:00 [INF] 25.11.2019 г. 18:42:42 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:42:42.027 +02:00 [INF] 25.11.2019 г. 18:42:42 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 18:42:44.027 +02:00 [INF] 25.11.2019 г. 18:42:44 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:42:51.581 +02:00 [ERR] Failed executing DbCommand (7ms) [Parameters=[@p11='?' (Size = 450), @p0='?' (DbType = Decimal), @p1='?' (Size = 4000), @p2='?' (Size = 450), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 450), @p8='?' (Size = 4000), @p9='?' (DbType = DateTime2), @p10='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [LoanApplications] SET [Amount] = @p0, [ApplicationStatus] = @p1, [ClientDataId] = @p2, [CreatedByUserId] = @p3, [CreatedOnDate] = @p4, [DeletedByUserId] = @p5, [DeletedOnDate] = @p6, [EmailId] = @p7, [ModifiedByUserId] = @p8, [ModifiedOnDate] = @p9, [UserId] = @p10
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+System.Data.SqlClient.SqlException (0x80131904): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:bd58889e-da07-44ac-ba6c-6425528e1f83
+Error Number:547,State:0,Class:16
+2019-11-25 18:42:51.623 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_LoanApplications_Emails_EmailId". The conflict occurred in database "EmailManager", table "dbo.Emails", column 'Id'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 18:49:48.794 +02:00 [INF] Starting web host
+2019-11-25 18:49:50.212 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:49:51.161 +02:00 [INF] 25.11.2019 г. 18:49:51 Get All Emails.
+2019-11-25 18:49:51.206 +02:00 [INF] 25.11.2019 г. 18:49:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:49:53.934 +02:00 [INF] 25.11.2019 г. 18:49:53 Get Emails with Status Name: Closed Application.
+2019-11-25 18:49:53.985 +02:00 [INF] 25.11.2019 г. 18:49:53 Get All Emails with Status: Closed Application.
+2019-11-25 18:49:54.001 +02:00 [INF] 25.11.2019 г. 18:49:54 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:49:56.469 +02:00 [INF] 25.11.2019 г. 18:49:56 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:49:56.469 +02:00 [INF] 25.11.2019 г. 18:49:56 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 18:49:58.646 +02:00 [INF] 25.11.2019 г. 18:49:58 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:50:27.882 +02:00 [INF] 25.11.2019 г. 18:50:24 Created new Loan Application with Email Id: db55def5-ca56-457d-8516-ceb2d7c610ad.
+2019-11-25 18:50:35.945 +02:00 [INF] 25.11.2019 г. 18:50:35 Get Emails with Status Name: New Application.
+2019-11-25 18:50:43.258 +02:00 [INF] 25.11.2019 г. 18:50:42 Updated Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad, from: Closed Application to New Application.
+2019-11-25 18:50:53.889 +02:00 [INF] 25.11.2019 г. 18:50:53 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by .
+2019-11-25 18:50:53.889 +02:00 [INF] 25.11.2019 г. 18:50:53 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 18:55:48.463 +02:00 [INF] Starting web host
+2019-11-25 18:55:49.007 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:55:49.828 +02:00 [INF] 25.11.2019 г. 18:55:49 Get All Emails.
+2019-11-25 18:55:49.851 +02:00 [INF] 25.11.2019 г. 18:55:49 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:58:19.074 +02:00 [INF] 25.11.2019 г. 18:58:19 Get Emails with Status Name: New Application.
+2019-11-25 18:58:19.124 +02:00 [INF] 25.11.2019 г. 18:58:19 Get All Emails with Status: New Application.
+2019-11-25 18:58:19.134 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EmailManager.Web.Areas.Manager.Controllers.EmailController.ShowEmailsByStatus(String statusName) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Areas\Manager\Controllers\EmailController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NToastNotify.NtoastNotifyAjaxToastsMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-25 18:58:30.426 +02:00 [INF] Starting web host
+2019-11-25 18:58:31.660 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 18:58:32.624 +02:00 [INF] 25.11.2019 г. 18:58:32 Get All Emails.
+2019-11-25 18:58:32.668 +02:00 [INF] 25.11.2019 г. 18:58:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:58:36.178 +02:00 [INF] 25.11.2019 г. 18:58:36 Get Emails with Status Name: New Application.
+2019-11-25 18:58:36.233 +02:00 [INF] 25.11.2019 г. 18:58:36 Get All Emails with Status: New Application.
+2019-11-25 18:58:36.302 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EmailManager.Web.Areas.Manager.Controllers.EmailController.ShowEmailsByStatus(String statusName) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Areas\Manager\Controllers\EmailController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NToastNotify.NtoastNotifyAjaxToastsMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-25 18:58:57.821 +02:00 [INF] 25.11.2019 г. 18:58:57 Get All Emails.
+2019-11-25 18:58:57.848 +02:00 [INF] 25.11.2019 г. 18:58:57 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 18:58:59.516 +02:00 [INF] 25.11.2019 г. 18:58:59 Get Emails with Status Name: Open Application.
+2019-11-25 18:58:59.521 +02:00 [INF] 25.11.2019 г. 18:58:59 Get All Emails with Status: Open Application.
+2019-11-25 18:58:59.523 +02:00 [INF] 25.11.2019 г. 18:58:59 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:59:00.613 +02:00 [INF] 25.11.2019 г. 18:59:00 Get Emails with Status Name: Closed Application.
+2019-11-25 18:59:00.616 +02:00 [INF] 25.11.2019 г. 18:59:00 Get All Emails with Status: Closed Application.
+2019-11-25 18:59:00.622 +02:00 [INF] 25.11.2019 г. 18:59:00 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 18:59:01.763 +02:00 [INF] 25.11.2019 г. 18:59:01 Get Emails with Status Name: New Application.
+2019-11-25 18:59:01.770 +02:00 [INF] 25.11.2019 г. 18:59:01 Get All Emails with Status: New Application.
+2019-11-25 18:59:01.787 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at EmailManager.Web.Areas.Manager.Controllers.EmailController.ShowEmailsByStatus(String statusName) in E:\Users\Madin\Source\Repos\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Areas\Manager\Controllers\EmailController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NToastNotify.NtoastNotifyAjaxToastsMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-25 19:00:27.840 +02:00 [INF] Starting web host
+2019-11-25 19:00:29.206 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:00:30.155 +02:00 [INF] 25.11.2019 г. 19:00:30 Get All Emails.
+2019-11-25 19:00:30.200 +02:00 [INF] 25.11.2019 г. 19:00:30 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:00:32.440 +02:00 [INF] 25.11.2019 г. 19:00:32 Get Emails with Status Name: New Application.
+2019-11-25 19:00:32.515 +02:00 [INF] 25.11.2019 г. 19:00:32 Get All Emails with Status: New Application.
+2019-11-25 19:00:32.515 +02:00 [INF] 25.11.2019 г. 19:00:32 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:00:39.442 +02:00 [INF] 25.11.2019 г. 19:00:39 Get All Emails.
+2019-11-25 19:00:39.469 +02:00 [INF] 25.11.2019 г. 19:00:39 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:00:40.893 +02:00 [INF] 25.11.2019 г. 19:00:40 Get Emails with Status Name: Open Application.
+2019-11-25 19:00:40.899 +02:00 [INF] 25.11.2019 г. 19:00:40 Get All Emails with Status: Open Application.
+2019-11-25 19:00:40.910 +02:00 [INF] 25.11.2019 г. 19:00:40 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:00:41.938 +02:00 [INF] 25.11.2019 г. 19:00:41 Get Emails with Status Name: New Application.
+2019-11-25 19:00:41.949 +02:00 [INF] 25.11.2019 г. 19:00:41 Get All Emails with Status: New Application.
+2019-11-25 19:00:41.949 +02:00 [INF] 25.11.2019 г. 19:00:41 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:00:47.576 +02:00 [INF] 25.11.2019 г. 19:00:47 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by .
+2019-11-25 19:00:47.577 +02:00 [INF] 25.11.2019 г. 19:00:47 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 19:00:49.215 +02:00 [INF] 25.11.2019 г. 19:00:49 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by .
+2019-11-25 19:01:01.452 +02:00 [INF] 25.11.2019 г. 19:01:01 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:01:13.405 +02:00 [INF] 25.11.2019 г. 19:01:12 Updated Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad, from: New Application to Not Reviewed.
+2019-11-25 19:01:20.045 +02:00 [INF] 25.11.2019 г. 19:01:20 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by .
+2019-11-25 19:01:20.045 +02:00 [INF] 25.11.2019 г. 19:01:20 Application with emailID: db55def5-ca56-457d-8516-ceb2d7c610ad has been accessed by .
+2019-11-25 19:01:24.207 +02:00 [INF] 25.11.2019 г. 19:01:24 Get Email with Id: db55def5-ca56-457d-8516-ceb2d7c610ad by .
+2019-11-25 19:01:24.208 +02:00 [INF] 25.11.2019 г. 19:01:24 Get Emails with Status Name: New Application.
+2019-11-25 19:01:24.212 +02:00 [INF] 25.11.2019 г. 19:01:24 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:01:24.265 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ChangedCloseToNewStatusForEmailId], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (db55def5-ca56-457d-8516-ceb2d7c610ad).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:cc4106d9-2133-448d-b742-a5be56076b2c
+Error Number:2601,State:1,Class:14
+2019-11-25 19:01:24.303 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (db55def5-ca56-457d-8516-ceb2d7c610ad).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (db55def5-ca56-457d-8516-ceb2d7c610ad).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 19:01:24.372 +02:00 [ERR] Status wasn't changed!
+2019-11-25 19:01:47.284 +02:00 [INF] 25.11.2019 г. 19:01:47 Get All Emails.
+2019-11-25 19:01:47.308 +02:00 [INF] 25.11.2019 г. 19:01:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:01:52.655 +02:00 [INF] 25.11.2019 г. 19:01:52 Get Emails with Status Name: Open Application.
+2019-11-25 19:01:52.662 +02:00 [INF] 25.11.2019 г. 19:01:52 Get All Emails with Status: Open Application.
+2019-11-25 19:01:52.665 +02:00 [INF] 25.11.2019 г. 19:01:52 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:01:53.669 +02:00 [INF] 25.11.2019 г. 19:01:53 Get Emails with Status Name: Closed Application.
+2019-11-25 19:01:53.676 +02:00 [INF] 25.11.2019 г. 19:01:53 Get All Emails with Status: Closed Application.
+2019-11-25 19:01:53.683 +02:00 [INF] 25.11.2019 г. 19:01:53 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:01:54.794 +02:00 [INF] 25.11.2019 г. 19:01:54 Get Emails with Status Name: Open Application.
+2019-11-25 19:01:54.796 +02:00 [INF] 25.11.2019 г. 19:01:54 Get All Emails with Status: Open Application.
+2019-11-25 19:01:54.798 +02:00 [INF] 25.11.2019 г. 19:01:54 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:01:55.664 +02:00 [INF] 25.11.2019 г. 19:01:55 Get Emails with Status Name: New Application.
+2019-11-25 19:01:55.670 +02:00 [INF] 25.11.2019 г. 19:01:55 Get All Emails with Status: New Application.
+2019-11-25 19:01:55.670 +02:00 [INF] 25.11.2019 г. 19:01:55 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:01:56.710 +02:00 [INF] 25.11.2019 г. 19:01:56 Get All Emails.
+2019-11-25 19:01:56.736 +02:00 [INF] 25.11.2019 г. 19:01:56 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:02:28.164 +02:00 [INF] 25.11.2019 г. 19:02:28 Get Emails with Status Name: New Application.
+2019-11-25 19:02:28.170 +02:00 [INF] 25.11.2019 г. 19:02:28 Get All Emails with Status: New Application.
+2019-11-25 19:02:28.170 +02:00 [INF] 25.11.2019 г. 19:02:28 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:02:31.892 +02:00 [INF] 25.11.2019 г. 19:02:31 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by a4933821-4610-4e85-a9fa-030162c19433.
+2019-11-25 19:02:31.892 +02:00 [INF] 25.11.2019 г. 19:02:31 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:02:33.589 +02:00 [INF] 25.11.2019 г. 19:02:33 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by a4933821-4610-4e85-a9fa-030162c19433.
+2019-11-25 19:02:37.179 +02:00 [INF] 25.11.2019 г. 19:02:37 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:02:37.182 +02:00 [INF] 25.11.2019 г. 19:02:37 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: New Application to Not Reviewed.
+2019-11-25 19:02:37.200 +02:00 [INF] 25.11.2019 г. 19:02:37 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:02:37.200 +02:00 [INF] 25.11.2019 г. 19:02:37 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:02:58.687 +02:00 [INF] 25.11.2019 г. 19:02:58 Get All Emails.
+2019-11-25 19:02:58.712 +02:00 [INF] 25.11.2019 г. 19:02:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:03:09.515 +02:00 [INF] 25.11.2019 г. 19:03:09 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:03:09.515 +02:00 [INF] 25.11.2019 г. 19:03:09 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:05:11.563 +02:00 [INF] 25.11.2019 г. 19:05:11 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:05:23.306 +02:00 [INF] 25.11.2019 г. 19:05:23 Get Emails with Status Name: New Application.
+2019-11-25 19:08:18.023 +02:00 [INF] Starting web host
+2019-11-25 19:08:19.445 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:08:20.400 +02:00 [INF] 25.11.2019 г. 19:08:20 Get All Emails.
+2019-11-25 19:08:20.444 +02:00 [INF] 25.11.2019 г. 19:08:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:08:24.245 +02:00 [INF] 25.11.2019 г. 19:08:24 Get All Emails.
+2019-11-25 19:08:24.276 +02:00 [INF] 25.11.2019 г. 19:08:24 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:08:38.473 +02:00 [INF] 25.11.2019 г. 19:08:38 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:08:38.473 +02:00 [INF] 25.11.2019 г. 19:08:38 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:08:49.937 +02:00 [INF] 25.11.2019 г. 19:08:49 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:08:56.680 +02:00 [INF] 25.11.2019 г. 19:08:56 Get Emails with Status Name: New Application.
+2019-11-25 19:09:12.896 +02:00 [INF] 25.11.2019 г. 19:09:12 Get Emails with Status Name: New Application.
+2019-11-25 19:09:12.923 +02:00 [INF] 25.11.2019 г. 19:09:12 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: Not Reviewed to New Application.
+2019-11-25 19:09:19.376 +02:00 [ERR] Failed executing DbCommand (21ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ChangedCloseToNewStatusForEmailId], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:c2487729-2465-4c4f-9134-ec92c7fbe82c
+Error Number:2601,State:1,Class:14
+2019-11-25 19:09:19.414 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 19:11:03.864 +02:00 [INF] Starting web host
+2019-11-25 19:11:05.357 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:11:06.304 +02:00 [INF] 25.11.2019 г. 19:11:06 Get All Emails.
+2019-11-25 19:11:06.351 +02:00 [INF] 25.11.2019 г. 19:11:06 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:11:21.414 +02:00 [INF] 25.11.2019 г. 19:11:21 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:11:21.414 +02:00 [INF] 25.11.2019 г. 19:11:21 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:11:23.340 +02:00 [INF] 25.11.2019 г. 19:11:23 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:11:48.568 +02:00 [INF] 25.11.2019 г. 19:11:48 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:11:48.582 +02:00 [INF] 25.11.2019 г. 19:11:48 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: New Application to Not Reviewed.
+2019-11-25 19:11:50.573 +02:00 [INF] 25.11.2019 г. 19:11:50 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:11:50.573 +02:00 [INF] 25.11.2019 г. 19:11:50 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:11:54.577 +02:00 [INF] 25.11.2019 г. 19:11:54 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:11:54.579 +02:00 [INF] 25.11.2019 г. 19:11:54 Get Emails with Status Name: New Application.
+2019-11-25 19:12:02.610 +02:00 [INF] 25.11.2019 г. 19:12:02 Get Emails with Status Name: New Application.
+2019-11-25 19:12:33.834 +02:00 [INF] 25.11.2019 г. 19:12:19 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: Not Reviewed to New Application.
+2019-11-25 19:16:27.722 +02:00 [ERR] Failed executing DbCommand (45ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ChangedCloseToNewStatusForEmailId], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:a7409446-5dac-4ed6-9801-fd82c22d16e7
+Error Number:2601,State:1,Class:14
+2019-11-25 19:16:27.760 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 19:17:53.477 +02:00 [INF] Starting web host
+2019-11-25 19:17:54.764 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:17:55.825 +02:00 [INF] 25.11.2019 г. 19:17:55 Get All Emails.
+2019-11-25 19:17:55.879 +02:00 [INF] 25.11.2019 г. 19:17:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:18:10.684 +02:00 [INF] 25.11.2019 г. 19:18:10 Get All Emails.
+2019-11-25 19:18:10.711 +02:00 [INF] 25.11.2019 г. 19:18:10 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:18:15.730 +02:00 [INF] 25.11.2019 г. 19:18:15 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:18:15.730 +02:00 [INF] 25.11.2019 г. 19:18:15 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:18:17.073 +02:00 [INF] 25.11.2019 г. 19:18:17 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:18:21.403 +02:00 [INF] 25.11.2019 г. 19:18:21 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:18:21.414 +02:00 [INF] 25.11.2019 г. 19:18:21 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: New Application to Not Reviewed.
+2019-11-25 19:18:21.530 +02:00 [INF] 25.11.2019 г. 19:18:21 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:18:21.530 +02:00 [INF] 25.11.2019 г. 19:18:21 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:18:24.369 +02:00 [INF] 25.11.2019 г. 19:18:24 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:18:24.371 +02:00 [INF] 25.11.2019 г. 19:18:24 Get Emails with Status Name: New Application.
+2019-11-25 19:18:31.333 +02:00 [INF] 25.11.2019 г. 19:18:31 Get Emails with Status Name: New Application.
+2019-11-25 19:18:31.355 +02:00 [INF] 25.11.2019 г. 19:18:31 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: Not Reviewed to New Application.
+2019-11-25 19:18:37.579 +02:00 [ERR] Failed executing DbCommand (40ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ChangedCloseToNewStatusForEmailId], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:d629cd63-0d7e-45f5-9f83-f4e2a2087bec
+Error Number:2601,State:1,Class:14
+2019-11-25 19:18:37.620 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (ba567bee-5915-498f-a0e9-4bf5a2bf40bc).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 19:19:22.576 +02:00 [INF] Starting web host
+2019-11-25 19:19:23.216 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:19:23.932 +02:00 [INF] 25.11.2019 г. 19:19:23 Get All Emails.
+2019-11-25 19:19:23.963 +02:00 [INF] 25.11.2019 г. 19:19:23 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:19:26.860 +02:00 [INF] 25.11.2019 г. 19:19:26 Get All Emails.
+2019-11-25 19:19:26.870 +02:00 [INF] 25.11.2019 г. 19:19:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:19:28.166 +02:00 [INF] 25.11.2019 г. 19:19:28 Get Emails with Status Name: New Application.
+2019-11-25 19:19:28.214 +02:00 [INF] 25.11.2019 г. 19:19:28 Get All Emails with Status: New Application.
+2019-11-25 19:19:28.214 +02:00 [INF] 25.11.2019 г. 19:19:28 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:19:31.054 +02:00 [INF] 25.11.2019 г. 19:19:31 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:19:31.054 +02:00 [INF] 25.11.2019 г. 19:19:31 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:19:33.254 +02:00 [INF] 25.11.2019 г. 19:19:33 Get Emails with Status Name: New Application.
+2019-11-25 19:19:33.269 +02:00 [INF] 25.11.2019 г. 19:19:33 Get All Emails with Status: New Application.
+2019-11-25 19:19:33.269 +02:00 [INF] 25.11.2019 г. 19:19:33 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:24:31.143 +02:00 [INF] Starting web host
+2019-11-25 19:24:32.540 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:24:33.536 +02:00 [INF] 25.11.2019 г. 19:24:33 Get All Emails.
+2019-11-25 19:24:33.583 +02:00 [INF] 25.11.2019 г. 19:24:33 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:24:43.530 +02:00 [INF] 25.11.2019 г. 19:24:43 Get Emails with Status Name: New Application.
+2019-11-25 19:24:43.589 +02:00 [INF] 25.11.2019 г. 19:24:43 Get All Emails with Status: New Application.
+2019-11-25 19:24:43.589 +02:00 [INF] 25.11.2019 г. 19:24:43 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:24:46.133 +02:00 [INF] 25.11.2019 г. 19:24:46 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:24:46.134 +02:00 [INF] 25.11.2019 г. 19:24:46 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:24:47.897 +02:00 [INF] 25.11.2019 г. 19:24:47 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:24:49.472 +02:00 [INF] 25.11.2019 г. 19:24:49 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:24:49.482 +02:00 [INF] 25.11.2019 г. 19:24:49 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: New Application to Not Reviewed.
+2019-11-25 19:24:49.582 +02:00 [INF] 25.11.2019 г. 19:24:49 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:24:49.583 +02:00 [INF] 25.11.2019 г. 19:24:49 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:24:52.065 +02:00 [INF] 25.11.2019 г. 19:24:52 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:24:52.066 +02:00 [INF] 25.11.2019 г. 19:24:52 Get Emails with Status Name: New Application.
+2019-11-25 19:24:55.827 +02:00 [INF] 25.11.2019 г. 19:24:55 Get Emails with Status Name: New Application.
+2019-11-25 19:24:55.849 +02:00 [INF] 25.11.2019 г. 19:24:55 Updated Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc, from: Not Reviewed to New Application.
+2019-11-25 19:25:02.877 +02:00 [INF] 25.11.2019 г. 19:24:57 Created new Loan Application with Email Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc.
+2019-11-25 19:25:15.943 +02:00 [INF] 25.11.2019 г. 19:25:15 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:25:17.552 +02:00 [INF] 25.11.2019 г. 19:24:49 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:25:19.631 +02:00 [INF] 25.11.2019 г. 19:25:19 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:25:19.631 +02:00 [INF] 25.11.2019 г. 19:25:19 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:25:24.723 +02:00 [INF] 25.11.2019 г. 19:25:24 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by .
+2019-11-25 19:25:24.727 +02:00 [INF] 25.11.2019 г. 19:25:24 Get Emails with Status Name: Open Application.
+2019-11-25 19:25:24.730 +02:00 [INF] 25.11.2019 г. 19:25:24 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: New Application to Open Application.
+2019-11-25 19:25:26.256 +02:00 [INF] 25.11.2019 г. 19:25:26 Get Loan Application with Email Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by User Id: .
+2019-11-25 19:25:26.257 +02:00 [INF] 25.11.2019 г. 19:25:26 Open Loan Application with Email ID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by UserId: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:25:26.257 +02:00 [INF] 25.11.2019 г. 19:24:55 Open Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:25:26.257 +02:00 [INF] 25.11.2019 г. 19:24:55 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: New Application to Open Application.
+2019-11-25 19:25:26.267 +02:00 [INF] 25.11.2019 г. 19:25:26 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:25:26.267 +02:00 [INF] 25.11.2019 г. 19:25:26 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:25:36.582 +02:00 [INF] 25.11.2019 г. 19:25:36 Get All Emails.
+2019-11-25 19:25:36.608 +02:00 [INF] 25.11.2019 г. 19:25:36 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:25:39.038 +02:00 [INF] 25.11.2019 г. 19:25:39 Get Emails with Status Name: Open Application.
+2019-11-25 19:25:39.044 +02:00 [INF] 25.11.2019 г. 19:25:39 Get All Emails with Status: Open Application.
+2019-11-25 19:25:39.058 +02:00 [INF] 25.11.2019 г. 19:25:39 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:29.589 +02:00 [INF] Starting web host
+2019-11-25 19:29:30.209 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:29:31.041 +02:00 [INF] 25.11.2019 г. 19:29:31 Get All Emails.
+2019-11-25 19:29:31.062 +02:00 [INF] 25.11.2019 г. 19:29:31 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:29:34.071 +02:00 [INF] 25.11.2019 г. 19:29:34 Get Emails with Status Name: Closed Application.
+2019-11-25 19:29:34.119 +02:00 [INF] 25.11.2019 г. 19:29:34 Get All Emails with Status: Closed Application.
+2019-11-25 19:29:34.130 +02:00 [INF] 25.11.2019 г. 19:29:34 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:34.870 +02:00 [INF] 25.11.2019 г. 19:29:34 Get Emails with Status Name: Open Application.
+2019-11-25 19:29:34.871 +02:00 [INF] 25.11.2019 г. 19:29:34 Get All Emails with Status: Open Application.
+2019-11-25 19:29:34.873 +02:00 [INF] 25.11.2019 г. 19:29:34 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:36.139 +02:00 [INF] 25.11.2019 г. 19:29:36 Get Emails with Status Name: Closed Application.
+2019-11-25 19:29:36.141 +02:00 [INF] 25.11.2019 г. 19:29:36 Get All Emails with Status: Closed Application.
+2019-11-25 19:29:36.144 +02:00 [INF] 25.11.2019 г. 19:29:36 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:45.428 +02:00 [INF] 25.11.2019 г. 19:29:45 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:45.428 +02:00 [INF] 25.11.2019 г. 19:29:45 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:29:52.661 +02:00 [INF] 25.11.2019 г. 19:29:52 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:52.672 +02:00 [ERR] Value cannot be null.
+Parameter name: 25.11.2019 г. 19:29:52 Remove Application could not found Loan with email Id 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:29:52.743 +02:00 [INF] 25.11.2019 г. 19:29:52 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:29:52.746 +02:00 [INF] 25.11.2019 г. 19:29:52 Get Emails with Status Name: New Application.
+2019-11-25 19:29:52.755 +02:00 [INF] 25.11.2019 г. 19:29:52 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Closed Application to New Application.
+2019-11-25 19:29:52.802 +02:00 [INF] 25.11.2019 г. 19:29:52 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:52.802 +02:00 [INF] 25.11.2019 г. 19:29:52 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:29:54.146 +02:00 [INF] 25.11.2019 г. 19:29:54 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:54.148 +02:00 [INF] 25.11.2019 г. 19:29:54 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:29:54.149 +02:00 [INF] 25.11.2019 г. 19:29:54 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:29:54.164 +02:00 [INF] 25.11.2019 г. 19:29:54 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:54.164 +02:00 [INF] 25.11.2019 г. 19:29:54 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:29:56.176 +02:00 [INF] 25.11.2019 г. 19:29:56 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:56.178 +02:00 [INF] 25.11.2019 г. 19:29:56 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:29:56.181 +02:00 [INF] 25.11.2019 г. 19:29:56 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:29:56.189 +02:00 [INF] 25.11.2019 г. 19:29:54 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:29:56.195 +02:00 [INF] 25.11.2019 г. 19:29:56 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:56.195 +02:00 [INF] 25.11.2019 г. 19:29:56 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:29:57.325 +02:00 [INF] 25.11.2019 г. 19:29:57 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:29:57.327 +02:00 [INF] 25.11.2019 г. 19:29:57 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:29:57.328 +02:00 [INF] 25.11.2019 г. 19:29:57 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Invalid Application to Not Reviewed.
+2019-11-25 19:29:57.343 +02:00 [INF] 25.11.2019 г. 19:29:57 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:57.344 +02:00 [INF] 25.11.2019 г. 19:29:57 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:29:58.854 +02:00 [INF] 25.11.2019 г. 19:29:58 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:29:58.857 +02:00 [INF] 25.11.2019 г. 19:29:58 Get Emails with Status Name: New Application.
+2019-11-25 19:29:58.859 +02:00 [INF] 25.11.2019 г. 19:29:58 Get Emails with Status Name: New Application.
+2019-11-25 19:29:58.860 +02:00 [INF] 25.11.2019 г. 19:29:58 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:29:58.875 +02:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Decimal), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 450), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 450), @p10='?' (Size = 4000), @p11='?' (DbType = DateTime2), @p12='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LoanApplications] ([Id], [Amount], [ApplicationStatus], [ChangedCloseToNewStatusForEmailId], [ClientDataId], [CreatedByUserId], [CreatedOnDate], [DeletedByUserId], [DeletedOnDate], [EmailId], [ModifiedByUserId], [ModifiedOnDate], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);
+System.Data.SqlClient.SqlException (0x80131904): Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (7862a24a-1c63-4ce0-8291-0dcde07c0aa5).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:eb2c557a-a86c-40b0-90fb-cc185cb7c073
+Error Number:2601,State:1,Class:14
+2019-11-25 19:29:58.901 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'EmailManager.Data.EmailManagerDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (7862a24a-1c63-4ce0-8291-0dcde07c0aa5).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.LoanApplications' with unique index 'IX_LoanApplications_EmailId'. The duplicate key value is (7862a24a-1c63-4ce0-8291-0dcde07c0aa5).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-11-25 19:29:58.903 +02:00 [ERR] Status wasn't changed!
+2019-11-25 19:30:34.905 +02:00 [INF] 25.11.2019 г. 19:30:34 Get Emails with Status Name: New Application.
+2019-11-25 19:30:34.921 +02:00 [INF] 25.11.2019 г. 19:30:34 Get All Emails with Status: New Application.
+2019-11-25 19:30:34.921 +02:00 [INF] 25.11.2019 г. 19:30:34 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:30:36.988 +02:00 [INF] 25.11.2019 г. 19:30:36 Get All Emails.
+2019-11-25 19:30:36.999 +02:00 [INF] 25.11.2019 г. 19:30:36 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:30:46.050 +02:00 [INF] 25.11.2019 г. 19:30:46 Get Emails with Status Name: New Application.
+2019-11-25 19:30:46.055 +02:00 [INF] 25.11.2019 г. 19:30:46 Get All Emails with Status: New Application.
+2019-11-25 19:30:46.055 +02:00 [INF] 25.11.2019 г. 19:30:46 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:31:33.366 +02:00 [INF] 25.11.2019 г. 19:31:33 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:31:33.366 +02:00 [INF] 25.11.2019 г. 19:31:33 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:31:38.602 +02:00 [INF] 25.11.2019 г. 19:31:38 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:31:38.604 +02:00 [INF] 25.11.2019 г. 19:31:38 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:31:38.606 +02:00 [INF] 25.11.2019 г. 19:31:38 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:31:38.614 +02:00 [INF] 25.11.2019 г. 19:31:38 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:31:38.614 +02:00 [INF] 25.11.2019 г. 19:31:38 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:31:42.037 +02:00 [INF] 25.11.2019 г. 19:31:42 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:31:42.038 +02:00 [INF] 25.11.2019 г. 19:31:42 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:31:42.040 +02:00 [INF] 25.11.2019 г. 19:31:42 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:31:42.043 +02:00 [INF] 25.11.2019 г. 19:31:38 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:31:42.048 +02:00 [INF] 25.11.2019 г. 19:31:42 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:31:42.048 +02:00 [INF] 25.11.2019 г. 19:31:42 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:31:46.034 +02:00 [INF] 25.11.2019 г. 19:31:46 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:31:46.106 +02:00 [INF] 25.11.2019 г. 19:31:46 Get All Emails with Status: Invalid Application.
+2019-11-25 19:31:46.106 +02:00 [INF] 25.11.2019 г. 19:31:46 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:31:51.738 +02:00 [INF] 25.11.2019 г. 19:31:51 Get All Emails.
+2019-11-25 19:31:51.748 +02:00 [INF] 25.11.2019 г. 19:31:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:31:53.518 +02:00 [INF] 25.11.2019 г. 19:31:53 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:31:53.582 +02:00 [INF] 25.11.2019 г. 19:31:53 Get All Emails with Status: Invalid Application.
+2019-11-25 19:31:53.582 +02:00 [INF] 25.11.2019 г. 19:31:53 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:31:54.166 +02:00 [INF] 25.11.2019 г. 19:31:54 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:31:54.166 +02:00 [INF] 25.11.2019 г. 19:31:54 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:34:30.154 +02:00 [INF] Starting web host
+2019-11-25 19:34:31.669 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:34:32.628 +02:00 [INF] 25.11.2019 г. 19:34:32 Get All Emails.
+2019-11-25 19:34:32.682 +02:00 [INF] 25.11.2019 г. 19:34:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:34:44.812 +02:00 [INF] 25.11.2019 г. 19:34:44 Get Email with Id: 4ab4b23d-119a-4449-a6e6-8815d0814929 by a4933821-4610-4e85-a9fa-030162c19433.
+2019-11-25 19:34:44.812 +02:00 [INF] 25.11.2019 г. 19:34:44 Application with emailID: 4ab4b23d-119a-4449-a6e6-8815d0814929 has been accessed by .
+2019-11-25 19:34:50.910 +02:00 [INF] 25.11.2019 г. 19:34:50 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:34:50.910 +02:00 [INF] 25.11.2019 г. 19:34:50 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:34:52.439 +02:00 [INF] 25.11.2019 г. 19:34:52 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:34:56.926 +02:00 [INF] 25.11.2019 г. 19:34:56 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:34:56.936 +02:00 [INF] 25.11.2019 г. 19:34:56 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Invalid Application to Not Reviewed.
+2019-11-25 19:34:57.006 +02:00 [INF] 25.11.2019 г. 19:34:57 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:34:57.006 +02:00 [INF] 25.11.2019 г. 19:34:57 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:34:59.541 +02:00 [INF] 25.11.2019 г. 19:34:59 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:34:59.543 +02:00 [INF] 25.11.2019 г. 19:34:59 Get Emails with Status Name: New Application.
+2019-11-25 19:34:59.544 +02:00 [INF] 25.11.2019 г. 19:34:59 Get Emails with Status Name: New Application.
+2019-11-25 19:34:59.546 +02:00 [INF] 25.11.2019 г. 19:34:59 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:34:59.562 +02:00 [INF] 25.11.2019 г. 19:34:59 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:34:59.563 +02:00 [INF] 25.11.2019 г. 19:34:59 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:34:59.563 +02:00 [INF] 25.11.2019 г. 19:34:56 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:34:59.571 +02:00 [INF] 25.11.2019 г. 19:34:59 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:34:59.571 +02:00 [INF] 25.11.2019 г. 19:34:59 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:02.773 +02:00 [INF] 25.11.2019 г. 19:35:02 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:09.399 +02:00 [INF] 25.11.2019 г. 19:35:09 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:09.401 +02:00 [INF] 25.11.2019 г. 19:35:09 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:09.411 +02:00 [INF] 25.11.2019 г. 19:35:09 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:09.411 +02:00 [INF] 25.11.2019 г. 19:35:09 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:12.717 +02:00 [INF] 25.11.2019 г. 19:35:12 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:12.719 +02:00 [INF] 25.11.2019 г. 19:35:12 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:35:12.723 +02:00 [INF] 25.11.2019 г. 19:35:12 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:35:12.725 +02:00 [INF] 25.11.2019 г. 19:35:09 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:35:12.733 +02:00 [INF] 25.11.2019 г. 19:35:12 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:35:12.733 +02:00 [INF] 25.11.2019 г. 19:35:12 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:13.659 +02:00 [INF] 25.11.2019 г. 19:35:13 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:35:13.692 +02:00 [ERR] Value cannot be null.
+Parameter name: 25.11.2019 г. 19:35:13 Remove Application could not found Loan with email Id 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:13.694 +02:00 [INF] 25.11.2019 г. 19:35:13 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:13.695 +02:00 [INF] 25.11.2019 г. 19:35:13 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Invalid Application to Not Reviewed.
+2019-11-25 19:35:13.713 +02:00 [INF] 25.11.2019 г. 19:35:13 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:13.713 +02:00 [INF] 25.11.2019 г. 19:35:13 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:14.731 +02:00 [INF] 25.11.2019 г. 19:35:14 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:14.733 +02:00 [INF] 25.11.2019 г. 19:35:14 Get Emails with Status Name: New Application.
+2019-11-25 19:35:14.734 +02:00 [INF] 25.11.2019 г. 19:35:14 Get Emails with Status Name: New Application.
+2019-11-25 19:35:14.735 +02:00 [INF] 25.11.2019 г. 19:35:14 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:14.740 +02:00 [INF] 25.11.2019 г. 19:35:14 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:14.740 +02:00 [INF] 25.11.2019 г. 19:35:14 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:14.740 +02:00 [INF] 25.11.2019 г. 19:35:13 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:14.745 +02:00 [INF] 25.11.2019 г. 19:35:14 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:14.745 +02:00 [INF] 25.11.2019 г. 19:35:14 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:15.593 +02:00 [INF] 25.11.2019 г. 19:35:15 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:15.606 +02:00 [INF] 25.11.2019 г. 19:35:15 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:15.608 +02:00 [INF] 25.11.2019 г. 19:35:15 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:15.616 +02:00 [INF] 25.11.2019 г. 19:35:15 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:15.616 +02:00 [INF] 25.11.2019 г. 19:35:15 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:16.353 +02:00 [INF] 25.11.2019 г. 19:35:16 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:16.356 +02:00 [INF] 25.11.2019 г. 19:35:16 Get Emails with Status Name: New Application.
+2019-11-25 19:35:16.358 +02:00 [INF] 25.11.2019 г. 19:35:16 Get Emails with Status Name: New Application.
+2019-11-25 19:35:16.359 +02:00 [INF] 25.11.2019 г. 19:35:16 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:16.370 +02:00 [INF] 25.11.2019 г. 19:35:16 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:16.370 +02:00 [INF] 25.11.2019 г. 19:35:16 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:16.370 +02:00 [INF] 25.11.2019 г. 19:35:15 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:16.378 +02:00 [INF] 25.11.2019 г. 19:35:16 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:16.378 +02:00 [INF] 25.11.2019 г. 19:35:16 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:17.133 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.146 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:17.147 +02:00 [INF] 25.11.2019 г. 19:35:17 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:17.154 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.154 +02:00 [INF] 25.11.2019 г. 19:35:17 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:17.600 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.602 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Emails with Status Name: New Application.
+2019-11-25 19:35:17.604 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Emails with Status Name: New Application.
+2019-11-25 19:35:17.606 +02:00 [INF] 25.11.2019 г. 19:35:17 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:17.608 +02:00 [INF] 25.11.2019 г. 19:35:17 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:17.608 +02:00 [INF] 25.11.2019 г. 19:35:17 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:17.608 +02:00 [INF] 25.11.2019 г. 19:35:17 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:17.614 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.614 +02:00 [INF] 25.11.2019 г. 19:35:17 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:17.868 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.873 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:17.875 +02:00 [INF] 25.11.2019 г. 19:35:17 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:17.882 +02:00 [INF] 25.11.2019 г. 19:35:17 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:17.882 +02:00 [INF] 25.11.2019 г. 19:35:17 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:18.141 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.143 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: New Application.
+2019-11-25 19:35:18.144 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: New Application.
+2019-11-25 19:35:18.145 +02:00 [INF] 25.11.2019 г. 19:35:18 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:18.148 +02:00 [INF] 25.11.2019 г. 19:35:18 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:18.148 +02:00 [INF] 25.11.2019 г. 19:35:18 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:18.148 +02:00 [INF] 25.11.2019 г. 19:35:17 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:18.159 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.159 +02:00 [INF] 25.11.2019 г. 19:35:18 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:18.381 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.392 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:18.398 +02:00 [INF] 25.11.2019 г. 19:35:18 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:18.409 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.409 +02:00 [INF] 25.11.2019 г. 19:35:18 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:18.641 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.643 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: New Application.
+2019-11-25 19:35:18.644 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: New Application.
+2019-11-25 19:35:18.645 +02:00 [INF] 25.11.2019 г. 19:35:18 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:18.648 +02:00 [INF] 25.11.2019 г. 19:35:18 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:18.648 +02:00 [INF] 25.11.2019 г. 19:35:18 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:18.648 +02:00 [INF] 25.11.2019 г. 19:35:18 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:18.654 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.654 +02:00 [INF] 25.11.2019 г. 19:35:18 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:18.911 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.915 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:18.916 +02:00 [INF] 25.11.2019 г. 19:35:18 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:18.924 +02:00 [INF] 25.11.2019 г. 19:35:18 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:18.924 +02:00 [INF] 25.11.2019 г. 19:35:18 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:19.169 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.171 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: New Application.
+2019-11-25 19:35:19.173 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: New Application.
+2019-11-25 19:35:19.174 +02:00 [INF] 25.11.2019 г. 19:35:19 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:19.178 +02:00 [INF] 25.11.2019 г. 19:35:19 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:19.178 +02:00 [INF] 25.11.2019 г. 19:35:19 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:19.178 +02:00 [INF] 25.11.2019 г. 19:35:18 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:19.183 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.184 +02:00 [INF] 25.11.2019 г. 19:35:19 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:19.441 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.446 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:19.448 +02:00 [INF] 25.11.2019 г. 19:35:19 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:19.457 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.457 +02:00 [INF] 25.11.2019 г. 19:35:19 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:19.711 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.713 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: New Application.
+2019-11-25 19:35:19.715 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: New Application.
+2019-11-25 19:35:19.716 +02:00 [INF] 25.11.2019 г. 19:35:19 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:19.719 +02:00 [INF] 25.11.2019 г. 19:35:19 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:19.719 +02:00 [INF] 25.11.2019 г. 19:35:19 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:19.719 +02:00 [INF] 25.11.2019 г. 19:35:19 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:19.725 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.725 +02:00 [INF] 25.11.2019 г. 19:35:19 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:19.970 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.975 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:19.977 +02:00 [INF] 25.11.2019 г. 19:35:19 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:19.984 +02:00 [INF] 25.11.2019 г. 19:35:19 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:19.984 +02:00 [INF] 25.11.2019 г. 19:35:19 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:20.211 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.212 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Emails with Status Name: New Application.
+2019-11-25 19:35:20.214 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Emails with Status Name: New Application.
+2019-11-25 19:35:20.215 +02:00 [INF] 25.11.2019 г. 19:35:20 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:20.218 +02:00 [INF] 25.11.2019 г. 19:35:20 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:20.218 +02:00 [INF] 25.11.2019 г. 19:35:20 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:20.218 +02:00 [INF] 25.11.2019 г. 19:35:19 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:20.225 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.225 +02:00 [INF] 25.11.2019 г. 19:35:20 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:20.492 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.503 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:20.505 +02:00 [INF] 25.11.2019 г. 19:35:20 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:20.514 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.514 +02:00 [INF] 25.11.2019 г. 19:35:20 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:20.731 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.732 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Emails with Status Name: New Application.
+2019-11-25 19:35:20.734 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Emails with Status Name: New Application.
+2019-11-25 19:35:20.735 +02:00 [INF] 25.11.2019 г. 19:35:20 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:20.739 +02:00 [INF] 25.11.2019 г. 19:35:20 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:20.739 +02:00 [INF] 25.11.2019 г. 19:35:20 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:20.739 +02:00 [INF] 25.11.2019 г. 19:35:20 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:20.745 +02:00 [INF] 25.11.2019 г. 19:35:20 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:20.745 +02:00 [INF] 25.11.2019 г. 19:35:20 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:21.031 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.035 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:21.036 +02:00 [INF] 25.11.2019 г. 19:35:21 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:21.045 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.045 +02:00 [INF] 25.11.2019 г. 19:35:21 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:21.301 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.304 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Emails with Status Name: New Application.
+2019-11-25 19:35:21.306 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Emails with Status Name: New Application.
+2019-11-25 19:35:21.308 +02:00 [INF] 25.11.2019 г. 19:35:21 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:21.318 +02:00 [INF] 25.11.2019 г. 19:35:21 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:21.318 +02:00 [INF] 25.11.2019 г. 19:35:21 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:21.318 +02:00 [INF] 25.11.2019 г. 19:35:21 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:21.326 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.326 +02:00 [INF] 25.11.2019 г. 19:35:21 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:21.549 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.554 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:21.555 +02:00 [INF] 25.11.2019 г. 19:35:21 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:21.563 +02:00 [INF] 25.11.2019 г. 19:35:21 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:21.564 +02:00 [INF] 25.11.2019 г. 19:35:21 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:22.443 +02:00 [INF] 25.11.2019 г. 19:35:22 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:22.445 +02:00 [INF] 25.11.2019 г. 19:35:22 Get Emails with Status Name: New Application.
+2019-11-25 19:35:22.446 +02:00 [INF] 25.11.2019 г. 19:35:22 Get Emails with Status Name: New Application.
+2019-11-25 19:35:22.447 +02:00 [INF] 25.11.2019 г. 19:35:22 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: Not Reviewed to New Application.
+2019-11-25 19:35:22.457 +02:00 [INF] 25.11.2019 г. 19:35:22 Created new Loan Application with Email Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5.
+2019-11-25 19:35:22.457 +02:00 [INF] 25.11.2019 г. 19:35:22 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:35:22.457 +02:00 [INF] 25.11.2019 г. 19:35:21 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:35:22.463 +02:00 [INF] 25.11.2019 г. 19:35:22 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:22.464 +02:00 [INF] 25.11.2019 г. 19:35:22 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:35:23.434 +02:00 [INF] 25.11.2019 г. 19:35:23 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:23.439 +02:00 [INF] 25.11.2019 г. 19:35:23 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:35:23.440 +02:00 [INF] 25.11.2019 г. 19:35:23 Updated Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5, from: New Application to Not Reviewed.
+2019-11-25 19:35:23.447 +02:00 [INF] 25.11.2019 г. 19:35:23 Get Email with Id: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 by .
+2019-11-25 19:35:23.447 +02:00 [INF] 25.11.2019 г. 19:35:23 Application with emailID: 7862a24a-1c63-4ce0-8291-0dcde07c0aa5 has been accessed by .
+2019-11-25 19:36:37.242 +02:00 [INF] 25.11.2019 г. 19:36:37 Get All Emails.
+2019-11-25 19:36:37.268 +02:00 [INF] 25.11.2019 г. 19:36:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:37:54.456 +02:00 [INF] Starting web host
+2019-11-25 19:37:55.124 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:37:55.848 +02:00 [INF] 25.11.2019 г. 19:37:55 Get All Emails.
+2019-11-25 19:37:55.875 +02:00 [INF] 25.11.2019 г. 19:37:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:37:58.442 +02:00 [INF] 25.11.2019 г. 19:37:58 Get All Emails.
+2019-11-25 19:37:58.451 +02:00 [INF] 25.11.2019 г. 19:37:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:38:03.219 +02:00 [INF] 25.11.2019 г. 19:38:03 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 19:38:03.219 +02:00 [INF] 25.11.2019 г. 19:38:03 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 19:38:04.787 +02:00 [INF] 25.11.2019 г. 19:38:04 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 19:38:04.798 +02:00 [INF] 25.11.2019 г. 19:38:04 Get Emails with Status Name: New Application.
+2019-11-25 19:38:04.801 +02:00 [INF] 25.11.2019 г. 19:38:04 Get Emails with Status Name: New Application.
+2019-11-25 19:38:04.811 +02:00 [INF] 25.11.2019 г. 19:38:04 Updated Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f, from: Not Reviewed to New Application.
+2019-11-25 19:38:04.897 +02:00 [INF] 25.11.2019 г. 19:38:04 Created new Loan Application with Email Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f.
+2019-11-25 19:38:04.898 +02:00 [INF] 25.11.2019 г. 19:38:04 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:38:04.930 +02:00 [INF] 25.11.2019 г. 18:01:26 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:38:04.943 +02:00 [INF] 25.11.2019 г. 19:38:04 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 19:38:04.943 +02:00 [INF] 25.11.2019 г. 19:38:04 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 19:38:06.567 +02:00 [INF] 25.11.2019 г. 19:38:06 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by .
+2019-11-25 19:38:06.569 +02:00 [INF] 25.11.2019 г. 19:38:06 Get Emails with Status Name: Open Application.
+2019-11-25 19:38:06.573 +02:00 [INF] 25.11.2019 г. 19:38:06 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: New Application to Open Application.
+2019-11-25 19:38:06.596 +02:00 [INF] 25.11.2019 г. 19:38:06 Get Loan Application with Email Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by User Id: .
+2019-11-25 19:38:06.597 +02:00 [INF] 25.11.2019 г. 19:38:06 Open Loan Application with Email ID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by UserId: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:06.597 +02:00 [INF] 25.11.2019 г. 19:38:04 Open Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:06.597 +02:00 [INF] 25.11.2019 г. 19:38:04 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: New Application to Open Application.
+2019-11-25 19:38:06.605 +02:00 [INF] 25.11.2019 г. 19:38:06 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:06.605 +02:00 [INF] 25.11.2019 г. 19:38:06 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 19:38:46.805 +02:00 [INF] 25.11.2019 г. 17:38:46 Create Client Data by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:46.805 +02:00 [INF] 25.11.2019 г. 19:38:46 Client Data has been created by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:38:46.824 +02:00 [INF] 25.11.2019 г. 19:38:46 Filled Loan Application with id: 7c540810-9580-4231-9253-01e70588e4d1 by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:46.824 +02:00 [INF] 25.11.2019 г. 19:38:46 Loan Application has been created by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:38:46.826 +02:00 [INF] 25.11.2019 г. 19:38:46 Get Emails with Status Name: Closed Application.
+2019-11-25 19:38:46.829 +02:00 [INF] 25.11.2019 г. 19:38:46 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Open Application to Closed Application.
+2019-11-25 19:38:46.837 +02:00 [INF] 25.11.2019 г. 19:38:46 Get Email with Id: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:46.837 +02:00 [INF] 25.11.2019 г. 19:38:46 Application with emailID: fab6af55-dfe3-4bc2-b8b0-be2f27eb568f has been accessed by .
+2019-11-25 19:38:51.375 +02:00 [INF] 25.11.2019 г. 19:38:51 Get Emails with Status Name: Closed Application.
+2019-11-25 19:38:51.407 +02:00 [INF] 25.11.2019 г. 19:38:51 Get All Emails with Status: Closed Application.
+2019-11-25 19:38:51.418 +02:00 [INF] 25.11.2019 г. 19:38:51 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:38:58.850 +02:00 [INF] 25.11.2019 г. 19:38:58 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:38:58.912 +02:00 [INF] 25.11.2019 г. 19:38:58 Get All Emails with Status: Invalid Application.
+2019-11-25 19:38:58.912 +02:00 [INF] 25.11.2019 г. 19:38:58 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:39:00.866 +02:00 [INF] 25.11.2019 г. 19:39:00 Get Emails with Status Name: Open Application.
+2019-11-25 19:39:00.868 +02:00 [INF] 25.11.2019 г. 19:39:00 Get All Emails with Status: Open Application.
+2019-11-25 19:39:00.870 +02:00 [INF] 25.11.2019 г. 19:39:00 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:39:08.905 +02:00 [INF] 25.11.2019 г. 19:39:08 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:39:08.905 +02:00 [INF] 25.11.2019 г. 19:39:08 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:40:07.598 +02:00 [INF] 25.11.2019 г. 17:40:07 Create Client Data by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:40:07.598 +02:00 [INF] 25.11.2019 г. 19:40:07 Client Data has been created by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:40:07.609 +02:00 [INF] 25.11.2019 г. 19:40:07 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:40:07.609 +02:00 [INF] 25.11.2019 г. 19:40:07 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:40:41.859 +02:00 [INF] 25.11.2019 г. 17:40:41 Create Client Data by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:40:41.859 +02:00 [INF] 25.11.2019 г. 19:40:41 Client Data has been created by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:40:41.864 +02:00 [INF] 25.11.2019 г. 19:40:41 Get Email with Id: ba567bee-5915-498f-a0e9-4bf5a2bf40bc by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:40:41.864 +02:00 [INF] 25.11.2019 г. 19:40:41 Application with emailID: ba567bee-5915-498f-a0e9-4bf5a2bf40bc has been accessed by .
+2019-11-25 19:42:06.731 +02:00 [INF] 25.11.2019 г. 19:42:06 Get All Emails.
+2019-11-25 19:42:06.741 +02:00 [INF] 25.11.2019 г. 19:42:06 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:44:52.642 +02:00 [INF] Starting web host
+2019-11-25 19:44:53.205 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:44:53.798 +02:00 [INF] 25.11.2019 г. 19:44:53 Get All Emails.
+2019-11-25 19:44:53.798 +02:00 [INF] 25.11.2019 г. 19:44:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:45:02.057 +02:00 [INF] 25.11.2019 г. 19:45:02 Get All Emails.
+2019-11-25 19:45:02.057 +02:00 [INF] 25.11.2019 г. 19:45:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:45:03.061 +02:00 [INF] 25.11.2019 г. 19:45:03 Get Emails with Status Name: New Application.
+2019-11-25 19:45:03.085 +02:00 [INF] 25.11.2019 г. 19:45:03 Get All Emails with Status: New Application.
+2019-11-25 19:45:03.085 +02:00 [INF] 25.11.2019 г. 19:45:03 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:45:04.601 +02:00 [INF] 25.11.2019 г. 19:45:04 Get Emails with Status Name: Open Application.
+2019-11-25 19:45:04.602 +02:00 [INF] 25.11.2019 г. 19:45:04 Get All Emails with Status: Open Application.
+2019-11-25 19:45:04.602 +02:00 [INF] 25.11.2019 г. 19:45:04 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:45:05.547 +02:00 [INF] 25.11.2019 г. 19:45:05 Get Emails with Status Name: Closed Application.
+2019-11-25 19:45:05.548 +02:00 [INF] 25.11.2019 г. 19:45:05 Get All Emails with Status: Closed Application.
+2019-11-25 19:45:05.548 +02:00 [INF] 25.11.2019 г. 19:45:05 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:45:06.608 +02:00 [INF] 25.11.2019 г. 19:45:06 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:45:06.608 +02:00 [INF] 25.11.2019 г. 19:45:06 Get All Emails with Status: Invalid Application.
+2019-11-25 19:45:06.608 +02:00 [INF] 25.11.2019 г. 19:45:06 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:45:08.499 +02:00 [INF] 25.11.2019 г. 19:45:08 Get Emails with Status Name: Closed Application.
+2019-11-25 19:45:08.500 +02:00 [INF] 25.11.2019 г. 19:45:08 Get All Emails with Status: Closed Application.
+2019-11-25 19:45:08.500 +02:00 [INF] 25.11.2019 г. 19:45:08 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:45:10.026 +02:00 [INF] 25.11.2019 г. 19:45:10 Get All Emails.
+2019-11-25 19:45:10.026 +02:00 [INF] 25.11.2019 г. 19:45:10 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:47:48.878 +02:00 [INF] 25.11.2019 г. 19:47:48 Get All Emails.
+2019-11-25 19:47:48.878 +02:00 [INF] 25.11.2019 г. 19:47:48 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:47:51.498 +02:00 [INF] 25.11.2019 г. 19:47:51 Get All Emails.
+2019-11-25 19:47:51.499 +02:00 [INF] 25.11.2019 г. 19:47:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:47:55.839 +02:00 [INF] 25.11.2019 г. 19:47:55 Get All Emails.
+2019-11-25 19:47:55.840 +02:00 [INF] 25.11.2019 г. 19:47:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:48:13.751 +02:00 [INF] Starting web host
+2019-11-25 19:48:14.451 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-25 19:48:15.269 +02:00 [INF] 25.11.2019 г. 19:48:15 Get All Emails.
+2019-11-25 19:48:15.270 +02:00 [INF] 25.11.2019 г. 19:48:15 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:48:21.014 +02:00 [INF]  Create Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-25 19:48:21.665 +02:00 [INF]  Create Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:48:22.000 +02:00 [INF]  Create Email with Id: 785b0798-d05c-4b25-a324-7b67b91d39b8 by .
+2019-11-25 19:48:22.183 +02:00 [INF]  Create Email with Id: 44c2f808-a987-44b5-aa22-d3772dca2134 by .
+2019-11-25 19:48:22.446 +02:00 [INF]  Create Email with Id: 13b1ed03-9924-4e12-86c9-cd595b365ab1 by .
+2019-11-25 19:48:22.662 +02:00 [INF]  Create Email with Id: 7c12d592-5227-49e0-a70e-a767e787e057 by .
+2019-11-25 19:48:22.858 +02:00 [INF]  Create Email with Id: 4100cf68-5e0e-4c82-8d5d-7b7cf3591f98 by .
+2019-11-25 19:48:23.033 +02:00 [INF]  Create Email with Id: e6873dad-1982-48ed-991d-907d33eb11df by .
+2019-11-25 19:48:23.215 +02:00 [INF]  Create Email with Id: b9c2759a-ce97-4267-858e-83d7f3d7476e by .
+2019-11-25 19:48:23.410 +02:00 [INF]  Create Email with Id: 28c0af4e-3abc-4373-9810-fe8a786c7bd2 by .
+2019-11-25 19:48:23.590 +02:00 [INF]  Create Email with Id: 76c015b8-da5c-4a21-8ccc-01ceafa329bb by .
+2019-11-25 19:48:23.770 +02:00 [INF]  Create Email with Id: 9eb58746-94fd-43d2-918f-3f752dd72e9a by .
+2019-11-25 19:48:23.966 +02:00 [INF]  Create Email with Id: 7840e3f1-e50a-40b7-b982-7bfa6d25fd00 by .
+2019-11-25 19:48:24.211 +02:00 [INF]  Create Email with Id: 2dd4a2ec-f93c-46fc-a3b5-f4c58584b92b by .
+2019-11-25 19:48:24.392 +02:00 [INF]  Create Email with Id: 2cf6204b-686a-4c67-bf1a-e0e38374ac5c by .
+2019-11-25 19:48:24.574 +02:00 [INF]  Create Email with Id: e95f85c8-73aa-4697-a81d-5dafbba912a8 by .
+2019-11-25 19:48:24.802 +02:00 [INF]  Create Email with Id: 270fae43-bfca-4599-8db9-c4b03293f5bd by .
+2019-11-25 19:48:24.988 +02:00 [INF]  Create Email with Id: be3e5eb8-f415-4829-b49c-6be13119bea2 by .
+2019-11-25 19:48:25.490 +02:00 [INF]  Create Email with Id: 4778e008-6b67-44f3-a8de-e101a996d8da by .
+2019-11-25 19:48:25.932 +02:00 [INF]  Create Email with Id: ffe6a318-b955-4551-8f70-5eecd5af76c2 by .
+2019-11-25 19:48:26.116 +02:00 [INF]  Create Email with Id: 43be6d4f-b620-4978-bfcf-9e44c28c1acf by .
+2019-11-25 19:48:26.319 +02:00 [INF]  Create Email with Id: 35701c2a-9750-4eb7-b6d3-41886e23181d by .
+2019-11-25 19:48:26.715 +02:00 [INF]  Create Email with Id: dd6e4645-b08c-4d36-8a82-ba9d17b4be90 by .
+2019-11-25 19:48:26.939 +02:00 [INF]  Create Email with Id: 64e04de2-1fd6-4887-8dfc-6a268862c9e6 by .
+2019-11-25 19:48:27.119 +02:00 [INF]  Create Email with Id: 0f4be4c2-9630-44ac-ba3c-efa4c24e38aa by .
+2019-11-25 19:48:27.532 +02:00 [INF]  Create Email with Id: 520f386b-40d6-49b9-88c6-ac43245bd25e by .
+2019-11-25 19:48:27.739 +02:00 [INF]  Create Email with Id: 2c50811a-606a-4c8a-8f48-ed196074dbdf by .
+2019-11-25 19:48:28.141 +02:00 [INF]  Create Email with Id: 76650d7b-ad20-41b5-a6b3-70d833bdfb28 by .
+2019-11-25 19:48:28.345 +02:00 [INF]  Create Email with Id: 89b6496c-a59f-4cd8-912f-6dd0cc3f79b0 by .
+2019-11-25 19:48:28.518 +02:00 [INF]  Create Email with Id: 320036df-1246-4a0e-a326-bc245cfcf8f0 by .
+2019-11-25 19:48:28.693 +02:00 [INF]  Create Email with Id: a6bae983-b762-4cdf-8b61-5f91c9e1f92f by .
+2019-11-25 19:48:28.903 +02:00 [INF]  Create Email with Id: 0d187297-ccff-4921-87c7-0a99a322a8ab by .
+2019-11-25 19:48:29.105 +02:00 [INF]  Create Email with Id: a05e6b5d-04dc-4349-8960-508b119453c7 by .
+2019-11-25 19:48:29.168 +02:00 [INF] 25.11.2019 г. 19:48:29 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:48:29.562 +02:00 [INF] 25.11.2019 г. 19:48:29 Get All Emails.
+2019-11-25 19:48:29.620 +02:00 [INF] 25.11.2019 г. 19:48:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-25 19:49:35.790 +02:00 [INF] 25.11.2019 г. 19:49:35 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:35.790 +02:00 [INF] 25.11.2019 г. 19:49:35 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-25 19:49:38.738 +02:00 [INF] 25.11.2019 г. 19:49:38 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:38.766 +02:00 [INF] 25.11.2019 г. 19:49:38 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:49:38.994 +02:00 [INF] 25.11.2019 г. 19:49:38 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:49:39.026 +02:00 [INF]  Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:49:39.271 +02:00 [INF] 25.11.2019 г. 19:49:39 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:49:39.272 +02:00 [INF] 25.11.2019 г. 19:49:39 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-25 19:49:40.853 +02:00 [INF] 25.11.2019 г. 19:49:40 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:49:40.885 +02:00 [ERR] Value cannot be null.
+Parameter name: 25.11.2019 г. 19:49:40 Remove Application could not found Loan with email Id 02ee72fe-8662-4a88-9663-03be0e8f2014.
+2019-11-25 19:49:40.893 +02:00 [INF] 25.11.2019 г. 19:49:40 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:49:41.079 +02:00 [INF] 25.11.2019 г. 19:49:41 Updated Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014, from: Invalid Application to Not Reviewed.
+2019-11-25 19:49:41.348 +02:00 [INF] 25.11.2019 г. 19:49:41 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:41.348 +02:00 [INF] 25.11.2019 г. 19:49:41 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-25 19:49:42.889 +02:00 [INF] 25.11.2019 г. 19:49:42 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:42.891 +02:00 [INF] 25.11.2019 г. 19:49:42 Get Emails with Status Name: New Application.
+2019-11-25 19:49:42.893 +02:00 [INF] 25.11.2019 г. 19:49:42 Get Emails with Status Name: New Application.
+2019-11-25 19:49:43.029 +02:00 [INF] 25.11.2019 г. 19:49:43 Updated Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014, from: Not Reviewed to New Application.
+2019-11-25 19:49:43.133 +02:00 [INF] 25.11.2019 г. 19:49:43 Created new Loan Application with Email Id: 02ee72fe-8662-4a88-9663-03be0e8f2014.
+2019-11-25 19:49:43.135 +02:00 [INF] 25.11.2019 г. 19:49:43 Created Loan Application by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c with Status: New Application.
+2019-11-25 19:49:43.135 +02:00 [INF] 25.11.2019 г. 19:49:41 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to New Application.
+2019-11-25 19:49:43.357 +02:00 [INF] 25.11.2019 г. 19:49:43 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:43.357 +02:00 [INF] 25.11.2019 г. 19:49:43 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-25 19:49:44.783 +02:00 [INF] 25.11.2019 г. 19:49:44 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:44.819 +02:00 [INF] 25.11.2019 г. 19:49:44 Get Emails with Status Name: Not Reviewed.
+2019-11-25 19:49:44.952 +02:00 [INF] 25.11.2019 г. 19:49:44 Updated Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014, from: New Application to Not Reviewed.
+2019-11-25 19:49:45.206 +02:00 [INF] 25.11.2019 г. 19:49:45 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:45.206 +02:00 [INF] 25.11.2019 г. 19:49:45 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-25 19:49:46.991 +02:00 [INF] 25.11.2019 г. 19:49:46 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-25 19:49:46.993 +02:00 [INF] 25.11.2019 г. 19:49:46 Get Emails with Status Name: Invalid Application.
+2019-11-25 19:49:47.128 +02:00 [INF] 25.11.2019 г. 19:49:47 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:49:47.137 +02:00 [INF] 25.11.2019 г. 19:49:44 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-25 19:49:47.307 +02:00 [INF] 25.11.2019 г. 19:49:47 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-25 19:49:47.307 +02:00 [INF] 25.11.2019 г. 19:49:47 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .

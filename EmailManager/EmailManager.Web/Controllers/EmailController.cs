@@ -108,38 +108,31 @@ namespace EmailManager.Web.Controllers
                 var userId = this.userManager.GetUserId(User);
                 var emailDTO = await this.emailService.GetEmailByIdAsync(emailId);
                 var statusToSet = await this.emailStatusService.GetEmailStatusByNameAsync(newStatusName);
-                await this.emailService.UpdateEmailStatus(emailDTO, statusToSet, userId);
+                if (!newStatusName.StartsWith("New"))
+                {
+                    await this.emailService.UpdateEmailStatus(emailDTO, statusToSet, userId);
+                }
 
                 if (newStatusName == "New Application")
                 {
-                    if (User.IsInRole("Manager"))
-                    {
-                        var application = await this.applicationService.GetLoanApplicationByEmailIdAsync(emailDTO.Id);
-                        //TODO: Fix that...
-                    }
-                    else
-                    {
-                        await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id, userId);
+                    await this.emailService.UpdateEmailStatus(emailDTO, newStatusName);
 
-                        Log.Information($"{DateTime.Now} Create Loan Application by User Id: {userId} with Status: {newStatusName}.");
-                    }
+                    await this.applicationService.CreateLoanApplicationAsync(emailDTO.Id);
+
+                    Log.Information($"{DateTime.Now} Created Loan Application by User Id: {userId} with Status: {newStatusName}.");
                 }
                 else if (newStatusName == "Open Application")
                 {
-                    await this.applicationService.OpenLoanApplication(emailDTO.Id, userId);
+                    await this.applicationService.OpenLoanApplicationAsync(emailDTO.Id, userId);
 
                     Log.Information($"{emailDTO.ModifiedOnDate} Open Loan Application by User Id: {userId}.");
-                }
-                else if (newStatusName.StartsWith("Not"))
-                {
-
                 }
 
                 this.toast.AddSuccessToastMessage($"Status was changed successfully!");
                 Log.Information($"{emailDTO.ModifiedOnDate} Changed Status by User Id: {userId}, from: {emailDTO.EmailStatusName} to {newStatusName}.");
                 return RedirectToAction("Application", new { id = emailDTO.Id });
             }
-            catch
+            catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
                 Log.Error($"Status wasn't changed!");

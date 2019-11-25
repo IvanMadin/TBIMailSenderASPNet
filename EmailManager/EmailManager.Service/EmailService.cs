@@ -92,8 +92,8 @@ namespace EmailManager.Service
 
         public async Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, StatusEmailDTO newEmailStatus, string userId)
         {
-            var email = await this.context.Emails.Include(e=>e.Status).FirstOrDefaultAsync(e=>e.Id == emailDTO.Id); 
-            
+            var email = await this.context.Emails.Include(e => e.Status).FirstOrDefaultAsync(e => e.Id == emailDTO.Id);
+
             if (email is null)
             {
                 Log.Information($"{DateTime.Now} Email with id {emailDTO.Id} has not found.");
@@ -117,15 +117,33 @@ namespace EmailManager.Service
 
             return email.ToDTO();
         }
+        public async Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, string newStatusName)
+        {
+            var newEmailStatus = await this.emailStatusService.GetEmailStatusByNameAsync(newStatusName);
+            var email = await this.context.Emails.Include(e => e.Status).FirstOrDefaultAsync(e => e.Id == emailDTO.Id);
+
+            if (email is null)
+            {
+                Log.Information($"{DateTime.Now} Email with id {emailDTO.Id} has not found.");
+                throw new Exception("Email is not found");
+            }
+
+            var oldEmailStatus = email.Status.StatusType;
+
+
+            email.StatusEmailId = newEmailStatus.Id;
+            email.ModifiedOnDate = DateTime.Now;
+            email.ModifiedByUserId = null;
+
+            Log.Information($"{email.ModifiedOnDate} Updated Email with Id: {email.Id}, from: {oldEmailStatus} to {newEmailStatus.StatusType}.");
+            await this.context.SaveChangesAsync();
+
+            return email.ToDTO();
+        }
 
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);
-
-            if (doesEmailExist)
-            {
-
-            }
 
             return doesEmailExist;
         }
