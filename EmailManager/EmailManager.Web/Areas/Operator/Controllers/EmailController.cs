@@ -47,7 +47,28 @@ namespace EmailManager.Web.Areas.Operator.Controllers
                     email.ModifiedByUserName = userName;
                 }
 
-                Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} asked by Manager with Id: {user.Id}.");
+                Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} asked by Operator with Id: {user.Id}.");
+
+                return View("AllEmails", list);
+            }
+            catch (ArgumentNullException ex)
+            {
+                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                Log.Error(ex.Message);
+            }
+            return LocalRedirect("~");
+        }
+
+        public async Task<IActionResult> ShowEmailsWithStatusNewForOperator(string statusName)
+        {
+            try
+            {
+                var user = await this.userManager.GetUserAsync(User);
+                var list = (await this.emailService.GetAllEmailsByStatusNameAsync(statusName))
+                        .ToList()
+                        .ToVM();
+
+                Log.Information($"{DateTime.Now} Show Emails with Status: {statusName} asked by Operator with Id: {user.Id}.");
 
                 return View("AllEmails", list);
             }

@@ -57,40 +57,6 @@
                         {
                             <partial name="_LayoutManagerButtons" />
                         }
-                        @*<li class="nav-item">
-                            <a class="nav-link" asp-controller="Email" asp-action="ShowEmailsByStatus"
-                               asp-route-statusName="New Application">
-                                <i class="fas fa-envelope"></i>New Applications
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Email" asp-action="ShowEmailsByStatus"
-                               asp-route-statusName="Open Application">
-                                <i class="fas fa-envelope-open-text"></i>Open Applications
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Email" asp-action="ShowEmailsByStatus"
-                               asp-route-statusName="Closed Application">
-                                <i class="far fa-envelope"></i>Closed Applications
-                            </a>
-                        </li>
-                        @if (User.IsInRole("Manager"))
-                        {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-route="Manager" asp-controller="Email" asp-action="ShowEmailsByStatus"
-                                   asp-route-statusName="Invalid Application">
-                                    <i class="fas fa-times-circle"></i>Invalid Applications
-                                </a>
-                            </li>
-
-                            <li>
-                                <div class="divider"></div>
-                                <a class="nav-link" area="" asp-area="Identity" asp-page="/Account/Register">
-                                    <i class="fas fa-user-plus"></i>Register Employee
-                                </a>
-                            </li>
-                        }*@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="UpdateEmails">
                                 <i class="fas fa-sync-alt"></i>
