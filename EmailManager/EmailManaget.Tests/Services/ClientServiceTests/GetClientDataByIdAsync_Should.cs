@@ -2,6 +2,7 @@ using EmailManager.Data;
 using EmailManager.Data.Entities;
 using EmailManager.Service;
 using EmailManager.Service.Contracts;
+using EmailManager.Service.DTOs;
 using EmailManaget.Tests.Utils;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
@@ -59,6 +60,19 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
                 var result = await sut.GetClientDataByIdAsync("invalid");
                 Assert.IsNull(result);
             }
+        }
+
+        [TestMethod]
+        public async Task ReturnCorrectClientData_IsCalledOnce()
+        {
+            var mockClientData = new Mock<ClientDataDTO>();
+
+            var clientService = new Mock<IClientService>();
+            clientService.Setup(x => x.CreateClientData(mockClientData.Object)).ReturnsAsync(mockClientData.Object);
+
+            var sut = await clientService.Object.CreateClientData(mockClientData.Object);
+
+            clientService.Verify(x => x.CreateClientData(mockClientData.Object), Times.Once);
         }
     }
 }

@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using EmailManager.Service.Contracts;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using NToastNotify;
 
 namespace EmailManager.Web.Areas.Identity.Pages.Account
 {
@@ -20,13 +21,16 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
     {
         private readonly UserManager<User> userManager;
         private readonly ILogger<RegisterModel> logger;
+        private readonly IToastNotification toast;
 
         public RegisterModel(
             UserManager<User> userManager,
-            ILogger<RegisterModel> logger)
+            ILogger<RegisterModel> logger,
+            IToastNotification toast)
         {
             this.userManager = userManager;
             this.logger = logger;
+            this.toast = toast;
         }
 
         [BindProperty]
@@ -76,7 +80,7 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     logger.LogInformation("User created a new account with password.");
-
+                    this.toast.AddSuccessToastMessage($"Account was created successfully!");
                     return LocalRedirect(returnUrl);
                 }
                 foreach (var error in result.Errors)

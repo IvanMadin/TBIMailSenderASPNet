@@ -2,12 +2,14 @@
 using EmailManager.Data.Entities;
 using EmailManager.Service;
 using EmailManager.Service.Contracts;
+using EmailManager.Service.DTOs;
 using EmailManaget.Tests.Utils;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,74 +21,147 @@ namespace EmailManaget.Tests.Services.UsersServiceTests
         [TestMethod]
         public async Task ReturnCorrectUser_WhenPassedValueIsCorrect()
         {
-            //    var testUsername = "TestName";
-            //    var newUser = new User() { UserName = testUsername };
-            //    var options = TestUtils.GetOptions(nameof(ReturnCorrectUser_WhenPassedValueIsCorrect));
-            //    using (var arrangeContext = new EmailManagerDbContext(options))
-            //    {
-            //        await arrangeContext.Users.AddAsync(newUser);
-            //        await arrangeContext.SaveChangesAsync();
-            //    }
+            var testUsername = "TestName";
 
-            //    using (var assertContext = new EmailManagerDbContext(options))
-            //    {
-            //        var mockedUserManager = new Mock<UserManager<User>>();
-            //        var sut = new UsersService(assertContext, mockedUserManager.Object);
+            var newUser = new User() { UserName = testUsername };
 
-            //        var result = await sut.GetUserByIdAsync(newUser.Id);
-            //        Assert.AreEqual(newUser.Id, result.Id);
-            //    }
+            var options = TestUtils.GetOptions(nameof(ReturnCorrectUser_WhenPassedValueIsCorrect));
+
+            using (var arrangeContext = new EmailManagerDbContext(options))
+            {
+                await arrangeContext.Users.AddAsync(newUser);
+                await arrangeContext.SaveChangesAsync();
+            }
+
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var userStoreMock = new Mock<IUserStore<User>>();
+
+                var mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
+                var sut = new UsersService(assertContext, mockUserManager.Object);
+
+                var result = await sut.GetUserByIdAsync(newUser.Id);
+
+                Assert.AreEqual(newUser.Id, result.Id);
+            }
         }
 
         [TestMethod]
         public async Task ReturnNull_WhenPassedValueNotMatch()
         {
-            //var testUsername = "TestName";
-            //var newUser = new User() { UserName = testUsername };
-            //var options = TestUtils.GetOptions(nameof(ReturnNull_WhenPassedValueNotMatch));
 
-            //using (var arrangeContext = new EmailManagerDbContext(options))
-            //{
-            //    arrangeContext.Users.Add(newUser);
-            //    arrangeContext.SaveChanges();
-            //}
+            var options = TestUtils.GetOptions(nameof(ReturnNull_WhenPassedValueNotMatch));
 
-            //using (var assertContext = new EmailManagerDbContext(options))
-            //{
-                ////var mockUserManager = new Mock<UserManager<User>>(
-                ////    new Mock<IUserStore<User>>().Object);
-                ////mockUserManager.Setup(x => x.FindByNameAsync(It.IsAny<string>()))
-                ////     .Returns(Task.FromResult(It.IsAny<User>()));
+            var testUserId = "testUserId";
 
-                ////var sut = new UsersService(assertContext, mockUserManager.Object);
-            //    var mockedUserManager = new Mock<UserManager<User>>().Object;
-            //    var sut = new UsersService(assertContext, mockedUserManager);
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var userStoreMock = new Mock<IUserStore<User>>();
 
-            //    var result = await sut.GetUserByIdAsync("invalid");
+                var mockUserManager = new Mock<UserManager<User>>(
+            userStoreMock.Object, null, null, null, null, null, null, null, null);
 
-            //    Assert.IsNull(result);
-            //}
+                var usersService = new UsersService(assertContext, mockUserManager.Object);
+
+                var sut = await usersService.GetUserByIdAsync(testUserId);
+
+                Assert.IsNull(sut);
+            }
         }
 
         [TestMethod]
         public async Task ReturnRoles_Successfully()
         {
-            //var options = TestUtils.GetOptions(nameof(ReturnRoles_Successfully));
-            //using (var arrangeContext = new EmailManagerDbContext(options))
-            //{
-            //    await arrangeContext.Roles.AddAsync(new IdentityRole { Name = "Manager" });
+            var options = TestUtils.GetOptions(nameof(ReturnRoles_Successfully));
 
-            //    await arrangeContext.SaveChangesAsync();
-            //}
+            var testUserRole = "Manager";
+            var testRoleId = "TestRoleId";
 
-            //using (var assertContext = new EmailManagerDbContext(options))
-            //{
-            //    var sut = new UsersService(assertContext, mockUserManager.Object);
+            using (var arrangeContext = new EmailManagerDbContext(options))
+            {
+                await arrangeContext.Roles.AddAsync(new IdentityRole { Id = testRoleId, Name = testUserRole });
 
-            //    var roles = await sut.GetRolesAsync();
+                await arrangeContext.SaveChangesAsync();
+            }
 
-            //    Assert.AreEqual();
-            //}
+            var userStoreMock = new Mock<IUserStore<User>>();
+
+            var mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
+
+
+
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var sut = new UsersService(assertContext, mockUserManager.Object);
+
+                var roles = await sut.GetRolesAsync();
+
+                Assert.AreEqual(testRoleId, roles.First().Id);
+            }
+        }
+
+        [TestMethod]
+        public async Task ReturnRolesType_Successfully()
+        {
+            var options = TestUtils.GetOptions(nameof(ReturnRolesType_Successfully));
+
+            var testUserRole = "Manager";
+            var testRoleId = "TestRoleId";
+
+            using (var arrangeContext = new EmailManagerDbContext(options))
+            {
+                await arrangeContext.Roles.AddAsync(new IdentityRole { Id = testRoleId, Name = testUserRole });
+
+                await arrangeContext.SaveChangesAsync();
+            }
+
+            var userStoreMock = new Mock<IUserStore<User>>();
+
+            var mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
+
+
+
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var sut = new UsersService(assertContext, mockUserManager.Object);
+
+                var roles = await sut.GetRolesAsync();
+
+                Assert.IsInstanceOfType(roles, typeof(ICollection<RoleDTO>));
+            }
+        }
+
+        [TestMethod]
+        public async Task ReturnRoles_WhenValuIsNull()
+        {
+            var options = TestUtils.GetOptions(nameof(ReturnRoles_WhenValuIsNull));
+
+            var userStoreMock = new Mock<IUserStore<User>>();
+
+            var mockUserManager = new Mock<UserManager<User>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
+
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var sut = new UsersService(assertContext, mockUserManager.Object);
+
+                var roles = await sut.GetRolesAsync();
+
+                Assert.AreEqual(0, roles.Count());
+            }
+        }
+
+        [TestMethod]
+        public async Task ReturnCorrectUser_IsCalledOnce()
+        {
+            var mockRoles = new Mock<ICollection<RoleDTO>>();
+
+            var usersService = new Mock<IRolesService>();
+            usersService.Setup(x => x.GetRolesAsync()).ReturnsAsync(mockRoles.Object);
+
+            var sut = await usersService.Object.GetRolesAsync();
+
+            usersService.Verify(x => x.GetRolesAsync(), Times.Once);
         }
     }
+
 }
