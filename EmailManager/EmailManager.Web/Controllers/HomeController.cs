@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using EmailManager.Web.Models;
 using EmailManager.GmailConfig;
-using EmailManager.Service;
 using Serilog;
-using EmailManager.Web.Extensions.Mappers;
-using EmailManager.Service.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using NToastNotify;
 
@@ -32,6 +27,13 @@ namespace EmailManager.Web.Controllers
             return RedirectToAction("AllEmails", "Email");
         }
 
+
+        [ResponseCache(Location = ResponseCacheLocation.Client, Duration = 3600)]
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -49,13 +51,13 @@ namespace EmailManager.Web.Controllers
                 Log.Information($"{DateTime.Now} Update Emails by {User}.");
                 return RedirectToAction("AllEmails", "Email");
             }
-            catch
+            catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Emails weren't updated!");
-                return RedirectToAction("Error", "Home");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
-            
+
         }
     }
 }

@@ -57,11 +57,11 @@ namespace EmailManager.Web.Controllers
                 Log.Information($"{DateTime.Now} Application Form with email ID: {emailId} has been accessed by {User}.");
                 return View(newLoanApplication);
             }
-            catch
+            catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Application form wasn't accessible!");
-                return RedirectToAction("Error", "Home");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
 
         }
@@ -118,8 +118,9 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 TempData["errorMessage"] = ex.Message;
+                Log.Error($"{DateTime.Now} {ex.Message}");
             }
 
             return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });

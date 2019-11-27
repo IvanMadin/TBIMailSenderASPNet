@@ -56,7 +56,7 @@ namespace EmailManager.Web.Areas.Manager.Controllers
             }
             catch (ArgumentNullException ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 Log.Error(ex.Message);
             }
             return LocalRedirect("~");
@@ -81,7 +81,7 @@ namespace EmailManager.Web.Areas.Manager.Controllers
             }
             catch
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 Log.Error($"{DateTime.Now} Status wasn't changed!");
                 return RedirectToAction("Index", "Home");
             }

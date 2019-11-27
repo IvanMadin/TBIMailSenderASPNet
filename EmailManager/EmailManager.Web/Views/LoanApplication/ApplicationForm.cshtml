@@ -31,7 +31,6 @@
                     <div class="form-group">
                         <label asp-for="Phone" title="Phone: "></label>
                         <input asp-for="Phone" class="form-control" />
-                        @*<select asp-for="Phone" asp-items="@ViewBag.Phone" class="form-control" />*@
                         <span asp-validation-for="Phone" class="text-danger"></span>
                         <p class="text-danger">@TempData["phoneMessage"]</p>
                     </div>
@@ -43,17 +42,6 @@
                     <button type="submit" class="btn button-color">Confirm</button>
                 </form>
             </div>
-            @*<div>
-                @TempData["errorMessage"]
-            </div>*@
         </div>
-
-        @*@section Scripts {
-            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-        }*@
     </div>
 </div>
-
-@*@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
-}*@

@@ -216,3 +216,34 @@ System.ObjectDisposedException: The CancellationTokenSource has been disposed.
 2019-11-27 12:48:54.619 +02:00 [WRN] Failed to determine the https port for redirect.
 2019-11-27 12:48:55.603 +02:00 [INF] 27.11.2019 г. 12:48:55 Get All Emails.
 2019-11-27 12:48:55.640 +02:00 [INF] 27.11.2019 г. 12:48:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:14:52.301 +02:00 [INF] Starting web host
+2019-11-27 16:14:53.936 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 16:14:55.023 +02:00 [INF] 27.11.2019 г. 16:14:55 Get All Emails.
+2019-11-27 16:14:55.051 +02:00 [INF] 27.11.2019 г. 16:14:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:17:25.080 +02:00 [INF] Starting web host
+2019-11-27 16:17:25.597 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 16:17:26.335 +02:00 [INF] 27.11.2019 г. 16:17:26 Get All Emails.
+2019-11-27 16:17:26.364 +02:00 [INF] 27.11.2019 г. 16:17:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:17:27.856 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:18:10.810 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:33.772 +02:00 [INF] Starting web host
+2019-11-27 16:20:34.279 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 16:20:35.047 +02:00 [INF] 27.11.2019 г. 16:20:35 Get All Emails.
+2019-11-27 16:20:35.074 +02:00 [INF] 27.11.2019 г. 16:20:35 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:20:40.148 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:50.969 +02:00 [INF] Starting web host
+2019-11-27 16:20:51.458 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 16:20:52.192 +02:00 [INF] 27.11.2019 г. 16:20:52 Get All Emails.
+2019-11-27 16:20:52.221 +02:00 [INF] 27.11.2019 г. 16:20:52 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:20:53.839 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:55.960 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:56.336 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:56.529 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:20:56.693 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:21:07.954 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:21:56.860 +02:00 [INF] 27.11.2019 г. 16:21:56 Get All Emails.
+2019-11-27 16:21:56.871 +02:00 [INF] 27.11.2019 г. 16:21:56 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:22:52.614 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:22:56.311 +02:00 [INF] 27.11.2019 г. 16:22:56 Get All Emails.
+2019-11-27 16:22:56.322 +02:00 [INF] 27.11.2019 г. 16:22:56 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:22:57.549 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.

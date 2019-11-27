@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
-using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -50,9 +47,9 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 Log.Error($"[{DateTime.Now}]: {ex.Message}");
-                return RedirectToAction("Error", "Home");
+                return RedirectToAction("Index", "Home");
             }
         }
 
@@ -67,15 +64,12 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Application wasn't accessible");
-                return RedirectToAction("Error", "Home");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
 
-        /// <summary>
-        /// List All Emails.
-        /// </summary>
         public async Task<IActionResult> AllEmails()
         {
             try
@@ -91,16 +85,12 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"All emails weren't accessible");
-                return RedirectToAction("Error", "Home");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
 
-
-        /// <summary>
-        /// Changing status with the given StatusName.
-        /// </summary>
         public async Task<IActionResult> ChangeStatus(string emailId, string newStatusName)
         {
             try
@@ -134,9 +124,9 @@ namespace EmailManager.Web.Controllers
             }
             catch (Exception ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Status wasn't changed!");
-                return RedirectToAction("Error", "Home");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
     }

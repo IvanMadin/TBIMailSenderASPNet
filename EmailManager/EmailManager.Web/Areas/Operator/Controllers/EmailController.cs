@@ -53,7 +53,7 @@ namespace EmailManager.Web.Areas.Operator.Controllers
             }
             catch (ArgumentNullException ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 Log.Error(ex.Message);
             }
             return LocalRedirect("~");
@@ -74,7 +74,7 @@ namespace EmailManager.Web.Areas.Operator.Controllers
             }
             catch (ArgumentNullException ex)
             {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong.");
+                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
                 Log.Error(ex.Message);
             }
             return LocalRedirect("~");
