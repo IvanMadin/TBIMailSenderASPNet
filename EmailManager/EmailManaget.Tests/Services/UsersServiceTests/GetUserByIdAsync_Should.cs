@@ -163,5 +163,4 @@ namespace EmailManaget.Tests.Services.UsersServiceTests
             usersService.Verify(x => x.GetRolesAsync(), Times.Once);
         }
     }
-
 }

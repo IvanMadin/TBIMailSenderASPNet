@@ -46,19 +46,19 @@ namespace EmailManaget.Tests.Services.EmailServiceTests
         [TestMethod]
         public async Task ReturnEmailNull_WhenPassedValueNotMatch()
         {
-            //var options = TestUtils.GetOptions(nameof(ReturnEmailNull_WhenPassedValueNotMatch));
-        
-            //var mockEmailFactory = new Mock<IEmailFactory>().Object;
-            //var mockEmailStatus = new Mock<IEmailStatusService>().Object;
-            //var mockEncryptHelper = new Mock<EncryptingHelper>().Object;
+            var options = TestUtils.GetOptions(nameof(ReturnEmailNull_WhenPassedValueNotMatch));
 
-            //using (var assertContext = new EmailManagerDbContext(options))
-            //{
-            //    var sut = new EmailService(assertContext, mockEmailFactory, mockEncryptHelper, mockEmailStatus);
+            var mockEmailFactory = new Mock<IEmailFactory>().Object;
+            var mockEmailStatus = new Mock<IEmailStatusService>().Object;
+            var mockEncryptHelper = new Mock<EncryptingHelper>().Object;
 
-            //    var result = await sut.GetEmailByIdAsync("test");
-            //    Assert.IsNull(result);
-            //}
+            using (var assertContext = new EmailManagerDbContext(options))
+            {
+                var sut = new EmailService(assertContext, mockEmailFactory, mockEncryptHelper, mockEmailStatus);
+
+                var result = await sut.GetEmailByIdAsync("test");
+                Assert.IsNull(result);
+            }
         }
     }
 }

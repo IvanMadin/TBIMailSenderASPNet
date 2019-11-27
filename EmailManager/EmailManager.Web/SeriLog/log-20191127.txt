@@ -1,0 +1,218 @@
+2019-11-27 12:15:50.011 +02:00 [INF] Starting web host
+2019-11-27 12:15:55.241 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:16:00.017 +02:00 [INF] 27.11.2019 г. 12:16:00 Get All Emails.
+2019-11-27 12:16:00.142 +02:00 [INF] 27.11.2019 г. 12:16:00 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:16:09.878 +02:00 [INF] 27.11.2019 г. 12:16:09 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:16:09.878 +02:00 [INF] 27.11.2019 г. 12:16:09 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:16:11.425 +02:00 [INF] 27.11.2019 г. 12:16:11 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:16:17.610 +02:00 [INF] 27.11.2019 г. 12:16:17 Get All Emails.
+2019-11-27 12:16:17.686 +02:00 [INF] 27.11.2019 г. 12:16:17 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:16:17.711 +02:00 [INF] 27.11.2019 г. 12:16:17 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:18:24.341 +02:00 [INF] Starting web host
+2019-11-27 12:18:27.654 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:18:30.675 +02:00 [INF] 27.11.2019 г. 12:18:30 Get All Emails.
+2019-11-27 12:18:30.826 +02:00 [INF] 27.11.2019 г. 12:18:30 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:18:42.406 +02:00 [INF] 27.11.2019 г. 12:18:42 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:18:42.407 +02:00 [INF] 27.11.2019 г. 12:18:42 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:18:50.706 +02:00 [INF] 27.11.2019 г. 12:18:50 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:19:02.021 +02:00 [INF] 27.11.2019 г. 12:19:02 Get All Emails.
+2019-11-27 12:19:02.055 +02:00 [INF] 27.11.2019 г. 12:19:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:19:02.076 +02:00 [INF] 27.11.2019 г. 12:19:02 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:20:08.446 +02:00 [INF] Starting web host
+2019-11-27 12:20:11.448 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:20:14.599 +02:00 [INF] 27.11.2019 г. 12:20:14 Get All Emails.
+2019-11-27 12:20:14.738 +02:00 [INF] 27.11.2019 г. 12:20:14 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:21:28.086 +02:00 [INF] 27.11.2019 г. 12:21:28 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-27 12:21:28.086 +02:00 [INF] 27.11.2019 г. 12:21:28 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-27 12:21:29.352 +02:00 [INF] 27.11.2019 г. 12:21:29 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Locked succesfully!
+2019-11-27 12:21:58.647 +02:00 [INF] 27.11.2019 г. 12:21:58 Get All Emails.
+2019-11-27 12:21:58.715 +02:00 [INF] 27.11.2019 г. 12:21:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:22:03.089 +02:00 [INF] 27.11.2019 г. 12:22:03 Get All Emails.
+2019-11-27 12:22:03.191 +02:00 [INF] 27.11.2019 г. 12:22:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:22:03.490 +02:00 [INF] 27.11.2019 г. 12:22:03 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Unlocked succesfully!
+2019-11-27 12:22:22.590 +02:00 [INF] User logged in.
+2019-11-27 12:22:22.842 +02:00 [INF] 27.11.2019 г. 12:22:22 Get All Emails.
+2019-11-27 12:22:22.939 +02:00 [INF] 27.11.2019 г. 12:22:22 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:22:40.818 +02:00 [INF] 27.11.2019 г. 12:22:40 Get All Emails.
+2019-11-27 12:22:40.898 +02:00 [INF] 27.11.2019 г. 12:22:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:22:50.088 +02:00 [INF] 27.11.2019 г. 12:22:50 Get All Emails.
+2019-11-27 12:22:50.234 +02:00 [INF] 27.11.2019 г. 12:22:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:22:52.673 +02:00 [INF] 27.11.2019 г. 12:22:52 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:22:52.673 +02:00 [INF] 27.11.2019 г. 12:22:52 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:22:53.379 +02:00 [INF] 27.11.2019 г. 12:22:53 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:23:07.410 +02:00 [INF] 27.11.2019 г. 12:23:07 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:23:07.411 +02:00 [INF] 27.11.2019 г. 12:23:07 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:23:07.979 +02:00 [INF] 27.11.2019 г. 12:23:07 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:23:12.717 +02:00 [INF] 27.11.2019 г. 12:23:12 Get All Emails.
+2019-11-27 12:23:12.846 +02:00 [INF] 27.11.2019 г. 12:23:12 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:23:12.900 +02:00 [INF] 27.11.2019 г. 12:23:12 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:23:19.652 +02:00 [INF] 27.11.2019 г. 12:23:19 Get All Emails.
+2019-11-27 12:23:19.753 +02:00 [INF] 27.11.2019 г. 12:23:19 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:23:19.797 +02:00 [INF] 27.11.2019 г. 12:23:19 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:23:27.660 +02:00 [INF] 27.11.2019 г. 12:23:27 Get All Emails.
+2019-11-27 12:23:27.746 +02:00 [INF] 27.11.2019 г. 12:23:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:23:36.770 +02:00 [INF] 27.11.2019 г. 12:23:36 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:23:36.771 +02:00 [INF] 27.11.2019 г. 12:23:36 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:23:37.192 +02:00 [INF] 27.11.2019 г. 12:23:37 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:23:56.511 +02:00 [INF] 27.11.2019 г. 12:23:56 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:23:56.512 +02:00 [INF] 27.11.2019 г. 12:23:56 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:23:57.216 +02:00 [INF] 27.11.2019 г. 12:23:57 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:24:13.914 +02:00 [INF] 27.11.2019 г. 12:24:13 Get All Emails.
+2019-11-27 12:24:13.974 +02:00 [INF] 27.11.2019 г. 12:24:13 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:24:13.998 +02:00 [INF] 27.11.2019 г. 12:24:13 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:24:16.197 +02:00 [INF] 27.11.2019 г. 12:24:16 Get All Emails.
+2019-11-27 12:24:16.291 +02:00 [INF] 27.11.2019 г. 12:24:16 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:24:16.312 +02:00 [INF] 27.11.2019 г. 12:24:16 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:25:11.764 +02:00 [INF] 27.11.2019 г. 12:25:11 Get All Emails.
+2019-11-27 12:25:11.882 +02:00 [INF] 27.11.2019 г. 12:25:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:25:17.526 +02:00 [INF] 27.11.2019 г. 12:25:17 Get All Emails.
+2019-11-27 12:25:17.684 +02:00 [INF] 27.11.2019 г. 12:25:17 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:25:20.625 +02:00 [INF] 27.11.2019 г. 12:25:20 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:25:20.626 +02:00 [INF] 27.11.2019 г. 12:25:20 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:25:21.061 +02:00 [INF] 27.11.2019 г. 12:25:21 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:25:29.448 +02:00 [INF] 27.11.2019 г. 12:25:29 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:25:29.449 +02:00 [INF] 27.11.2019 г. 12:25:29 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:25:30.249 +02:00 [INF] 27.11.2019 г. 12:25:30 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:25:30.912 +02:00 [INF] 27.11.2019 г. 12:25:30 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:25:35.749 +02:00 [INF] 27.11.2019 г. 12:25:35 Get All Emails.
+2019-11-27 12:25:35.853 +02:00 [INF] 27.11.2019 г. 12:25:35 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:25:38.416 +02:00 [INF] 27.11.2019 г. 12:25:38 Get All Emails.
+2019-11-27 12:25:38.473 +02:00 [INF] 27.11.2019 г. 12:25:38 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:25:42.793 +02:00 [INF] 27.11.2019 г. 12:25:42 Get All Emails.
+2019-11-27 12:25:42.942 +02:00 [INF] 27.11.2019 г. 12:25:42 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:25:43.006 +02:00 [INF] 27.11.2019 г. 12:25:43 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:25:47.946 +02:00 [INF] 27.11.2019 г. 12:25:47 Get All Emails.
+2019-11-27 12:25:48.016 +02:00 [INF] 27.11.2019 г. 12:25:48 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:26:26.058 +02:00 [INF] 27.11.2019 г. 12:26:26 Get All Emails.
+2019-11-27 12:26:26.135 +02:00 [INF] 27.11.2019 г. 12:26:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:26:38.543 +02:00 [INF] Starting web host
+2019-11-27 12:26:39.483 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:26:40.518 +02:00 [INF] 27.11.2019 г. 12:26:40 Get All Emails.
+2019-11-27 12:26:40.556 +02:00 [INF] 27.11.2019 г. 12:26:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:27:05.248 +02:00 [INF] User logged in.
+2019-11-27 12:27:05.438 +02:00 [INF] 27.11.2019 г. 12:27:05 Get All Emails.
+2019-11-27 12:27:05.469 +02:00 [INF] 27.11.2019 г. 12:27:05 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:27:29.863 +02:00 [INF] 27.11.2019 г. 12:27:29 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:27:29.863 +02:00 [INF] 27.11.2019 г. 12:27:29 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:27:30.470 +02:00 [INF] 27.11.2019 г. 12:27:30 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:28:10.897 +02:00 [INF] 27.11.2019 г. 12:28:10 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:28:10.898 +02:00 [INF] 27.11.2019 г. 12:28:10 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:28:11.778 +02:00 [INF] 27.11.2019 г. 12:28:11 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:28:12.407 +02:00 [INF] 27.11.2019 г. 12:28:12 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:28:22.816 +02:00 [INF] 27.11.2019 г. 12:28:22 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:28:22.816 +02:00 [INF] 27.11.2019 г. 12:28:22 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:28:23.931 +02:00 [INF] 27.11.2019 г. 12:28:23 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:31:45.146 +02:00 [INF] Starting web host
+2019-11-27 12:31:45.868 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:31:47.026 +02:00 [INF] 27.11.2019 г. 12:31:47 Get All Emails.
+2019-11-27 12:31:47.063 +02:00 [INF] 27.11.2019 г. 12:31:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:31:47.086 +02:00 [INF] 27.11.2019 г. 12:31:47 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:31:51.026 +02:00 [INF] 27.11.2019 г. 12:31:51 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:31:59.449 +02:00 [INF] Starting web host
+2019-11-27 12:32:00.162 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:32:01.297 +02:00 [INF] 27.11.2019 г. 12:32:01 Get All Emails.
+2019-11-27 12:32:01.339 +02:00 [INF] 27.11.2019 г. 12:32:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:32:15.470 +02:00 [INF] 27.11.2019 г. 12:32:15 Get All Emails.
+2019-11-27 12:32:15.500 +02:00 [INF] 27.11.2019 г. 12:32:15 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:35:02.252 +02:00 [INF] Starting web host
+2019-11-27 12:35:03.192 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:35:04.231 +02:00 [INF] 27.11.2019 г. 12:35:04 Get All Emails.
+2019-11-27 12:35:04.267 +02:00 [INF] 27.11.2019 г. 12:35:04 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:35:58.293 +02:00 [INF] Starting web host
+2019-11-27 12:35:59.164 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:36:01.254 +02:00 [INF] 27.11.2019 г. 12:36:01 Get All Emails.
+2019-11-27 12:36:01.370 +02:00 [INF] 27.11.2019 г. 12:36:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:37:00.554 +02:00 [INF] Starting web host
+2019-11-27 12:37:01.524 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:37:03.889 +02:00 [INF] 27.11.2019 г. 12:37:03 Get All Emails.
+2019-11-27 12:37:03.965 +02:00 [INF] 27.11.2019 г. 12:37:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:38:53.837 +02:00 [INF] Starting web host
+2019-11-27 12:38:55.090 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:38:57.019 +02:00 [INF] 27.11.2019 г. 12:38:57 Get All Emails.
+2019-11-27 12:38:57.100 +02:00 [INF] 27.11.2019 г. 12:38:57 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:39:19.094 +02:00 [INF] Starting web host
+2019-11-27 12:39:49.005 +02:00 [INF] Starting web host
+2019-11-27 12:39:49.770 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:39:50.948 +02:00 [INF] 27.11.2019 г. 12:39:50 Get All Emails.
+2019-11-27 12:39:51.009 +02:00 [INF] 27.11.2019 г. 12:39:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:40:00.349 +02:00 [INF] 27.11.2019 г. 12:40:00 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:40:00.350 +02:00 [INF] 27.11.2019 г. 12:40:00 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:40:00.494 +02:00 [INF] 27.11.2019 г. 12:40:00 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:40:00.494 +02:00 [INF] 27.11.2019 г. 12:40:00 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:40:01.720 +02:00 [INF] 27.11.2019 г. 12:40:01 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:40:02.289 +02:00 [INF] 27.11.2019 г. 12:40:02 Get All Emails.
+2019-11-27 12:40:02.320 +02:00 [INF] 27.11.2019 г. 12:40:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:40:02.363 +02:00 [INF] 27.11.2019 г. 12:40:02 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:40:12.865 +02:00 [INF] 27.11.2019 г. 12:40:12 Get All Emails.
+2019-11-27 12:40:12.893 +02:00 [INF] 27.11.2019 г. 12:40:12 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:40:31.675 +02:00 [INF] 27.11.2019 г. 12:40:31 Get Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b by .
+2019-11-27 12:40:31.675 +02:00 [INF] 27.11.2019 г. 12:40:31 Application with emailID: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been accessed by .
+2019-11-27 12:40:32.578 +02:00 [INF] 27.11.2019 г. 12:40:32 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Locked succesfully!
+2019-11-27 12:41:04.068 +02:00 [INF] 27.11.2019 г. 12:41:04 Get All Emails.
+2019-11-27 12:41:04.109 +02:00 [INF] 27.11.2019 г. 12:41:04 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:41:04.158 +02:00 [INF] 27.11.2019 г. 12:41:04 Email with Id: ed5a7e3e-a311-4193-9c84-9ad7adeeec6b has been Unlocked succesfully!
+2019-11-27 12:44:17.182 +02:00 [INF] 27.11.2019 г. 12:44:17 Get All Emails.
+2019-11-27 12:44:17.229 +02:00 [INF] 27.11.2019 г. 12:44:17 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:44:20.647 +02:00 [INF] 27.11.2019 г. 12:44:20 Get All Emails.
+2019-11-27 12:44:20.676 +02:00 [INF] 27.11.2019 г. 12:44:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:45:26.979 +02:00 [INF] 27.11.2019 г. 12:45:26 Get Emails with Status Name: Open Application.
+2019-11-27 12:45:27.051 +02:00 [INF] 27.11.2019 г. 12:45:27 Get All Emails with Status: Open Application.
+2019-11-27 12:45:27.051 +02:00 [INF] 27.11.2019 г. 12:45:27 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:28.106 +02:00 [INF] 27.11.2019 г. 12:45:28 Get Emails with Status Name: New Application.
+2019-11-27 12:45:28.329 +02:00 [INF] 27.11.2019 г. 12:45:28 Get All Emails with Status: New Application.
+2019-11-27 12:45:28.329 +02:00 [INF] 27.11.2019 г. 12:45:28 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:29.093 +02:00 [INF] 27.11.2019 г. 12:45:29 Get Emails with Status Name: Open Application.
+2019-11-27 12:45:29.095 +02:00 [INF] 27.11.2019 г. 12:45:29 Get All Emails with Status: Open Application.
+2019-11-27 12:45:29.095 +02:00 [INF] 27.11.2019 г. 12:45:29 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:29.833 +02:00 [INF] 27.11.2019 г. 12:45:29 Get Emails with Status Name: New Application.
+2019-11-27 12:45:29.978 +02:00 [INF] 27.11.2019 г. 12:45:29 Get All Emails with Status: New Application.
+2019-11-27 12:45:29.978 +02:00 [INF] 27.11.2019 г. 12:45:29 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:29.995 +02:00 [ERR] Connection ID "18374686485577204105", Request ID "8000018a-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: The CancellationTokenSource has been disposed.
+   at System.Threading.CancellationTokenSource.ThrowObjectDisposedException()
+   at System.Threading.CancellationTokenSource.Cancel()
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.<>c__DisplayClass314_0.<AbortIO>b__0(Object t)
+2019-11-27 12:45:44.495 +02:00 [INF] 27.11.2019 г. 12:45:44 Get All Emails.
+2019-11-27 12:45:44.536 +02:00 [INF] 27.11.2019 г. 12:45:44 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:45:46.013 +02:00 [INF] 27.11.2019 г. 12:45:46 Get Emails with Status Name: New Application.
+2019-11-27 12:45:46.151 +02:00 [INF] 27.11.2019 г. 12:45:46 Get All Emails with Status: New Application.
+2019-11-27 12:45:46.152 +02:00 [INF] 27.11.2019 г. 12:45:46 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:46.760 +02:00 [INF] 27.11.2019 г. 12:45:46 Get Emails with Status Name: Open Application.
+2019-11-27 12:45:46.762 +02:00 [INF] 27.11.2019 г. 12:45:46 Get All Emails with Status: Open Application.
+2019-11-27 12:45:46.762 +02:00 [INF] 27.11.2019 г. 12:45:46 Show Emails with Status: Open Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:48.031 +02:00 [INF] 27.11.2019 г. 12:45:48 Get Emails with Status Name: New Application.
+2019-11-27 12:45:48.198 +02:00 [INF] 27.11.2019 г. 12:45:48 Get All Emails with Status: New Application.
+2019-11-27 12:45:48.198 +02:00 [INF] 27.11.2019 г. 12:45:48 Show Emails with Status: New Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:54.513 +02:00 [INF] 27.11.2019 г. 12:45:54 Get Emails with Status Name: Closed Application.
+2019-11-27 12:45:54.521 +02:00 [INF] 27.11.2019 г. 12:45:54 Get All Emails with Status: Closed Application.
+2019-11-27 12:45:54.521 +02:00 [INF] 27.11.2019 г. 12:45:54 Show Emails with Status: Closed Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:45:55.618 +02:00 [INF] 27.11.2019 г. 12:45:55 Get Emails with Status Name: Invalid Application.
+2019-11-27 12:45:55.625 +02:00 [INF] 27.11.2019 г. 12:45:55 Get All Emails with Status: Invalid Application.
+2019-11-27 12:45:55.625 +02:00 [INF] 27.11.2019 г. 12:45:55 Show Emails with Status: Invalid Application asked by Manager with Id: 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:46:02.155 +02:00 [INF] 27.11.2019 г. 12:46:02 Get All Emails.
+2019-11-27 12:46:02.190 +02:00 [INF] 27.11.2019 г. 12:46:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:46:04.575 +02:00 [INF] 27.11.2019 г. 12:46:04 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-27 12:46:04.575 +02:00 [INF] 27.11.2019 г. 12:46:04 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-27 12:46:05.256 +02:00 [INF] 27.11.2019 г. 12:46:05 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Locked succesfully!
+2019-11-27 12:46:06.009 +02:00 [INF] 27.11.2019 г. 12:46:06 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-27 12:46:06.137 +02:00 [INF] 27.11.2019 г. 12:46:06 Get Emails with Status Name: Not Reviewed.
+2019-11-27 12:46:06.319 +02:00 [INF] 27.11.2019 г. 12:46:06 Updated Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014, from: New Application to Not Reviewed.
+2019-11-27 12:46:06.804 +02:00 [INF] 27.11.2019 г. 12:46:06 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-27 12:46:06.804 +02:00 [INF] 27.11.2019 г. 12:46:06 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-27 12:46:07.053 +02:00 [INF] 27.11.2019 г. 12:46:07 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Unlocked succesfully!
+2019-11-27 12:46:07.770 +02:00 [INF] 27.11.2019 г. 12:46:07 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Locked succesfully!
+2019-11-27 12:46:08.683 +02:00 [INF] 27.11.2019 г. 12:46:08 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by .
+2019-11-27 12:46:08.686 +02:00 [INF] 27.11.2019 г. 12:46:08 Get Emails with Status Name: Invalid Application.
+2019-11-27 12:46:08.873 +02:00 [INF] 27.11.2019 г. 12:46:08 Update Emails by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-27 12:46:08.879 +02:00 [INF] 27.11.2019 г. 12:46:06 Changed Status by User Id: 565dfbc0-2681-4f29-bc97-a619eacf339c, from: Not Reviewed to Invalid Application.
+2019-11-27 12:46:09.044 +02:00 [INF] 27.11.2019 г. 12:46:09 Get Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 by 565dfbc0-2681-4f29-bc97-a619eacf339c.
+2019-11-27 12:46:09.045 +02:00 [INF] 27.11.2019 г. 12:46:09 Application with emailID: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been accessed by .
+2019-11-27 12:46:09.267 +02:00 [INF] 27.11.2019 г. 12:46:09 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Unlocked succesfully!
+2019-11-27 12:46:10.011 +02:00 [INF] 27.11.2019 г. 12:46:10 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Locked succesfully!
+2019-11-27 12:46:18.261 +02:00 [INF] 27.11.2019 г. 12:46:18 Get All Emails.
+2019-11-27 12:46:18.288 +02:00 [INF] 27.11.2019 г. 12:46:18 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 12:46:18.519 +02:00 [INF] 27.11.2019 г. 12:46:18 Email with Id: 02ee72fe-8662-4a88-9663-03be0e8f2014 has been Unlocked succesfully!
+2019-11-27 12:48:53.709 +02:00 [INF] Starting web host
+2019-11-27 12:48:54.619 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-27 12:48:55.603 +02:00 [INF] 27.11.2019 г. 12:48:55 Get All Emails.
+2019-11-27 12:48:55.640 +02:00 [INF] 27.11.2019 г. 12:48:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
