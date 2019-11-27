@@ -17,6 +17,7 @@ using Microsoft.Extensions.Logging;
 using EmailManager.Web.Extensions.ServiceHelpers;
 using EmailManager.Service.Contracts;
 using EmailManager.Service.Utilities;
+using EmailManager.Web.SignalR;
 
 namespace EmailManager.Web
 {
@@ -57,6 +58,8 @@ namespace EmailManager.Web
             services.Registrations();
             services.AddMvc().AddNToastNotifyToastr();
 
+            services.AddSignalR();
+
             services.AddHostedService<AutomatedService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
@@ -81,6 +84,11 @@ namespace EmailManager.Web
 
             app.UseAuthentication();
             app.UseNToastNotify();
+
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<TestHub>("/test");
+            });
 
             app.UseMvc(routes =>
             {

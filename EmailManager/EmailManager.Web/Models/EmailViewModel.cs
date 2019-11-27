@@ -20,5 +20,6 @@ namespace EmailManager.Web.Models
         public string ModifiedByUserId { get; set; }
         public string ModifiedByUserName { get; set; }
         public string ApplicationStatus { get; set; }
+        public bool IsLocked { get; set; }
     }
 }

@@ -141,6 +141,18 @@ namespace EmailManager.Service
             return email.ToDTO();
         }
 
+        public async Task<bool> ChangeLockStatusForEmailAsync(string emailId, bool isLocked)
+        {
+            var email = await this.context.Emails.FirstOrDefaultAsync(e => e.Id == emailId);
+            if (email != null)
+            {
+                email.IsLocked = isLocked;
+                await this.context.SaveChangesAsync();
+                return email.IsLocked;
+            }
+            throw new ArgumentNullException($"Email ID: {emailId} was not found, in the datebase!");
+        }
+
         public async Task<bool> CheckIfEmailExists(string originalMailId)
         {
             var doesEmailExist = await this.context.Emails.AnyAsync(e => e.OriginalMailId == originalMailId);

@@ -61,6 +61,8 @@ namespace EmailManager.Data.Migrations
 
                     b.Property<DateTime>("DateReceived");
 
+                    b.Property<bool>("IsLocked");
+
                     b.Property<string>("ModifiedByUserId");
 
                     b.Property<DateTime?>("ModifiedOnDate");
@@ -259,13 +261,13 @@ namespace EmailManager.Data.Migrations
                             Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
                             AccessFailedCount = 0,
                             ChangedPassword = true,
-                            ConcurrencyStamp = "e7133e5b-df25-4e41-b71c-1f4dc258bc88",
+                            ConcurrencyStamp = "533fa9a4-4287-4046-bdcb-4eee5ad9234d",
                             Email = "krisi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "KRISI@GMAIL.COM",
                             NormalizedUserName = "KRISI",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMzyrSqwNNQpzENjeQppJe8xADgje0msImG1jKCJdfAIfRcNZ7N2mvR5rJQtBsNc7w==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPuI9rMtkBJw5qixHAwYvLwqE21ClxwmWt+OJ2k2vRTB9jfcybdNtPgHPF6WFnbvkA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
                             TwoFactorEnabled = false,
@@ -276,13 +278,13 @@ namespace EmailManager.Data.Migrations
                             Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
                             AccessFailedCount = 0,
                             ChangedPassword = true,
-                            ConcurrencyStamp = "3435e608-00f6-4940-8ee3-6108da462228",
+                            ConcurrencyStamp = "d2ab59f8-6375-4314-a679-46ea27fbc851",
                             Email = "madinftw@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "MADINFTW@GMAIL.COM",
                             NormalizedUserName = "MADINFTW",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJ4vQc4uYZxWu8sHL/wFYENTOzu9xlmPHB7Hk2ofqVh7VTAoVHM6VDG7JflK18wpmw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIF6RFcFHfptvJaiQ2giYc5PEorDFvx7cNit+nG/gUFOsD+sa58D4JN4Sqx9yvKM8Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
                             TwoFactorEnabled = false,
@@ -317,14 +319,14 @@ namespace EmailManager.Data.Migrations
                         new
                         {
                             Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
-                            ConcurrencyStamp = "cfa5727d-a365-455a-b486-cd50e5b32a5f",
+                            ConcurrencyStamp = "1e742652-526f-4b28-9497-07b86d8ea041",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
                             Id = "93c66dd9-11c5-4836-b104-a9c333549530",
-                            ConcurrencyStamp = "df0a6900-7a7c-4eaf-8d9e-6e8207810937",
+                            ConcurrencyStamp = "4edf0f0d-940f-4119-9181-3239d4fe578d",
                             Name = "Operator",
                             NormalizedName = "OPERATOR"
                         });

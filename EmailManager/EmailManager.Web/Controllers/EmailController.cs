@@ -6,9 +6,11 @@ using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
 using EmailManager.Web.Models;
+using EmailManager.Web.SignalR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using NToastNotify;
 using Serilog;
 
@@ -22,6 +24,7 @@ namespace EmailManager.Web.Controllers
         private readonly IEmailStatusService emailStatusService;
         private readonly ILoanApplicationService applicationService;
         private readonly IAttachmentsService attachmentsService;
+        private readonly IHubContext<TestHub> hubContext;
         private readonly IToastNotification toast;
 
         public EmailController(UserManager<User> userManager,
@@ -29,6 +32,7 @@ namespace EmailManager.Web.Controllers
             IEmailStatusService emailStatusService,
             ILoanApplicationService applicationService,
             IAttachmentsService attachmentsService,
+            IHubContext<TestHub> hubContext,
             IToastNotification toast)
         {
             this.userManager = userManager;
@@ -36,6 +40,7 @@ namespace EmailManager.Web.Controllers
             this.emailStatusService = emailStatusService;
             this.applicationService = applicationService;
             this.attachmentsService = attachmentsService;
+            this.hubContext = hubContext;
             this.toast = toast;
         }
 
@@ -68,8 +73,8 @@ namespace EmailManager.Web.Controllers
             catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Application wasn't accessible");
-                return RedirectToAction("Error", "Home");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
 
@@ -92,11 +97,26 @@ namespace EmailManager.Web.Controllers
             catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"All emails weren't accessible");
-                return RedirectToAction("Error", "Home");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
+        [HttpPost]
+        public async Task Test(string emailId, bool status)
+        {
+            try
+            {
+                var isLocked = await this.emailService.ChangeLockStatusForEmailAsync(emailId, status);
+                string messageResult = isLocked ? "Locked" : "Unlocked";
+                Log.Information($"{DateTime.Now} Email with Id: {emailId} has been {messageResult} succesfully!");
 
+                await this.hubContext.Clients.All.SendAsync(messageResult, emailId);
+            }
+            catch(Exception ex)
+            {
+                Log.Error($"{DateTime.Now} {ex.Message}");
+            }
+        }
 
         /// <summary>
         /// Changing status with the given StatusName.
@@ -135,8 +155,8 @@ namespace EmailManager.Web.Controllers
             catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong.");
-                Log.Error($"Status wasn't changed!");
-                return RedirectToAction("Error", "Home");
+                Log.Error($"{DateTime.Now} {ex.Message}");
+                return RedirectToAction("Index", "Home");
             }
         }
     }

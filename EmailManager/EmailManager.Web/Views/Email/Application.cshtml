@@ -19,7 +19,7 @@
         }
         @if (User.IsInRole("Manager"))
         {
-            <partial name="_ApplicationManagerButtons" model="@Model" /> 
+            <partial name="_ApplicationManagerButtons" model="@Model" />
         }
     </h6>
     <br />
@@ -47,12 +47,52 @@
         </dl>
     </div>
 </div>
+<div id="testvamsi" data-value="@Model.Id">
+
+</div>
 <div class="col-4" id="application-form-div">
     <partial name="_AppFormPartial" model="new LoanApplicationViewModel { EmailId = Model.Id }" />
 </div>
 
 @section Scripts{
     <script type="text/javascript" src="~/js/application-form.js"></script>
+
+    <script>
+
+        let currid;
+        window.addEventListener('load', function (event) {
+
+            let id = document.getElementById("testvamsi").getAttribute("data-value");
+            currid = id;
+
+            $.ajax({
+                type: 'Post',
+                url: '/Email/Test',
+                data: {
+                    'emailId': id,
+                    'status': true
+                }
+            });
+        });
+
+        window.addEventListener('unload', function () {
+            test2();
+        });
+
+
+        function test2() {
+            console.log(currid);
+            $.ajax({
+                type: 'Post',
+                async : false,
+                url: '/Email/Test',
+                data: {
+                    'emailId': currid,
+                    'status': false
+                }
+            });
+        }
+    </script>
 }
 
 

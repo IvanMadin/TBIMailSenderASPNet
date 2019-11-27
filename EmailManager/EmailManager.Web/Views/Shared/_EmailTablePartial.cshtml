@@ -76,9 +76,11 @@
 
                         <td>
                             <div>
-                                <a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id" style="color: #e66b00">Preview email</a>
+                                @*<a asp-controller="Email" asp-action="Application" asp-route-id="@email.Id" id="@email.Id" style="color: #e66b00">Preview email</a>*@
+                                <form>
+                                    <button asp-controller="Email" asp-action="Application" id="@email.Id" name="id" value="@email.Id" style="color: #e66b00; background-color:transparent; border:none;">Preview email</button>
+                                </form>
                             </div>
-
                         </td>
                     </tr>
                 }
@@ -86,4 +88,3 @@
         </table>
     </div>
 </div>
-

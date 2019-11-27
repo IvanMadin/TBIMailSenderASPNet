@@ -12,6 +12,8 @@ using EmailManager.Web.Extensions.Mappers;
 using EmailManager.Service.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using NToastNotify;
+using Microsoft.AspNetCore.SignalR;
+using EmailManager.Web.SignalR;
 
 namespace EmailManager.Web.Controllers
 {
@@ -19,16 +21,19 @@ namespace EmailManager.Web.Controllers
     {
         private readonly GmailConfigure gmailConfigure;
         private readonly IToastNotification toast;
+        private readonly IHubContext<TestHub> hubContext;
 
-        public HomeController(GmailConfigure gmailConfigure, IToastNotification toast)
+        public HomeController(GmailConfigure gmailConfigure, IToastNotification toast, IHubContext<TestHub> hubContext)
         {
             this.gmailConfigure = gmailConfigure;
             this.toast = toast;
+            this.hubContext = hubContext;
         }
 
         [Authorize]
         public IActionResult Index()
         {
+            //this.hubContext.Clients.All.SendAsync("Testing","zdravei");
             return RedirectToAction("AllEmails", "Email");
         }
 

@@ -17,5 +17,6 @@ namespace EmailManager.Service.DTOs
         public DateTime? ModifiedOnDate { get; set; }
         public string ModifiedByUserId { get; set; }
         public string ApplicationStatus { get; set; }
+        public bool IsLocked { get; set; }
     }
 }

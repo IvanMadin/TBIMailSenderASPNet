@@ -23,7 +23,8 @@ namespace EmailManager.Web.Extensions.Mappers
                 EmailStatusName = emailDTO.EmailStatusName,
                 ModifiedOnDate = emailDTO.ModifiedOnDate,
                 ModifiedByUserId = emailDTO.ModifiedByUserId,
-                ApplicationStatus = emailDTO.ApplicationStatus
+                ApplicationStatus = emailDTO.ApplicationStatus,
+                IsLocked = emailDTO.IsLocked
             };
 
             return emailModel;

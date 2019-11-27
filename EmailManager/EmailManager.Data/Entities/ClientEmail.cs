@@ -16,6 +16,7 @@ namespace EmailManager.Data.Entities
         public string Body { get; set; }
         public string ModifiedByUserId { get; set; }
         public DateTime? ModifiedOnDate { get; set; }
+        public bool IsLocked { get; set; }
 
         public ICollection<EmailAttachments> EmailAttachments { get; set; }
 

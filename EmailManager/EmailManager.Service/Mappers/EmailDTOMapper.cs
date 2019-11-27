@@ -28,6 +28,7 @@ namespace EmailManager.Service.Mappers
                 EmailStatusName = entity.Status?.StatusType,
                 ModifiedOnDate = entity.ModifiedOnDate,
                 ModifiedByUserId = entity.ModifiedByUserId,
+                IsLocked = entity.IsLocked,
                 ApplicationStatus = entity.LoanApplication?.ApplicationStatus.ToString()
             };
 

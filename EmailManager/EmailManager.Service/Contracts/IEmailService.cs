@@ -37,5 +37,6 @@ namespace EmailManager.Service.Contracts
         /// </summary>
         Task<bool> CheckIfEmailExists(string originalMailId);
         Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, string newStatusName);
+        Task<bool> ChangeLockStatusForEmailAsync(string emailId, bool isLocked);
     }
 }
