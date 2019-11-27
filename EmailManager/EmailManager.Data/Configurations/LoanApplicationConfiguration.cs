@@ -26,7 +26,7 @@ namespace EmailManager.Data.Configurations
             builder
                 .HasOne(la => la.Email)
                 .WithOne(e => e.LoanApplication)
-                .HasForeignKey<LoanApplication>(la => la.EmailId).IsRequired(true);
+                .HasForeignKey<LoanApplication>(la => la.EmailId).IsRequired(false);
 
             builder
                 .Property(la => la.Amount)

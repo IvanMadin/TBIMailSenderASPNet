@@ -33,9 +33,21 @@
 
 
   <ItemGroup>
-    <Folder Include="Areas\Manager\" />
-    <Folder Include="Areas\Operator\" />
+    <Folder Include="Areas\Manager\Models\" />
+    <Folder Include="Areas\Operator\Models\" />
     <Folder Include="wwwroot\image\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Update="Areas\Operator\Views\_ViewImports.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="Areas\Operator\Views\_ViewStart.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

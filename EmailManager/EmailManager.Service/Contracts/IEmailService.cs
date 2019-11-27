@@ -36,5 +36,6 @@ namespace EmailManager.Service.Contracts
         /// Helper Method for quick checks
         /// </summary>
         Task<bool> CheckIfEmailExists(string originalMailId);
+        Task<EmailDTO> UpdateEmailStatus(EmailDTO emailDTO, string newStatusName);
     }
 }

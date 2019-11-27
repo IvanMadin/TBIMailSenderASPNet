@@ -63,7 +63,7 @@ namespace EmailManager.Web
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            //TODO: Make a MiddleWare who is gonna block the page on one place for the password changing page, till it is not changed, once for all.
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
