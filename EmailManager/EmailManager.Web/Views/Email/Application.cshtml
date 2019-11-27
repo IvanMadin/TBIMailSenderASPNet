@@ -1,4 +1,6 @@
 ﻿@model EmailViewModel
+@inject UserManager<User> userManager
+
 
 @{
     ViewData["Title"] = "Email Preview";
@@ -45,10 +47,15 @@
         </dl>
     </div>
 </div>
-<div class="col-4" id="application-form-div">
-    <partial name="_AppFormPartial" model="new LoanApplicationViewModel { EmailId = Model.Id }" />
-
-</div>
+@if (Model.EmailStatusName.StartsWith("Open"))
+{
+    if (Model.ModifiedByUserId == userManager.GetUserId(User) || User.IsInRole("Manager"))
+    {
+        <div class="col-4" id="application-form-div">
+            <partial name="_AppFormPartial" model="new LoanApplicationViewModel { EmailId = Model.Id }" />
+        </div>
+    }
+}
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

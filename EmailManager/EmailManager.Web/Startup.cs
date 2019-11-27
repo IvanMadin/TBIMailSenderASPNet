@@ -17,6 +17,7 @@ using Microsoft.Extensions.Logging;
 using EmailManager.Web.Extensions.ServiceHelpers;
 using EmailManager.Service.Contracts;
 using EmailManager.Service.Utilities;
+using NToastNotify;
 
 namespace EmailManager.Web
 {
@@ -55,7 +56,11 @@ namespace EmailManager.Web
                 .AddEntityFrameworkStores<EmailManagerDbContext>();
 
             services.Registrations();
-            services.AddMvc().AddNToastNotifyToastr();
+            services.AddMvc().AddNToastNotifyToastr(new ToastrOptions()
+            {
+                PositionClass = ToastPositions.BottomCenter,
+                CloseOnHover = true
+            });
 
             services.AddHostedService<AutomatedService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

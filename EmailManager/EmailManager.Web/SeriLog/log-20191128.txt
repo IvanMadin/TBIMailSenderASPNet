@@ -1,0 +1,7 @@
+2019-11-28 01:09:26.202 +02:00 [INF] Starting web host
+2019-11-28 01:09:27.884 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-28 01:09:28.980 +02:00 [INF] 28.11.2019 г. 1:09:28 Get All Emails.
+2019-11-28 01:09:29.001 +02:00 [INF] 28.11.2019 г. 1:09:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 01:09:31.909 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:10:46.301 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:11:25.456 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.

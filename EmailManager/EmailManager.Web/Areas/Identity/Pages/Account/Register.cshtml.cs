@@ -70,8 +70,7 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            var roleName = Input.RoleName;
-            returnUrl = returnUrl ?? Url.Content("~/");
+            returnUrl = returnUrl ?? Url.Content("~/Identity/Account/Register");
             if (ModelState.IsValid)
             {
                 var user = new User { UserName = Input.UserName, Email = Input.Email };
@@ -83,12 +82,14 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
                     this.toast.AddSuccessToastMessage($"Account was created successfully!");
                     return LocalRedirect(returnUrl);
                 }
+
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
-
+            Input.UserName = null;
+            Input.Email = null;
             return Page();
         }
     }

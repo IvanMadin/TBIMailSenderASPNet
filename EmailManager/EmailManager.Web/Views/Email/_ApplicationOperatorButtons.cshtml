@@ -1,14 +1,13 @@
 ﻿@model EmailViewModel
-@inject UserManager<User> userManager
 
 
 
-@if (Model.EmailStatusName == "Not Reviewed")
+@if (Model.EmailStatusName.StartsWith("Not"))
 {
-    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">New Application</a>
-    <a class="btn btn-outline-danger" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Invalid Application">Invalid Email</a>
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">Set to New</a>
+    <a class="btn btn-outline-danger" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Invalid Application">Set to Invalid</a>
 }
-@if (Model.EmailStatusName == "New Application")
+@if (Model.EmailStatusName.StartsWith("New"))
 {
-    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Open Application">Open Application</a>
+    <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Open Application">Set to Open</a>
 }

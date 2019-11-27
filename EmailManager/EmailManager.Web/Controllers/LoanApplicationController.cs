@@ -69,7 +69,7 @@ namespace EmailManager.Web.Controllers
                 }
 
                 var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
-                this.toast.AddSuccessToastMessage($"{DateTime.Now}  Loan Application has been created successfully!");
+                this.toast.AddSuccessToastMessage($"Loan Application has been created successfully!");
                 Log.Information($"{DateTime.Now} Loan Application has been created by {operatorId}.");
 
                 var emailStatus = await this.emailStatusService.GetEmailStatusByNameAsync("Closed Application");
