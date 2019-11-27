@@ -12,7 +12,3 @@
 {
     <a class="btn btn-outline-success" asp-controller="Email" asp-action="ChangeStatus" asp-route-emailId="@Model.Id" asp-route-newStatusName="Open Application">Open Application</a>
 }
-@if (Model.EmailStatusName == "Open Application" && Model.ModifiedByUserId == userManager.GetUserId(User))
-{
-    <input type="button" class="btn btn-outline-warning" id="show-or-hide-button-form" value="Show Form">
-}

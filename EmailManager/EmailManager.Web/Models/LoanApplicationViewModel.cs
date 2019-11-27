@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EmailManager.Web.Models
 {
@@ -20,11 +16,15 @@ namespace EmailManager.Web.Models
 
         [Required]
         [StringLength(10, ErrorMessage = "{0} must be {1} characters.", MinimumLength = 10)]
+        [RegularExpression("[0-9]+", ErrorMessage = "EGN can only contains Digits")]
         public string EGN { get; set; }
 
         [Required]
         [StringLength(13, ErrorMessage = "{0} cannot be less than {2} and more than {1} characters.", MinimumLength = 10)]
+        [RegularExpression("[0-9]+", ErrorMessage = "Phone numbers can only contains Digits")]
         public string Phone { get; set; }
+        [Required]
+        [Range(0, 200000000,ErrorMessage ="{0} cannot be negative number.")]
         public decimal Amount { get; set; }
         public string EmailId { get; set; }
         public string Status { get; set; }

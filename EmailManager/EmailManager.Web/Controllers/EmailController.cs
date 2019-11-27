@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using EmailManager.Data.Entities;
 using EmailManager.Service.Contracts;
 using EmailManager.Web.Extensions.Mappers;
+using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;

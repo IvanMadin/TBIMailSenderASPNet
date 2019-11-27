@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace EmailManager.Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -257,9 +257,10 @@ namespace EmailManager.Data.Migrations
                     DeletedOnDate = table.Column<DateTime>(nullable: true),
                     Amount = table.Column<decimal>(type: "numeric(15,2)", nullable: false),
                     ApplicationStatus = table.Column<string>(nullable: false),
+                    ChangedCloseToNewStatusForEmailId = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true),
                     ClientDataId = table.Column<string>(nullable: true),
-                    EmailId = table.Column<string>(nullable: false)
+                    EmailId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -275,7 +276,7 @@ namespace EmailManager.Data.Migrations
                         column: x => x.EmailId,
                         principalTable: "Emails",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_LoanApplications_AspNetUsers_UserId",
                         column: x => x.UserId,
@@ -289,8 +290,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "fcae7c83-e3ba-4c97-9e99-1bc303cf046c", "Manager", "MANAGER" },
-                    { "93c66dd9-11c5-4836-b104-a9c333549530", "05889dd6-c11d-4e0f-a162-b23a6be7c242", "Operator", "OPERATOR" }
+                    { "771f568e-a7d5-496b-90c4-72ff997368e6", "0cbb30c8-ce96-4c6d-a72a-63bc9ef8b1a5", "Manager", "MANAGER" },
+                    { "93c66dd9-11c5-4836-b104-a9c333549530", "d85ebbad-713e-4c6e-ac77-ad009d695af2", "Operator", "OPERATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -298,8 +299,8 @@ namespace EmailManager.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ChangedPassword", "ConcurrencyStamp", "DeletedByUserId", "DeletedOnDate", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, true, "d98b93de-ad5c-42f9-b49b-9bd6721ad86f", null, null, "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEFvX5yitf/Stim9hAq2k1WbEGEV/Z6cfDY9kzWi46XdMNEvBBnpMM7b+d3Mj8/ycHA==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
-                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, true, "8bc0e618-558a-4702-855b-729d96b8edd4", null, null, "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEHjV2SLjPDPn7bG8dEi4xTCThDTF1SF0x/NQUGIPiCKFU4IU068+xUXMYB9oN1syZA==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
+                    { "fe86f129-41f3-4ab8-a61c-5f47239a1393", 0, true, "f543d523-2dad-47d2-a43e-2c04519769ef", null, null, "krisi@gmail.com", false, true, null, "KRISI@GMAIL.COM", "KRISI", "AQAAAAEAACcQAAAAEM36y29RiLczSIm73fJ6scVixiqC6RIw59+iXdNUmoUfcyjK2KM780B3Ebae/BlFhQ==", null, false, "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN", false, "krisi" },
+                    { "565dfbc0-2681-4f29-bc97-a619eacf339c", 0, true, "90de0769-2285-4951-a340-0ac36af47b19", null, null, "madinftw@gmail.com", false, true, null, "MADINFTW@GMAIL.COM", "MADINFTW", "AQAAAAEAACcQAAAAEFO6Hp6+CqwUiBgitbH+17EKthbQt/GNWtYIG33yZNgcc7upvjjp9y42tAcLbiOG+A==", null, false, "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU", false, "madinftw" }
                 });
 
             migrationBuilder.InsertData(
@@ -387,7 +388,8 @@ namespace EmailManager.Data.Migrations
                 name: "IX_LoanApplications_EmailId",
                 table: "LoanApplications",
                 column: "EmailId",
-                unique: true);
+                unique: true,
+                filter: "[EmailId] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
                 name: "IX_LoanApplications_UserId",

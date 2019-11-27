@@ -247,3 +247,840 @@ System.ObjectDisposedException: The CancellationTokenSource has been disposed.
 2019-11-27 16:22:56.311 +02:00 [INF] 27.11.2019 г. 16:22:56 Get All Emails.
 2019-11-27 16:22:56.322 +02:00 [INF] 27.11.2019 г. 16:22:56 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
 2019-11-27 16:22:57.549 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:38:43.101 +02:00 [INF] Starting web host
+2019-11-27 16:38:53.712 +02:00 [INF] 27.11.2019 г. 16:38:53 Get All Emails.
+2019-11-27 16:38:53.850 +02:00 [INF] 27.11.2019 г. 16:38:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:39:16.952 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-27 16:39:20.258 +02:00 [INF] 27.11.2019 г. 16:39:20 Get All Emails.
+2019-11-27 16:39:20.327 +02:00 [INF] 27.11.2019 г. 16:39:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:39:22.593 +02:00 [INF] 27.11.2019 г. 16:39:22 Get Emails with Status Name: Closed Application.
+2019-11-27 16:39:22.647 +02:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@__status_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Body], [e].[DateReceived], [e].[ModifiedByUserId], [e].[ModifiedOnDate], [e].[OriginalMailId], [e].[SenderEmail], [e].[SenderName], [e].[StatusEmailId], [e].[Subject], [e].[UserId], [e.LoanApplication].[Id], [e.LoanApplication].[Amount], [e.LoanApplication].[ApplicationStatus], [e.LoanApplication].[ChangedCloseToNewStatusForEmailId], [e.LoanApplication].[ClientDataId], [e.LoanApplication].[CreatedByUserId], [e.LoanApplication].[CreatedOnDate], [e.LoanApplication].[DeletedByUserId], [e.LoanApplication].[DeletedOnDate], [e.LoanApplication].[EmailId], [e.LoanApplication].[ModifiedByUserId], [e.LoanApplication].[ModifiedOnDate], [e.LoanApplication].[UserId], [e.Status].[Id], [e.Status].[StatusType]
+FROM [Emails] AS [e]
+LEFT JOIN [LoanApplications] AS [e.LoanApplication] ON [e].[Id] = [e.LoanApplication].[EmailId]
+LEFT JOIN [StatusEmails] AS [e.Status] ON [e].[StatusEmailId] = [e.Status].[Id]
+WHERE [e].[StatusEmailId] = @__status_Id_0
+ORDER BY [e].[Id]
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ChangedCloseToNewStatusForEmailId'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+ClientConnectionId:bd34d936-41ef-4e78-afe9-8fed04f53d04
+Error Number:207,State:1,Class:16
+2019-11-27 16:39:22.742 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ChangedCloseToNewStatusForEmailId'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:bd34d936-41ef-4e78-afe9-8fed04f53d04
+Error Number:207,State:1,Class:16
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ChangedCloseToNewStatusForEmailId'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:bd34d936-41ef-4e78-afe9-8fed04f53d04
+Error Number:207,State:1,Class:16
+2019-11-27 16:40:24.698 +02:00 [INF] Starting web host
+2019-11-27 16:40:34.072 +02:00 [ERR] An error occurred using the connection to database 'EmailManager' on server '.'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+2019-11-27 16:40:34.317 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+2019-11-27 16:40:34.879 +02:00 [ERR] 27.11.2019 г. 16:40:34 Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+2019-11-27 16:40:35.011 +02:00 [ERR] An error occurred using the connection to database 'EmailManager' on server '.'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+2019-11-27 16:40:35.017 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'EmailManager.Data.EmailManagerDbContext'.
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+System.Data.SqlClient.SqlException (0x80131904): Cannot open database "EmailManager" requested by the login. The login failed.
+Login failed for user 'MicrosoftAccount\krisinceto_98@abv.bg'.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.AsyncSelectEnumerable`2.AsyncSelectEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\Select.cs:line 106
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken) in D:\a\1\s\Ix.NET\Source\System.Interactive.Async\AsyncIterator.cs:line 98
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:018881c4-ec5d-4269-aa8d-156470b1c168
+Error Number:4060,State:1,Class:11
+2019-11-27 16:41:34.914 +02:00 [INF] Starting web host
+2019-11-27 16:41:45.246 +02:00 [INF] 27.11.2019 г. 16:41:45 Get All Emails.
+2019-11-27 16:41:45.256 +02:00 [INF] 27.11.2019 г. 16:41:45 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:41:50.197 +02:00 [INF] 27.11.2019 г. 16:41:50 Get All Emails.
+2019-11-27 16:41:50.197 +02:00 [INF] 27.11.2019 г. 16:41:50 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:41:57.180 +02:00 [INF]  Create Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by .
+2019-11-27 16:41:57.813 +02:00 [INF]  Create Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 16:41:58.062 +02:00 [INF]  Create Email with Id: fdb1a759-1274-47a2-b446-74bbbb1ffdfc by .
+2019-11-27 16:41:58.490 +02:00 [INF]  Create Email with Id: 8c56dd62-03a3-432e-8d3c-eecc28ceaa55 by .
+2019-11-27 16:41:58.720 +02:00 [INF]  Create Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 16:41:59.130 +02:00 [INF]  Create Email with Id: 25ff7442-86b1-4aef-9b70-d82caa1f29a7 by .
+2019-11-27 16:41:59.599 +02:00 [INF]  Create Email with Id: dc665c98-d96f-42dd-bd6b-7318ecf9a614 by .
+2019-11-27 16:41:59.922 +02:00 [INF]  Create Email with Id: 16b8d3e5-81cb-4a2b-8558-7e4bab1ca2e4 by .
+2019-11-27 16:42:00.546 +02:00 [INF]  Create Email with Id: 4be87544-0fdb-4d04-bb48-87d8266816d2 by .
+2019-11-27 16:42:00.741 +02:00 [INF]  Create Email with Id: e2da4eff-df95-4ed3-9264-9f138ef8d7ff by .
+2019-11-27 16:42:01.125 +02:00 [INF]  Create Email with Id: 340bc450-17c4-4ea7-b1fb-c4775e31f3fa by .
+2019-11-27 16:42:01.347 +02:00 [INF]  Create Email with Id: befbfe4a-f4bc-4348-bb4e-17264341cc2f by .
+2019-11-27 16:42:01.959 +02:00 [INF]  Create Email with Id: c8ae2774-d8bd-467b-869f-9e857a6a3f93 by .
+2019-11-27 16:42:03.596 +02:00 [INF]  Create Email with Id: 6a6712ce-7c96-4985-a5b1-760329693242 by .
+2019-11-27 16:42:04.661 +02:00 [INF]  Create Email with Id: 1eed7276-4d78-4e81-8c5b-73f8a9b45541 by .
+2019-11-27 16:42:04.871 +02:00 [INF]  Create Email with Id: 55559f82-cdbf-4805-893f-f890c739d76d by .
+2019-11-27 16:42:06.341 +02:00 [INF]  Create Email with Id: 8881cd4a-08ad-4f12-a064-d2e2a9aa19f3 by .
+2019-11-27 16:42:06.646 +02:00 [INF]  Create Email with Id: a9f97d16-c04b-4f00-b01d-3e553862cb2d by .
+2019-11-27 16:42:07.933 +02:00 [INF]  Create Email with Id: c2b22cce-46bc-49e5-9d63-70599743a3cc by .
+2019-11-27 16:42:09.140 +02:00 [INF]  Create Email with Id: 305a3dba-04b2-42d2-9ed9-f1018bd7bda1 by .
+2019-11-27 16:42:09.763 +02:00 [INF]  Create Email with Id: 516d8d89-0a71-4a88-a577-ea4ee11b4be1 by .
+2019-11-27 16:42:10.387 +02:00 [INF]  Create Email with Id: 0cae1a13-9b82-4c5a-ac0e-5d8003dfb908 by .
+2019-11-27 16:42:10.664 +02:00 [INF]  Create Email with Id: 712956e0-db13-47b3-8e81-2c46fa42e588 by .
+2019-11-27 16:42:10.974 +02:00 [INF]  Create Email with Id: 3bad529c-a745-4cda-af64-97cf3040939f by .
+2019-11-27 16:42:11.147 +02:00 [INF]  Create Email with Id: 6af0985f-5887-4f7f-aab9-36a5a6d20626 by .
+2019-11-27 16:42:11.382 +02:00 [INF]  Create Email with Id: 7014a948-dafa-4d87-8ab1-3f46b6425d02 by .
+2019-11-27 16:42:11.610 +02:00 [INF]  Create Email with Id: 188efe33-ddb8-444b-8e10-71758003bbdb by .
+2019-11-27 16:42:12.216 +02:00 [INF]  Create Email with Id: 47ce63a1-215c-4d65-bf26-58ad3e6d7fce by .
+2019-11-27 16:42:12.624 +02:00 [INF]  Create Email with Id: 05dae9b4-53a7-40bf-b56e-54c4cf2f5edf by .
+2019-11-27 16:42:12.964 +02:00 [INF]  Create Email with Id: 72057488-229f-4a24-af09-4996233acbd5 by .
+2019-11-27 16:42:13.360 +02:00 [INF]  Create Email with Id: 561428c6-7ebe-42b0-8f1f-31d01dad5007 by .
+2019-11-27 16:42:13.573 +02:00 [INF]  Create Email with Id: 205a98e3-62ab-4e4e-b1d5-636ce47e9ec1 by .
+2019-11-27 16:42:14.294 +02:00 [INF]  Create Email with Id: cc23ecd4-a8d2-4fa6-b997-f7521e39627d by .
+2019-11-27 16:42:14.375 +02:00 [INF] 27.11.2019 г. 16:42:14 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:42:14.771 +02:00 [INF] 27.11.2019 г. 16:42:14 Get All Emails.
+2019-11-27 16:42:14.860 +02:00 [INF] 27.11.2019 г. 16:42:14 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:42:17.848 +02:00 [INF] 27.11.2019 г. 16:42:17 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by .
+2019-11-27 16:42:17.848 +02:00 [INF] 27.11.2019 г. 16:42:17 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:42:20.606 +02:00 [INF] 27.11.2019 г. 16:42:20 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by .
+2019-11-27 16:42:20.679 +02:00 [INF] 27.11.2019 г. 16:42:20 Get Emails with Status Name: New Application.
+2019-11-27 16:42:20.688 +02:00 [INF] 27.11.2019 г. 16:42:20 Get Emails with Status Name: New Application.
+2019-11-27 16:42:20.714 +02:00 [INF] 27.11.2019 г. 16:42:20 Updated Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f, from: Not Reviewed to New Application.
+2019-11-27 16:42:20.896 +02:00 [INF] 27.11.2019 г. 16:42:20 Created new Loan Application with Email Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f.
+2019-11-27 16:42:20.898 +02:00 [INF] 27.11.2019 г. 16:42:20 Created Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393 with Status: New Application.
+2019-11-27 16:42:20.898 +02:00 [INF]  Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to New Application.
+2019-11-27 16:42:20.912 +02:00 [INF] 27.11.2019 г. 16:42:20 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by .
+2019-11-27 16:42:20.912 +02:00 [INF] 27.11.2019 г. 16:42:20 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:42:22.119 +02:00 [INF] 27.11.2019 г. 16:42:22 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by .
+2019-11-27 16:42:22.123 +02:00 [INF] 27.11.2019 г. 16:42:22 Get Emails with Status Name: Open Application.
+2019-11-27 16:42:22.130 +02:00 [INF] 27.11.2019 г. 16:42:22 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: New Application to Open Application.
+2019-11-27 16:42:22.202 +02:00 [INF] 27.11.2019 г. 16:42:22 Get Loan Application with Email Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by User Id: .
+2019-11-27 16:42:22.204 +02:00 [INF] 27.11.2019 г. 16:42:22 Open Loan Application with Email ID: 7dbca891-79f6-4b48-9ba7-dcd37409017f by UserId: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:42:22.205 +02:00 [INF] 27.11.2019 г. 16:42:20 Open Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:42:22.205 +02:00 [INF] 27.11.2019 г. 16:42:20 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: New Application to Open Application.
+2019-11-27 16:42:22.217 +02:00 [INF] 27.11.2019 г. 16:42:22 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:42:22.217 +02:00 [INF] 27.11.2019 г. 16:42:22 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:42:49.032 +02:00 [INF] 27.11.2019 г. 16:42:49 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:42:49.032 +02:00 [INF] 27.11.2019 г. 16:42:49 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:44:42.783 +02:00 [INF] 27.11.2019 г. 16:44:42 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:44:43.035 +02:00 [INF] 27.11.2019 г. 16:44:43 Get All Emails.
+2019-11-27 16:44:43.108 +02:00 [INF] 27.11.2019 г. 16:44:43 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:44:47.097 +02:00 [INF] 27.11.2019 г. 16:44:47 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 16:44:47.097 +02:00 [INF] 27.11.2019 г. 16:44:47 Application with emailID: 8ba517d3-3b17-429b-9d7b-06fa7c41142e has been accessed by .
+2019-11-27 16:44:51.412 +02:00 [INF] 27.11.2019 г. 16:44:51 Get All Emails.
+2019-11-27 16:44:51.489 +02:00 [INF] 27.11.2019 г. 16:44:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:44:59.313 +02:00 [INF] 27.11.2019 г. 16:44:59 Get Email with Id: e2da4eff-df95-4ed3-9264-9f138ef8d7ff by .
+2019-11-27 16:44:59.313 +02:00 [INF] 27.11.2019 г. 16:44:59 Application with emailID: e2da4eff-df95-4ed3-9264-9f138ef8d7ff has been accessed by .
+2019-11-27 16:45:02.272 +02:00 [INF] 27.11.2019 г. 16:45:02 Get All Emails.
+2019-11-27 16:45:02.382 +02:00 [INF] 27.11.2019 г. 16:45:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:45:14.966 +02:00 [INF] 27.11.2019 г. 16:45:14 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 16:45:14.966 +02:00 [INF] 27.11.2019 г. 16:45:14 Application with emailID: 8ba517d3-3b17-429b-9d7b-06fa7c41142e has been accessed by .
+2019-11-27 16:45:37.381 +02:00 [INF] 27.11.2019 г. 16:45:37 Get All Emails.
+2019-11-27 16:45:37.470 +02:00 [INF] 27.11.2019 г. 16:45:37 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:45:41.365 +02:00 [INF] 27.11.2019 г. 16:45:41 Get Email with Id: 25ff7442-86b1-4aef-9b70-d82caa1f29a7 by .
+2019-11-27 16:45:41.365 +02:00 [INF] 27.11.2019 г. 16:45:41 Application with emailID: 25ff7442-86b1-4aef-9b70-d82caa1f29a7 has been accessed by .
+2019-11-27 16:45:43.615 +02:00 [INF] 27.11.2019 г. 16:45:43 Get All Emails.
+2019-11-27 16:45:43.682 +02:00 [INF] 27.11.2019 г. 16:45:43 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:45:45.615 +02:00 [INF] 27.11.2019 г. 16:45:45 Get Email with Id: 16b8d3e5-81cb-4a2b-8558-7e4bab1ca2e4 by .
+2019-11-27 16:45:45.616 +02:00 [INF] 27.11.2019 г. 16:45:45 Application with emailID: 16b8d3e5-81cb-4a2b-8558-7e4bab1ca2e4 has been accessed by .
+2019-11-27 16:46:13.696 +02:00 [INF] 27.11.2019 г. 16:46:13 Get All Emails.
+2019-11-27 16:46:13.771 +02:00 [INF] 27.11.2019 г. 16:46:13 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:46:17.479 +02:00 [INF] 27.11.2019 г. 16:46:17 Get Email with Id: e2da4eff-df95-4ed3-9264-9f138ef8d7ff by .
+2019-11-27 16:46:17.479 +02:00 [INF] 27.11.2019 г. 16:46:17 Application with emailID: e2da4eff-df95-4ed3-9264-9f138ef8d7ff has been accessed by .
+2019-11-27 16:46:20.340 +02:00 [INF] 27.11.2019 г. 16:46:20 Get All Emails.
+2019-11-27 16:46:20.412 +02:00 [INF] 27.11.2019 г. 16:46:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:46:24.566 +02:00 [INF] 27.11.2019 г. 16:46:24 Get Email with Id: befbfe4a-f4bc-4348-bb4e-17264341cc2f by .
+2019-11-27 16:46:24.567 +02:00 [INF] 27.11.2019 г. 16:46:24 Application with emailID: befbfe4a-f4bc-4348-bb4e-17264341cc2f has been accessed by .
+2019-11-27 16:46:26.973 +02:00 [INF] 27.11.2019 г. 16:46:26 Get All Emails.
+2019-11-27 16:46:27.045 +02:00 [INF] 27.11.2019 г. 16:46:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:46:28.528 +02:00 [INF] 27.11.2019 г. 16:46:28 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:46:28.529 +02:00 [INF] 27.11.2019 г. 16:46:28 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:46:31.825 +02:00 [INF] 27.11.2019 г. 16:46:31 Get All Emails.
+2019-11-27 16:46:31.888 +02:00 [INF] 27.11.2019 г. 16:46:31 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:46:33.873 +02:00 [INF] 27.11.2019 г. 16:46:33 Get All Emails.
+2019-11-27 16:46:33.942 +02:00 [INF] 27.11.2019 г. 16:46:33 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:49:08.430 +02:00 [INF] User logged out.
+2019-11-27 16:49:55.267 +02:00 [INF] User logged in.
+2019-11-27 16:49:55.465 +02:00 [INF] 27.11.2019 г. 16:49:55 Get All Emails.
+2019-11-27 16:49:55.837 +02:00 [INF] 27.11.2019 г. 16:49:55 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:51:07.517 +02:00 [INF] 27.11.2019 г. 16:51:07 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:51:07.517 +02:00 [INF] 27.11.2019 г. 16:51:07 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:52:57.707 +02:00 [INF] Starting web host
+2019-11-27 16:53:02.607 +02:00 [INF] 27.11.2019 г. 16:53:02 Get All Emails.
+2019-11-27 16:53:02.849 +02:00 [INF] 27.11.2019 г. 16:53:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:53:09.280 +02:00 [INF] 27.11.2019 г. 16:53:09 Get Emails with Status Name: New Application.
+2019-11-27 16:53:09.344 +02:00 [INF] 27.11.2019 г. 16:53:09 Get All Emails with Status: New Application.
+2019-11-27 16:53:09.345 +02:00 [INF] 27.11.2019 г. 16:53:09 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:53:11.741 +02:00 [INF] 27.11.2019 г. 16:53:11 Get All Emails.
+2019-11-27 16:53:11.755 +02:00 [INF] 27.11.2019 г. 16:53:11 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:53:17.224 +02:00 [INF] 27.11.2019 г. 16:53:17 Get Emails with Status Name: Open Application.
+2019-11-27 16:53:17.285 +02:00 [INF] 27.11.2019 г. 16:53:17 Get All Emails with Status: Open Application.
+2019-11-27 16:53:17.304 +02:00 [INF] 27.11.2019 г. 16:53:17 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:53:19.669 +02:00 [INF] 27.11.2019 г. 16:53:19 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:53:19.670 +02:00 [INF] 27.11.2019 г. 16:53:19 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:55:18.022 +02:00 [INF] Starting web host
+2019-11-27 16:55:22.390 +02:00 [INF] 27.11.2019 г. 16:55:22 Get All Emails.
+2019-11-27 16:55:22.511 +02:00 [INF] 27.11.2019 г. 16:55:22 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:55:25.748 +02:00 [INF] 27.11.2019 г. 16:55:25 Get Emails with Status Name: Open Application.
+2019-11-27 16:55:25.826 +02:00 [INF] 27.11.2019 г. 16:55:25 Get All Emails with Status: Open Application.
+2019-11-27 16:55:25.839 +02:00 [INF] 27.11.2019 г. 16:55:25 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:55:28.215 +02:00 [INF] 27.11.2019 г. 16:55:28 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:55:28.215 +02:00 [INF] 27.11.2019 г. 16:55:28 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:56:49.578 +02:00 [INF] Starting web host
+2019-11-27 16:56:53.624 +02:00 [INF] 27.11.2019 г. 16:56:53 Get All Emails.
+2019-11-27 16:56:53.778 +02:00 [INF] 27.11.2019 г. 16:56:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 16:57:02.537 +02:00 [INF] 27.11.2019 г. 16:57:02 Get Emails with Status Name: Open Application.
+2019-11-27 16:57:02.609 +02:00 [INF] 27.11.2019 г. 16:57:02 Get All Emails with Status: Open Application.
+2019-11-27 16:57:02.623 +02:00 [INF] 27.11.2019 г. 16:57:02 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:57:06.016 +02:00 [INF] 27.11.2019 г. 16:57:06 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:57:06.016 +02:00 [INF] 27.11.2019 г. 16:57:06 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:57:33.875 +02:00 [INF] 27.11.2019 г. 16:57:33 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:57:33.875 +02:00 [INF] 27.11.2019 г. 16:57:33 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:58:10.485 +02:00 [INF] 27.11.2019 г. 16:58:10 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:58:10.485 +02:00 [INF] 27.11.2019 г. 16:58:10 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 16:58:20.040 +02:00 [INF] 27.11.2019 г. 16:58:20 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 16:58:20.040 +02:00 [INF] 27.11.2019 г. 16:58:20 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:05:36.142 +02:00 [INF] Starting web host
+2019-11-27 17:05:39.944 +02:00 [INF] 27.11.2019 г. 17:05:39 Get All Emails.
+2019-11-27 17:05:40.097 +02:00 [INF] 27.11.2019 г. 17:05:40 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:05:45.344 +02:00 [INF] 27.11.2019 г. 17:05:45 Get Emails with Status Name: Open Application.
+2019-11-27 17:05:45.431 +02:00 [INF] 27.11.2019 г. 17:05:45 Get All Emails with Status: Open Application.
+2019-11-27 17:05:45.448 +02:00 [INF] 27.11.2019 г. 17:05:45 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:05:47.595 +02:00 [INF] 27.11.2019 г. 17:05:47 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:05:47.595 +02:00 [INF] 27.11.2019 г. 17:05:47 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:06:57.890 +02:00 [INF] Starting web host
+2019-11-27 17:07:02.185 +02:00 [INF] 27.11.2019 г. 17:07:02 Get All Emails.
+2019-11-27 17:07:02.468 +02:00 [INF] 27.11.2019 г. 17:07:02 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:07:06.921 +02:00 [INF] 27.11.2019 г. 17:07:06 Get Emails with Status Name: Open Application.
+2019-11-27 17:07:06.990 +02:00 [INF] 27.11.2019 г. 17:07:06 Get All Emails with Status: Open Application.
+2019-11-27 17:07:07.003 +02:00 [INF] 27.11.2019 г. 17:07:07 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:07:08.991 +02:00 [INF] 27.11.2019 г. 17:07:08 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:07:08.992 +02:00 [INF] 27.11.2019 г. 17:07:08 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:08:43.317 +02:00 [INF] Starting web host
+2019-11-27 17:08:46.662 +02:00 [INF] 27.11.2019 г. 17:08:46 Get All Emails.
+2019-11-27 17:08:46.774 +02:00 [INF] 27.11.2019 г. 17:08:46 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:08:52.246 +02:00 [INF] 27.11.2019 г. 17:08:52 Get Emails with Status Name: Open Application.
+2019-11-27 17:08:52.317 +02:00 [INF] 27.11.2019 г. 17:08:52 Get All Emails with Status: Open Application.
+2019-11-27 17:08:52.331 +02:00 [INF] 27.11.2019 г. 17:08:52 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:08:54.701 +02:00 [INF] 27.11.2019 г. 17:08:54 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:08:54.701 +02:00 [INF] 27.11.2019 г. 17:08:54 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:10:05.060 +02:00 [INF] Starting web host
+2019-11-27 17:10:08.552 +02:00 [INF] 27.11.2019 г. 17:10:08 Get All Emails.
+2019-11-27 17:10:08.689 +02:00 [INF] 27.11.2019 г. 17:10:08 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:10:13.295 +02:00 [INF] 27.11.2019 г. 17:10:13 Get Emails with Status Name: Open Application.
+2019-11-27 17:10:13.369 +02:00 [INF] 27.11.2019 г. 17:10:13 Get All Emails with Status: Open Application.
+2019-11-27 17:10:13.389 +02:00 [INF] 27.11.2019 г. 17:10:13 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:10:15.244 +02:00 [INF] 27.11.2019 г. 17:10:15 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:10:15.244 +02:00 [INF] 27.11.2019 г. 17:10:15 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:10:24.620 +02:00 [INF] 27.11.2019 г. 17:10:24 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:10:24.620 +02:00 [INF] 27.11.2019 г. 17:10:24 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:12:08.617 +02:00 [INF] Starting web host
+2019-11-27 17:12:11.984 +02:00 [INF] 27.11.2019 г. 17:12:11 Get All Emails.
+2019-11-27 17:12:12.100 +02:00 [INF] 27.11.2019 г. 17:12:12 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:12:14.823 +02:00 [INF] 27.11.2019 г. 17:12:14 Get Emails with Status Name: Open Application.
+2019-11-27 17:12:14.929 +02:00 [INF] 27.11.2019 г. 17:12:14 Get All Emails with Status: Open Application.
+2019-11-27 17:12:14.948 +02:00 [INF] 27.11.2019 г. 17:12:14 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:12:16.805 +02:00 [INF] 27.11.2019 г. 17:12:16 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:12:16.805 +02:00 [INF] 27.11.2019 г. 17:12:16 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:12:19.659 +02:00 [INF] 27.11.2019 г. 17:12:19 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:12:19.659 +02:00 [INF] 27.11.2019 г. 17:12:19 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:14:22.374 +02:00 [INF] Starting web host
+2019-11-27 17:14:26.225 +02:00 [INF] 27.11.2019 г. 17:14:26 Get All Emails.
+2019-11-27 17:14:26.387 +02:00 [INF] 27.11.2019 г. 17:14:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:14:29.062 +02:00 [INF] 27.11.2019 г. 17:14:29 Get Emails with Status Name: Open Application.
+2019-11-27 17:14:29.131 +02:00 [INF] 27.11.2019 г. 17:14:29 Get All Emails with Status: Open Application.
+2019-11-27 17:14:29.144 +02:00 [INF] 27.11.2019 г. 17:14:29 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:14:31.004 +02:00 [INF] 27.11.2019 г. 17:14:31 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:14:31.004 +02:00 [INF] 27.11.2019 г. 17:14:31 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:14:44.530 +02:00 [INF] 27.11.2019 г. 17:14:44 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:14:44.530 +02:00 [INF] 27.11.2019 г. 17:14:44 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:14:53.994 +02:00 [INF] 27.11.2019 г. 17:14:53 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:14:53.994 +02:00 [INF] 27.11.2019 г. 17:14:53 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:19:49.504 +02:00 [INF] Starting web host
+2019-11-27 17:19:53.029 +02:00 [INF] 27.11.2019 г. 17:19:53 Get All Emails.
+2019-11-27 17:19:53.177 +02:00 [INF] 27.11.2019 г. 17:19:53 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:20:06.623 +02:00 [INF] 27.11.2019 г. 17:20:06 Get Emails with Status Name: Open Application.
+2019-11-27 17:20:06.731 +02:00 [INF] 27.11.2019 г. 17:20:06 Get All Emails with Status: Open Application.
+2019-11-27 17:20:06.748 +02:00 [INF] 27.11.2019 г. 17:20:06 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:20:07.969 +02:00 [INF] 27.11.2019 г. 17:20:07 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:20:07.969 +02:00 [INF] 27.11.2019 г. 17:20:07 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:20:17.390 +02:00 [INF] 27.11.2019 г. 17:20:17 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:20:17.390 +02:00 [INF] 27.11.2019 г. 17:20:17 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:21:56.303 +02:00 [INF] 27.11.2019 г. 17:21:56 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:21:56.303 +02:00 [INF] 27.11.2019 г. 17:21:56 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:22:00.776 +02:00 [INF] 27.11.2019 г. 17:22:00 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:22:00.776 +02:00 [INF] 27.11.2019 г. 17:22:00 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:22:18.023 +02:00 [INF] Starting web host
+2019-11-27 17:22:26.294 +02:00 [INF] 27.11.2019 г. 17:22:26 Get All Emails.
+2019-11-27 17:22:26.482 +02:00 [INF] 27.11.2019 г. 17:22:26 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:22:28.903 +02:00 [INF] 27.11.2019 г. 17:22:28 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:22:28.903 +02:00 [INF] 27.11.2019 г. 17:22:28 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:22:42.872 +02:00 [INF] 27.11.2019 г. 17:22:42 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:22:42.873 +02:00 [INF] 27.11.2019 г. 17:22:42 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:22:47.139 +02:00 [INF] 27.11.2019 г. 17:22:47 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:22:47.139 +02:00 [INF] 27.11.2019 г. 17:22:47 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:23:47.106 +02:00 [INF] 27.11.2019 г. 17:23:47 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:23:47.106 +02:00 [INF] 27.11.2019 г. 17:23:47 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:24:01.919 +02:00 [INF] 27.11.2019 г. 17:24:01 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:24:01.919 +02:00 [INF] 27.11.2019 г. 17:24:01 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:24:28.031 +02:00 [INF] 27.11.2019 г. 17:24:28 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:24:28.031 +02:00 [INF] 27.11.2019 г. 17:24:28 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:24:29.897 +02:00 [INF] 27.11.2019 г. 17:24:29 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:24:29.897 +02:00 [INF] 27.11.2019 г. 17:24:29 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:25:34.213 +02:00 [INF] 27.11.2019 г. 17:25:34 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:25:34.213 +02:00 [INF] 27.11.2019 г. 17:25:34 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:25:35.839 +02:00 [INF] 27.11.2019 г. 17:25:35 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:25:35.840 +02:00 [INF] 27.11.2019 г. 17:25:35 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:26:04.600 +02:00 [INF] 27.11.2019 г. 17:26:04 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:26:04.600 +02:00 [INF] 27.11.2019 г. 17:26:04 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:26:06.445 +02:00 [INF] 27.11.2019 г. 17:26:06 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:26:06.446 +02:00 [INF] 27.11.2019 г. 17:26:06 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:21.416 +02:00 [INF] 27.11.2019 г. 17:30:21 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:21.416 +02:00 [INF] 27.11.2019 г. 17:30:21 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:30.229 +02:00 [INF] 27.11.2019 г. 17:30:30 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:30.229 +02:00 [INF] 27.11.2019 г. 17:30:30 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:31.627 +02:00 [INF] 27.11.2019 г. 17:30:31 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:31.628 +02:00 [INF] 27.11.2019 г. 17:30:31 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:32.578 +02:00 [INF] 27.11.2019 г. 17:30:32 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:32.579 +02:00 [INF] 27.11.2019 г. 17:30:32 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:33.403 +02:00 [INF] 27.11.2019 г. 17:30:33 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:33.403 +02:00 [INF] 27.11.2019 г. 17:30:33 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:33.952 +02:00 [INF] 27.11.2019 г. 17:30:33 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:33.952 +02:00 [INF] 27.11.2019 г. 17:30:33 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:34.425 +02:00 [INF] 27.11.2019 г. 17:30:34 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:34.425 +02:00 [INF] 27.11.2019 г. 17:30:34 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:34.688 +02:00 [INF] 27.11.2019 г. 17:30:34 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:34.688 +02:00 [INF] 27.11.2019 г. 17:30:34 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:34.860 +02:00 [INF] 27.11.2019 г. 17:30:34 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:34.861 +02:00 [INF] 27.11.2019 г. 17:30:34 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:30:35.143 +02:00 [INF] 27.11.2019 г. 17:30:35 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:30:35.144 +02:00 [INF] 27.11.2019 г. 17:30:35 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:31:20.432 +02:00 [INF] 27.11.2019 г. 17:31:20 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:31:20.432 +02:00 [INF] 27.11.2019 г. 17:31:20 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:31:21.506 +02:00 [INF] 27.11.2019 г. 17:31:21 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:31:21.506 +02:00 [INF] 27.11.2019 г. 17:31:21 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:31:46.546 +02:00 [INF] 27.11.2019 г. 17:31:46 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:31:46.546 +02:00 [INF] 27.11.2019 г. 17:31:46 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:32:04.907 +02:00 [INF] 27.11.2019 г. 17:32:04 Get All Emails.
+2019-11-27 17:32:04.962 +02:00 [INF] 27.11.2019 г. 17:32:04 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:32:07.353 +02:00 [INF] 27.11.2019 г. 17:32:07 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:32:07.353 +02:00 [INF] 27.11.2019 г. 17:32:07 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:32:49.264 +02:00 [INF] 27.11.2019 г. 17:32:49 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:32:49.264 +02:00 [INF] 27.11.2019 г. 17:32:49 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:32:55.015 +02:00 [INF] 27.11.2019 г. 17:32:55 Get Emails with Status Name: Open Application.
+2019-11-27 17:32:55.094 +02:00 [INF] 27.11.2019 г. 17:32:55 Get All Emails with Status: Open Application.
+2019-11-27 17:32:55.109 +02:00 [INF] 27.11.2019 г. 17:32:55 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:32:56.930 +02:00 [INF] 27.11.2019 г. 17:32:56 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:32:56.930 +02:00 [INF] 27.11.2019 г. 17:32:56 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:34:17.436 +02:00 [INF] 27.11.2019 г. 17:34:17 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:34:17.437 +02:00 [INF] 27.11.2019 г. 17:34:17 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:34:21.111 +02:00 [INF] 27.11.2019 г. 17:34:21 Get All Emails.
+2019-11-27 17:34:21.162 +02:00 [INF] 27.11.2019 г. 17:34:21 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:34:22.955 +02:00 [INF] 27.11.2019 г. 17:34:22 Get Email with Id: 8c56dd62-03a3-432e-8d3c-eecc28ceaa55 by .
+2019-11-27 17:34:22.955 +02:00 [INF] 27.11.2019 г. 17:34:22 Application with emailID: 8c56dd62-03a3-432e-8d3c-eecc28ceaa55 has been accessed by .
+2019-11-27 17:34:57.184 +02:00 [INF] Starting web host
+2019-11-27 17:35:01.500 +02:00 [INF] 27.11.2019 г. 17:35:01 Get All Emails.
+2019-11-27 17:35:01.647 +02:00 [INF] 27.11.2019 г. 17:35:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:35:08.213 +02:00 [INF] 27.11.2019 г. 17:35:08 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:35:08.213 +02:00 [INF] 27.11.2019 г. 17:35:08 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:35:12.027 +02:00 [INF] 27.11.2019 г. 17:35:12 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:35:12.027 +02:00 [INF] 27.11.2019 г. 17:35:12 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:35:23.801 +02:00 [INF] 27.11.2019 г. 17:35:23 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:35:23.834 +02:00 [INF] 27.11.2019 г. 17:35:23 Get All Emails with Status: Invalid Application.
+2019-11-27 17:35:23.834 +02:00 [INF] 27.11.2019 г. 17:35:23 Show Emails with Status: Invalid Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:35:25.425 +02:00 [INF] 27.11.2019 г. 17:35:25 Get Emails with Status Name: Open Application.
+2019-11-27 17:35:25.471 +02:00 [INF] 27.11.2019 г. 17:35:25 Get All Emails with Status: Open Application.
+2019-11-27 17:35:25.485 +02:00 [INF] 27.11.2019 г. 17:35:25 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:35:26.533 +02:00 [INF] 27.11.2019 г. 17:35:26 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:35:26.844 +02:00 [INF] 27.11.2019 г. 17:35:26 Get Emails with Status Name: New Application.
+2019-11-27 17:35:26.852 +02:00 [INF] 27.11.2019 г. 17:35:26 Get All Emails with Status: New Application.
+2019-11-27 17:35:26.852 +02:00 [INF] 27.11.2019 г. 17:35:26 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:35:27.960 +02:00 [INF] 27.11.2019 г. 17:35:27 Get All Emails.
+2019-11-27 17:35:27.989 +02:00 [INF] 27.11.2019 г. 17:35:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:35:30.860 +02:00 [INF] 27.11.2019 г. 17:35:30 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 17:35:30.860 +02:00 [INF] 27.11.2019 г. 17:35:30 Application with emailID: 8ba517d3-3b17-429b-9d7b-06fa7c41142e has been accessed by .
+2019-11-27 17:39:57.358 +02:00 [INF] 27.11.2019 г. 17:39:57 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 17:39:57.358 +02:00 [INF] 27.11.2019 г. 17:39:57 Application with emailID: 8ba517d3-3b17-429b-9d7b-06fa7c41142e has been accessed by .
+2019-11-27 17:40:01.755 +02:00 [INF] 27.11.2019 г. 17:40:01 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by .
+2019-11-27 17:40:03.031 +02:00 [INF] 27.11.2019 г. 17:40:03 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:40:03.048 +02:00 [INF] 27.11.2019 г. 17:40:03 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:40:03.264 +02:00 [INF]  Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:40:03.273 +02:00 [INF] 27.11.2019 г. 17:40:03 Get Email with Id: 8ba517d3-3b17-429b-9d7b-06fa7c41142e by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:03.273 +02:00 [INF] 27.11.2019 г. 17:40:03 Application with emailID: 8ba517d3-3b17-429b-9d7b-06fa7c41142e has been accessed by .
+2019-11-27 17:40:06.760 +02:00 [INF] 27.11.2019 г. 17:40:06 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:40:06.769 +02:00 [INF] 27.11.2019 г. 17:40:06 Get All Emails with Status: Invalid Application.
+2019-11-27 17:40:06.769 +02:00 [INF] 27.11.2019 г. 17:40:06 Show Emails with Status: Invalid Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:10.856 +02:00 [INF] 27.11.2019 г. 17:40:10 Get Emails with Status Name: New Application.
+2019-11-27 17:40:10.857 +02:00 [INF] 27.11.2019 г. 17:40:10 Get All Emails with Status: New Application.
+2019-11-27 17:40:10.857 +02:00 [INF] 27.11.2019 г. 17:40:10 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:12.123 +02:00 [INF] 27.11.2019 г. 17:40:12 Get Emails with Status Name: Open Application.
+2019-11-27 17:40:12.124 +02:00 [INF] 27.11.2019 г. 17:40:12 Get All Emails with Status: Open Application.
+2019-11-27 17:40:12.128 +02:00 [INF] 27.11.2019 г. 17:40:12 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:16.134 +02:00 [INF] 27.11.2019 г. 17:40:16 Get All Emails.
+2019-11-27 17:40:16.152 +02:00 [INF] 27.11.2019 г. 17:40:16 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:40:17.272 +02:00 [INF] 27.11.2019 г. 17:40:17 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:40:17.274 +02:00 [INF] 27.11.2019 г. 17:40:17 Get All Emails with Status: Invalid Application.
+2019-11-27 17:40:17.274 +02:00 [INF] 27.11.2019 г. 17:40:17 Show Emails with Status: Invalid Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:18.236 +02:00 [INF] 27.11.2019 г. 17:40:18 Get Emails with Status Name: Closed Application.
+2019-11-27 17:40:18.237 +02:00 [INF] 27.11.2019 г. 17:40:18 Get All Emails with Status: Closed Application.
+2019-11-27 17:40:18.237 +02:00 [INF] 27.11.2019 г. 17:40:18 Show Emails with Status: Closed Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:20.479 +02:00 [INF] 27.11.2019 г. 17:40:20 Get Emails with Status Name: Closed Application.
+2019-11-27 17:40:20.480 +02:00 [INF] 27.11.2019 г. 17:40:20 Get All Emails with Status: Closed Application.
+2019-11-27 17:40:20.480 +02:00 [INF] 27.11.2019 г. 17:40:20 Show Emails with Status: Closed Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:40:29.674 +02:00 [INF] 27.11.2019 г. 17:40:29 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:40:29.676 +02:00 [INF] 27.11.2019 г. 17:40:29 Get All Emails with Status: Invalid Application.
+2019-11-27 17:40:29.676 +02:00 [INF] 27.11.2019 г. 17:40:29 Show Emails with Status: Invalid Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:03.132 +02:00 [INF] 27.11.2019 г. 17:42:03 Get All Emails.
+2019-11-27 17:42:03.152 +02:00 [INF] 27.11.2019 г. 17:42:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:42:04.872 +02:00 [INF] 27.11.2019 г. 17:42:04 Get Emails with Status Name: New Application.
+2019-11-27 17:42:04.877 +02:00 [INF] 27.11.2019 г. 17:42:04 Get All Emails with Status: New Application.
+2019-11-27 17:42:04.877 +02:00 [INF] 27.11.2019 г. 17:42:04 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:06.133 +02:00 [INF] 27.11.2019 г. 17:42:06 Get All Emails.
+2019-11-27 17:42:06.155 +02:00 [INF] 27.11.2019 г. 17:42:06 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:42:07.574 +02:00 [INF] 27.11.2019 г. 17:42:07 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:07.574 +02:00 [INF] 27.11.2019 г. 17:42:07 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:42:10.347 +02:00 [INF] 27.11.2019 г. 17:42:10 Get All Emails.
+2019-11-27 17:42:10.367 +02:00 [INF] 27.11.2019 г. 17:42:10 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:42:11.912 +02:00 [INF] 27.11.2019 г. 17:42:11 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:11.913 +02:00 [INF] 27.11.2019 г. 17:42:11 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:13.572 +02:00 [INF] 27.11.2019 г. 17:42:13 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:14.683 +02:00 [INF] 27.11.2019 г. 17:42:14 Get Emails with Status Name: New Application.
+2019-11-27 17:42:14.687 +02:00 [INF] 27.11.2019 г. 17:42:14 Get Emails with Status Name: New Application.
+2019-11-27 17:42:14.784 +02:00 [INF] 27.11.2019 г. 17:42:14 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Not Reviewed to New Application.
+2019-11-27 17:42:14.897 +02:00 [INF] 27.11.2019 г. 17:42:14 Created new Loan Application with Email Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:42:14.898 +02:00 [INF] 27.11.2019 г. 17:42:14 Created Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393 with Status: New Application.
+2019-11-27 17:42:14.899 +02:00 [INF]  Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to New Application.
+2019-11-27 17:42:14.996 +02:00 [INF] 27.11.2019 г. 17:42:14 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:14.996 +02:00 [INF] 27.11.2019 г. 17:42:14 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:22.261 +02:00 [INF] 27.11.2019 г. 17:42:22 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:22.309 +02:00 [INF] 27.11.2019 г. 17:42:22 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:42:22.405 +02:00 [INF] 27.11.2019 г. 17:42:22 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: New Application to Not Reviewed.
+2019-11-27 17:42:22.507 +02:00 [INF] 27.11.2019 г. 17:42:22 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:22.507 +02:00 [INF] 27.11.2019 г. 17:42:22 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:23.929 +02:00 [INF] 27.11.2019 г. 17:42:23 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:23.931 +02:00 [INF] 27.11.2019 г. 17:42:23 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:42:24.027 +02:00 [INF] 27.11.2019 г. 17:42:24 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:24.032 +02:00 [INF] 27.11.2019 г. 17:42:22 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:24.130 +02:00 [INF] 27.11.2019 г. 17:42:24 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:24.130 +02:00 [INF] 27.11.2019 г. 17:42:24 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:24.979 +02:00 [INF] 27.11.2019 г. 17:42:24 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:24.982 +02:00 [ERR] Value cannot be null.
+Parameter name: 27.11.2019 г. 17:42:24 Remove Application could not found Loan with email Id 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:42:24.984 +02:00 [INF] 27.11.2019 г. 17:42:24 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:42:25.060 +02:00 [INF] 27.11.2019 г. 17:42:25 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Invalid Application to Not Reviewed.
+2019-11-27 17:42:25.143 +02:00 [INF] 27.11.2019 г. 17:42:25 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:25.143 +02:00 [INF] 27.11.2019 г. 17:42:25 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:25.940 +02:00 [INF] 27.11.2019 г. 17:42:25 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:25.941 +02:00 [INF] 27.11.2019 г. 17:42:25 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:42:26.043 +02:00 [INF] 27.11.2019 г. 17:42:26 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:26.047 +02:00 [INF] 27.11.2019 г. 17:42:25 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:26.142 +02:00 [INF] 27.11.2019 г. 17:42:26 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:26.142 +02:00 [INF] 27.11.2019 г. 17:42:26 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:26.844 +02:00 [INF] 27.11.2019 г. 17:42:26 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:26.845 +02:00 [ERR] Value cannot be null.
+Parameter name: 27.11.2019 г. 17:42:26 Remove Application could not found Loan with email Id 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:42:26.847 +02:00 [INF] 27.11.2019 г. 17:42:26 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:42:26.930 +02:00 [INF] 27.11.2019 г. 17:42:26 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Invalid Application to Not Reviewed.
+2019-11-27 17:42:27.023 +02:00 [INF] 27.11.2019 г. 17:42:27 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:27.023 +02:00 [INF] 27.11.2019 г. 17:42:27 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:27.739 +02:00 [INF] 27.11.2019 г. 17:42:27 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:27.741 +02:00 [INF] 27.11.2019 г. 17:42:27 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:42:27.820 +02:00 [INF] 27.11.2019 г. 17:42:27 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:27.824 +02:00 [INF] 27.11.2019 г. 17:42:26 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:27.915 +02:00 [INF] 27.11.2019 г. 17:42:27 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:27.915 +02:00 [INF] 27.11.2019 г. 17:42:27 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:28.594 +02:00 [INF] 27.11.2019 г. 17:42:28 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:28.595 +02:00 [ERR] Value cannot be null.
+Parameter name: 27.11.2019 г. 17:42:28 Remove Application could not found Loan with email Id 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:42:28.596 +02:00 [INF] 27.11.2019 г. 17:42:28 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:42:28.678 +02:00 [INF] 27.11.2019 г. 17:42:28 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Invalid Application to Not Reviewed.
+2019-11-27 17:42:28.783 +02:00 [INF] 27.11.2019 г. 17:42:28 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:28.783 +02:00 [INF] 27.11.2019 г. 17:42:28 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:29.423 +02:00 [INF] 27.11.2019 г. 17:42:29 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:29.425 +02:00 [INF] 27.11.2019 г. 17:42:29 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:42:29.503 +02:00 [INF] 27.11.2019 г. 17:42:29 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:29.509 +02:00 [INF] 27.11.2019 г. 17:42:28 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:29.610 +02:00 [INF] 27.11.2019 г. 17:42:29 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:29.610 +02:00 [INF] 27.11.2019 г. 17:42:29 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:30.784 +02:00 [INF] 27.11.2019 г. 17:42:30 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:30.785 +02:00 [ERR] Value cannot be null.
+Parameter name: 27.11.2019 г. 17:42:30 Remove Application could not found Loan with email Id 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:42:30.788 +02:00 [INF] 27.11.2019 г. 17:42:30 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:42:30.878 +02:00 [INF] 27.11.2019 г. 17:42:30 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Invalid Application to Not Reviewed.
+2019-11-27 17:42:30.972 +02:00 [INF] 27.11.2019 г. 17:42:30 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:30.972 +02:00 [INF] 27.11.2019 г. 17:42:30 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:42:31.856 +02:00 [INF] 27.11.2019 г. 17:42:31 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:42:31.857 +02:00 [INF] 27.11.2019 г. 17:42:31 Get Emails with Status Name: Invalid Application.
+2019-11-27 17:42:31.947 +02:00 [INF] 27.11.2019 г. 17:42:31 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:31.951 +02:00 [INF] 27.11.2019 г. 17:42:30 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-11-27 17:42:32.039 +02:00 [INF] 27.11.2019 г. 17:42:32 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:42:32.039 +02:00 [INF] 27.11.2019 г. 17:42:32 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:06.088 +02:00 [INF] 27.11.2019 г. 17:43:06 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:43:06.091 +02:00 [ERR] Value cannot be null.
+Parameter name: 27.11.2019 г. 17:43:06 Remove Application could not found Loan with email Id 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:43:06.094 +02:00 [INF] 27.11.2019 г. 17:43:06 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:43:06.179 +02:00 [INF] 27.11.2019 г. 17:43:06 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Invalid Application to Not Reviewed.
+2019-11-27 17:43:06.288 +02:00 [INF] 27.11.2019 г. 17:43:06 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:06.288 +02:00 [INF] 27.11.2019 г. 17:43:06 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:07.592 +02:00 [INF] 27.11.2019 г. 17:43:07 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:07.595 +02:00 [INF] 27.11.2019 г. 17:43:07 Get Emails with Status Name: New Application.
+2019-11-27 17:43:07.597 +02:00 [INF] 27.11.2019 г. 17:43:07 Get Emails with Status Name: New Application.
+2019-11-27 17:43:07.695 +02:00 [INF] 27.11.2019 г. 17:43:07 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Not Reviewed to New Application.
+2019-11-27 17:43:07.712 +02:00 [INF] 27.11.2019 г. 17:43:07 Created new Loan Application with Email Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:43:07.712 +02:00 [INF] 27.11.2019 г. 17:43:07 Created Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393 with Status: New Application.
+2019-11-27 17:43:07.712 +02:00 [INF] 27.11.2019 г. 17:43:06 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to New Application.
+2019-11-27 17:43:07.841 +02:00 [INF] 27.11.2019 г. 17:43:07 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:07.842 +02:00 [INF] 27.11.2019 г. 17:43:07 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:08.947 +02:00 [INF] 27.11.2019 г. 17:43:08 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:08.960 +02:00 [INF] 27.11.2019 г. 17:43:08 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:43:09.040 +02:00 [INF] 27.11.2019 г. 17:43:09 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: New Application to Not Reviewed.
+2019-11-27 17:43:09.168 +02:00 [INF] 27.11.2019 г. 17:43:09 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:09.169 +02:00 [INF] 27.11.2019 г. 17:43:09 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:09.934 +02:00 [INF] 27.11.2019 г. 17:43:09 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:09.937 +02:00 [INF] 27.11.2019 г. 17:43:09 Get Emails with Status Name: New Application.
+2019-11-27 17:43:09.939 +02:00 [INF] 27.11.2019 г. 17:43:09 Get Emails with Status Name: New Application.
+2019-11-27 17:43:10.040 +02:00 [INF] 27.11.2019 г. 17:43:10 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Not Reviewed to New Application.
+2019-11-27 17:43:10.055 +02:00 [INF] 27.11.2019 г. 17:43:10 Created new Loan Application with Email Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:43:10.055 +02:00 [INF] 27.11.2019 г. 17:43:10 Created Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393 with Status: New Application.
+2019-11-27 17:43:10.055 +02:00 [INF] 27.11.2019 г. 17:43:09 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to New Application.
+2019-11-27 17:43:10.174 +02:00 [INF] 27.11.2019 г. 17:43:10 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:10.174 +02:00 [INF] 27.11.2019 г. 17:43:10 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:10.963 +02:00 [INF] 27.11.2019 г. 17:43:10 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:10.977 +02:00 [INF] 27.11.2019 г. 17:43:10 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:43:11.065 +02:00 [INF] 27.11.2019 г. 17:43:11 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: New Application to Not Reviewed.
+2019-11-27 17:43:11.196 +02:00 [INF] 27.11.2019 г. 17:43:11 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:11.196 +02:00 [INF] 27.11.2019 г. 17:43:11 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:11.910 +02:00 [INF] 27.11.2019 г. 17:43:11 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:11.912 +02:00 [INF] 27.11.2019 г. 17:43:11 Get Emails with Status Name: New Application.
+2019-11-27 17:43:11.913 +02:00 [INF] 27.11.2019 г. 17:43:11 Get Emails with Status Name: New Application.
+2019-11-27 17:43:11.999 +02:00 [INF] 27.11.2019 г. 17:43:11 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: Not Reviewed to New Application.
+2019-11-27 17:43:12.010 +02:00 [INF] 27.11.2019 г. 17:43:12 Created new Loan Application with Email Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa.
+2019-11-27 17:43:12.010 +02:00 [INF] 27.11.2019 г. 17:43:12 Created Loan Application by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393 with Status: New Application.
+2019-11-27 17:43:12.010 +02:00 [INF] 27.11.2019 г. 17:43:11 Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to New Application.
+2019-11-27 17:43:12.105 +02:00 [INF] 27.11.2019 г. 17:43:12 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:12.106 +02:00 [INF] 27.11.2019 г. 17:43:12 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:12.780 +02:00 [INF] 27.11.2019 г. 17:43:12 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:12.792 +02:00 [INF] 27.11.2019 г. 17:43:12 Get Emails with Status Name: Not Reviewed.
+2019-11-27 17:43:12.881 +02:00 [INF] 27.11.2019 г. 17:43:12 Updated Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa, from: New Application to Not Reviewed.
+2019-11-27 17:43:12.984 +02:00 [INF] 27.11.2019 г. 17:43:12 Get Email with Id: 50ab99fe-2eeb-46ea-b30a-7860879cccfa by .
+2019-11-27 17:43:12.984 +02:00 [INF] 27.11.2019 г. 17:43:12 Application with emailID: 50ab99fe-2eeb-46ea-b30a-7860879cccfa has been accessed by .
+2019-11-27 17:43:41.391 +02:00 [INF] 27.11.2019 г. 17:43:41 Get Emails with Status Name: New Application.
+2019-11-27 17:43:41.397 +02:00 [INF] 27.11.2019 г. 17:43:41 Get All Emails with Status: New Application.
+2019-11-27 17:43:41.397 +02:00 [INF] 27.11.2019 г. 17:43:41 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:43:42.854 +02:00 [INF] 27.11.2019 г. 17:43:42 Get Emails with Status Name: Open Application.
+2019-11-27 17:43:42.859 +02:00 [INF] 27.11.2019 г. 17:43:42 Get All Emails with Status: Open Application.
+2019-11-27 17:43:42.861 +02:00 [INF] 27.11.2019 г. 17:43:42 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:43:44.055 +02:00 [INF] 27.11.2019 г. 17:43:44 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:43:44.055 +02:00 [INF] 27.11.2019 г. 17:43:44 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:44:18.418 +02:00 [INF] 27.11.2019 г. 17:44:18 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:44:18.418 +02:00 [INF] 27.11.2019 г. 17:44:18 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:44:31.300 +02:00 [INF] 27.11.2019 г. 17:44:31 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:44:31.300 +02:00 [INF] 27.11.2019 г. 17:44:31 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:53:43.745 +02:00 [INF] Starting web host
+2019-11-27 17:53:47.523 +02:00 [INF] 27.11.2019 г. 17:53:47 Get All Emails.
+2019-11-27 17:53:47.565 +02:00 [INF] 27.11.2019 г. 17:53:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:54:32.664 +02:00 [INF] Starting web host
+2019-11-27 17:54:36.777 +02:00 [INF] 27.11.2019 г. 17:54:36 Get All Emails.
+2019-11-27 17:54:36.945 +02:00 [INF] 27.11.2019 г. 17:54:36 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:54:39.314 +02:00 [INF] 27.11.2019 г. 17:54:39 Get Emails with Status Name: New Application.
+2019-11-27 17:54:39.364 +02:00 [INF] 27.11.2019 г. 17:54:39 Get All Emails with Status: New Application.
+2019-11-27 17:54:39.365 +02:00 [INF] 27.11.2019 г. 17:54:39 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:54:39.988 +02:00 [INF] 27.11.2019 г. 17:54:39 Get Emails with Status Name: Open Application.
+2019-11-27 17:54:40.047 +02:00 [INF] 27.11.2019 г. 17:54:40 Get All Emails with Status: Open Application.
+2019-11-27 17:54:40.063 +02:00 [INF] 27.11.2019 г. 17:54:40 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:54:41.279 +02:00 [INF] 27.11.2019 г. 17:54:41 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:54:41.279 +02:00 [INF] 27.11.2019 г. 17:54:41 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:55:25.746 +02:00 [INF] 27.11.2019 г. 17:55:25 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:55:25.746 +02:00 [INF] 27.11.2019 г. 17:55:25 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:57:10.853 +02:00 [INF] Starting web host
+2019-11-27 17:57:14.556 +02:00 [INF] 27.11.2019 г. 17:57:14 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:57:14.560 +02:00 [INF] 27.11.2019 г. 17:57:14 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:57:20.560 +02:00 [INF] 27.11.2019 г. 17:57:20 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:57:20.561 +02:00 [INF] 27.11.2019 г. 17:57:20 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:57:29.320 +02:00 [INF] 27.11.2019 г. 17:57:29 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:57:29.320 +02:00 [INF] 27.11.2019 г. 17:57:29 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:59:24.705 +02:00 [INF] Starting web host
+2019-11-27 17:59:32.599 +02:00 [INF] 27.11.2019 г. 17:59:32 Get All Emails.
+2019-11-27 17:59:32.794 +02:00 [INF] 27.11.2019 г. 17:59:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 17:59:35.927 +02:00 [INF] 27.11.2019 г. 17:59:35 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:59:35.928 +02:00 [INF] 27.11.2019 г. 17:59:35 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 17:59:39.914 +02:00 [ERR] 27.11.2019 г. 17:59:39 Name must be between 3 and 50 symbols.
+2019-11-27 17:59:39.961 +02:00 [INF] 27.11.2019 г. 17:59:39 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 17:59:39.961 +02:00 [INF] 27.11.2019 г. 17:59:39 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:09:50.131 +02:00 [INF] Starting web host
+2019-11-27 18:09:54.437 +02:00 [INF] 27.11.2019 г. 18:09:54 Get All Emails.
+2019-11-27 18:09:54.597 +02:00 [INF] 27.11.2019 г. 18:09:54 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:09:59.467 +02:00 [INF] 27.11.2019 г. 18:09:59 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:09:59.467 +02:00 [INF] 27.11.2019 г. 18:09:59 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:10:01.538 +02:00 [INF] 27.11.2019 г. 18:10:01 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:10:01.538 +02:00 [INF] 27.11.2019 г. 18:10:01 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:10:10.494 +02:00 [INF] 27.11.2019 г. 18:10:10 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:10:10.494 +02:00 [INF] 27.11.2019 г. 18:10:10 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:10:27.842 +02:00 [INF] 27.11.2019 г. 18:10:27 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:10:27.842 +02:00 [INF] 27.11.2019 г. 18:10:27 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:10:46.913 +02:00 [INF] 27.11.2019 г. 18:10:46 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:10:46.913 +02:00 [INF] 27.11.2019 г. 18:10:46 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:14:08.719 +02:00 [INF] Starting web host
+2019-11-27 18:14:12.497 +02:00 [INF] 27.11.2019 г. 18:14:12 Get All Emails.
+2019-11-27 18:14:12.664 +02:00 [INF] 27.11.2019 г. 18:14:12 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:14:19.075 +02:00 [INF] 27.11.2019 г. 18:14:19 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:14:19.075 +02:00 [INF] 27.11.2019 г. 18:14:19 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:20:05.515 +02:00 [INF] Starting web host
+2019-11-27 18:20:09.621 +02:00 [INF] 27.11.2019 г. 18:20:09 Get All Emails.
+2019-11-27 18:20:09.790 +02:00 [INF] 27.11.2019 г. 18:20:09 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:20:41.302 +02:00 [INF] 27.11.2019 г. 18:20:41 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:20:41.302 +02:00 [INF] 27.11.2019 г. 18:20:41 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:23:53.186 +02:00 [INF] Starting web host
+2019-11-27 18:23:58.401 +02:00 [INF] 27.11.2019 г. 18:23:58 Get All Emails.
+2019-11-27 18:23:58.639 +02:00 [INF] 27.11.2019 г. 18:23:58 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:24:10.784 +02:00 [INF] Starting web host
+2019-11-27 18:24:14.994 +02:00 [INF] 27.11.2019 г. 18:24:14 Get All Emails.
+2019-11-27 18:24:15.134 +02:00 [INF] 27.11.2019 г. 18:24:15 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:24:17.789 +02:00 [INF] 27.11.2019 г. 18:24:17 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:24:17.789 +02:00 [INF] 27.11.2019 г. 18:24:17 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:25:53.621 +02:00 [INF] Starting web host
+2019-11-27 18:25:57.827 +02:00 [INF] 27.11.2019 г. 18:25:57 Get All Emails.
+2019-11-27 18:25:57.975 +02:00 [INF] 27.11.2019 г. 18:25:57 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:26:03.811 +02:00 [INF] 27.11.2019 г. 18:26:03 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:26:03.811 +02:00 [INF] 27.11.2019 г. 18:26:03 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:27:25.291 +02:00 [INF] Starting web host
+2019-11-27 18:27:28.774 +02:00 [INF] 27.11.2019 г. 18:27:28 Get All Emails.
+2019-11-27 18:27:28.941 +02:00 [INF] 27.11.2019 г. 18:27:28 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:27:31.138 +02:00 [INF] 27.11.2019 г. 18:27:31 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:27:31.139 +02:00 [INF] 27.11.2019 г. 18:27:31 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:31:46.989 +02:00 [INF] Starting web host
+2019-11-27 18:31:50.933 +02:00 [INF] 27.11.2019 г. 18:31:50 Get All Emails.
+2019-11-27 18:31:51.074 +02:00 [INF] 27.11.2019 г. 18:31:51 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:31:59.612 +02:00 [INF] 27.11.2019 г. 18:31:59 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:31:59.612 +02:00 [INF] 27.11.2019 г. 18:31:59 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:32:50.457 +02:00 [INF] Starting web host
+2019-11-27 18:32:53.582 +02:00 [INF] 27.11.2019 г. 18:32:53 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:32:53.586 +02:00 [INF] 27.11.2019 г. 18:32:53 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:35:18.693 +02:00 [INF] Starting web host
+2019-11-27 18:35:21.849 +02:00 [INF] 27.11.2019 г. 18:35:21 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:35:21.854 +02:00 [INF] 27.11.2019 г. 18:35:21 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:35:22.113 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: parsing '+?[0-9]+' - Quantifier {x,y} following nothing.
+   at System.Text.RegularExpressions.RegexParser.ScanRegex()
+   at System.Text.RegularExpressions.RegexParser.Parse(String re, RegexOptions op)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout, Boolean addToCache)
+   at System.Text.RegularExpressions.Regex..ctor(String pattern, RegexOptions options, TimeSpan matchTimeout)
+   at System.ComponentModel.DataAnnotations.RegularExpressionAttribute.SetupRegex()
+   at System.ComponentModel.DataAnnotations.RegularExpressionAttribute.FormatErrorMessage(String name)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.ValidationAttributeAdapter`1.GetErrorMessage(ModelMetadata modelMetadata, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.Internal.RegularExpressionAttributeAdapter.GetErrorMessage(ModelValidationContextBase validationContext)
+   at Microsoft.AspNetCore.Mvc.DataAnnotations.Internal.RegularExpressionAttributeAdapter.AddValidation(ClientModelValidationContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultValidationHtmlAttributeProvider.AddValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ValidationHtmlAttributeProvider.AddAndTrackValidationAttributes(ViewContext viewContext, ModelExplorer modelExplorer, String expression, IDictionary`2 attributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.AddValidationAttributes(ViewContext viewContext, TagBuilder tagBuilder, ModelExplorer modelExplorer, String expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateInput(ViewContext viewContext, InputType inputType, ModelExplorer modelExplorer, String expression, Object value, Boolean useViewData, Boolean isChecked, Boolean setId, Boolean isExplicitValue, String format, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.DefaultHtmlGenerator.GenerateTextBox(ViewContext viewContext, ModelExplorer modelExplorer, String expression, Object value, String format, Object htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GenerateTextBox(ModelExplorer modelExplorer, String inputTypeHint, String inputType, IDictionary`2 htmlAttributes)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email__AppFormPartial.<ExecuteAsync>b__28_0() in E:\Stuffs\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\_AppFormPartial.cshtml:line 29
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email__AppFormPartial.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_Email_Application.ExecuteAsync() in E:\Stuffs\TBIMailSenderASPNet\EmailManager\EmailManager.Web\Views\Email\Application.cshtml:line 49
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at NToastNotify.NtoastNotifyAjaxToastsMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-11-27 18:36:15.279 +02:00 [INF] Starting web host
+2019-11-27 18:36:18.946 +02:00 [INF] 27.11.2019 г. 18:36:18 Get All Emails.
+2019-11-27 18:36:19.060 +02:00 [INF] 27.11.2019 г. 18:36:19 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:36:21.651 +02:00 [INF] 27.11.2019 г. 18:36:21 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:36:21.651 +02:00 [INF] 27.11.2019 г. 18:36:21 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:37:23.257 +02:00 [INF] Starting web host
+2019-11-27 18:37:26.906 +02:00 [INF] 27.11.2019 г. 18:37:26 Get All Emails.
+2019-11-27 18:37:27.051 +02:00 [INF] 27.11.2019 г. 18:37:27 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:37:30.038 +02:00 [INF] 27.11.2019 г. 18:37:30 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:37:30.039 +02:00 [INF] 27.11.2019 г. 18:37:30 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:42:06.447 +02:00 [INF] Starting web host
+2019-11-27 18:42:10.119 +02:00 [INF] 27.11.2019 г. 18:42:10 Get All Emails.
+2019-11-27 18:42:10.235 +02:00 [INF] 27.11.2019 г. 18:42:10 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:42:15.867 +02:00 [INF] 27.11.2019 г. 18:42:15 Get Email with Id: 7dbca891-79f6-4b48-9ba7-dcd37409017f by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-27 18:42:15.868 +02:00 [INF] 27.11.2019 г. 18:42:15 Application with emailID: 7dbca891-79f6-4b48-9ba7-dcd37409017f has been accessed by .
+2019-11-27 18:43:43.781 +02:00 [INF] Starting web host
+2019-11-27 18:43:47.688 +02:00 [INF] 27.11.2019 г. 18:43:47 Get All Emails.
+2019-11-27 18:43:47.833 +02:00 [INF] 27.11.2019 г. 18:43:47 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:44:52.076 +02:00 [INF] User logged out.
+2019-11-27 18:45:07.817 +02:00 [INF] User logged in.
+2019-11-27 18:45:07.923 +02:00 [INF] 27.11.2019 г. 18:45:07 Get All Emails.
+2019-11-27 18:45:07.944 +02:00 [INF] 27.11.2019 г. 18:45:07 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:45:42.481 +02:00 [INF] User created a new account with password.
+2019-11-27 18:45:42.666 +02:00 [INF] 27.11.2019 г. 18:45:42 Get All Emails.
+2019-11-27 18:45:42.687 +02:00 [INF] 27.11.2019 г. 18:45:42 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:45:45.287 +02:00 [INF] User logged out.
+2019-11-27 18:47:03.918 +02:00 [INF] 27.11.2019 г. 18:47:03 Get All Emails.
+2019-11-27 18:47:03.938 +02:00 [INF] 27.11.2019 г. 18:47:03 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:51:13.946 +02:00 [INF] Starting web host
+2019-11-27 18:51:18.784 +02:00 [INF] 27.11.2019 г. 18:51:18 Get All Emails.
+2019-11-27 18:51:19.010 +02:00 [INF] 27.11.2019 г. 18:51:19 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:51:22.475 +02:00 [INF] User logged out.
+2019-11-27 18:51:29.117 +02:00 [INF] User logged in.
+2019-11-27 18:51:29.354 +02:00 [INF] 27.11.2019 г. 18:51:29 Get All Emails.
+2019-11-27 18:51:29.373 +02:00 [INF] 27.11.2019 г. 18:51:29 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:51:49.343 +02:00 [INF] User created a new account with password.
+2019-11-27 18:51:49.516 +02:00 [INF] 27.11.2019 г. 18:51:49 Get All Emails.
+2019-11-27 18:51:49.537 +02:00 [INF] 27.11.2019 г. 18:51:49 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:51:52.381 +02:00 [INF] User logged out.
+2019-11-27 18:52:05.677 +02:00 [INF] 27.11.2019 г. 18:52:05 User with Id: 7c7c17f9-8b27-4516-996b-91fe1b92fccf has changed their password successfully.
+2019-11-27 18:52:05.795 +02:00 [INF] 27.11.2019 г. 18:52:05 Get All Emails.
+2019-11-27 18:52:05.812 +02:00 [INF] 27.11.2019 г. 18:52:05 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-27 18:52:16.355 +02:00 [INF] User logged out.

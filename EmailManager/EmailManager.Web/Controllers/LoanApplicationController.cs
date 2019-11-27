@@ -42,55 +42,16 @@ namespace EmailManager.Web.Controllers
             this.emailStatusService = emailStatusService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> ApplicationForm(string emailId)
-        {
-            try
-            {
-                var email = await this.emailService.GetEmailByIdAsync(emailId);
-
-                var newLoanApplication = new LoanApplicationViewModel
-                {
-                    EmailId = email.Id
-                };
-
-                Log.Information($"{DateTime.Now} Application Form with email ID: {emailId} has been accessed by {User}.");
-                return View(newLoanApplication);
-            }
-            catch (Exception ex)
-            {
-                this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
-                Log.Error($"{DateTime.Now} {ex.Message}");
-                return RedirectToAction("Index", "Home");
-            }
-
-        }
-
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> ApplicationForm(LoanApplicationViewModel loanModel)
         {
-            if (!ModelState.IsValid || loanModel.FirstName == null || loanModel.LastName == null || loanModel.EGN == null)
+            if (!ModelState.IsValid 
+                || loanModel.FirstName == null 
+                || loanModel.LastName == null 
+                || loanModel.EGN == null 
+                || loanModel.Phone == null)
             {
-                if (string.IsNullOrEmpty(loanModel.FirstName))
-                {
-                    TempData["firstNameMessage"] = "FirstName must be between 3 and 50 symbols.";
-                }
-
-                if (string.IsNullOrEmpty(loanModel.LastName))
-                {
-                    TempData["lastNameMessage"] = "LastName must be between 3 and 50 symbols.";
-                }
-
-                if (string.IsNullOrEmpty(loanModel.EGN))
-                {
-                    TempData["egnMessage"] = "EGN must be 10 symbols.";
-                }
-
-                if (string.IsNullOrEmpty(loanModel.Phone))
-                {
-                    TempData["phoneMessage"] = "Phone must be between 10 and 13 symbols.";
-                }
                 this.toast.AddWarningToastMessage("Not valid data.");
                 return RedirectToAction("Application", "Email", new { id = loanModel.EmailId });
             }
@@ -104,12 +65,12 @@ namespace EmailManager.Web.Controllers
                 {
                     var clientDataDTO = this.clientDataDTOFactory.Create(loanModel.FirstName, loanModel.LastName, loanModel.EGN, loanModel.Phone, operatorId);
                     clientData = await this.clientService.CreateClientData(clientDataDTO);
-                    Log.Information($"{DateTime.Now} Client Data has been created by {User}.");
+                    Log.Information($"{DateTime.Now} Client Data has been created by {operatorId}.");
                 }
 
                 var loanApplicationDTO = await this.loanApplicationService.CreateLoanApplicationAsync(clientData.Id, loanModel.EmailId, loanModel.Status, operatorId, loanModel.Amount);
-                this.toast.AddSuccessToastMessage($"Client data was created successfully!");
-                Log.Information($"{DateTime.Now} Loan Application has been created by {User}.");
+                this.toast.AddSuccessToastMessage($"{DateTime.Now}  Loan Application has been created successfully!");
+                Log.Information($"{DateTime.Now} Loan Application has been created by {operatorId}.");
 
                 var emailStatus = await this.emailStatusService.GetEmailStatusByNameAsync("Closed Application");
                 await this.emailService.UpdateEmailStatus(new EmailDTO { Id = loanModel.EmailId }, emailStatus, operatorId);
@@ -119,7 +80,6 @@ namespace EmailManager.Web.Controllers
             catch (Exception ex)
             {
                 this.toast.AddWarningToastMessage("Oops... Something went wrong. Please, call your system administrator.");
-                TempData["errorMessage"] = ex.Message;
                 Log.Error($"{DateTime.Now} {ex.Message}");
             }
 

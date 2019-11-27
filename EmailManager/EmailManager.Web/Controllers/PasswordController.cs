@@ -7,6 +7,8 @@ using EmailManager.Service.DTOs;
 using EmailManager.Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using NToastNotify;
+using Serilog;
 
 namespace EmailManager.Web.Controllers
 {
@@ -14,11 +16,15 @@ namespace EmailManager.Web.Controllers
     {
         private readonly UserManager<User> userManager;
         private readonly SignInManager<User> signInManager;
+        private readonly IToastNotification toastNotification;
 
-        public PasswordController(UserManager<User> userManager, SignInManager<User> signInManager)
+        public PasswordController(UserManager<User> userManager, 
+                                  SignInManager<User> signInManager, 
+                                  IToastNotification toastNotification)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.toastNotification = toastNotification;
         }
 
         [HttpGet]
@@ -50,11 +56,11 @@ namespace EmailManager.Web.Controllers
             }
 
             await signInManager.RefreshSignInAsync(user);
-            //logger.LogInformation("User changed their password successfully."); -> SeriLog
-            //StatusMessage = "Your password has been changed."; -> Toaster
             user.ChangedPassword = true;
             await this.userManager.UpdateAsync(user);
 
+            this.toastNotification.AddSuccessToastMessage("Your password has been changed.");
+            Log.Information($"{DateTime.Now} User with Id: {user.Id} has changed their password successfully.");
             return RedirectToAction("Index", "Home");
         }
     }

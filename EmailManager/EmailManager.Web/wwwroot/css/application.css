@@ -34,7 +34,7 @@ button .close-email {
 }
 
 #application-form-div {
-    visibility: hidden;
+    visibility: visible;
     position: fixed;
     top: 5%;
     right: -3%;

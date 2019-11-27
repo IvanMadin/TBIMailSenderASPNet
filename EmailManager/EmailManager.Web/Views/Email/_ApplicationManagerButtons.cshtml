@@ -12,15 +12,11 @@ else if (Model.EmailStatusName == "New Application")
 
     <a class="btn btn-outline-warning" asp-area="Manager" asp-controller="Email" asp-action="ReturnStatusFromClosedToNew" asp-route-emailId="@Model.Id" asp-route-newStatusName="Not Reviewed">Not Reviewed</a>
 }
-else if (Model.EmailStatusName == "Open Application")
-{
-    <input type="button" class="btn btn-outline-warning" id="show-or-hide-button-form" value="Show Form">
-}
 else if (Model.EmailStatusName.StartsWith("Closed"))
 {
     <a class="btn btn-outline-warning" asp-area="Manager" asp-controller="Email" asp-action="ReturnStatusFromClosedToNew" asp-route-emailId="@Model.Id" asp-route-newStatusName="New Application">New Application</a>
 }
-else
+else if (Model.EmailStatusName == "Invalid Application")
 {
     <a class="btn btn-outline-warning" asp-area="Manager" asp-controller="Email" asp-action="ReturnStatusFromClosedToNew" asp-route-emailId="@Model.Id" asp-route-newStatusName="Not Reviewed">Not Reviewed</a>
 }

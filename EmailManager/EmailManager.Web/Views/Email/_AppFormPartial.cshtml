@@ -1,38 +1,38 @@
 ﻿@model LoanApplicationViewModel
 
-<div class="container-fluid" style="padding-top:12px">
+<div class="container-fluid" style="padding-top:0px">
     <div class="row">
-        <div class="card border-0 shadow my-5">
-            <div class="card-body p-3 amber-text">
+        <div class="card border-0 shadow my-5" style="max-height:700px !important">
+            <div class="card-body p-3 amber-text" style="margin-top: -30px">
                 <form asp-controller="LoanApplication" asp-action="ApplicationForm" method="post">
                     <h4>Fill Client Data</h4>
                     <hr />
-                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input asp-for="EmailId" value="@Model.EmailId" hidden />
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="FirstName" title="Name: "></label>
                         <input asp-for="FirstName" class="form-control" />
-                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                        <span asp-validation-for="FirstName" class="text-danger" style="font-size:small"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="LastName" title="Name: "></label>
                         <input asp-for="LastName" class="form-control" />
-                        <span asp-validation-for="LastName" class="text-danger"></span>
+                        <span asp-validation-for="LastName" class="text-danger" style="font-size:small"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="EGN" title="EGN: "></label>
                         <input asp-for="EGN" class="form-control" />
-                        <span asp-validation-for="EGN" class="text-danger"></span>
+                        <span asp-validation-for="EGN" class="text-danger" style="font-size:small"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="Phone" title="Phone: "></label>
                         <input asp-for="Phone" class="form-control" />
-                        <span asp-validation-for="Phone" class="text-danger"></span>
+                        <span asp-validation-for="Phone" class="text-danger" style="font-size:small"></span>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="Amount" title="Amount: "></label>
                         <input asp-for="Amount" class="form-control" />
-                        <span asp-validation-for="Amount" class="text-danger"></span>
+                        <span asp-validation-for="Amount" class="text-danger" style="font-size:small"></span>
                     </div>
                     <input type="submit" class="btn btn-success" asp-for="Status" value="Approved">
                     <input type="submit" class="btn btn-danger" style="margin-left:10px;" asp-for="Status" value="Rejected">
@@ -41,5 +41,3 @@
         </div>
     </div>
 </div>
-
-

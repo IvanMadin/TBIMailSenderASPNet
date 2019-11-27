@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmailManager.Data.Migrations
 {
     [DbContext(typeof(EmailManagerDbContext))]
-    [Migration("20191113224926_Initial")]
-    partial class Initial
+    [Migration("20191127144102_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -126,6 +126,8 @@ namespace EmailManager.Data.Migrations
                     b.Property<string>("ApplicationStatus")
                         .IsRequired();
 
+                    b.Property<string>("ChangedCloseToNewStatusForEmailId");
+
                     b.Property<string>("ClientDataId");
 
                     b.Property<string>("CreatedByUserId");
@@ -136,8 +138,7 @@ namespace EmailManager.Data.Migrations
 
                     b.Property<DateTime?>("DeletedOnDate");
 
-                    b.Property<string>("EmailId")
-                        .IsRequired();
+                    b.Property<string>("EmailId");
 
                     b.Property<string>("ModifiedByUserId");
 
@@ -150,7 +151,8 @@ namespace EmailManager.Data.Migrations
                     b.HasIndex("ClientDataId");
 
                     b.HasIndex("EmailId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[EmailId] IS NOT NULL");
 
                     b.HasIndex("UserId");
 
@@ -259,13 +261,13 @@ namespace EmailManager.Data.Migrations
                             Id = "fe86f129-41f3-4ab8-a61c-5f47239a1393",
                             AccessFailedCount = 0,
                             ChangedPassword = true,
-                            ConcurrencyStamp = "d98b93de-ad5c-42f9-b49b-9bd6721ad86f",
+                            ConcurrencyStamp = "f543d523-2dad-47d2-a43e-2c04519769ef",
                             Email = "krisi@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "KRISI@GMAIL.COM",
                             NormalizedUserName = "KRISI",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFvX5yitf/Stim9hAq2k1WbEGEV/Z6cfDY9kzWi46XdMNEvBBnpMM7b+d3Mj8/ycHA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEM36y29RiLczSIm73fJ6scVixiqC6RIw59+iXdNUmoUfcyjK2KM780B3Ebae/BlFhQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "7I5VNHIJTSZNOT3KDWKNFUV5PVYBHGXN",
                             TwoFactorEnabled = false,
@@ -276,13 +278,13 @@ namespace EmailManager.Data.Migrations
                             Id = "565dfbc0-2681-4f29-bc97-a619eacf339c",
                             AccessFailedCount = 0,
                             ChangedPassword = true,
-                            ConcurrencyStamp = "8bc0e618-558a-4702-855b-729d96b8edd4",
+                            ConcurrencyStamp = "90de0769-2285-4951-a340-0ac36af47b19",
                             Email = "madinftw@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = true,
                             NormalizedEmail = "MADINFTW@GMAIL.COM",
                             NormalizedUserName = "MADINFTW",
-                            PasswordHash = "AQAAAAEAACcQAAAAEHjV2SLjPDPn7bG8dEi4xTCThDTF1SF0x/NQUGIPiCKFU4IU068+xUXMYB9oN1syZA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFO6Hp6+CqwUiBgitbH+17EKthbQt/GNWtYIG33yZNgcc7upvjjp9y42tAcLbiOG+A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "15CLJEKQCTLPRXMVXXNSWXZH6R6KJRRU",
                             TwoFactorEnabled = false,
@@ -317,14 +319,14 @@ namespace EmailManager.Data.Migrations
                         new
                         {
                             Id = "771f568e-a7d5-496b-90c4-72ff997368e6",
-                            ConcurrencyStamp = "fcae7c83-e3ba-4c97-9e99-1bc303cf046c",
+                            ConcurrencyStamp = "0cbb30c8-ce96-4c6d-a72a-63bc9ef8b1a5",
                             Name = "Manager",
                             NormalizedName = "MANAGER"
                         },
                         new
                         {
                             Id = "93c66dd9-11c5-4836-b104-a9c333549530",
-                            ConcurrencyStamp = "05889dd6-c11d-4e0f-a162-b23a6be7c242",
+                            ConcurrencyStamp = "d85ebbad-713e-4c6e-ac77-ad009d695af2",
                             Name = "Operator",
                             NormalizedName = "OPERATOR"
                         });
@@ -458,8 +460,7 @@ namespace EmailManager.Data.Migrations
 
                     b.HasOne("EmailManager.Data.Entities.ClientEmail", "Email")
                         .WithOne("LoanApplication")
-                        .HasForeignKey("EmailManager.Data.Entities.LoanApplication", "EmailId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("EmailManager.Data.Entities.LoanApplication", "EmailId");
 
                     b.HasOne("EmailManager.Data.Entities.User", "User")
                         .WithMany("LoanApplications")
