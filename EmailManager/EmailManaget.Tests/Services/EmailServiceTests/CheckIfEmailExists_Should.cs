@@ -49,7 +49,7 @@ namespace EmailManaget.Tests.Services.EmailServiceTests
 
             var mockEmailFactory = new Mock<IEmailFactory>().Object;
             var mockEmailStatus = new Mock<IEmailStatusService>().Object;
-            var mockEncryptHelper = new Mock<EncryptingHelper>().Object;
+            var mockEncryptHelper = new Mock<IEncryptingHelper>().Object;
             using (var assertContext = new EmailManagerDbContext(options))
             {
                 var sut = new EmailService(assertContext, mockEmailFactory, mockEncryptHelper, mockEmailStatus);

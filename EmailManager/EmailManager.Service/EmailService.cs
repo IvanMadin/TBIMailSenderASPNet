@@ -18,23 +18,25 @@ namespace EmailManager.Service
     {
         private readonly EmailManagerDbContext context;
         private readonly IEmailFactory emailFactory;
-        private readonly EncryptingHelper encryptingHelper;
+        private readonly IEncryptingHelper encrypting;
         private readonly IEmailStatusService emailStatusService;
 
         public EmailService(EmailManagerDbContext context,
             IEmailFactory emailFactory,
-            EncryptingHelper encryptingHelper,
+            IEncryptingHelper encryptingHelper,
             IEmailStatusService emailStatusService)
         {
             this.context = context;
             this.emailFactory = emailFactory;
-            this.encryptingHelper = encryptingHelper;
+            this.encrypting = encryptingHelper;
             this.emailStatusService = emailStatusService;
         }
 
         public async Task<EmailDTO> CreateAsync(string originalMailId, string senderName, string senderEmail, DateTime dateReceived, string subject, string body)
         {
-            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, dateReceived, subject, body);
+            var newBody = this.encrypting.Encrypt(body);
+
+            var newEmail = this.emailFactory.CreateEmail(originalMailId, senderName, senderEmail, dateReceived, subject, newBody);
 
             if (newEmail == null)
             {
@@ -53,15 +55,17 @@ namespace EmailManager.Service
         public async Task<EmailDTO> GetEmailByIdAsync(string emailId)
         {
             var email = await this.context.Emails.Include(e => e.Status).FirstOrDefaultAsync(e => e.Id == emailId);
-            if (email is null)
-                return null;
+            if (email != null)
+            {
+                var emailDTO = email.ToDTO();
+                var decryptedBody = this.encrypting.Decrypt(email.Body);
+                var decodedBody = this.encrypting.DecryptingBase64Data(decryptedBody);
+                emailDTO.Body = decodedBody;
 
-            var decryptedBody = this.encryptingHelper.DecryptingBase64Data(email.Body);
-            var emailDTO = email.ToDTO();
-            emailDTO.Body = decryptedBody;
-
-            Log.Information($"{DateTime.Now} Get Email with Id: {email.Id} by {email.ModifiedByUserId}.");
-            return emailDTO;
+                Log.Information($"{DateTime.Now} Get Email with Id: {email.Id} by {email.ModifiedByUserId}.");
+                return emailDTO;
+            }
+            return null;
         }
 
         /// <summary>
@@ -70,7 +74,9 @@ namespace EmailManager.Service
         public async Task<ICollection<EmailDTO>> GetAllEmailsAsync()
         {
             var allEmails = await this.context.Emails.Include(e => e.Status).Include(a => a.EmailAttachments).Include(u => u.User).OrderByDescending(e => e.DateReceived).ToListAsync();
-            allEmails.Select(e => e.Body = this.encryptingHelper.DecryptingBase64Data(e.Body));
+
+            allEmails.Select(e => 
+            e.Body = this.encrypting.DecryptingBase64Data(this.encrypting.Decrypt(e.Body)));
             var mappedEmails = allEmails.ToDTO();
 
             Log.Information($"{DateTime.Now} Get All Emails.");

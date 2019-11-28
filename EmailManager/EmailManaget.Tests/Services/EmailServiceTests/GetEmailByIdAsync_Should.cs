@@ -26,7 +26,7 @@ namespace EmailManaget.Tests.Services.EmailServiceTests
 
             var mockEmailFactory = new Mock<IEmailFactory>().Object;
             var mockEmailStatus = new Mock<IEmailStatusService>().Object;
-            var mockEncryptHelper = new Mock<EncryptingHelper>().Object;
+            var mockEncryptHelper = new Mock<IEncryptingHelper>();
 
             using (var arrangeContext = new EmailManagerDbContext(options))
             {
@@ -36,7 +36,12 @@ namespace EmailManaget.Tests.Services.EmailServiceTests
 
             using (var assertContext = new EmailManagerDbContext(options))
             {
-                var sut = new EmailService(assertContext, mockEmailFactory, mockEncryptHelper, mockEmailStatus);
+                var sut = new EmailService(assertContext, mockEmailFactory, mockEncryptHelper.Object, mockEmailStatus);
+
+                mockEncryptHelper.Setup(e => e.Encrypt("")).Returns("");
+                mockEncryptHelper.Setup(e => e.Encrypt("")).Returns("");
+                mockEncryptHelper.Setup(e => e.Decrypt("")).Returns("");
+                mockEncryptHelper.Setup(e => e.Decrypt("")).Returns("");
 
                 var result = await sut.GetEmailByIdAsync(email.Id);
                 Assert.AreEqual(email.Id, result.Id);
@@ -50,7 +55,7 @@ namespace EmailManaget.Tests.Services.EmailServiceTests
 
             var mockEmailFactory = new Mock<IEmailFactory>().Object;
             var mockEmailStatus = new Mock<IEmailStatusService>().Object;
-            var mockEncryptHelper = new Mock<EncryptingHelper>().Object;
+            var mockEncryptHelper = new Mock<IEncryptingHelper>().Object;
 
             using (var assertContext = new EmailManagerDbContext(options))
             {

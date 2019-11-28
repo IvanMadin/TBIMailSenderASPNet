@@ -22,6 +22,7 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
             var clientData = new ClientData() { FirstName = testFirstName };
 
             var mockValidation = new Mock<IValidation>().Object;
+            var mockEncryption = new Mock<IEncryptingHelper>().Object;
 
             using (var arrangeContext = new EmailManagerDbContext(options))
             {
@@ -31,7 +32,7 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
 
             using (var assertContext = new EmailManagerDbContext(options))
             {
-                var sut = new ClientService(assertContext, mockValidation);
+                var sut = new ClientService(assertContext, mockValidation, mockEncryption);
 
                 var result = await sut.GetClientDataByIdAsync(clientData.Id);
                 Assert.AreEqual(clientData.Id, result.Id);
@@ -46,6 +47,7 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
             var clientData = new ClientData() { FirstName = testFirstName };
 
             var mockValidation = new Mock<IValidation>().Object;
+            var mockEncryption = new Mock<IEncryptingHelper>().Object;
 
             using (var arrangeContext = new EmailManagerDbContext(options))
             {
@@ -55,7 +57,7 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
 
             using (var assertContext = new EmailManagerDbContext(options))
             {
-                var sut = new ClientService(assertContext, mockValidation);
+                var sut = new ClientService(assertContext, mockValidation, mockEncryption);
               
                 var result = await sut.GetClientDataByIdAsync("invalid");
                 Assert.IsNull(result);

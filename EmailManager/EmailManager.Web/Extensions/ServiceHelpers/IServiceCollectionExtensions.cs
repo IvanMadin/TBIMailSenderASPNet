@@ -18,8 +18,7 @@ namespace EmailManager.Web.Extensions.ServiceHelpers
         {
             services.AddScoped<GmailConfigure>();
             services.AddScoped<IEmailFactory, EmailFactory>();
-            services.AddScoped<ClientService>();
-            services.AddScoped<EncryptingHelper>();
+            services.AddScoped<IEncryptingHelper, EncryptingHelper>();
             services.AddTransient<IEmailService, EmailService>();
             services.AddScoped<IClientService, ClientService>();
             services.AddTransient<IEmailStatusService, EmailStatusService>();

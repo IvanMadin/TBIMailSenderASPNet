@@ -5,3 +5,98 @@
 2019-11-28 01:09:31.909 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
 2019-11-28 01:10:46.301 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
 2019-11-28 01:11:25.456 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:18:17.237 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:23:54.753 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:23:58.959 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:23:59.391 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:23:59.640 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:23:59.885 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:24:00.130 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:24:00.316 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:24:11.744 +02:00 [INF] Starting web host
+2019-11-28 01:24:12.255 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-28 01:24:13.025 +02:00 [INF] 28.11.2019 г. 1:24:13 Get All Emails.
+2019-11-28 01:24:13.053 +02:00 [INF] 28.11.2019 г. 1:24:13 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 01:24:15.396 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:28:26.503 +02:00 [WRN] The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached.
+2019-11-28 01:29:01.664 +02:00 [INF] 28.11.2019 г. 1:29:01 Get All Emails.
+2019-11-28 01:29:01.675 +02:00 [INF] 28.11.2019 г. 1:29:01 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 02:33:49.727 +02:00 [INF] Starting web host
+2019-11-28 03:07:19.291 +02:00 [INF] Starting web host
+2019-11-28 03:07:19.750 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-28 03:07:20.476 +02:00 [INF] 28.11.2019 г. 3:07:20 Get All Emails.
+2019-11-28 03:07:20.477 +02:00 [INF] 28.11.2019 г. 3:07:20 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:07:23.906 +02:00 [INF]  Create Email with Id: 99cbd9e8-853e-4b58-8de1-f61961d5cfcb by .
+2019-11-28 03:07:24.561 +02:00 [INF]  Create Email with Id: d01a6f29-3850-44ea-b030-c559e834f37a by .
+2019-11-28 03:07:24.755 +02:00 [INF]  Create Email with Id: 000997c8-7d6e-41da-a60a-928d389de2c5 by .
+2019-11-28 03:07:24.936 +02:00 [INF]  Create Email with Id: ce5ae788-ce4a-4f79-9493-42f976f93660 by .
+2019-11-28 03:07:25.164 +02:00 [INF]  Create Email with Id: 89501f68-2373-4775-abb2-4bf9ea3f4231 by .
+2019-11-28 03:07:25.397 +02:00 [INF]  Create Email with Id: ca506d45-a075-430b-bf5c-3c0c78b3861d by .
+2019-11-28 03:07:25.596 +02:00 [INF]  Create Email with Id: 13d0c294-98a7-4076-9abb-955684e10828 by .
+2019-11-28 03:07:25.803 +02:00 [INF]  Create Email with Id: 369e1e15-ffa4-4445-9ddf-bf63e9827ed3 by .
+2019-11-28 03:07:25.999 +02:00 [INF]  Create Email with Id: 3f22e67c-bebd-4e26-97c1-2b3cbf78a322 by .
+2019-11-28 03:07:26.192 +02:00 [INF]  Create Email with Id: 7846ef80-eb84-4f60-9296-2885e673e797 by .
+2019-11-28 03:07:26.380 +02:00 [INF]  Create Email with Id: 72abecf1-5c0f-48cc-83c2-3f8f61a7cce4 by .
+2019-11-28 03:07:26.561 +02:00 [INF]  Create Email with Id: d02dadb8-e335-445c-bf1f-76f91e7d667b by .
+2019-11-28 03:07:26.751 +02:00 [INF]  Create Email with Id: 683bc4b4-7b46-490b-b016-b2b86b680bec by .
+2019-11-28 03:07:26.962 +02:00 [INF]  Create Email with Id: a60d8eb3-2ab5-4aa7-8d41-0a48b3567ab0 by .
+2019-11-28 03:07:27.142 +02:00 [INF]  Create Email with Id: e9bc59a6-008b-4f48-bba4-f7028a63ae3e by .
+2019-11-28 03:07:27.316 +02:00 [INF]  Create Email with Id: a5bef794-8527-47de-a941-222560f72a69 by .
+2019-11-28 03:07:27.571 +02:00 [INF]  Create Email with Id: 7f4e8b37-e1fd-463d-9de3-b1ffc88829a6 by .
+2019-11-28 03:07:27.763 +02:00 [INF]  Create Email with Id: a4262121-93a1-44f8-a646-759c604a148b by .
+2019-11-28 03:07:28.482 +02:00 [INF]  Create Email with Id: 2b82b16a-1c17-465c-829d-06fa916f71bf by .
+2019-11-28 03:07:29.233 +02:00 [INF]  Create Email with Id: a328f0db-3b57-4547-be42-9456a77d8614 by .
+2019-11-28 03:07:29.407 +02:00 [INF]  Create Email with Id: 00fd3234-147c-4e9e-b191-46801f76d354 by .
+2019-11-28 03:07:29.603 +02:00 [INF]  Create Email with Id: 8190edc4-caf0-428a-ac3c-cd3e734c9359 by .
+2019-11-28 03:07:29.792 +02:00 [INF]  Create Email with Id: 94fdb5ec-85c0-45a8-ac24-be5e3e42de46 by .
+2019-11-28 03:07:29.987 +02:00 [INF]  Create Email with Id: 383681f0-67b5-49e5-9074-a522b5e8d60b by .
+2019-11-28 03:07:30.160 +02:00 [INF]  Create Email with Id: b21bad58-fb79-4377-a0fc-c9cd79186704 by .
+2019-11-28 03:07:30.339 +02:00 [INF]  Create Email with Id: 6eec8aa3-0dec-4659-bc1f-ead8bcd507d6 by .
+2019-11-28 03:07:30.530 +02:00 [INF]  Create Email with Id: 09c7bb59-c619-48a1-87c5-b28bc367b664 by .
+2019-11-28 03:07:30.717 +02:00 [INF]  Create Email with Id: 39c197c9-0169-4bed-bb64-c50ffed6b65c by .
+2019-11-28 03:07:30.905 +02:00 [INF]  Create Email with Id: 0fee13f2-ccda-40bd-a43a-a65cfc0878fd by .
+2019-11-28 03:07:31.079 +02:00 [INF]  Create Email with Id: 757997ae-2622-4867-ad3b-0ce90abecf59 by .
+2019-11-28 03:07:31.253 +02:00 [INF]  Create Email with Id: 7c8cc2ae-f36d-4931-bd41-7b2ca87d9303 by .
+2019-11-28 03:07:31.461 +02:00 [INF]  Create Email with Id: cd7f8e4a-94c1-4229-981f-34005ac95555 by .
+2019-11-28 03:07:31.837 +02:00 [INF]  Create Email with Id: dee81b63-dee6-4fed-ab28-49b45a6346fe by .
+2019-11-28 03:07:31.849 +02:00 [INF] 28.11.2019 г. 3:07:31 Update Emails by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:07:32.214 +02:00 [INF] 28.11.2019 г. 3:07:32 Get All Emails.
+2019-11-28 03:07:32.232 +02:00 [INF] 28.11.2019 г. 3:07:32 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:07:35.318 +02:00 [INF] 28.11.2019 г. 3:07:35 Get Email with Id: 89501f68-2373-4775-abb2-4bf9ea3f4231 by .
+2019-11-28 03:07:35.318 +02:00 [INF] 28.11.2019 г. 3:07:35 Application with emailID: 89501f68-2373-4775-abb2-4bf9ea3f4231 has been accessed by .
+2019-11-28 03:07:39.278 +02:00 [INF] 28.11.2019 г. 3:07:39 Get All Emails.
+2019-11-28 03:07:39.289 +02:00 [INF] 28.11.2019 г. 3:07:39 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:07:41.831 +02:00 [INF] 28.11.2019 г. 3:07:41 Get Email with Id: 369e1e15-ffa4-4445-9ddf-bf63e9827ed3 by .
+2019-11-28 03:07:41.831 +02:00 [INF] 28.11.2019 г. 3:07:41 Application with emailID: 369e1e15-ffa4-4445-9ddf-bf63e9827ed3 has been accessed by .
+2019-11-28 03:07:46.137 +02:00 [INF] 28.11.2019 г. 3:07:46 Get All Emails.
+2019-11-28 03:07:46.147 +02:00 [INF] 28.11.2019 г. 3:07:46 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:07:47.964 +02:00 [INF] 28.11.2019 г. 3:07:47 Get Email with Id: 7846ef80-eb84-4f60-9296-2885e673e797 by .
+2019-11-28 03:07:47.964 +02:00 [INF] 28.11.2019 г. 3:07:47 Application with emailID: 7846ef80-eb84-4f60-9296-2885e673e797 has been accessed by .
+2019-11-28 03:07:54.037 +02:00 [INF] 28.11.2019 г. 3:07:54 Get All Emails.
+2019-11-28 03:07:54.048 +02:00 [INF] 28.11.2019 г. 3:07:54 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:08:58.568 +02:00 [INF] Starting web host
+2019-11-28 03:08:59.057 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-11-28 03:09:00.108 +02:00 [INF] 28.11.2019 г. 3:09:00 Get All Emails.
+2019-11-28 03:09:00.133 +02:00 [INF] 28.11.2019 г. 3:09:00 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:10:04.429 +02:00 [INF] 28.11.2019 г. 3:10:04 Get All Emails.
+2019-11-28 03:10:04.439 +02:00 [INF] 28.11.2019 г. 3:10:04 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:10:06.302 +02:00 [INF] 28.11.2019 г. 3:10:06 Get Emails with Status Name: New Application.
+2019-11-28 03:10:06.327 +02:00 [INF] 28.11.2019 г. 3:10:06 Get All Emails with Status: New Application.
+2019-11-28 03:10:06.327 +02:00 [INF] 28.11.2019 г. 3:10:06 Show Emails with Status: New Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-28 03:10:06.870 +02:00 [INF] 28.11.2019 г. 3:10:06 Get Emails with Status Name: Open Application.
+2019-11-28 03:10:06.871 +02:00 [INF] 28.11.2019 г. 3:10:06 Get All Emails with Status: Open Application.
+2019-11-28 03:10:06.871 +02:00 [INF] 28.11.2019 г. 3:10:06 Show Emails with Status: Open Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-28 03:10:08.638 +02:00 [INF] 28.11.2019 г. 3:10:08 Get Emails with Status Name: Closed Application.
+2019-11-28 03:10:08.649 +02:00 [INF] 28.11.2019 г. 3:10:08 Get All Emails with Status: Closed Application.
+2019-11-28 03:10:08.649 +02:00 [INF] 28.11.2019 г. 3:10:08 Show Emails with Status: Closed Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-28 03:10:08.720 +02:00 [INF] 28.11.2019 г. 3:10:08 Get All Emails.
+2019-11-28 03:10:08.732 +02:00 [INF] 28.11.2019 г. 3:10:08 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:10:09.341 +02:00 [INF] 28.11.2019 г. 3:10:09 Get Emails with Status Name: Invalid Application.
+2019-11-28 03:10:09.344 +02:00 [INF] 28.11.2019 г. 3:10:09 Get All Emails with Status: Invalid Application.
+2019-11-28 03:10:09.344 +02:00 [INF] 28.11.2019 г. 3:10:09 Show Emails with Status: Invalid Application asked by Manager with Id: fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-11-28 03:10:10.660 +02:00 [INF] 28.11.2019 г. 3:10:10 Get All Emails.
+2019-11-28 03:10:10.672 +02:00 [INF] 28.11.2019 г. 3:10:10 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-11-28 03:10:13.907 +02:00 [INF] 28.11.2019 г. 3:10:13 Get Email with Id: dee81b63-dee6-4fed-ab28-49b45a6346fe by .
+2019-11-28 03:10:13.907 +02:00 [INF] 28.11.2019 г. 3:10:13 Application with emailID: dee81b63-dee6-4fed-ab28-49b45a6346fe has been accessed by .
+2019-11-28 03:10:21.794 +02:00 [INF] 28.11.2019 г. 3:10:21 Get All Emails.
+2019-11-28 03:10:21.805 +02:00 [INF] 28.11.2019 г. 3:10:21 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.

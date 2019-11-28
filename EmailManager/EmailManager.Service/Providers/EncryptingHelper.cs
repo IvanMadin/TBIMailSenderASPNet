@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EmailManager.Service.Contracts;
+using Serilog;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
@@ -6,11 +8,11 @@ using System.Text;
 
 namespace EmailManager.Service.Providers
 {
-    public class EncryptingHelper
+    public class EncryptingHelper : IEncryptingHelper
     {
-        public static string Encrypt(string clearText)
+        public string Encrypt(string clearText)
         {
-            string EncryptionKey = "I am not pretty sure if I am gonna use that crypting.";
+            string EncryptionKey = "IAmNotPrettySureIfIAmGonnaUseThatCrypting";
             byte[] clearBytes = Encoding.Unicode.GetBytes(clearText);
             using (Aes encryptor = Aes.Create())
             {
@@ -26,14 +28,15 @@ namespace EmailManager.Service.Providers
                     }
                     clearText = Convert.ToBase64String(ms.ToArray());
                 }
+                pdb.Dispose();
             }
             return clearText;
         }
 
 
-        public static string Decrypt(string cipherText)
+        public string Decrypt(string cipherText)
         {
-            string EncryptionKey = "I am not pretty sure if I am gonna use that crypting.";
+            string EncryptionKey = "IAmNotPrettySureIfIAmGonnaUseThatCrypting";
             cipherText = cipherText.Replace(" ", "+");
             try
             {
@@ -52,11 +55,12 @@ namespace EmailManager.Service.Providers
                         }
                         cipherText = Encoding.Unicode.GetString(ms.ToArray());
                     }
+                    pdb.Dispose();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-
+                throw;
             }
 
             return cipherText;

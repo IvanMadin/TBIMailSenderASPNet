@@ -22,9 +22,13 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
             var egn = "1234567899";
 
             var options = TestUtils.GetOptions(nameof(FindClient_Successfully));
-            var clientData = new ClientData() { FirstName = firstName, LastName=lastName, EGN=egn};
+            var clientData = new ClientData() { FirstName = firstName, 
+                LastName= lastName, 
+                EGN= egn
+            };
 
             var mockValidation = new Mock<IValidation>().Object;
+            var mockEncryption = new Mock<IEncryptingHelper>();
 
             using (var arrangeContext = new EmailManagerDbContext(options))
             {
@@ -34,8 +38,11 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
 
             using (var assertContext = new EmailManagerDbContext(options))
             {
-                var sut = new ClientService(assertContext, mockValidation);
-
+                var sut = new ClientService(assertContext, mockValidation, mockEncryption.Object);
+                mockEncryption.Setup(e => e.Encrypt(lastName)).Returns(lastName);
+                mockEncryption.Setup(e => e.Encrypt(egn)).Returns(egn);
+                mockEncryption.Setup(e => e.Decrypt(lastName)).Returns(lastName);
+                mockEncryption.Setup(e => e.Decrypt(egn)).Returns(egn);
                 var data = await sut.FindClientAsync(firstName, lastName, egn);
 
                 Assert.AreEqual(clientData.Id, data.Id);
@@ -55,6 +62,7 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
             var clientData = new ClientData() { FirstName = firstName, LastName = lastName, EGN = egn };
 
             var mockValidation = new Mock<IValidation>().Object;
+            var mockEncryption = new Mock<IEncryptingHelper>();
 
             using (var arrangeContext = new EmailManagerDbContext(options))
             {
@@ -64,8 +72,11 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
 
             using (var assertContext = new EmailManagerDbContext(options))
             {
-                var sut = new ClientService(assertContext, mockValidation);
-
+                var sut = new ClientService(assertContext, mockValidation, mockEncryption.Object);
+                mockEncryption.Setup(e => e.Encrypt(lastName)).Returns(lastName);
+                mockEncryption.Setup(e => e.Encrypt(egn)).Returns(egn);
+                mockEncryption.Setup(e => e.Decrypt(lastName)).Returns(lastName);
+                mockEncryption.Setup(e => e.Decrypt(egn)).Returns(egn);
                 var data = await sut.FindClientAsync(firstName, lastName, egn);
 
                 Assert.IsInstanceOfType(data, typeof(ClientDataDTO));
@@ -81,7 +92,8 @@ namespace EmailManaget.Tests.Services.ClientServiceTests
             using (var assertContext = new EmailManagerDbContext(options))
             {
                 var mockValidation = new Mock<IValidation>().Object;
-                var sut = new ClientService(assertContext, mockValidation);
+                var mockEncryption = new Mock<IEncryptingHelper>().Object;
+                var sut = new ClientService(assertContext, mockValidation, mockEncryption);
 
                 var data = await sut.FindClientAsync("FirstName", "LastName", "1231231231");
 

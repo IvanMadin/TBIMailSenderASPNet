@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using EmailManager.Service.Contracts;
+using Serilog;
 
 namespace EmailManager.Web.Areas.Identity.Pages.Account
 {
@@ -80,8 +81,7 @@ namespace EmailManager.Web.Areas.Identity.Pages.Account
                 }
                 catch(ArgumentNullException ex)
                 {
-                    //TODO: log Exception;
-                    //TODO: Show Message for the client with Toast;
+                    Log.Error($"{DateTime.Now} {ex.Message}");
                 }
 
                 var result = await signInManager.PasswordSignInAsync(Input.UserName, Input.Password, true, lockoutOnFailure: true);
