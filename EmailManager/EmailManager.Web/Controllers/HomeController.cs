@@ -7,6 +7,7 @@ using EmailManager.GmailConfig;
 using Serilog;
 using Microsoft.AspNetCore.Authorization;
 using NToastNotify;
+using EmailManager.Service.Contracts;
 
 namespace EmailManager.Web.Controllers
 {
@@ -14,11 +15,13 @@ namespace EmailManager.Web.Controllers
     {
         private readonly GmailConfigure gmailConfigure;
         private readonly IToastNotification toast;
+        private readonly IEGNChecker eGNChecker;
 
-        public HomeController(GmailConfigure gmailConfigure, IToastNotification toast)
+        public HomeController(GmailConfigure gmailConfigure, IToastNotification toast, IEGNChecker eGNChecker)
         {
             this.gmailConfigure = gmailConfigure;
             this.toast = toast;
+            this.eGNChecker = eGNChecker;
         }
 
         [Authorize]
@@ -38,6 +41,13 @@ namespace EmailManager.Web.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public async Task<bool> CheckEGN(string egn)
+        {
+            bool result = await this.eGNChecker.IsRealAsync(egn);
+
+            return result;
         }
 
         [Authorize]

@@ -1,11 +1,24 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-//$(document).ready(function () {
-//    $('.navbar-nav .nav-item').click(function () {
-//        $('.navbar-nav .nav-item').removeClass('active');
-//        $(this).addClass('active');
-//    })
-//});
+﻿
+$('#checkegn').keyup(() => {
+    let egn = $('#checkegn').val();
+    
+    if (egn.length === 10) {
+        $.ajax({
+            type: 'Get',
+            url: "/Home/CheckEGN",
+            data:
+            {
+                'egn': egn
+            },
+            success: function (response) {
+                if (!response) {
+                    $('#isrealegn').text("This EGN is invalid! Are you sure?");
+                }
+                else {
+                    $('#isrealegn').text("");
+                }
+            }
+        })
+    }
+    
+})

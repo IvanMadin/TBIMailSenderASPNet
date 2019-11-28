@@ -28,6 +28,7 @@ namespace EmailManager.Web.Extensions.ServiceHelpers
             services.AddScoped<IRolesService, UsersService>();
             services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<IAttachmentsService, AttachmentsService>();
+            services.AddScoped<IEGNChecker, EGNChecker>();
         }
     }
 }

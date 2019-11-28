@@ -21,13 +21,13 @@
                     </div>
                     <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="EGN" title="EGN: "></label>
-                        <input asp-for="EGN" class="form-control" />
-                        <span asp-validation-for="EGN" class="text-danger" style="font-size:small"></span>
+                        <input asp-for="EGN" id="checkegn" class="form-control" />
+                        <span asp-validation-for="EGN" id="isrealegn" class="text-danger" style="font-size:small"></span>
                     </div>
                     <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="Phone" title="Phone: "></label>
                         <input asp-for="Phone" class="form-control" />
-                        <span asp-validation-for="Phone" class="text-danger" style="font-size:small"></span>
+                        <span  asp-validation-for="Phone" class="text-danger" style="font-size:small"></span>
                     </div>
                     <div class="form-group" style="margin-bottom:0.8rem;">
                         <label asp-for="Amount" title="Amount: "></label>
