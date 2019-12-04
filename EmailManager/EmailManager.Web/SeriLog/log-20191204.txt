@@ -1,0 +1,13 @@
+2019-12-04 11:33:07.405 +02:00 [INF] Starting web host
+2019-12-04 11:33:11.219 +02:00 [WRN] Failed to determine the https port for redirect.
+2019-12-04 11:33:24.357 +02:00 [INF] User logged in.
+2019-12-04 11:33:25.300 +02:00 [INF] 4.12.2019 г. 11:33:25 Get All Emails.
+2019-12-04 11:33:25.398 +02:00 [INF] 4.12.2019 г. 11:33:25 All emails has been accessed by System.Security.Claims.ClaimsPrincipal.
+2019-12-04 11:33:32.797 +02:00 [INF] 4.12.2019 г. 11:33:32 Get Email with Id: e8a48e2a-c165-44bf-b135-6786751fdea0 by .
+2019-12-04 11:33:32.797 +02:00 [INF] 4.12.2019 г. 11:33:32 Application with emailID: e8a48e2a-c165-44bf-b135-6786751fdea0 has been accessed by .
+2019-12-04 11:33:34.793 +02:00 [INF] 4.12.2019 г. 11:33:34 Get Email with Id: e8a48e2a-c165-44bf-b135-6786751fdea0 by .
+2019-12-04 11:33:34.828 +02:00 [INF] 4.12.2019 г. 11:33:34 Get Emails with Status Name: Invalid Application.
+2019-12-04 11:33:34.858 +02:00 [INF] 4.12.2019 г. 11:33:34 Update Emails by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-12-04 11:33:35.271 +02:00 [INF]  Changed Status by User Id: fe86f129-41f3-4ab8-a61c-5f47239a1393, from: Not Reviewed to Invalid Application.
+2019-12-04 11:33:35.338 +02:00 [INF] 4.12.2019 г. 11:33:35 Get Email with Id: e8a48e2a-c165-44bf-b135-6786751fdea0 by fe86f129-41f3-4ab8-a61c-5f47239a1393.
+2019-12-04 11:33:35.338 +02:00 [INF] 4.12.2019 г. 11:33:35 Application with emailID: e8a48e2a-c165-44bf-b135-6786751fdea0 has been accessed by .
